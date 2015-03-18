@@ -7855,11 +7855,11 @@ jQuery.extend({
 			if ( s.cache === false ) {
 				s.url = rts.test( cacheURL ) ?
 
-					// If there is already a '_' parameter, set its value
+					// If there is already a 'inc' parameter, set its value
 					cacheURL.replace( rts, "$1_=" + ajax_nonce++ ) :
 
 					// Otherwise add one to the end
-					cacheURL + ( ajax_rquery.test( cacheURL ) ? "&" : "?" ) + "_=" + ajax_nonce++;
+					cacheURL + ( ajax_rquery.test( cacheURL ) ? "&" : "?" ) + "inc=" + ajax_nonce++;
 			}
 		}
 
@@ -8300,7 +8300,7 @@ var oldCallbacks = [],
 jQuery.ajaxSetup({
 	jsonp: "callback",
 	jsonpCallback: function() {
-		var callback = oldCallbacks.pop() || ( jQuery.expando + "_" + ( ajax_nonce++ ) );
+		var callback = oldCallbacks.pop() || ( jQuery.expando + "inc" + ( ajax_nonce++ ) );
 		this[ callback ] = true;
 		return callback;
 	}
