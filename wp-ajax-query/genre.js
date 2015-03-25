@@ -61,7 +61,7 @@
         var self = this;
 
         //If list item is clicked, trigger input change and add css class
-        $('#genre-filter li').live('click', function(){
+        $('#genre-filter li').on('click', function() {
             var input = $(this).find('input');
 
             if ( $(this).attr('class') == 'clear-all' )
@@ -82,7 +82,7 @@
         });
 
         //If input is changed, load posts
-        $('#genre-filter input').live('change', function(){
+        $('#genre-filter input').on('change', function(){
             self.load_posts(); //Load Posts
         });
 
@@ -127,6 +127,8 @@
         var self = this;
         var paged_value = paged;
         var ajax_url = ajax_genre_params.ajax_url;
+
+        console.log(ajax_url);
 
         $.ajax({
             type: 'GET',

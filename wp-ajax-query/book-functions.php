@@ -108,5 +108,5 @@ function ajax_genre_filter()
 	endif;
 	wp_reset_postdata();
 	
-	die();
+	wp_die();
 }
