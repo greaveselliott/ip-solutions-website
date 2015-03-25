@@ -1,0 +1,29 @@
+{
+  "name": "ip-solutions-website",
+  "version": "1.0.0",
+  "description": "IP Solutions Wordpress Theme Packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greaveselliott/ip-solutions-website.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Pulse",
+    "IP-Solutions",
+    "Theme",
+    "Client"
+  ],
+  "author": "Elliott Matthew Greaves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greaveselliott/ip-solutions-website/issues"
+  },
+  "homepage": "https://github.com/greaveselliott/ip-solutions-website",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
