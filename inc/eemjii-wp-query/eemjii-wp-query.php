@@ -60,8 +60,5 @@ Class Eemjii_WP_Query {
 
         // Resetting Query
         wp_reset_query();
-
-        // close the ajax callback function
-        die();
     }
 }

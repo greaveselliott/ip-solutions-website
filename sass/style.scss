@@ -1,5 +1,13 @@
 // WordPress heading
 @import "wordpress-theme-init";
+
+// Apex Font
+@import "font-apex/font-apex";
+
+// Import Font Awesome;
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
 
@@ -8,3 +16,9 @@
 
 // Import Bootstrap for Sass
 @import "bootstrap";
+
+// Bootstrap Extension: Media Query Mixin's
+@import "bootstrap-media-queries";
+
+// Utility Class
+@import "utility-classes";
