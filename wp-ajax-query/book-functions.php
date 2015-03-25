@@ -49,7 +49,7 @@ function get_genre_filters()
 
 //Enqueue Ajax Scripts
 function enqueue_genre_ajax_scripts() {
-    wp_register_script( 'genre-ajax-js', get_stylesheet_directory_uri() . '/wp_ajax_query/genre.js', array( 'jquery' ), '', true );
+    wp_register_script( 'genre-ajax-js', get_stylesheet_directory_uri() . '/wp-ajax-query/genre.js', array( 'jquery' ), '', true );
     wp_localize_script( 'genre-ajax-js', 'ajax_genre_params', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 		wp_enqueue_script( 'genre-ajax-js' );
 }
@@ -84,9 +84,10 @@ function ajax_genre_filter()
 		'paged' => $paged
 	);
 	$book_loop = new WP_Query($book_args);
-    echo '<pre>';
-    print_r($book_loop->posts);
-    echo '</pre>';
+
+	echo'<pre>';
+	print_r($book_loop->posts);
+	echo '</pre>';
 
 	if( $book_loop->have_posts() ):
 		while( $book_loop->have_posts() ): $book_loop->the_post();

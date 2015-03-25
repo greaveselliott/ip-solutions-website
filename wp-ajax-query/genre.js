@@ -45,6 +45,8 @@
         this._name = eemjiiWPQuery;
 
         this.init();
+
+        console.log(this);
     }
 
     Eemjii_WP_Query.prototype.init = function () {
