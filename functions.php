@@ -20,6 +20,9 @@ include_once('inc/customize.php');
 // Plugin: Advanced Custom Field
 include_once('inc/plugin-config-acf.php');
 
+// Register Theme Widgets
+include_once( 'inc/widgets.php' );
+
 // Eemjii-WP-Query Class
 include_once('inc/eemjii-wp-query/eemjii-wp-query.php');
 

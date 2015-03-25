@@ -17,8 +17,13 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+//
+
 // Bootstrap Extension: Media Query Mixin's
 @import "bootstrap-media-queries";
+
+// Bootstrap Extension: Block Grids
+@import "bootstrap-block-grid";
 
 // Utility Class
 @import "utility-classes";

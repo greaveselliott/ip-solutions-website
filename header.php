@@ -35,8 +35,8 @@
 					<div class="col-sm-6">
 						<div class="pull-right">
 							<div class="icon-links display-inline-block">
-								<a aria-label="Left Align"><i class="fa fa-phone"></i></a>
-								<a aria-label="Left Align"><i class="fa fa-envelope"></i></a>
+								<a href="#" aria-label="Left Align"><i class="fa fa-phone"></i></a>
+								<a href="#" aria-label="Left Align"><i class="fa fa-envelope"></i></a>
 							</div>
 							<a href="#" title="Customer Login Section">Customer Login</a>
 							<div class="icon-links social-links display-inline-block">
@@ -52,8 +52,17 @@
 	</div>
 </header>
 <!-- Navigation -->
-<navigation class="container-fluid" role="navigation" aria-label="Main Website Navigation">
+<nav class="container-fluid" role="navigation" aria-label="Main Website Navigation">
 	<div class="row">
+		<div class="col-sm-12">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+					</div>
+				</div>
+			</div>
+		</div>
 		<h2 class="hidden"><?php echo bloginfo('name'); ?> | Website Navigation</h2>
 	</div>
-</navigation>
+</nav>
