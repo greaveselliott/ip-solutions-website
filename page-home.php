@@ -8,14 +8,13 @@
 
 
 <?php
-
-    $home_args = array(
-        '_post_type'             => 'eemjii_resources',
-        '_post_template_part'    => 'resources',
-        '_post_per_page'         => 0,
-        '_posts_per_row'         => 4
-    );
-    $home_query = new Eemjii_WP_Query($home_args);
+    $home_query = new Eemjii_WP_Query(array(
+	    '_post_type'             => 'eemjii_resources',
+	    '_post_template_prefix'  => 'template',
+	    '_post_template_part'    => 'testimonials',
+	    '_posts_per_page'        => 5,
+	    '_posts_per_row'         => 2
+    ));
 ?>
 <?php
     $home_query->loop();

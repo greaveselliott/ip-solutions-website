@@ -46,7 +46,7 @@
 }
 
 
-@include block-grids(xs); 
-@media #{$tablet-portrait} { @include block-grids(sm) }
+@include block-grids(xs);
+@media #{$tablet-portrait-only} { @include block-grids(sm) }
 @media #{$tablet-landscape-desktop} { @include block-grids(md) }
 @media #{$large-desktop} { @include block-grids(lg) }

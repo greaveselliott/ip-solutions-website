@@ -2,20 +2,22 @@
 /**
  * The template for displaying the footer
  */
-$the_sidebars = wp_get_sidebars_widgets();
+$the_sidebars   = wp_get_sidebars_widgets();
+
 ?>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
-					<?php if( is_active_sidebar( 'footer-site-map' ) ) : ?>
+					<?php if( is_active_sidebar( 'footer-site-map' ) ) :
+							$side_bar_count = count( $the_sidebars['footer-site-map'] );
+						?>
 						<nav>
 							<h1 class="hide"><?php bloginfo('name');?>&nbsp;<?php bloginfo('description');?>&#58;&nbsp;Site Map</h1>
-							<ul class="block-grid-<?php echo count( $the_sidebars['footer-site-map'] ); ?>-md">
+							<div class="block-grid-lg-<?php echo $side_bar_count; ?> block-grid-md-<?php echo $side_bar_count; ?> block-grid-sm-<?php echo $side_bar_count; ?> block-grid-xs-1">
 								<?php dynamic_sidebar( 'footer-site-map' ); ?>
-							</ul>
+							</div>
 						</nav>
 					<?php else: ?>
 						<div class="panel panel-default">
@@ -24,7 +26,6 @@ $the_sidebars = wp_get_sidebars_widgets();
 							</div>
 						</div>
 					<?php endif; ?>
-					</div>
 				</div>
 			</div>
 		</div>

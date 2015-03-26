@@ -27,8 +27,8 @@
 					<div class="col-sm-6">
 						<h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
 						<figure class="eemjii-logo" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
-								<img class="display-inline-block" src="http://placehold.it/240x100" alt="<?php echo bloginfo('name'); ?> Logo">
-							<figcaption class="display-inline-block eemjii-slogan"><?php echo bloginfo('description'); ?></figcaption>
+								<a href="<?php echo home_url();?>" class="display-inline-block" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="http://placehold.it/240x100" alt="<?php echo bloginfo('name'); ?> Logo"></a>
+							<figcaption class="h3 display-inline-block eemjii-slogan"><?php echo bloginfo('description'); ?></figcaption>
 						</figure>
 					</div>
 					<!-- Social Icons & Links -->
@@ -58,7 +58,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+						<?php
+						wp_nav_menu( array(
+								'menu'              => 'primary',
+								'theme_location'    => 'primary',
+								'depth'             => 2,
+								'container'         => 'div',
+								'container_class'   => 'collapse navbar-collapse',
+								'container_id'      => 'bs-example-navbar-collapse-1',
+								'menu_class'        => 'nav navbar-nav',
+								'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+								'walker'            => new wp_bootstrap_navwalker())
+						);
+						?>
 					</div>
 				</div>
 			</div>

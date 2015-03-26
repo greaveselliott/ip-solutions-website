@@ -22,9 +22,10 @@ $phone: "(max-width: 480px)";
 
 /* Landscape phone to portrait tablet */
 $tablet-portrait: "(max-width: 767px)";
+$tablet-portrait-only: "(min-width: 480px) and (max-width: 767px)";
 
 /* Portrait tablet to landscape and desktop */
-$tablet-landscape-desktop: "(min-width: 768px) and (max-width: 979px)";
+$tablet-landscape-desktop: "(min-width: 768px) and (max-width: 1199px)";
 
 /* Large desktop */
 $large-desktop: "(min-width: 1200px)";
@@ -41,6 +42,7 @@ $respond-to-list:
 
   /* Landscape phone to portrait tablet */
   "tablet-portrait" $tablet-portrait
+  "tablet-portrait-only" $tablet-portrait-only
 
   /* Portrait tablet to landscape and desktop */
   "tablet-landscape-desktop" $tablet-landscape-desktop

@@ -3,6 +3,9 @@ require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 require 'font-awesome-sass'
 
+# No Cache
+asset_cache_buster :none
+
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "/"
