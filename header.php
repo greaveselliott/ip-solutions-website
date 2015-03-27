@@ -18,21 +18,13 @@
 
 <body <?php body_class(); ?>>
 
-<header class="container-fluid">
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="container">
 				<div class="row">
-					<!-- Logo & Slogan -->
-					<div class="col-sm-6">
-						<h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
-						<figure class="eemjii-logo" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
-								<a href="<?php echo home_url();?>" class="display-inline-block" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="http://placehold.it/240x100" alt="<?php echo bloginfo('name'); ?> Logo"></a>
-							<figcaption class="h3 display-inline-block eemjii-slogan"><?php echo bloginfo('description'); ?></figcaption>
-						</figure>
-					</div>
 					<!-- Social Icons & Links -->
-					<div class="col-sm-6">
+					<div class="col-sm-12">
 						<div class="pull-right">
 							<div class="icon-links display-inline-block">
 								<a href="#" aria-label="Left Align"><i class="fa fa-phone"></i></a>
@@ -50,14 +42,22 @@
 			</div>
 		</div>
 	</div>
-</header>
-<!-- Navigation -->
-<nav class="container-fluid" role="navigation" aria-label="Main Website Navigation">
+</div>
+<div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12">
+                    <!-- Logo -->
+                    <div class="col-sm-5">
+                        <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
+                        <figure class="eemjii-logo" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
+                            <a href="<?php echo home_url();?>" class="display-inline-block" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="http://placehold.it/240x100" alt="<?php echo bloginfo('name'); ?> Logo"></a>
+                            <figcaption class="h3 display-inline-block eemjii-slogan"><?php echo bloginfo('description'); ?></figcaption>
+                        </figure>
+                    </div>
+                    <!-- Navigation -->
+					<div class="col-sm-7">
 						<?php
 						wp_nav_menu( array(
 								'menu'              => 'primary',
@@ -77,4 +77,4 @@
 		</div>
 		<h2 class="hidden"><?php echo bloginfo('name'); ?> | Website Navigation</h2>
 	</div>
-</nav>
+</div>

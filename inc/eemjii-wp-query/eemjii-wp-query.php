@@ -4,7 +4,8 @@
  * Class for any WordPress post type that matches the given arguments
  * --------------------------------------
  * Author: Elliott Matthew Greaves
- * Author URI: http://ww.\w
+ * Author URI: http://www.elliottgreaves.com
+ * Author GitHub: https://github.com/greaveselliott
 */
 
 
@@ -26,6 +27,7 @@ Class Eemjii_WP_Query {
     private $_is_open_row                 = true;
     private $_is_close_row                = false;
     private $_total_columns            = 12;
+    private $_columns_configured       = false;
 
     // Class Defaults
     protected $_post_type             = '';
@@ -35,6 +37,7 @@ Class Eemjii_WP_Query {
     protected $_posts_per_row         = 4;
     protected $_loop_wrapper          = true;
     protected $_row_wrapper           = true;
+    protected $_loop_on_init          = true;
 
     // Set Properties
     public function __construct ($args) {
@@ -45,7 +48,12 @@ Class Eemjii_WP_Query {
             }
         }
         // Set column widths
-        $this -> configure_columns();
+        if ($this -> configure_columns() && $this->_loop_on_init) :
+            // Callback
+            // Call loop if _loop_on_initialize is set to TRUE
+            // DEFAULT: TRUE
+            $this->loop();
+        endif;
     }
 
     private function configure_columns () {
@@ -59,6 +67,9 @@ Class Eemjii_WP_Query {
             !$posts_per_row % $total_columns ? // Is modulo Fa;se or equal to 0
                 true:  // True:     Set _row_has_empty_space to True
                 false; // False:    Set _row_has_empty_space to False
+
+        // Returns true to enable conditional callbacks
+        return true;
     }
 
     public function opening_wrapper (){
@@ -103,19 +114,31 @@ Class Eemjii_WP_Query {
         return $boolean;
     }
 
-    protected function open_row () {
+    protected function opening_row () {
         ?>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
         <?php
     }
 
-    protected function close_row () {
+    protected function closing_row () {
         ?>
-                </div><!-- END .col-lg-12 .col-md-12 .col-sm-12 .col-xs-12 -->
             </div><!-- END .row -->
         </div><!-- END .container -->
+        <?php
+    }
+
+    protected function opening_column () {
+        ?>
+            <div class="col-lg-<?php echo $this->_column_size ;?> col-md-<?php echo $this->_column_size ;?> col-sm-<?php echo $this->_column_size ;?> col-xs-12">
+        <!-- START open column -->
+        <?php
+    }
+
+    protected function closing_column () {
+        ?>
+            </div><!-- END close column -->
         <?php
     }
 
@@ -153,20 +176,26 @@ Class Eemjii_WP_Query {
 
                 // Are we using a row wrapper?
                 if ($row_wrapper):
+                    // Does a new row need to be opened?
                     if ($this -> is_open_row($i) || $this -> _is_open_row) :
-                        echo 'POST OPEN';
-                        $this -> open_row();
+                        // Open new row
+                        $this -> opening_row();
                     endif;
+                    // Open new column
+                    $this -> opening_column();
                 endif;
 
-                    //echo $this->_post_template_part;
+                    //Get the post template
                     get_template_part($this->_post_template_prefix, $this->_post_template_part);
 
                 // Are we using a row wrapper?
                 if ($row_wrapper):
+                    // Close the current column - MUST CLOSE BEFORE THE ROW ;D
+                    $this -> closing_column();
+                    // Do we need to close this row now?
                     if ($this -> is_close_row($i) || $this -> _is_close_row || $last_loop):
-                        echo 'POST CLOSE';
-                        $this -> close_row();
+                        // Close the current row
+                        $this -> closing_row();
                     endif;
                 endif;
 
