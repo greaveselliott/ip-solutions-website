@@ -18,3 +18,14 @@
 @include responsive_property("h4"){font-size: $font-size-h4 }
 @include responsive_property("h5"){font-size: $font-size-h5 }
 @include responsive_property("h6"){font-size: $font-size-h6 }
+
+// Position
+@include responsive_property("position-absolute"){position: absolute}
+@include responsive_property("position-relative"){position: relative}
+@include responsive_property("position-static"){position: static}
+
+// Border Placement
+@include responsive_property("top-0"){top: 0}
+@include responsive_property("left-0"){top: 0}
+@include responsive_property("right-0"){top: 0}
+@include responsive_property("bottom-0"){top: 0}

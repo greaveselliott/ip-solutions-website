@@ -1,0 +1,25 @@
+$ips-colours-list:
+"blue"    $ips-blue,
+"green"   $ips-green,
+"grey"    $ips-grey,
+"cyan"    $ips-cyan,
+"purple"  $ips-purple,
+"orange"  $ips-orange,
+"white" #FFFFFF,
+"black" #000000;
+
+@each $i in $ips-colours-list {
+  @include responsive_property (#{nth($i,1)}) {
+    color: #{nth($i,2)} !important;
+  }
+
+  @include responsive_property(background-#{nth($i,1)}){
+    background-color: #{nth($i,2)};
+
+    @for $j from 1 through 20 {
+      &.opacity-#{5 * $j}{
+        background-color: #{rgba(nth($i,2), (0.05 * $j))};
+      }
+    }
+  }
+}

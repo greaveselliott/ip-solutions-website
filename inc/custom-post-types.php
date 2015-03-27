@@ -25,7 +25,7 @@ if ( ! function_exists('custom_post_type_clients') ) {
             'not_found_in_trash'  => __( 'Not found in Trash', 'twentyfifteen' ),
         );
         $rewrite = array(
-            'slug'                => 'clients',
+            'slug'                => 'our-clients',
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => true,
@@ -81,7 +81,7 @@ if ( ! function_exists('custom_post_type_testimonials') ) {
             'not_found_in_trash'  => __( 'Not found in Trash', 'twentyfifteen' ),
         );
         $rewrite = array(
-            'slug'                => 'testimonial',
+            'slug'                => 'our-testimonials',
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => true,
@@ -137,7 +137,7 @@ if ( ! function_exists('custom_post_type_services') ) {
             'not_found_in_trash'  => __( 'Not found in Trash', 'twentyfifteen' ),
         );
         $rewrite = array(
-            'slug'                => 'services',
+            'slug'                => 'our-services',
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => true,
@@ -192,7 +192,7 @@ if ( ! function_exists('custom_post_type_solutions') ) {
             'not_found_in_trash'  => __( 'Not found in Trash', 'twentyfifteen' ),
         );
         $rewrite = array(
-            'slug'                => 'solutions',
+            'slug'                => 'our-solutions',
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => true,
@@ -304,7 +304,7 @@ if ( ! function_exists('custom_post_type_resources') ) {
             'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
         );
         $rewrite = array(
-            'slug'                => 'resources',
+            'slug'                => 'our-resources',
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => true,

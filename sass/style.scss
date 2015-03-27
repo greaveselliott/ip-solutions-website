@@ -17,13 +17,33 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
-//
-
 // Bootstrap Extension: Media Query Mixin's
 @import "bootstrap-media-queries";
 
 // Bootstrap Extension: Block Grids
 @import "bootstrap-block-grid";
 
+// General Variables
+@import "variables";
+
 // Utility Class
 @import "utility-classes";
+
+// Colours
+@import "colours";
+
+// Specific Styles
+// WordPress Admin Bar Fix
+@import "admin-bar";
+
+// Sticky Social Media
+@import "social_sticky";
+
+// Main Website Header
+@import "header-main";
+
+// plugins
+@import "../javascripts/slick/slick/slick";
+
+// Templates
+@import "template-home";

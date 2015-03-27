@@ -5,6 +5,7 @@
 $the_sidebars   = wp_get_sidebars_widgets();
 
 ?>
+<footer>
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12">
@@ -31,6 +32,26 @@ $the_sidebars   = wp_get_sidebars_widgets();
 		</div>
 	</div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <span class="footer-company-info"><?php eemjii_option_address() ;?></span>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="footer-company-info">Company No. </span><span class="footer-company-info"><?php eemjii_option_company_no() ?></span>
+                    </div>
+                    <div class="col-sm-3">
+                        <span class="footer-company-info">Tel. </span><span class="footer-company-info"><?php eemjii_option_tel() ?></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
 <?php
 	/*
 	* Always have wp_footer() just before the closing </body>

@@ -5,25 +5,33 @@
 ?>
 
 <?php get_header(); ?>
+<div class="full-screen background-blue opacity-30">
 
-<pre>
-    <?php
-       echo get_theme_mod('eemjii_option_telephone');
-    echo get_theme_mod('eemjii_option_fax');
-    echo get_theme_mod('eemjii_option_company_no');
-    echo get_theme_mod('eemjii_option_vat_no');
-    ?>
-</pre>
+    <section class="starting-point background-blue">
+        <div class="container">
+            <div class="row">
+                <div class="row-sm-12">
+                    <h2>Choose your starting point</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row-sm-3 background-orange">
+                    <p>Discover how to curb excessive spending, apportion costs, and the best tariffs to suit your needs.</p>
+                </div>
+                <div class="row-sm-3">
 
-<?php
+                </div>
+                <div class="row-sm-3">
+
+                </div>
+                <div class="row-sm-3">
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 
-    $home_query = new Eemjii_WP_Query(array(
-	    '_post_type'             => 'eemjii_resources',
-	    '_post_template_prefix'  => 'template',
-	    '_post_template_part'    => 'clients',
-	    '_posts_per_page'        => 10,
-	    '_posts_per_row'         => 2
-    ));
-?>
+
 <?php get_footer(); ?>

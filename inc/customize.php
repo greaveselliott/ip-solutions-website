@@ -14,6 +14,20 @@ function wptuts_theme_customizer( $wp_customize ) {
     ) );
 
     // Add Setting: Telephone
+    $wp_customize->add_setting( 'eemjii_option_address', array(
+        'default' => 'You haven\'t entered your address yet',
+        // Let everything else default
+    ) );
+    // Add Controller: Telephone
+    $wp_customize->add_control( 'eemjii_option_address', array(
+        // wptuts_welcome_text is a id of setting that this control handles
+        'label' => 'Address',
+        // 'type' =>, // Default is "text", define the content type of setting rendering.
+        'section' => 'eemjii_company_details', // id of section to which the setting belongs
+        // Let everything else default
+    ) );
+
+    // Add Setting: Telephone
     $wp_customize->add_setting( 'eemjii_option_telephone', array(
         'default' => '0000 000 0000',
         // Let everything else default
@@ -29,7 +43,7 @@ function wptuts_theme_customizer( $wp_customize ) {
 
     // Add Setting: Fax
     $wp_customize->add_setting( 'eemjii_option_fax', array(
-        'default' => '0000 000 0000',
+        'default' => '',
         // Let everything else default
     ) );
     // Add Controller: Fax
@@ -43,7 +57,7 @@ function wptuts_theme_customizer( $wp_customize ) {
 
     // Add Setting: Company Registration Number
     $wp_customize->add_setting( 'eemjii_option_company_no', array(
-        'default' => '0000000000',
+        'default' => '',
         // Let everything else default
     ) );
     // Add Controller: Company Registration Number
@@ -57,7 +71,7 @@ function wptuts_theme_customizer( $wp_customize ) {
 
     // Add Setting: Company VAT Registration Number
     $wp_customize->add_setting( 'eemjii_option_vat_no', array(
-        'default' => '00000000',
+        'default' => '',
         // Let everything else default
     ) );
     // Add Controller: Company VAT Registration Number
@@ -71,3 +85,35 @@ function wptuts_theme_customizer( $wp_customize ) {
 }
 
 add_action( 'customize_register', 'wptuts_theme_customizer', 11 );
+
+
+// Functions for outputting options
+function eemjii_option_tel () {
+    echo get_theme_mod(
+        'eemjii_option_telephone',
+        'You haven\'t entered your telephone number in the theme \'customize\' options');
+}
+function eemjii_option_fax () {
+    echo get_theme_mod(
+        'eemjii_option_fax',
+        'You haven\'t entered your fax number in the theme \'customize\' options'
+    );
+}
+function eemjii_option_address () {
+    echo get_theme_mod(
+        'eemjii_option_address',
+        'You haven\'t entered your address in the theme \'customize\' options'
+    );
+}
+function eemjii_option_company_no () {
+    echo get_theme_mod(
+        'eemjii_option_company_no',
+        'You haven\'t entered your company registration number in the theme \'customize\' options'
+    );
+}
+function eemjii_option_vat_no () {
+    echo get_theme_mod(
+        'eemjii_option_vat_no',
+        'You haven\'t entered your VAT number in the theme \'customize\' options'
+    );
+}

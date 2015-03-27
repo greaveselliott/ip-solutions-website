@@ -11,6 +11,9 @@ include_once('inc/enqueue.php');
 // Custom Post Types
 include_once('inc/custom-post-types.php');
 
+// Theme Navigation
+include_once('inc/navigation.php');
+
 // Custom Taxonomies
 include_once('inc/custom-taxonomies.php');
 
