@@ -12876,14 +12876,14 @@ button.close {
 /* Landscape phones and down */
 /* line 100, sass/_bootstrap-media-queries.scss */
 .left-0 {
-  top: 0;
+  left: 0;
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .left-0-phone {
-    top: 0;
+    left: 0;
   }
 }
 /* Landscape phones and down */
@@ -12891,7 +12891,7 @@ button.close {
 @media (max-width: 767px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .left-0-tablet-portrait {
-    top: 0;
+    left: 0;
   }
 }
 /* Landscape phones and down */
@@ -12901,7 +12901,7 @@ button.close {
 @media (min-width: 768px) and (max-width: 1199px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .left-0-tablet-landscape-desktop {
-    top: 0;
+    left: 0;
   }
 }
 /* Landscape phones and down */
@@ -12909,7 +12909,7 @@ button.close {
 @media (min-width: 1200px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .left-0-large-desktop {
-    top: 0;
+    left: 0;
   }
 }
 /* Landscape phones and down */
@@ -12917,7 +12917,7 @@ button.close {
 @media screen and (-webkit-max-device-pixel-ratio: 1) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .left-0-non-retina {
-    top: 0;
+    left: 0;
   }
 }
 /* Landscape phones and down */
@@ -12925,20 +12925,20 @@ button.close {
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .left-0-retina {
-    top: 0;
+    left: 0;
   }
 }
 /* Landscape phones and down */
 /* line 100, sass/_bootstrap-media-queries.scss */
 .right-0 {
-  top: 0;
+  right: 0;
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .right-0-phone {
-    top: 0;
+    right: 0;
   }
 }
 /* Landscape phones and down */
@@ -12946,7 +12946,7 @@ button.close {
 @media (max-width: 767px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .right-0-tablet-portrait {
-    top: 0;
+    right: 0;
   }
 }
 /* Landscape phones and down */
@@ -12956,7 +12956,7 @@ button.close {
 @media (min-width: 768px) and (max-width: 1199px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .right-0-tablet-landscape-desktop {
-    top: 0;
+    right: 0;
   }
 }
 /* Landscape phones and down */
@@ -12964,7 +12964,7 @@ button.close {
 @media (min-width: 1200px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .right-0-large-desktop {
-    top: 0;
+    right: 0;
   }
 }
 /* Landscape phones and down */
@@ -12972,7 +12972,7 @@ button.close {
 @media screen and (-webkit-max-device-pixel-ratio: 1) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .right-0-non-retina {
-    top: 0;
+    right: 0;
   }
 }
 /* Landscape phones and down */
@@ -12980,20 +12980,20 @@ button.close {
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .right-0-retina {
-    top: 0;
+    right: 0;
   }
 }
 /* Landscape phones and down */
 /* line 100, sass/_bootstrap-media-queries.scss */
 .bottom-0 {
-  top: 0;
+  bottom: 0;
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .bottom-0-phone {
-    top: 0;
+    bottom: 0;
   }
 }
 /* Landscape phones and down */
@@ -13001,7 +13001,7 @@ button.close {
 @media (max-width: 767px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .bottom-0-tablet-portrait {
-    top: 0;
+    bottom: 0;
   }
 }
 /* Landscape phones and down */
@@ -13011,7 +13011,7 @@ button.close {
 @media (min-width: 768px) and (max-width: 1199px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .bottom-0-tablet-landscape-desktop {
-    top: 0;
+    bottom: 0;
   }
 }
 /* Landscape phones and down */
@@ -13019,7 +13019,7 @@ button.close {
 @media (min-width: 1200px) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .bottom-0-large-desktop {
-    top: 0;
+    bottom: 0;
   }
 }
 /* Landscape phones and down */
@@ -13027,7 +13027,7 @@ button.close {
 @media screen and (-webkit-max-device-pixel-ratio: 1) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .bottom-0-non-retina {
-    top: 0;
+    bottom: 0;
   }
 }
 /* Landscape phones and down */
@@ -13035,7 +13035,117 @@ button.close {
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .bottom-0-retina {
-    top: 0;
+    bottom: 0;
+  }
+}
+/* Landscape phones and down */
+/* line 100, sass/_bootstrap-media-queries.scss */
+.width-100 {
+  width: 100%;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-100-phone {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-100-tablet-portrait {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-100-tablet-landscape-desktop {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-100-large-desktop {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-100-non-retina {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-100-retina {
+    width: 100%;
+  }
+}
+/* Landscape phones and down */
+/* line 100, sass/_bootstrap-media-queries.scss */
+.height-100 {
+  height: 100%;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-100-phone {
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-100-tablet-portrait {
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-100-tablet-landscape-desktop {
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-100-large-desktop {
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-100-non-retina {
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-100-retina {
+    height: 100%;
   }
 }
 /* Landscape phones and down */
