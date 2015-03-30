@@ -6,9 +6,7 @@ $the_sidebars   = wp_get_sidebars_widgets();
 
 ?>
 <footer>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-12">
+    <div class="background-grey padding-top padding-bottom">
 			<div class="container">
 				<div class="row">
 					<?php if( is_active_sidebar( 'footer-site-map' ) ) :
@@ -29,12 +27,8 @@ $the_sidebars   = wp_get_sidebars_widgets();
 					<?php endif; ?>
 				</div>
 			</div>
-		</div>
-	</div>
-</div>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
+        </div>
+    <div class="padding-top padding-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
@@ -49,8 +43,6 @@ $the_sidebars   = wp_get_sidebars_widgets();
                 </div>
             </div>
         </div>
-    </div>
-</div>
 </footer>
 <?php
 	/*

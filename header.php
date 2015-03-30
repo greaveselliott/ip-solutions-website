@@ -19,11 +19,11 @@
 <body <?php body_class(); ?>>
 <header id="header-main" class="background-white opacity-80">
 <div class="container-fluid">
-	<div class="row">
+	<div class="row padding-top padding-bottom">
 		<div class="col-sm-12">
             <div class="pull-right">
-                <div class="icon-links display-inline-block">
-                    <span class="h3"><i class="fa fa-phone green"></i></span><span class="blue display-inline-block"><?php eemjii_option_tel() ?></span>
+                <div class="icon-links display-inline-block padding-right">
+                    <span class="h4"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue display-inline-block"><?php eemjii_option_tel() ?></span>
                 </div>
                 <a href="#" title="Customer Login Section">Customer Login</a>
             </div>
@@ -31,13 +31,13 @@
     </div>
 </div>
 <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
-	<div class="row">
+	<div class="row border-2-top-blue">
                     <!-- Logo -->
                     <div class="col-sm-5">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
-                        <figure class="eemjii-logo display-table" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
-                            <a href="<?php echo home_url();?>" class="display-inline-block" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
-                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan blue"><?php echo bloginfo('description'); ?></figcaption>
+                        <figure class="eemjii-logo display-table padding-right" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
+                            <a href="<?php echo home_url();?>" class="display-inline-block padding-right" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
+                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan text-blue padding-left border-2-left-blue"><?php echo bloginfo('description'); ?></figcaption>
                         </figure>
                     </div>
                     <!-- Navigation -->

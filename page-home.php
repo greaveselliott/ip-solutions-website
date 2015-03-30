@@ -8,7 +8,7 @@
 <div class="full-screen background-blue opacity-30">
     <div class="position-relative width-100 height-100">
         <!-- Choose your starting point -->
-        <article class="starting-point background-blue position-absolute bottom-0 width-100 padding-bottom">
+        <article class="starting-point background-blue opacity-50 position-absolute bottom-0 width-100 padding-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
@@ -44,12 +44,18 @@
                     </section>
                 </div>
             </div>
-        </article>
+        </article><?php if (has_post_thumbnail( $post->ID ) ): ?>
+            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+            $image = $image[0]; ?>
+        <?php else :
+            $image = 'http://placehold.it/100x100'; ?>
+        <?php endif; ?>
+        <div class="width-100 height-100 position-absolute top-0 left-0" style="background-image: url('<?php echo $image; ?>'); z-index: -10; background-size: cover;"></div>
     </div>
 </div>
 <!-- End Fullscreen -->
 <!-- Transform your business with IP Solutions -->
-<div class="background-grey opacity-10">
+<div class="background-grey opacity-10 padding-top padding-bottom">
     <article class="container">
         <div class="row">
             <div class="col-sm-6">
@@ -65,7 +71,7 @@
     </article>
 </div>
 <!-- Award winning experts -->
-<div class="background-orange">
+<div class="background-orange padding-top padding-bottom">
     <article class="container">
         <div class="row">
             <div class="col-sm-12"><h2 class="text-align-center text-white">Awards winning experts</h2></div>
@@ -96,7 +102,7 @@
     </article>
 </div>
 <!-- Testimonials / Clients -->
-<div class="background-grey opacity-10">
+<div class="background-grey opacity-10 padding-top padding-bottom">
     <article class="container">
         <div class="row display-none">
             <div class="col-12-sm">
@@ -119,6 +125,43 @@
             </div>
         </div>
 
+    </article>
+</div>
+<div class="background-blue">
+    <article class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="text-white text-center">Our latest thinking</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+               <section class="row">
+                   <div class="col-sm-4">
+                       <div class="force-aspect-ratio-container">
+                           <img class="force-aspect-ratio" src="http://placehold.it/100x100">
+                       </div>
+                   </div>
+                   <div class="col-sm-8">
+                       <h3>Lorem Ipsum Icha Lorem</h3>
+                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                       <a class="btn" href="#">Read more</a>
+                   </div>
+               </section>
+                <section class="row">
+                    <div class="col-sm-4">
+                        <div class="force-aspect-ratio-container">
+                            <img class="force-aspect-ratio" src="http://placehold.it/100x100">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Lorem Ipsum Icha Lorem</h3>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                        <a class="btn" href="#">Read more</a>
+                    </div>
+                </section>
+            </div>
+        </div>
     </article>
 </div>
 <?php get_footer(); ?>

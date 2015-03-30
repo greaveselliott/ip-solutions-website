@@ -6,15 +6,17 @@
       @extend .display-inline-block;
       @extend .margin;
       img {
-        -webkit-transition: border 0.22s ease-in;
-        -moz-transition: border 0.22s ease-in;
-        -ms-transition: border 0.22s ease-in;
-        -o-transition: border 0.22s ease-in;
-        transition: border 0.22s ease-in;
+        -webkit-transition: border 0.12s ease-in;
+        -moz-transition: border 0.12s ease-in;
+        -ms-transition: border 0.12s ease-in;
+        -o-transition: border 0.12s ease-in;
+        transition: border 0.12s ease-in;
         @extend .border-none0-green;
       }
       &.slick-active {
-        @extend .border-1-green;
+        img {
+          @extend .border-3-green;
+        }
       }
     }
   }

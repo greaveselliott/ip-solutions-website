@@ -29,21 +29,28 @@ $ips-colours-list:
   @include responsive_property(border-1-top-#{nth($i,1)}){border-top: solid $ips-border-width-1 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-1-right-#{nth($i,1)}){border-right: solid $ips-border-width-1 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-1-bottom-#{nth($i,1)}){border-bottom: solid $ips-border-width-1 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
-  @include responsive_property(border-1-#{nth($i,1)}){border-left: solid $ips-border-width-1 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-1-left-#{nth($i,1)}){border-left: solid $ips-border-width-1 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
 
   // border size 2
   @include responsive_property(border-2-#{nth($i,1)}){border: solid $ips-border-width-2 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-2-top-#{nth($i,1)}){border-top: solid $ips-border-width-2 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-2-right-#{nth($i,1)}){border-right: solid $ips-border-width-2 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-2-bottom-#{nth($i,1)}){border-bottom: solid $ips-border-width-2 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
-  @include responsive_property(border-2-#{nth($i,1)}){border-left: solid $ips-border-width-2 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-2-left-#{nth($i,1)}){border-left: solid $ips-border-width-2 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+
+  // border size 3
+  @include responsive_property(border-3-#{nth($i,1)}){border: solid $ips-border-width-3 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-top-#{nth($i,1)}){border-top: solid $ips-border-width-3 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-right-#{nth($i,1)}){border-right: solid $ips-border-width-3 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-bottom-#{nth($i,1)}){border-bottom: solid $ips-border-width-3 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-left-#{nth($i,1)}){border-left: solid $ips-border-width-3 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
 
   // border size none0 - Zero pixels
   @include responsive_property(border-none0-#{nth($i,1)}){border: solid 0px #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-none0-top-#{nth($i,1)}){border-top: solid 0px #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-none0-right-#{nth($i,1)}){border-right: solid 0px #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-none0-bottom-#{nth($i,1)}){border-bottom: solid 0px #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
-  @include responsive_property(border-none0-#{nth($i,1)}){border-left: solid 0px #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-none0-left-#{nth($i,1)}){border-left: solid 0px #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
 }
 
 @include responsive_property(border-none){border: none; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }

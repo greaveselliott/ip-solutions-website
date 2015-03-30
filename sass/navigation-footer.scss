@@ -1,0 +1,7 @@
+footer {
+  .menu, .menu * {
+    @extend .text-align-center;
+    @extend .text-white;
+    list-style-type: none;
+  }
+}
