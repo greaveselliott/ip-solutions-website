@@ -29,6 +29,9 @@
 // Utility Class
 @import "utility-classes";
 
+// Typography
+@import "typography";
+
 // Colours
 @import "colours";
 
@@ -45,5 +48,11 @@
 // plugins
 @import "../javascripts/slick/slick/slick";
 
+// Flip Cards
+@import "flip-cards";
+
 // Templates
 @import "template-home";
+
+// Slick Testimonials Home
+@import "slick-testimonials-home";

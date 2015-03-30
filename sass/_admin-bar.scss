@@ -1,1 +1,11 @@
-html, * html body { margin-top: 28px !important; position: relative }
+body.logged-in {
+  margin-top: 28px !important;
+  position: relative;
+  @include respond-to(tablet-portrait) {
+    margin-top: 46px !important;
+  }
+}
+
+#wpadminbar {
+  position: fixed !important;
+}

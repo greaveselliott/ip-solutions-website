@@ -91,29 +91,29 @@ add_action( 'customize_register', 'wptuts_theme_customizer', 11 );
 function eemjii_option_tel () {
     echo get_theme_mod(
         'eemjii_option_telephone',
-        'You haven\'t entered your telephone number in the theme \'customize\' options');
+        '<div class="alert alert-warning"><strong>Oops! </strong>You haven\'t entered your telephone number in the theme \'customize\' options</div>');
 }
 function eemjii_option_fax () {
     echo get_theme_mod(
         'eemjii_option_fax',
-        'You haven\'t entered your fax number in the theme \'customize\' options'
+        '<div class="alert alert-warning">You haven\'t entered your fax number in the theme \'customize\' options</div>'
     );
 }
 function eemjii_option_address () {
     echo get_theme_mod(
         'eemjii_option_address',
-        'You haven\'t entered your address in the theme \'customize\' options'
+        '<div class="alert alert-warning">You haven\'t entered your address in the theme \'customize\' options</div>'
     );
 }
 function eemjii_option_company_no () {
     echo get_theme_mod(
         'eemjii_option_company_no',
-        'You haven\'t entered your company registration number in the theme \'customize\' options'
+        '<div class="alert alert-warning">You haven\'t entered your company registration number in the theme \'customize\' options</div>'
     );
 }
 function eemjii_option_vat_no () {
     echo get_theme_mod(
         'eemjii_option_vat_no',
-        'You haven\'t entered your VAT number in the theme \'customize\' options'
+        '<div class="alert alert-warning">You haven\'t entered your VAT number in the theme \'customize\' options</div>'
     );
 }

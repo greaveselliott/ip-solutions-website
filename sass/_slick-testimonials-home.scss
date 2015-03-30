@@ -1,0 +1,21 @@
+.slick-testimonial-home {
+  .slick-dots {
+    padding: 0px;
+    text-align: center;
+    li {
+      @extend .display-inline-block;
+      @extend .margin;
+      img {
+        -webkit-transition: border 0.22s ease-in;
+        -moz-transition: border 0.22s ease-in;
+        -ms-transition: border 0.22s ease-in;
+        -o-transition: border 0.22s ease-in;
+        transition: border 0.22s ease-in;
+        @extend .border-none0-green;
+      }
+      &.slick-active {
+        @extend .border-1-green;
+      }
+    }
+  }
+}

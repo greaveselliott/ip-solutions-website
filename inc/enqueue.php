@@ -91,7 +91,7 @@ function enqueue_slickjs_scripts () {
         '',
         true
     );
-    wp_enqueue_script ('google-maps');
+    wp_enqueue_script ('slick-js');
 
     // Google Maps Config
     wp_register_script(
@@ -101,5 +101,6 @@ function enqueue_slickjs_scripts () {
         '',
         true
     );
-    wp_enqueue_script ('google-maps-config');
+    wp_enqueue_script ('full-screen-js-config');
 }
+add_action('wp_enqueue_scripts','enqueue_slickjs_scripts');

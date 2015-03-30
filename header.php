@@ -23,7 +23,7 @@
 		<div class="col-sm-12">
             <div class="pull-right">
                 <div class="icon-links display-inline-block">
-                    <i class="fa fa-phone green"></i><span class="blue"><?php eemjii_option_tel() ?></span>
+                    <span class="h3"><i class="fa fa-phone green"></i></span><span class="blue display-inline-block"><?php eemjii_option_tel() ?></span>
                 </div>
                 <a href="#" title="Customer Login Section">Customer Login</a>
             </div>
@@ -35,9 +35,9 @@
                     <!-- Logo -->
                     <div class="col-sm-5">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
-                        <figure class="eemjii-logo" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
-                            <a href="<?php echo home_url();?>" class="display-inline-block" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="http://placehold.it/200x60" alt="<?php echo bloginfo('name'); ?> Logo"></a>
-                            <figcaption class="h4 display-inline-block eemjii-slogan blue"><?php echo bloginfo('description'); ?></figcaption>
+                        <figure class="eemjii-logo display-table" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
+                            <a href="<?php echo home_url();?>" class="display-inline-block" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
+                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan blue"><?php echo bloginfo('description'); ?></figcaption>
                         </figure>
                     </div>
                     <!-- Navigation -->

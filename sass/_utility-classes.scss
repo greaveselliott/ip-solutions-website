@@ -1,23 +1,32 @@
-// Display
-@include responsive_property("display-inline-block"){
-  display: inline-block;
-}
-
-@include responsive_property("display-inline"){
-  display: inline-block;
-}
-
-@include responsive_property("display-block"){
-  display: inline-block;
-}
-
-// Headings.h1 { font-size: $font-size-h6 }
+// Headings
 @include responsive_property("h1"){font-size: $font-size-h1 }
 @include responsive_property("h2"){font-size: $font-size-h2 }
 @include responsive_property("h3"){font-size: $font-size-h3 }
 @include responsive_property("h4"){font-size: $font-size-h4 }
 @include responsive_property("h5"){font-size: $font-size-h5 }
 @include responsive_property("h6"){font-size: $font-size-h6 }
+
+// Line height
+@include responsive_property("line-height-h1"){line-height: $font-size-h1}
+@include responsive_property("line-height-h2"){line-height: $font-size-h2}
+@include responsive_property("line-height-h3"){line-height: $font-size-h3}
+@include responsive_property("line-height-h4"){line-height: $font-size-h4}
+@include responsive_property("line-height-h5"){line-height: $font-size-h5}
+@include responsive_property("line-height-h6"){line-height: $font-size-h6}
+
+// Verticle Align
+@include responsive_property("vertical-align-top"){vertical-align: top};
+@include responsive_property("vertical-align-middle"){vertical-align: middle};
+@include responsive_property("vertical-align-bottom"){vertical-align: bottom};
+
+// Display
+@include responsive_property("display-inline-block"){display: inline-block;}
+@include responsive_property("display-inline"){display: inline;}
+@include responsive_property("display-block"){display: block;}
+@include responsive_property("display-table"){display: table;}
+@include responsive_property("display-table-cell"){display: table-cell;}
+@include responsive_property("display-none"){display: none;}
+@include responsive_property("display-none-important"){display: none !important;}
 
 // Position
 @include responsive_property("position-absolute"){position: absolute}
@@ -33,3 +42,31 @@
 // Dimensions
 @include responsive_property("width-100"){width: 100%;}
 @include responsive_property("height-100"){height: 100%;}
+
+// Padding
+@include responsive_property('padding-0'){padding: 0 !important}
+@include responsive_property('padding'){padding: $grid-gutter-width/2;}
+@include responsive_property('padding-left'){padding-left: $grid-gutter-width/2;}
+@include responsive_property('padding-right'){padding-right: $grid-gutter-width/2;}
+@include responsive_property('padding-top'){padding-top: $grid-gutter-width/2;}
+@include responsive_property('padding-bottom'){padding-bottom: $grid-gutter-width/2;}
+
+// Margins
+@include responsive_property('margin-0'){margin: 0 !important}
+@include responsive_property('margin'){margin: $grid-gutter-width/2;}
+@include responsive_property('margin-left'){margin-left: $grid-gutter-width/2;}
+@include responsive_property('margin-right'){margin-right: $grid-gutter-width/2;}
+@include responsive_property('margin-top'){margin-top: $grid-gutter-width/2;}
+@include responsive_property('margin-bottom'){margin-bottom: $grid-gutter-width/2;}
+
+// Borders -
+// Added in colours.scss
+// All classes that need to loop through each brand-colour is declared in the loop found in colours.scss
+
+
+// Text Alignment
+@include responsive_property(text-align-left){text-align: left;}
+@include responsive_property(text-align-right){text-align: right;}
+@include responsive_property(text-align-center){text-align: center;}
+@include responsive_property(text-align-justify){text-align: justify;}
+
