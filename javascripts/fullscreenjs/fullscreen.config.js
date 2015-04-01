@@ -2,7 +2,8 @@
 
     $(document).fullScreenjs({
         target: '.full-screen',
-        container: window
+        container: window,
+        minHeight: '900px'
     });
 
 })(jQuery, window, document);

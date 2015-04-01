@@ -24,7 +24,7 @@
 
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="text-align-center text-white">Choose your starting point</h2>
+                        <h2 class="text-align-center text-white h1 margin-top margin-bottom">Choose your starting point</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -37,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
-                                <p class="text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+                                <p class="text-white">Discover how to curb excessive spending, apportion costs, and  the best tariffs to suit your needs.</p>
                                 <a href="#" class="btn btn-white">Read more</a>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
-                                <p class="text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+                                <p class="text-white">Learn how call reporting and call recording can help you deliver higher levels of customer satisfaction.</p>
                                 <a href="#" class="btn btn-white">Read more</a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
-                                <p class="text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+                                <p class="text-white">Grab the opportunity to not just replace an outdated comms infrastructure – but to stay ahead of the curve forever.</p>
                                 <a href="#" class="btn btn-white">Read more</a>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
-                                <p class="text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p>
+                                <p class="text-white">Better, quicker, and more adaptable – discover how you can achieve a flexible, collaborative working environment.</p>
                                 <a href="#" class="btn btn-white">Read more</a>
                             </div>
                         </div>
@@ -102,7 +102,8 @@
         <div class="row">
             <div class="col-sm-6">
                 <h2 class="text-grey h3"><span class="text-x2">Transform your business with IP Solutions</span></h2>
-                <p class="text-blue h3">We're not just experts in comms technology, we're experts in applying it too. Find out more about how we deliver agile, flexible and intuitive solutions - delivering real results to hte button line.</p>
+                <p class="text-blue">Cloud-based solutions are the future, now – allowing telephony, video, data, email, messaging and more to be unified into one umbrella solution that is both agile and cost-effective.</p>
+                <p class="text-blue">From virtual contact centres, to cloud-based virtual desktops and servers, we’re not just experts in comms technology, we’re experts in applying it too. Find out more about how we deliver flexible and intuitive solutions that deliver real results to the bottom line.</p>
             </div>
             <div class="col-sm-6">
                 <div class="embed-responsive embed-responsive-16by9">
@@ -113,42 +114,36 @@
     </article>
 </div>
 <!-- Award winning experts -->
-<div class="background-orange padding-top padding-bottom">
-    <article class="container">
+<article class="background-orange padding-top padding-bottom">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-12"><h2 class="text-align-center text-white">Award winning experts</h2></div>
+            <div class="col-sm-12"><h2 class="text-align-center text-white h1 margin-top-0 margin-bottom">Award winning providers</h2></div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="force-aspect-ratio-container">
-                            <img src="<?php echo get_stylesheet_directory_uri() . '/images/reseller-award.jpg' ?>" class="force-aspect-ratio">
-                        </div>
-                    </div>
-                    <div class="col-sm-8">
-                        <?php
-                        $awards_query = new Eemjii_WP_Query(array(
-                            '_post_type'             => 'post',
-                            '_post_template_prefix'  => 'template',
-                            '_post_template_part'    => 'post',
-                            '_posts_per_page'        => 3,
-                            '_loop_wrapper'          => false,
-                            '_row_wrapper'          => false
-                        ));
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
-</div>
+    </div>
+                <?php
+                $awards_query = new Eemjii_WP_Query(array(
+                    '_post_type'             => 'post',
+                    '_post_template_prefix'  => 'template',
+                    '_post_template_part'    => 'awards',
+                    '_posts_per_page'        => 3,
+                    '_posts_per_row'         => 3,
+                    '_loop_wrapper'          => false
+                ));
+                ?>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <a href="#" class="btn btn-white h4">Find out why people choose us</a></div>
+    </div>
+    </div>
+</article>
 <!-- Testimonials / Clients -->
 <div class="background-white padding-top padding-bottom">
     <article class="container">
         <div class="row display-none">
             <div class="col-12-sm">
-                <h2>IP Solutions Testimonials</h2>
+                <h2 class="h1 margin-top-0 margin-bottom">IP Solutions Testimonials</h2>
             </div>
         </div>
         <div class="row">
@@ -169,15 +164,15 @@
 
     </article>
 </div>
-<div class="background-blue">
+<div class="background-blue padding-top padding-bottom">
     <article class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-white text-center">Our latest thinking</h2>
+                <h2 class="text-white text-center h1 margin-top-0 margin-bottom">Our latest thinking</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-sm-offset-3">
+            <div class="col-sm-6">
                <section class="row margin-bottom">
                    <div class="col-sm-4">
                        <div class="force-aspect-ratio-container">
@@ -185,11 +180,13 @@
                        </div>
                    </div>
                    <div class="col-sm-8">
-                       <h3 class="text-green margin-top-0">Lorem Ipsum Icha Lorem</h3>
-                       <p class="text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean.</p>
+                       <h3 class="text-green margin-top-0">What’s in a number?</h3>
+                       <p class="text-white">Contact Centres have changed; or, more precisely, they’re continuing to evolve. Whilst change is inevitable, it’s also a challenge to Contact Centre managers to offer the high levels of flexibility, responsiveness and customer service that people have come to expect, without incurring significant costs.</p>
                        <a class="btn btn-orange" href="#">Read more</a>
                    </div>
                </section>
+            </div>
+            <div class="col-sm-6">
                 <section class="row margin-bottom">
                     <div class="col-sm-4">
                         <div class="force-aspect-ratio-container">
@@ -197,8 +194,8 @@
                         </div>
                     </div>
                     <div class="col-sm-8">
-                        <h3 class="text-green margin-top-0">Lorem Ipsum Icha Lorem</h3>
-                        <p class="text-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean.</p>
+                        <h3 class="text-green margin-top-0">Inbound Innovation</h3>
+                        <p class="text-white">Generating interest in your product or service is less than half the battle. If you’re operating an inbound contact centre, having done everything you can to encourage inbound enquiries, you have to make sure you deliver an excellent customer experience.</p>
                         <a class="btn btn-orange" href="#">Read more</a>
                     </div>
                 </section>

@@ -53,11 +53,16 @@
 
 // Templates
 @import "template-home";
+@import "template-awards";
 
 // Slick Testimonials Home
 @import "slick-testimonials-home";
 
 // header menu
 @import "navigation-header";
+
 // footer menu
 @import "navigation-footer";
+
+// autofix anything
+@import "../javascripts/autofix_anything/autofix_anything";

@@ -1,8 +1,12 @@
-body.logged-in {
-  margin-top: 28px !important;
+body.logged-in, body.admin-bar {
+  .autofix-header {
+    top: 28px !important;
+  }
   position: relative;
   @include respond-to(tablet-portrait) {
-    margin-top: 46px !important;
+    .autofix-header {
+      top: 46px !important;
+    }
   }
 }
 

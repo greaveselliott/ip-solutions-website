@@ -83,7 +83,7 @@ add_action('wp_enqueue_scripts','enqueue_fullscreenjs_scripts');
 
 // Enqueue Slick JS styles
 function enqueue_slickjs_scripts () {
-    // Google Maps API
+    // plugin
     wp_register_script(
         'slick-js',
         get_stylesheet_directory_uri() . '/javascripts/slick/slick/slick.min.js',
@@ -93,7 +93,7 @@ function enqueue_slickjs_scripts () {
     );
     wp_enqueue_script ('slick-js');
 
-    // Google Maps Config
+    // config
     wp_register_script(
         'full-screen-js-config',
         get_stylesheet_directory_uri() . '/javascripts/slick/slick/slick.config.js',
@@ -104,3 +104,29 @@ function enqueue_slickjs_scripts () {
     wp_enqueue_script ('full-screen-js-config');
 }
 add_action('wp_enqueue_scripts','enqueue_slickjs_scripts');
+
+
+// Enqueue Autofix Anything JS
+function enqueue_autofix_anything () {
+    // Plugin
+    wp_register_script(
+        'autofix-anything',
+        get_stylesheet_directory_uri() . '/javascripts/autofix_anything/jquery.autofix_anything.min.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('autofix-anything');
+
+    // Config
+    wp_register_script(
+        'autofix-anything-config',
+        get_stylesheet_directory_uri() . '/javascripts/autofix_anything/jquery.autofix_anything.config.js',
+        array('jquery','autofix-anything'),
+        '',
+        true
+    );
+    wp_enqueue_script ('autofix-anything-config');
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_autofix_anything');

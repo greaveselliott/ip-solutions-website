@@ -28,7 +28,8 @@
     var fullScreenjs = 'fullScreenjs',
         defaults = {
             target: ".fs-target",
-            container: ".fs-container"
+            container: ".fs-container",
+            minHeight: false
         };
 
     // The actual plugin constructor
@@ -67,14 +68,20 @@
     };
     // Set $targets dimensions to that of its container - or any other object...
     FullScreenjs.prototype.setScreenDimensions = function ($target, $container) {
+        var self = this;
         var target      = $target;
         var container   = $container;
         var dimensions      = [container.height(), container.width()];
+        var minHeight = self.options.minHeight;
 
-        target.css({
+        var thisCSS = {
             height: dimensions[0],
             width: dimensions[1]
-        });
+        };
+        if (minHeight) {
+            thisCSS.minHeight = minHeight;
+        }
+        target.css(thisCSS);
 
         return dimensions;
     };
