@@ -45,19 +45,35 @@
 
 // Padding
 @include responsive_property('padding-0'){padding: 0 !important}
-@include responsive_property('padding'){padding: $grid-gutter-width/2;}
-@include responsive_property('padding-left'){padding-left: $grid-gutter-width/2;}
-@include responsive_property('padding-right'){padding-right: $grid-gutter-width/2;}
-@include responsive_property('padding-top'){padding-top: $grid-gutter-width/2;}
-@include responsive_property('padding-bottom'){padding-bottom: $grid-gutter-width/2;}
+@include responsive_property('padding-top-0'){padding-top: 0 !important}
+@include responsive_property('padding-left-0'){padding-left: 0 !important}
+@include responsive_property('padding-right-0'){padding-right: 0 !important}
+@include responsive_property('padding-bottom-0'){padding-bottom: 0 !important}
+
+@include responsive_property('padding'){padding: $ips-padding-1}
+@include responsive_property('padding-left'){padding-left: $ips-padding-1}
+@include responsive_property('padding-right'){padding-right: $ips-padding-1}
+@include responsive_property('padding-top'){padding-top: $ips-padding-1}
+@include responsive_property('padding-bottom'){padding-bottom: $ips-padding-1}
+
+@include responsive_property('padding-2'){padding: $ips-padding-2}
+@include responsive_property('padding-left-2'){padding-left: $ips-padding-2}
+@include responsive_property('padding-right-2'){padding-right: $ips-padding-2}
+@include responsive_property('padding-top-2'){padding-top: $ips-padding-2}
+@include responsive_property('padding-bottom-2'){padding-bottom: $ips-padding-2}
 
 // Margins
 @include responsive_property('margin-0'){margin: 0 !important}
-@include responsive_property('margin'){margin: $grid-gutter-width/2;}
-@include responsive_property('margin-left'){margin-left: $grid-gutter-width/2;}
-@include responsive_property('margin-right'){margin-right: $grid-gutter-width/2;}
-@include responsive_property('margin-top'){margin-top: $grid-gutter-width/2;}
-@include responsive_property('margin-bottom'){margin-bottom: $grid-gutter-width/2;}
+@include responsive_property('margin-left-0'){margin-left: 0 !important}
+@include responsive_property('margin-right-0'){margin-right: 0 !important}
+@include responsive_property('margin-top-0'){margin-top: 0 !important}
+@include responsive_property('margin-bottom-0'){margin-bottom: 0 !important}
+
+@include responsive_property('margin'){margin: $ips-padding-1}
+@include responsive_property('margin-left'){margin-left: $ips-padding-1}
+@include responsive_property('margin-right'){margin-right: $ips-padding-1}
+@include responsive_property('margin-top'){margin-top: $ips-padding-1}
+@include responsive_property('margin-bottom'){margin-bottom: $ips-padding-1}
 
 // Borders -
 // Added in colours.scss
@@ -69,4 +85,7 @@
 @include responsive_property(text-align-right){text-align: right;}
 @include responsive_property(text-align-center){text-align: center;}
 @include responsive_property(text-align-justify){text-align: justify;}
+
+// white space
+@include responsive_property(white-space-nowrap){white-space: nowrap};
 

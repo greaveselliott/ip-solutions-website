@@ -31,13 +31,13 @@ $the_sidebars   = wp_get_sidebars_widgets();
     <div class="padding-top padding-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 text-grey text-center">
                         <span class="footer-company-info"><?php eemjii_option_address() ;?></span>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 text-align-center text-grey">
                         <span class="footer-company-info">Company No. </span><span class="footer-company-info"><?php eemjii_option_company_no() ?></span>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 text-align-center text-grey">
                         <span class="footer-company-info">Tel. </span><span class="footer-company-info"><?php eemjii_option_tel() ?></span>
                     </div>
                 </div>

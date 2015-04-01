@@ -41,3 +41,6 @@ function my_acf_settings_dir( $dir ) {
 
 // 4. Include ACF
 include_once( get_stylesheet_directory() . '/inc/advanced-custom-fields-pro/acf.php' );
+
+// 5. Include ACF Configuration Options
+include_once( get_stylesheet_directory() . '/inc/advanced-custom-fields-pro/acf-import.php' );

@@ -5,8 +5,26 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   @extend .font-family-apex;
-  text-transform: lowercase;
+  //text-transform: lowercase;
   &::first-letter{
-    text-transform: uppercase;
+   // text-transform: uppercase;
+  }
+  .text-x2 {
+    font-size: 2em;
+  }
+  &.bold {
+    @extend .font-family-apex-medium;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+p {
+  &.h1, &.h2,
+  &.h3, &.h4,
+  &.h5, &.h6 {
+     font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif !important;
   }
 }

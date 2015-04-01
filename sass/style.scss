@@ -2,10 +2,9 @@
 @import "wordpress-theme-init";
 
 // Apex Font
-@import "font-apex/font-apex";
+@import "font-apex";
 
 // Import Font Awesome;
-@import "font-awesome-sprockets";
 @import "font-awesome";
 
 // Import Bootstrap Compass integration
@@ -39,8 +38,9 @@
 // WordPress Admin Bar Fix
 @import "admin-bar";
 
-// Sticky Social Media
-@import "social_sticky";
+
+// social sidebar
+@import "social-sidebar";
 
 // Main Website Header
 @import "header-main";
@@ -57,5 +57,7 @@
 // Slick Testimonials Home
 @import "slick-testimonials-home";
 
+// header menu
+@import "navigation-header";
 // footer menu
 @import "navigation-footer";

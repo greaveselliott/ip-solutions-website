@@ -17,9 +17,17 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="social-sidebar">
+    <ul>
+        <li class="twitter"><i class="fa fa-twitter"></i></i></li>
+        <li class="facebook"><i class="fa fa-facebook"></i></li>
+        <li class="linkedin"><i class="fa fa-linkedin"></i></li>
+        <li class="email"><i class="fa fa-envelope"></i></i></li>
+    </ul>
+</div>
 <header id="header-main" class="background-white opacity-80">
 <div class="container-fluid">
-	<div class="row padding-top padding-bottom">
+	<div class="row padding-top-2 padding-bottom-2">
 		<div class="col-sm-12">
             <div class="pull-right">
                 <div class="icon-links display-inline-block padding-right">
@@ -31,17 +39,17 @@
     </div>
 </div>
 <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
-	<div class="row border-2-top-blue">
+	<div class="row border-2-top-blue-opacity">
                     <!-- Logo -->
                     <div class="col-sm-5">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
                         <figure class="eemjii-logo display-table padding-right" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
-                            <a href="<?php echo home_url();?>" class="display-inline-block padding-right" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
-                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan text-blue padding-left border-2-left-blue"><?php echo bloginfo('description'); ?></figcaption>
+                            <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
+                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan text-blue padding-left-2 border-2-left-blue-opacity white-space-nowrap"><?php echo bloginfo('description'); ?></figcaption>
                         </figure>
                     </div>
                     <!-- Navigation -->
-                     <div class="col-sm-7 ">
+                     <div class="col-sm-7 padding-right-0">
 					    <nav class="pull-right">
                             <h2 class="hidden"><?php echo bloginfo('name'); ?> | Website Navigation</h2>
                             <?php
