@@ -29,7 +29,7 @@
     <div class="featured-image-container position-relative">
     <!-- The .featured-image-container's closing tag exists in the page template file for example page-home.php -->
 <?php endif; ?>
-    <div class="width-100">
+    <div class="autofix-header width-100">
         <header id="header-main" class="background-white opacity-80">
             <div class="container-fluid">
                 <div class="row padding-top-2 padding-bottom-2">
@@ -44,13 +44,13 @@
                 </div>
             </div>
             <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
-                <div class="row border-2-top-blue-opacity">
+                <div class="row border-3-top-blue-opacity">
                     <!-- Logo -->
                     <div class="col-sm-5">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
                         <figure class="eemjii-logo display-table padding-right" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
                             <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
-                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan text-blue padding-left-2 border-2-left-blue-opacity white-space-nowrap display-none-phone"><?php echo bloginfo('description'); ?></figcaption>
+                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan text-blue padding-left-2 border-3-left-blue-opacity white-space-nowrap display-none-phone"><?php echo bloginfo('description'); ?></figcaption>
                         </figure>
                     </div>
                     <!-- Navigation -->

@@ -5,19 +5,29 @@
 ?>
 
 <?php get_header(); ?>
-<div class="height-auto-important-tablet-portrait">
-    <div class="position-relative width-100 height-100">
+    <div class="height-auto-important-tablet-portrait">
+
         <!-- Aim-high -->
-        <div class="width-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                        <h2 class="h1 text-white bold"><span class="text-x2">Aim high</span></h2>
-                        <h4 class="h3 text-white"><span class="text-x2">Find out why cloud-based services are<br>becoming the de-facto business solution</span></h4>
-                </div>
-            </div>
+<!--        <div class="width-100">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-sm-12">-->
+<!--                            <h2 class="h1 text-white bold"><span class="text-x2">Aim high</span></h2>-->
+<!--                            <h4 class="h3 text-white"><span class="text-x2">Find out why cloud-based services are<br>becoming the de-facto business solution</span></h4>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <?php
+                //$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+                //$image = $image[0];
+            ?>
+           <!-- <div class="width-100 height-100 position-absolute top-0 left-0" style="background-image: url('<?php //echo $image; ?>'); z-index: -10; background-size: cover;">
+-->
+            <?php get_template_part('template','carousel'); ?>
+
         </div>
-            </div>
+
+
         <!-- Choose your starting point -->
         <article class="starting-point background-blue opacity-90 width-100">
             <div class="container">
@@ -91,9 +101,6 @@
 </div>
 <!-- Featured Image -->
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
-    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-    $image = $image[0]; ?>
-    <div class="width-100 height-100 position-absolute top-0 left-0" style="background-image: url('<?php echo $image; ?>'); z-index: -10; background-size: cover;"></div>
 </div><!-- End .featured-image-container tag -->
 <?php endif; ?>
 <!-- Transform your business with IP Solutions -->

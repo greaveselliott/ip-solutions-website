@@ -32,6 +32,15 @@ $ips-colours-list:
   @include responsive_property(border-2-bottom-#{nth($i,1)}-opacity){border-bottom: solid $ips-border-width-2 rgba(nth($i,2),$border-opacity); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-2-left-#{nth($i,1)}-opacity){border-left: solid $ips-border-width-2 rgba(nth($i,2),$border-opacity); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
 
+  // border size 3 - Lower Opacity
+  @include responsive_property(border-3-#{nth($i,1)}-opacity){
+    border: solid $ips-border-width-3 rgba(nth($i,2),$border-opacity); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-top-#{nth($i,1)}-opacity){border-top: solid $ips-border-width-3 rgba(nth($i,2),$border-opacity); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-right-#{nth($i,1)}-opacity){border-right: solid $ips-border-width-3 rgba(nth($i,2),$border-opacity); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-bottom-#{nth($i,1)}-opacity){border-bottom: solid $ips-border-width-3 rgba(nth($i,2),$border-opacity); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+  @include responsive_property(border-3-left-#{nth($i,1)}-opacity){border-left: solid $ips-border-width-3 rgba(nth($i,2),$border-opacity); -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
+
+
   // border size 1
   @include responsive_property(border-1-#{nth($i,1)}){border: solid $ips-border-width-1 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }
   @include responsive_property(border-1-top-#{nth($i,1)}){border-top: solid $ips-border-width-1 #{nth($i,2)}; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;box-sizing: border-box; }

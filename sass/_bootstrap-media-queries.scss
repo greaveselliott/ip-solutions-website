@@ -24,6 +24,8 @@ $phone: "(max-width: 480px)";
 $tablet-portrait: "(max-width: 767px)";
 $tablet-portrait-only: "(min-width: 480px) and (max-width: 767px)";
 
+$tablet-landscape-up: "(min-width: 768px)";
+
 /* Portrait tablet to landscape and desktop */
 $tablet-landscape-desktop: "(min-width: 768px) and (max-width: 1199px)";
 
@@ -44,6 +46,8 @@ $respond-to-list:
   "tablet-portrait" $tablet-portrait
   "tablet-portrait-only" $tablet-portrait-only
 
+  /* Tablets and bigger */
+  "tablet-up" $tablet-landscape-up
   /* Portrait tablet to landscape and desktop */
   "tablet-landscape-desktop" $tablet-landscape-desktop
 

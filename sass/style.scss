@@ -54,6 +54,7 @@
 // Templates
 @import "template-home";
 @import "template-awards";
+@import "template-carousel";
 
 // Slick Testimonials Home
 @import "slick-testimonials-home";
@@ -66,3 +67,6 @@
 
 // autofix anything
 @import "../javascripts/autofix_anything/autofix_anything";
+
+// Uber Menu plugin
+@import "wp-plugin-uber-menu";

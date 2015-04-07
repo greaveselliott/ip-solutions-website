@@ -1,15 +1,6 @@
 body.logged-in, body.admin-bar {
-  .autofix-header {
-    top: 28px !important;
-  }
-  position: relative;
+  margin-top: 28px !important;
   @include respond-to(tablet-portrait) {
-    .autofix-header {
-      top: 46px !important;
-    }
+    margin-top: 46px !important;
   }
-}
-
-#wpadminbar {
-  position: fixed !important;
 }
