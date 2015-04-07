@@ -104,29 +104,3 @@ function enqueue_slickjs_scripts () {
     wp_enqueue_script ('full-screen-js-config');
 }
 add_action('wp_enqueue_scripts','enqueue_slickjs_scripts');
-
-
-// Enqueue Autofix Anything JS
-function enqueue_autofix_anything () {
-    // Plugin
-    wp_register_script(
-        'autofix-anything',
-        get_stylesheet_directory_uri() . '/javascripts/autofix_anything/jquery.autofix_anything.min.js',
-        array('jquery'),
-        '',
-        true
-    );
-    wp_enqueue_script ('autofix-anything');
-
-    // Config
-    wp_register_script(
-        'autofix-anything-config',
-        get_stylesheet_directory_uri() . '/javascripts/autofix_anything/jquery.autofix_anything.config.js',
-        array('jquery','autofix-anything'),
-        '',
-        true
-    );
-    wp_enqueue_script ('autofix-anything-config');
-}
-
-add_action('wp_enqueue_scripts', 'enqueue_autofix_anything');

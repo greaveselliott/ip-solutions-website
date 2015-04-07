@@ -5,10 +5,10 @@
 ?>
 
 <?php get_header(); ?>
-<div class="full-screen">
+<div class="height-auto-important-tablet-portrait">
     <div class="position-relative width-100 height-100">
         <!-- Aim-high -->
-        <div class="position-absolute width-100" style="top:20%;">
+        <div class="width-100">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -19,7 +19,7 @@
         </div>
             </div>
         <!-- Choose your starting point -->
-        <article class="starting-point background-blue opacity-90 position-absolute bottom-0 width-100 padding-bottom">
+        <article class="starting-point background-blue opacity-90 width-100">
             <div class="container">
 
                 <div class="row">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <section class="col-sm-3 col-xs-6">
+                    <section class="col-sm-3 col-xs-6 padding-bottom">
                         <div class="flip-container">
                             <div class="front border-1-orange">
                                 <div class="padding text-align-center">
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="col-sm-3 col-xs-6">
+                    <section class="col-sm-3 col-xs-6 padding-bottom">
                         <div class="flip-container">
                             <div class="front border-1-orange">
                                 <div class="padding text-align-center">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="col-sm-3 col-xs-6">
+                    <section class="col-sm-3 col-xs-6 padding-bottom">
                         <div class="flip-container">
                             <div class="front border-1-orange">
                                 <div class="padding text-align-center">
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="col-sm-3 col-xs-6">
+                    <section class="col-sm-3 col-xs-6 padding-bottom">
                         <div class="flip-container">
                             <div class="front border-1-orange">
                                 <div class="padding text-align-center">
@@ -86,16 +86,16 @@
                     </section>
                 </div>
             </div>
-        </article><?php if (has_post_thumbnail( $post->ID ) ): ?>
-            <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-            $image = $image[0]; ?>
-        <?php else :
-            $image = 'http://placehold.it/100x100'; ?>
-        <?php endif; ?>
-        <div class="width-100 height-100 position-absolute top-0 left-0" style="background-image: url('<?php echo $image; ?>'); z-index: -10; background-size: cover;"></div>
+        </article>
     </div>
 </div>
-<!-- End Fullscreen -->
+<!-- Featured Image -->
+<?php if (has_post_thumbnail( $post->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+    $image = $image[0]; ?>
+    <div class="width-100 height-100 position-absolute top-0 left-0" style="background-image: url('<?php echo $image; ?>'); z-index: -10; background-size: cover;"></div>
+</div><!-- End .featured-image-container tag -->
+<?php endif; ?>
 <!-- Transform your business with IP Solutions -->
 <div class="background-grey opacity-10 padding-top padding-bottom">
     <article class="container">

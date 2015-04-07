@@ -12089,7 +12089,6 @@ button.close {
 /* line 7, sass/_bootstrap-block-grid.scss */
 [class*="block-grid-"] {
   display: block;
-  margin: -15px;
   padding: 0;
 }
 
@@ -14432,6 +14431,226 @@ button.close {
   /* line 105, sass/_bootstrap-media-queries.scss */
   .height-100-retina {
     height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* line 100, sass/_bootstrap-media-queries.scss */
+.width-auto {
+  width: auto;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-phone {
+    width: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-tablet-portrait {
+    width: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-tablet-landscape-desktop {
+    width: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-large-desktop {
+    width: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-non-retina {
+    width: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-retina {
+    width: auto;
+  }
+}
+/* Landscape phones and down */
+/* line 100, sass/_bootstrap-media-queries.scss */
+.height-auto {
+  height: auto;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-phone {
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-tablet-portrait {
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-tablet-landscape-desktop {
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-large-desktop {
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-non-retina {
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-retina {
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* line 100, sass/_bootstrap-media-queries.scss */
+.width-auto-important {
+  width: auto !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-important-phone {
+    width: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-important-tablet-portrait {
+    width: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-important-tablet-landscape-desktop {
+    width: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-important-large-desktop {
+    width: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-important-non-retina {
+    width: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .width-auto-important-retina {
+    width: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* line 100, sass/_bootstrap-media-queries.scss */
+.height-auto-important {
+  height: auto !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-important-phone {
+    height: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-important-tablet-portrait {
+    height: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-important-tablet-landscape-desktop {
+    height: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-important-large-desktop {
+    height: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-important-non-retina {
+    height: auto !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 105, sass/_bootstrap-media-queries.scss */
+  .height-auto-important-retina {
+    height: auto !important;
   }
 }
 /* Landscape phones and down */
@@ -52251,9 +52470,8 @@ body.logged-in .autofix-header, body.admin-bar .autofix-header {
 /* line 3, sass/_header-main.scss */
 .autofix-header {
   z-index: 10;
-  position: absolute;
-  top: 0;
   height: 105px !important;
+  overflow: initial !important;
   -webkit-transition: height 120ms cubic-bezier(0.56, 0, 0.505, 1);
   /* older webkit */
   -webkit-transition: height 120ms cubic-bezier(0.56, 0, 0.505, 1);
@@ -52261,7 +52479,7 @@ body.logged-in .autofix-header, body.admin-bar .autofix-header {
   -o-transition: height 120ms cubic-bezier(0.56, 0, 0.505, 1);
   transition: height 120ms cubic-bezier(0.56, 0, 0.505, 1);
 }
-/* line 13, sass/_header-main.scss */
+/* line 12, sass/_header-main.scss */
 .autofix-header .eemjii-logo img {
   height: 60px;
   -webkit-transition: height 120ms cubic-bezier(0.56, 0, 0.505, 1);
@@ -52271,7 +52489,7 @@ body.logged-in .autofix-header, body.admin-bar .autofix-header {
   -o-transition: height 120ms cubic-bezier(0.56, 0, 0.505, 1);
   transition: height 120ms cubic-bezier(0.56, 0, 0.505, 1);
 }
-/* line 21, sass/_header-main.scss */
+/* line 20, sass/_header-main.scss */
 .autofix-header .navbar-nav > li > a {
   -webkit-transition: padding 120ms cubic-bezier(0.56, 0, 0.505, 1);
   /* older webkit */
@@ -52280,15 +52498,15 @@ body.logged-in .autofix-header, body.admin-bar .autofix-header {
   -o-transition: padding 120ms cubic-bezier(0.56, 0, 0.505, 1);
   transition: padding 120ms cubic-bezier(0.56, 0, 0.505, 1);
 }
-/* line 28, sass/_header-main.scss */
+/* line 27, sass/_header-main.scss */
 .autofix-header.autofix_sb.fixed {
   height: 84px !important;
 }
-/* line 31, sass/_header-main.scss */
+/* line 30, sass/_header-main.scss */
 .autofix-header.autofix_sb.fixed .eemjii-logo img {
   height: 40px;
 }
-/* line 34, sass/_header-main.scss */
+/* line 33, sass/_header-main.scss */
 .autofix-header.autofix_sb.fixed .navbar-nav > li > a {
   padding-top: 13px;
   padding-bottom: 12px;

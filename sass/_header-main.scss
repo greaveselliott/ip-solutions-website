@@ -2,9 +2,8 @@
 
 .autofix-header {
   z-index: 10;
-  position: absolute;
-  top: 0;
   height: 105px !important;
+  overflow: initial !important;
   -webkit-transition: height 120ms $ips-animation-ease; /* older webkit */
   -webkit-transition: height 120ms $ips-animation-ease;
   -moz-transition: height 120ms $ips-animation-ease;

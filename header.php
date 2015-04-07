@@ -25,22 +25,26 @@
         <li class="email"><i class="fa fa-envelope"></i></i></li>
     </ul>
 </div>
-<div class="autofix-header width-100">
-<header id="header-main" class="background-white opacity-80">
-<div class="container-fluid">
-	<div class="row padding-top-2 padding-bottom-2">
-		<div class="col-sm-12">
-            <div class="pull-right">
-                <div class="icon-links display-inline-block padding-right padding-right-0-tablet-portrait text-align-center-tablet-portrait">
-                    <span class="h4"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue display-inline-block"><?php eemjii_option_tel() ?></span>
+<?php if (has_post_thumbnail( $post->ID ) ): ?>
+    <div class="featured-image-container position-relative">
+    <!-- The .featured-image-container's closing tag exists in the page template file for example page-home.php -->
+<?php endif; ?>
+    <div class="width-100">
+        <header id="header-main" class="background-white opacity-80">
+            <div class="container-fluid">
+                <div class="row padding-top-2 padding-bottom-2">
+                    <div class="col-sm-12">
+                        <div class="pull-right">
+                            <div class="icon-links display-inline-block padding-right padding-right-0-tablet-portrait text-align-center-tablet-portrait">
+                                <span class="h4"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue display-inline-block"><?php eemjii_option_tel() ?></span>
+                            </div>
+                            <a href="#" title="Customer Login Section" class="display-none-important-tablet-portrait">Customer Login</a>
+                        </div>
+                    </div>
                 </div>
-                <a href="#" title="Customer Login Section" class="display-none-important-tablet-portrait">Customer Login</a>
             </div>
-        </div>
-    </div>
-</div>
-<div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
-	<div class="row border-2-top-blue-opacity">
+            <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
+                <div class="row border-2-top-blue-opacity">
                     <!-- Logo -->
                     <div class="col-sm-5">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
@@ -51,26 +55,10 @@
                     </div>
                     <!-- Navigation -->
                      <div class="col-sm-7 padding-right-0">
-					    <nav class="pull-right">
                             <h2 class="hidden"><?php echo bloginfo('name'); ?> | Website Navigation</h2>
-
-                            <?php
-                        //                            wp_nav_menu( array(
-                        //                                    'menu'              => 'primary',
-                        //                                    'theme_location'    => 'primary',
-                        //                                    'depth'             => 2,
-                        //                                    'container'         => 'div',
-                        //                                    'container_class'   => 'collapse navbar-collapse',
-                        //                                    'container_id'      => 'bs-example-navbar-collapse-1',
-                        //                                    'menu_class'        => 'nav navbar-nav',
-                        //                                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                        //                                    'walker'            => new wp_bootstrap_navwalker())
-                        //                            );
-
-                            ubermenu( 'main' , array( 'theme_location' => 'primary' ) ); ?>
-					    </nav>
+                            <?php ubermenu( 'main' , array( 'theme_location' => 'primary' ) ); ?>
                     </div>
-				</div>
-			</div>
-</header>
-</div>
+                </div>
+            </div>
+        </header>
+    </div>
