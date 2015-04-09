@@ -50,7 +50,6 @@
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
                         <figure class="eemjii-logo display-table padding-right" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
                             <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
-                            <figcaption class="h4 display-table-cell vertical-align-middle eemjii-slogan text-blue padding-left-2 border-3-left-blue-opacity white-space-nowrap display-none-phone"><?php echo bloginfo('description'); ?></figcaption>
                         </figure>
                     </div>
                     <!-- Navigation -->
