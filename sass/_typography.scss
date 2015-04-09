@@ -21,10 +21,14 @@ h6, .h6 {
   text-transform: uppercase;
 }
 
+.font-family-default {
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif !important;
+}
+
 p {
   &.h1, &.h2,
   &.h3, &.h4,
   &.h5, &.h6 {
-     font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif !important;
+    @extend .font-family-default;
   }
 }

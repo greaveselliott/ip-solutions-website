@@ -16449,8 +16449,8 @@ h6 .text-x2, .h6 .text-x2 {
   text-transform: uppercase;
 }
 
-/* line 25, sass/_typography.scss */
-p.h1, p.h2, p.h3, p.h4, p.h5, p.h6 {
+/* line 24, sass/_typography.scss */
+.font-family-default, p.h1, p.h2, p.h3, p.h4, p.h5, p.h6 {
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif !important;
 }
 
