@@ -6,28 +6,8 @@
 
 <?php get_header(); ?>
     <div class="height-auto-important-tablet-portrait">
-
-        <!-- Aim-high -->
-<!--        <div class="width-100">-->
-<!--            <div class="container">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-sm-12">-->
-<!--                            <h2 class="h1 text-white bold"><span class="text-x2">Aim high</span></h2>-->
-<!--                            <h4 class="h3 text-white"><span class="text-x2">Find out why cloud-based services are<br>becoming the de-facto business solution</span></h4>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <?php
-                //$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
-                //$image = $image[0];
-            ?>
-           <!-- <div class="width-100 height-100 position-absolute top-0 left-0" style="background-image: url('<?php //echo $image; ?>'); z-index: -10; background-size: cover;">
--->
             <?php get_template_part('template','carousel'); ?>
-
         </div>
-
-
         <!-- Choose your starting point -->
         <article class="starting-point background-blue opacity-90 width-100">
             <div class="container">
@@ -104,47 +84,42 @@
 </div><!-- End .featured-image-container tag -->
 <?php endif; ?>
 <!-- Transform your business with IP Solutions -->
-<div class="background-grey opacity-10 padding-top padding-bottom">
-    <article class="container">
+<div class="background-orange padding-top padding-bottom">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <h2 class="text-grey h3"><span class="text-x2">Transform your business with IP Solutions</span></h2>
-                <p class="text-blue">Cloud-based solutions are the future, now – allowing telephony, video, data, email, messaging and more to be unified into one umbrella solution that is both agile and cost-effective.</p>
-                <p class="text-blue">From virtual contact centres, to cloud-based virtual desktops and servers, we’re not just experts in comms technology, we’re experts in applying it too. Find out more about how we deliver flexible and intuitive solutions that deliver real results to the bottom line.</p>
-            </div>
-            <div class="col-sm-6">
-                <div class="embed-responsive embed-responsive-16by9">
+            <article class="col-sm-6">
+                <h2 class="text-white h5"><span class="text-x2">Transform your business with IP Solutions</span></h2>
+                <p class="text-white">Cloud-based solutions are the future, now – allowing telephony, video, data, email, messaging and more to be unified into one umbrella solution that is both agile and cost-effective.</p>
+                <p class="text-white">From virtual contact centres, to cloud-based virtual desktops and servers, we’re not just experts in comms technology, we’re experts in applying it too. Find out more about how we deliver flexible and intuitive solutions that deliver real results to the bottom line.</p>
+                <div class="embed-responsive embed-responsive-16by9 margin-top">
                     <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/92117864" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/92117864">IP Solutions: Communications, Sorted</a> from <a href="https://vimeo.com/user26771751">IP Solutions</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                 </div>
-            </div>
-        </div>
-    </article>
-</div>
-<!-- Award winning experts -->
-<article class="background-orange padding-top padding-bottom">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12"><h2 class="text-align-center text-white h1 margin-top-0 margin-bottom">Award winning providers</h2></div>
-        </div>
-    </div>
-                <?php
-                $awards_query = new Eemjii_WP_Query(array(
-                    '_post_type'             => 'post',
-                    '_post_template_prefix'  => 'template',
-                    '_post_template_part'    => 'awards',
-                    '_posts_per_page'        => 3,
-                    '_posts_per_row'         => 3,
-                    '_loop_wrapper'          => false
-                ));
-                ?>
+            </article>
 
-    <div class="container">
-    <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
-            <a href="#" class="btn btn-white h4">Find out why people choose us</a></div>
+            <!-- Award winning experts -->
+            <article class="col-sm-6">
+                <div class="border-2-left-white padding-left">
+                    <h2 class="text-white h3 margin-top-0 margin-bottom">Award winning providers</h2>
+                    <?php
+                        $awards_query = new Eemjii_WP_Query(array(
+                            '_post_type'             => 'post',
+                            '_post_template_prefix'  => 'template',
+                            '_post_template_part'    => array(
+                                array('awards-first','first'),
+                                array('awards','default')
+                            ),
+                            '_posts_per_page'        => 3,
+                            '_posts_per_row'         => 3,
+                            '_loop_wrapper'          => false,
+                            '_row_wrapper'           => false
+                        ));
+                    ?>
+                    <a href="#" class="btn btn-white h4">Find out why people choose us</a>
+                </div>
+            </article>
+        </div>
     </div>
-    </div>
-</article>
+</div>
 <!-- Testimonials / Clients -->
 <div class="background-white padding-top padding-bottom">
     <article class="container">

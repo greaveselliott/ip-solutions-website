@@ -104,3 +104,77 @@ function enqueue_slickjs_scripts () {
     wp_enqueue_script ('full-screen-js-config');
 }
 add_action('wp_enqueue_scripts','enqueue_slickjs_scripts');
+
+
+// GSAP
+function enqueue_gsap_lite_scripts () {
+    // CSS Plugin
+    wp_register_script(
+        'gsap-css-plugin',
+        get_stylesheet_directory_uri() . '/javascripts/gsap/plugins/CSSPlugin.min.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('gsap-css-plugin');
+
+    // Ease Pack
+    wp_register_script(
+        'gsap-ease-pack',
+        get_stylesheet_directory_uri() . '/javascripts/gsap/easing/EasePack.min.js',
+        array('jquery','gsap-css-plugin'),
+        '',
+        true
+    );
+    wp_enqueue_script ('gsap-ease-pack');
+
+    // TweenLite
+    wp_register_script(
+        'gsap-tween-lite',
+        get_stylesheet_directory_uri() . '/javascripts/gsap/TweenLite.min.js',
+        array('jquery','gsap-css-plugin','gsap-ease-pack'),
+        '',
+        true
+    );
+    wp_enqueue_script ('gsap-tween-lite');
+}
+add_action('wp_enqueue_scripts','enqueue_gsap_lite_scripts');
+
+// Waypoints
+function enqueue_waypoints_scripts () {
+    // Jquery WayPoints
+    wp_register_script(
+        'jquery-waypoints',
+        get_stylesheet_directory_uri() . '/javascripts/waypoints/lib/jquery.waypoints.min.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('jquery-waypoints');
+    // Jquery WayPoints Config
+    wp_register_script(
+        'jquery-waypoints-config',
+        get_stylesheet_directory_uri() . '/javascripts/waypoints/lib/jquery.waypoints.config.js',
+        array('jquery','jquery-waypoints'),
+        '',
+        true
+    );
+    wp_enqueue_script ('jquery-waypoints-config');
+}
+add_action('wp_enqueue_scripts','enqueue_waypoints_scripts');
+
+// Polyfil - ubermenu
+
+// Waypoints
+function enqueue_polyfill_uber_menu_scripts () {
+    // Jquery WayPoints
+    wp_register_script(
+        'polyfill-ubermenu',
+        get_stylesheet_directory_uri() . '/javascripts/polyfill-uber-menu.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('polyfill-ubermenu');
+}
+add_action('wp_enqueue_scripts','enqueue_polyfill_uber_menu_scripts');

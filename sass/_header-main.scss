@@ -1,44 +1,42 @@
+.main-logo, .ubermenu-item-layout-text_only {
+  -webkit-transition: all 0.17s ease-in;
+  -moz-transition: all 0.17s ease-in;
+  -ms-transition: all 0.17s ease-in;
+  -o-transition: all 0.17s ease-in;
+  transition: all 0.17s ease-in;
+}
+.main-logo {
+  height: 135px;
+}
 
-
-.autofix-header {
-  z-index: 10;
-  height: 105px !important;
-  overflow: initial !important;
-  -webkit-transition: height 120ms $ips-animation-ease; /* older webkit */
-  -webkit-transition: height 120ms $ips-animation-ease;
-  -moz-transition: height 120ms $ips-animation-ease;
-  -o-transition: height 120ms $ips-animation-ease;
-  transition: height 120ms $ips-animation-ease;
-  .eemjii-logo img {
-    height: 60px;
-    -webkit-transition: height 120ms $ips-animation-ease; /* older webkit */
-    -webkit-transition: height 120ms $ips-animation-ease;
-    -moz-transition: height 120ms $ips-animation-ease;
-    -o-transition: height 120ms $ips-animation-ease;
-    transition: height 120ms $ips-animation-ease;
+body.logged-in, body.admin-bar {
+  .stick {
+  top: 28px !important;
+  @include respond-to(tablet-portrait) {
+   top: 46px !important;
   }
-  .navbar-nav > li > a {
-    -webkit-transition: padding 120ms $ips-animation-ease; /* older webkit */
-    -webkit-transition: padding 120ms $ips-animation-ease;
-    -moz-transition: padding 120ms $ips-animation-ease;
-    -o-transition: padding 120ms $ips-animation-ease;
-    transition: padding 120ms $ips-animation-ease;
-  }
-  &.autofix_sb.fixed{
-    height: 84px !important;
-
-    .eemjii-logo img {
-      height: 40px;
-    }
-    .navbar-nav > li > a {
-      padding-top: 13px;
-      padding-bottom: 12px;
-    }
   }
 }
 
-#header-main {
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
 
-//  width: 100%;
+  .main-logo {
+    height: 65px;
+  }
 
+  .ubermenu-item-layout-text_only {
+    padding: 30px 20px !important;
+  }
+}
+
+.ubermenu-item-layout-text_only {
+  padding: 60px 20px !important;
+}
+
+.ubermenu-loc-primary {
+  text-align: right;
 }

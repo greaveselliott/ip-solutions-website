@@ -6,7 +6,7 @@ $the_sidebars   = wp_get_sidebars_widgets();
 
 ?>
 <footer>
-    <div class="background-grey padding-top padding-bottom">
+    <div class="background-grey">
 			<div class="container">
 				<div class="row">
 					<?php if( is_active_sidebar( 'footer-site-map' ) ) :

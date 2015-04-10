@@ -12,32 +12,48 @@
 /*
  * @property string $_post_type
  * @property string $_post_template_prefix
- * @property string $_post_template
+ * @property string or array $_post_template
+ * Use a string for a single template to be used throughout the entire loop
+ * Use an array if a mixture of templates is to to be used based;
+ * - which template used is decided on a condition which should also be parsed to the array
+ * - The array structure should be in this format
+ * array(
+ *      array('template-name-1','first'), Use this template IF its the FIRST loop iteration
+ *      array('template-name-2','last'),  Use this template IF its the LAST loop iteration
+ *      array('template-name-3','even'),  Use this template IF its an EVEN loop iteration
+ *      array('template-name-4','odd'), Use this template IF its an ODD loop iteration
+ *      array('template-name-4','default') The default template to use if no other template condition is met
+ * )
  * @property number $_posts_per_page
  * @property number $_posts_per_row
  * @property number $_columns_per_row
  * @property boolean $_loop_wrapper
+ * @property boolean $_loop_on_init
+ * @property associative array $_loop_conditions
 */
 Class Eemjii_WP_Query {
 
     protected $_the_query;                         // The WP_Query object - defined later
 
-    private $_column_size              = 0;
-    private $_row_has_empty_space      = false;
-    private $_is_open_row                 = true;
-    private $_is_close_row                = false;
-    private $_total_columns            = 12;
-    private $_columns_configured       = false;
+    private $_column_size                       = 0;
+    private $_row_has_empty_space               = false;
+    private $_is_open_row                       = true;
+    private $_is_close_row                      = false;
+    private $_total_columns                     = 12;
+    private $_columns_configured                = false;
+    private $_current_post_template_part        = '';
+    private $_current_loop_condition            = '';
+    private $_post_count                        = 0;
 
     // Class Defaults
-    protected $_post_type             = '';
-    protected $_post_template_prefix  = 'post';
-    protected $_post_template_part    = '';
-    protected $_posts_per_page        = 10;
-    protected $_posts_per_row         = 4;
-    protected $_loop_wrapper          = true;
-    protected $_row_wrapper           = true;
-    protected $_loop_on_init          = true;
+    protected $_post_type                       = '';
+    protected $_post_template_prefix            = 'post';
+    protected $_post_template_part              = '';
+    protected $_posts_per_page                  = 10;
+    protected $_posts_per_row                   = 4;
+    protected $_loop_wrapper                    = true;
+    protected $_row_wrapper                     = true;
+    protected $_loop_on_init                    = true;
 
     // Set Properties
     public function __construct ($args) {
@@ -142,9 +158,42 @@ Class Eemjii_WP_Query {
         <?php
     }
 
+    protected function has_loop_condition ($current_loop_iteration) {
+        $the_condition_met = 'default';
+
+        if ($current_loop_iteration == 0) {
+            $the_condition_met = 'first';
+        } elseif ($current_loop_iteration == $this->_post_count) {
+            $the_condition_met = 'last';
+        }
+        $this -> _current_loop_condition = $the_condition_met;
+        return  $the_condition_met;
+    }
+
+    protected function set_post_template () {
+        $template = $this->_post_template_part;
+
+        if (!is_array($template)) {
+            $this->_current_post_template_part = $template;
+        } else {
+           for ($i = 0; $i < count($template); $i++) {
+               if ($template[$i][1] == $this->_current_loop_condition){
+                    $template = $template[$i][0];
+                        break;
+               }
+           }
+        }
+        return $this -> _current_post_template_part = $template;
+    }
+
+    protected function get_post_template() {
+        get_template_part($this->_post_template_prefix, $this->_current_post_template_part);
+    }
+
     public function loop () {
         // SET: Local Scope - $post_type
         // -- Properties defined in the local scope as "$post_type" to reduce object transversing
+        $self   =
         $post_type      = $this -> _post_type;
 		$posts_per_page = $this -> _posts_per_page;
         $loop_wrapper   = $this -> _loop_wrapper;
@@ -158,6 +207,9 @@ Class Eemjii_WP_Query {
         // Call: The loop - WP_Query
         // -- Property has also been cached in the local scope as "$query" to reduce object transversing
         $the_query   = $this -> _the_query = new WP_Query( $args );
+
+        // Set the number of posts found
+        $this -> _post_count = $the_query->post_count;
 
         // Does this query have any posts?
         if ($the_query -> have_posts()):
@@ -184,9 +236,11 @@ Class Eemjii_WP_Query {
                     // Open new column
                     $this -> opening_column();
                 endif;
-
                     //Get the post template
-                    get_template_part($this->_post_template_prefix, $this->_post_template_part);
+                    $this -> has_loop_condition($the_query->current_post);
+                    $this -> set_post_template();
+                    $this -> get_post_template();
+//                    get_template_part($this->_post_template_prefix, $this->_post_template_part);
 
                 // Are we using a row wrapper?
                 if ($row_wrapper):

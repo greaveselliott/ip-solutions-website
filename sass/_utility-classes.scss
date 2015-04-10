@@ -47,6 +47,16 @@
 @include responsive_property("width-auto-important"){width: auto !important;}
 @include responsive_property("height-auto-important"){height: auto !important;}
 
+// Box Sizing
+@include responsive_property('box-sizing-border-box') {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@include responsive_property('box-sizing-content-box') {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
 // Padding
 @include responsive_property('padding-0'){padding: 0 !important}
 @include responsive_property('padding-top-0'){padding-top: 0 !important}
