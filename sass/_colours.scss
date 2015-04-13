@@ -6,7 +6,8 @@ $ips-colours-list:
 "purple"  $ips-purple,
 "orange"  $ips-orange,
 "white" #FFFFFF,
-"black" #000000;
+"black" #000000,
+"trasparent" transparent;
 
 @each $i in $ips-colours-list {
   @include responsive_property (text-#{nth($i,1)}) {

@@ -28,6 +28,7 @@ include_once( 'inc/widgets.php' );
 
 // Eemjii-WP-Query Class
 include_once('inc/eemjii-wp-query/eemjii-wp-query.php');
+include_once('inc/eemjii-wp-query/eemjii-wp-taxonomy-query.php');
 
 // Custom Navigation Walker
 include_once('inc/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php');

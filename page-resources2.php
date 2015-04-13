@@ -3,7 +3,7 @@
     Template Name: Resources
 */
 ?>
-    <!-- Resources -->
+<!-- Resources -->
 
 <?php get_header(); ?>
 
@@ -69,16 +69,16 @@ function eemjii_loop_taxonomies ($taxonomy) {
         $the_query = eemjii_get_posts_by_taxonomy($this_taxonomy_obj->slug);
 
         if ($the_query -> have_posts()):
-            ?>
+        ?>
             <div class='container'>
 
                 <?php
-                echo '<h2>';
-                echo $this_taxonomy_obj->name;
-                echo '</h2>';
-                for ( $j = 0; $the_query->have_posts(); $j++ ) : $the_query->the_post();
-                    get_template_part('template','resources');
-                endfor;
+                    echo '<h2>';
+                    echo $this_taxonomy_obj->name;
+                    echo '</h2>';
+                     for ( $j = 0; $the_query->have_posts(); $j++ ) : $the_query->the_post();
+                        get_template_part('template','resources');
+                    endfor;
                 ?>
 
             </div>

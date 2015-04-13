@@ -72,7 +72,7 @@ Class Eemjii_WP_Query {
         endif;
     }
 
-    private function configure_columns () {
+    protected function configure_columns () {
         $total_columns    = $this -> _total_columns;
         $posts_per_row = $this -> _posts_per_row;
 
@@ -193,7 +193,7 @@ Class Eemjii_WP_Query {
     public function loop () {
         // SET: Local Scope - $post_type
         // -- Properties defined in the local scope as "$post_type" to reduce object transversing
-        $self   =
+        $self   =       $this;
         $post_type      = $this -> _post_type;
 		$posts_per_page = $this -> _posts_per_page;
         $loop_wrapper   = $this -> _loop_wrapper;
@@ -236,11 +236,11 @@ Class Eemjii_WP_Query {
                     // Open new column
                     $this -> opening_column();
                 endif;
-                    //Get the post template
+                    // Get the post template
                     $this -> has_loop_condition($the_query->current_post);
                     $this -> set_post_template();
                     $this -> get_post_template();
-//                    get_template_part($this->_post_template_prefix, $this->_post_template_part);
+                    // get_template_part($this->_post_template_prefix, $this->_post_template_part);
 
                 // Are we using a row wrapper?
                 if ($row_wrapper):

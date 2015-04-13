@@ -10,7 +10,7 @@
 }
 
 body.logged-in, body.admin-bar {
-  .stick {
+  .sticky {
   top: 28px !important;
   @include respond-to(tablet-portrait) {
    top: 46px !important;

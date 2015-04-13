@@ -174,6 +174,180 @@ if( function_exists('register_field_group') ):
     ));
 
     register_field_group(array (
+        'key' => 'group_552baa36d00a8',
+        'title' => 'Related Resources',
+        'fields' => array (
+            array (
+                'key' => 'field_552baa4230f9b',
+                'label' => 'Related Resources',
+                'name' => 'related_resources',
+                'prefix' => '',
+                'type' => 'relationship',
+                'instructions' => 'Select some related resources.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'eemjii_resources',
+                ),
+                'taxonomy' => '',
+                'filters' => array (
+                    0 => 'search',
+                    1 => 'post_type',
+                    2 => 'taxonomy',
+                ),
+                'elements' => array (
+                    0 => 'featured_image',
+                ),
+                'max' => '',
+                'return_format' => 'object',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_services',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_solutions',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+    ));
+
+    register_field_group(array (
+        'key' => 'group_552ba9eaeb650',
+        'title' => 'Related Services',
+        'fields' => array (
+            array (
+                'key' => 'field_552ba9f69ccfd',
+                'label' => 'Related Services',
+                'name' => 'related_services',
+                'prefix' => '',
+                'type' => 'relationship',
+                'instructions' => 'Select some related services.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'eemjii_services',
+                ),
+                'taxonomy' => '',
+                'filters' => array (
+                    0 => 'search',
+                    1 => 'post_type',
+                    2 => 'taxonomy',
+                ),
+                'elements' => array (
+                    0 => 'featured_image',
+                ),
+                'max' => '',
+                'return_format' => 'object',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_resources',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_solutions',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+    ));
+
+    register_field_group(array (
+        'key' => 'group_552baa63d316c',
+        'title' => 'Related Solutions',
+        'fields' => array (
+            array (
+                'key' => 'field_552baa70bb03f',
+                'label' => 'Related Solutions',
+                'name' => 'related_solutions',
+                'prefix' => '',
+                'type' => 'relationship',
+                'instructions' => 'Select some related solutions.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'eemjii_solutions',
+                ),
+                'taxonomy' => '',
+                'filters' => array (
+                    0 => 'search',
+                    1 => 'post_type',
+                    2 => 'taxonomy',
+                ),
+                'elements' => array (
+                    0 => 'featured_image',
+                ),
+                'max' => '',
+                'return_format' => 'object',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_resources',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_services',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+    ));
+
+    register_field_group(array (
         'key' => 'group_55099947ddea8',
         'title' => 'Resources',
         'fields' => array (
@@ -716,4 +890,5 @@ if( function_exists('register_field_group') ):
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
     ));
+
 endif;

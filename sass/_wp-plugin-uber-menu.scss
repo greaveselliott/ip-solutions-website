@@ -1,0 +1,31 @@
+.sticky {
+  .ubermenu-submenu {
+    margin-top: 0px !important;
+  }
+}
+
+.ubermenu-submenu {
+  background-color: rgba(white, 0.8) !important;
+  margin-top: 1px !important;
+
+  .ubermenu-submenu {
+    background-color: transparent !important;
+  }
+
+  .ubermenu-column {
+
+  }
+
+  .ubermenu-item {
+    padding: 10px !important;
+  }
+  .ubermenu-image {
+    padding-right: 10px !important;
+  }
+  .ubermenu-content-block {
+    color: $ips-green !important;
+    padding: 0px !important;
+    font-size: 12px;
+    font-style: italic;
+  }
+}
