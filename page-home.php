@@ -27,8 +27,11 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
+                                <div class="table-center-container">
+                                    <div class="table-center-cell">
                                 <p class="text-white">Discover how to curb excessive spending, apportion costs, and  the best tariffs to suit your needs.</p>
                                 <a href="#" class="btn btn-white">Read more</a>
+                                        </div></div>
                             </div>
                         </div>
                     </section>
@@ -41,8 +44,11 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
+                                <div class="table-center-container">
+                                    <div class="table-center-cell">
                                 <p class="text-white">Learn how call reporting and call recording can help you deliver higher levels of customer satisfaction.</p>
                                 <a href="#" class="btn btn-white">Read more</a>
+                                        </div></div>
                             </div>
                         </div>
                     </section>
@@ -55,8 +61,12 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
-                                <p class="text-white">Grab the opportunity to not just replace an outdated comms infrastructure – but to stay ahead of the curve forever.</p>
-                                <a href="#" class="btn btn-white">Read more</a>
+                                <div class="table-center-container">
+                                    <div class="table-center-cell">
+                                        <p class="text-white">Grab the opportunity to not just replace an outdated comms infrastructure – but to stay ahead of the curve forever.</p>
+                                        <a href="#" class="btn btn-white">Read more</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -69,8 +79,11 @@
                                 </div>
                             </div>
                             <div class="back background-orange padding text-align-center">
+                                <div class="table-center-container">
+                                    <div class="table-center-cell">
                                 <p class="text-white">Better, quicker, and more adaptable – discover how you can achieve a flexible, collaborative working environment.</p>
                                 <a href="#" class="btn btn-white">Read more</a>
+                                        </div></div>
                             </div>
                         </div>
                     </section>
@@ -88,7 +101,7 @@
     <div class="container">
         <div class="row">
             <article class="col-sm-6">
-                <h2 class="text-white h5"><span class="text-x2">Transform your business with IP Solutions</span></h2>
+                <h2 class="text-white h3 margin-top-0">Transform your business with IP Solutions</h2>
                 <p class="text-white">Cloud-based solutions are the future, now – allowing telephony, video, data, email, messaging and more to be unified into one umbrella solution that is both agile and cost-effective.</p>
                 <p class="text-white">From virtual contact centres, to cloud-based virtual desktops and servers, we’re not just experts in comms technology, we’re experts in applying it too. Find out more about how we deliver flexible and intuitive solutions that deliver real results to the bottom line.</p>
                 <div class="embed-responsive embed-responsive-16by9 margin-top">
@@ -98,7 +111,7 @@
 
             <!-- Award winning experts -->
             <article class="col-sm-6">
-                <div class="border-2-left-white padding-left">
+                <div class="border-2-left-white padding-left text-align-center">
                     <h2 class="text-white h3 margin-top-0 margin-bottom">Award winning providers</h2>
                     <?php
                         $awards_query = new Eemjii_WP_Query(array(

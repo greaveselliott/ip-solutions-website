@@ -12730,6 +12730,276 @@ button.close {
   }
 }
 /* line 104, sass/_bootstrap-media-queries.scss */
+.table-center-container {
+  display: table !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-container-phone {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-container-tablet-portrait {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-container-tablet-landscape-desktop {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-container-large-desktop {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-container-non-retina {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-container-retina {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+/* Landscape phones and down */
+/* line 104, sass/_bootstrap-media-queries.scss */
+.table-center-cell {
+  display: table-cell !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-cell-phone {
+    display: table-cell !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-cell-tablet-portrait {
+    display: table-cell !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-cell-tablet-landscape-desktop {
+    display: table-cell !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-cell-large-desktop {
+    display: table-cell !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-cell-non-retina {
+    display: table-cell !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .table-center-cell-retina {
+    display: table-cell !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+}
+/* Landscape phones and down */
+/* line 104, sass/_bootstrap-media-queries.scss */
+.width_100_aspect_ratio {
+  width: 100%;
+  height: auto;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .width_100_aspect_ratio-phone {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .width_100_aspect_ratio-tablet-portrait {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .width_100_aspect_ratio-tablet-landscape-desktop {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .width_100_aspect_ratio-large-desktop {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .width_100_aspect_ratio-non-retina {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .width_100_aspect_ratio-retina {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Landscape phones and down */
+/* line 104, sass/_bootstrap-media-queries.scss */
+.height_100_aspect_ratio {
+  width: auto;
+  height: 100%;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .height_100_aspect_ratio-phone {
+    width: auto;
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .height_100_aspect_ratio-tablet-portrait {
+    width: auto;
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .height_100_aspect_ratio-tablet-landscape-desktop {
+    width: auto;
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .height_100_aspect_ratio-large-desktop {
+    width: auto;
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .height_100_aspect_ratio-non-retina {
+    width: auto;
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 109, sass/_bootstrap-media-queries.scss */
+  .height_100_aspect_ratio-retina {
+    width: auto;
+    height: 100%;
+  }
+}
+/* Landscape phones and down */
+/* line 104, sass/_bootstrap-media-queries.scss */
 .h1 {
   font-size: 36px;
 }
@@ -16580,6 +16850,11 @@ h6 .text-x2, .h6 .text-x2 {
 /* line 24, sass/_typography.scss */
 .font-family-default, p.h1, p.h2, p.h3, p.h4, p.h5, p.h6 {
   font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* line 36, sass/_typography.scss */
+hr {
+  width: 30%;
 }
 
 /* line 104, sass/_bootstrap-media-queries.scss */
@@ -62414,7 +62689,7 @@ footer .menu, footer .menu * {
 
 /* line 7, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-submenu {
-  background-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: white !important;
   margin-top: 1px !important;
 }
 /* line 11, sass/_wp-plugin-uber-menu.scss */

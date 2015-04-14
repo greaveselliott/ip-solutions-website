@@ -1,3 +1,25 @@
+//
+@include responsive_property(table-center-container){
+  display: table !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+@include responsive_property(table-center-cell) {
+  display: table-cell !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+// image scale
+@include responsive_property(width_100_aspect_ratio) {
+  width: 100%;
+  height: auto;
+}
+
+@include responsive_property(height_100_aspect_ratio) {
+  width: auto;
+  height: 100%;
+}
 // Headings
 @include responsive_property("h1"){font-size: $font-size-h1 }
 @include responsive_property("h2"){font-size: $font-size-h2 }

@@ -164,8 +164,6 @@ function enqueue_waypoints_scripts () {
 add_action('wp_enqueue_scripts','enqueue_waypoints_scripts');
 
 // Polyfil - ubermenu
-
-// Waypoints
 function enqueue_polyfill_uber_menu_scripts () {
     // Jquery WayPoints
     wp_register_script(
@@ -178,3 +176,28 @@ function enqueue_polyfill_uber_menu_scripts () {
     wp_enqueue_script ('polyfill-ubermenu');
 }
 add_action('wp_enqueue_scripts','enqueue_polyfill_uber_menu_scripts');
+
+// MixItUp
+function enqueue_mixitup () {
+    // MixItUp
+    wp_register_script(
+        'mixitup',
+        get_stylesheet_directory_uri() . '/javascripts/mixitup/build/jquery.mixitup.min.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('mixitup');
+
+    // MixItUp Config
+    wp_register_script(
+        'mixitup-config',
+        get_stylesheet_directory_uri() . '/javascripts/mixitup/mixitup.config.js',
+        array('jquery','mixitup'),
+        '',
+        true
+    );
+    wp_enqueue_script ('mixitup-config');
+
+}
+add_action('wp_enqueue_scripts','enqueue_mixitup');
