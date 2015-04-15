@@ -9,6 +9,8 @@
 
 <?php
 
+
+
 function eemjii_get_taxonomies ($taxonomy) {
 
     $taxonomy_terms = get_terms($taxonomy, array(
@@ -48,11 +50,13 @@ function eemjii_get_taxonomies ($taxonomy) {
 }
 
 // View
-function eemjii_loop_taxonomies ($taxonomy) {
+function eemjii_loop_resources ($taxonomy) {
 
     $taxonomies_obj = eemjii_get_taxonomies($taxonomy);
 
-
+//    echo '<pre>';
+//    print_r($taxonomies_obj);
+//    echo '</pre>';
 
     for ($i = 0; $i < count($taxonomies_obj); $i++ ){
         $this_taxonomy_obj = $taxonomies_obj[$i];
@@ -62,46 +66,34 @@ function eemjii_loop_taxonomies ($taxonomy) {
                 'category_name' => $this_taxonomy_obj->slug
             )
         );
-
-        if ($the_query -> have_posts()):
             ?>
             <div class="mix <?php echo $this_taxonomy_obj->slug?>" data-myorder="<?php echo $i; ?>">
-                <div>
-                    <div>
+                <div class="row">
+                    <div class="col-sm-12">
                         <?php
                         echo '<h2>' .$this_taxonomy_obj->name . '</h2>';
                         ?>
                     </div>
                 </div>
-                <div>
-                    <div>
-                            <?php
-                            for ( $j = 0; $the_query->have_posts(); $j++ ) : $the_query->the_post();
-                                $the_query2 = get_posts(array(
-                                    'post_type'         => 'eemjii_services',
-                                    'meta_query'        => array(
-                                        array(
-                                            'key'       => 'related_services',           // name of custom field
-                                            'value'     => '"' . get_the_ID() . '"',// matches exaclty "123", not just 123. This prevents a match for "1234"
-                                            'compare'   => 'LIKE'
-                                            )
-                                        )
-                                    )
-                                );
-                                echo '<pre>';
-                                print_r($the_query2);
-                                echo '</pre>';
-                                echo '<div>';
-                                    get_template_part('template','resources');
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="mix-it-up-sub">
+                        <?php
+                            while ($the_query->have_posts()) : $the_query->the_post();
+                                $related_services = eemjii_get_related_posts('eemjii_services','related_services');
+
+                                $related_services_class = eemjii_set_related_post_classes($related_services, 'service-');
+                                echo '<div class="mix-service '.$related_services_class.'">';
+                                get_template_part('template','resources');
                                 echo '</div>';
-                            endfor;
-                            ?>
+                            endwhile;
+                        ?>
+                        </div>
                     </div>
                 </div>
             </div>
 
         <?php
-        endif;
         // Does this query have any posts?
 
         // resetting the WP_Query to avoid conflicting errors
@@ -110,50 +102,65 @@ function eemjii_loop_taxonomies ($taxonomy) {
 }
 
 function eemjii_get_related_posts ($post_type, $custom_field) {
-    $the_query = get_posts(array(
-        'post_type'         => $post_type,
-        'meta_query'        => array(
-            array(
-                'key'       => $custom_field,           // name of custom field
-                'value'     => '"' . get_the_ID() . '"',// matches exaclty "123", not just 123. This prevents a match for "1234"
-                'compare'   => 'LIKE'
-            )
-        )
-    ));
-    $result = array();
-    if( $the_query ):
+    $the_ID = get_field($custom_field,false , false);
 
-            foreach( $the_query as $post ):
-                array_push($result, $post->post_name ); ?>
-            <?php endforeach;
-    endif;
-
-    return $result;
-}
-
-
-/*
- *      $ids = get_field($custom_field, false, false);
-        array(
+    if (count($the_ID) > 0):
+        $the_query = new WP_Query(array(
             'post_type'      	=> $post_type,
             'posts_per_page'	=> 0,
-            'post__in'		    => $ids,
+            'post__in'		    => $the_ID,
             'post_status'		=> 'any',
-            'orderby'        	=> 'rand',
-        )*/
+            'order'             => 'ASC',
+            'orderby'        	=> 'title'
+        ));
 
-function eemjii_related_post_filter ($wp_query_args) {
+
+        return $the_query->posts;
+    endif;
+
+}
+
+function eemjii_set_related_post_classes ($related_posts, $prefix ='') {
+    $post_count = count($related_posts);
+    $classes = '';
+    for ( $i = 0; $i < $post_count; $i++ ) {
+        $classes .= ' '.$prefix .$related_posts[$i]->post_name;
+    }
+    return $classes;
+}
+
+function eemjii_related_post_filter2 ($related_posts, $prefix ='') {
+    $post_count = count($related_posts);
+    $mark_up = '';
+    $mark_up .= '<select>';
+    for ( $i = 0; $i < $post_count; $i++ ) {
+        $mark_up .= '<option value="'.$prefix .$related_posts[$i]->post_name .'">' . $related_posts[$i]->post_title. '</option>';
+
+    }
+    $mark_up .= '</select>';
+    return $mark_up;
+}
+
+function eemjii_related_post_filter ($wp_query_args, $mix_args) {
     $the_query = new WP_Query($wp_query_args);
-
+    $mark_up = '';
     if ($the_query -> have_posts()):
-        echo '<select>';
+        $mark_up .= '<select class="'.$mix_args['select_class'].'">';
+        $mark_up .= '<option class="filter" data-filter="all" value="all">All</option>';
             for ( $j = 0; $the_query->have_posts(); $j++ ) : $the_query->the_post();
-                echo '<option value="'. get_the_title() .'">' . get_the_title(). '</option>';
+                $mark_up .= '<option
+                            class="filter"
+                            data-filter=".'.get_the_title() .'"'.
+                            'value="'.$mix_args['class_prefix'].the_slug(false) .
+                            '">' .
+                            get_the_title().
+                            '</option>';
             endfor;
-        echo '</select>';
+        $mark_up .= '</select>';
     endif;
     // resetting the WP_Query to avoid conflicting errors
     wp_reset_query();
+    return $mark_up;
 }
 
 function eemjii_related_taxonomy_filter ($taxonomy) {
@@ -174,7 +181,7 @@ function eemjii_related_taxonomy_filter ($taxonomy) {
 
 ?>
     <style>
-        .mix-it-up .mix{
+        .mix-it-up .mix, .mix-it-up-sub .mix-service{
             display: none;
         }
     </style>
@@ -182,7 +189,7 @@ function eemjii_related_taxonomy_filter ($taxonomy) {
 <?php
 eemjii_related_taxonomy_filter('category');
 
-eemjii_related_post_filter(
+echo eemjii_related_post_filter(
     array(
         'post_type'      	=> 'eemjii_services',
         'posts_per_page'	=> 0,
@@ -190,10 +197,14 @@ eemjii_related_post_filter(
         'post_status'		=> 'any',
         'order'             => 'ASC',
         'orderby'        	=> 'title'
+    ),
+    array(
+        'select_class'      => 'mix-filter-services',
+        'class_prefix'      => 'service-'
     )
 );
 
-eemjii_related_post_filter(
+echo eemjii_related_post_filter(
     array(
         'post_type'      	=> 'eemjii_solutions',
         'posts_per_page'	=> 0,
@@ -201,6 +212,10 @@ eemjii_related_post_filter(
         'post_status'		=> 'any',
         'order'             => 'ASC',
         'orderby'        	=> 'title'
+    ),
+    array(
+        'select_class'      => 'mix-filter-solutions',
+        'class_prefix'      => 'solution-'
     )
 );
 ?>
@@ -209,7 +224,7 @@ eemjii_related_post_filter(
 <div class="row">
     <div class="mix-it-up">
     <?php
-    eemjii_loop_taxonomies('category');
+    eemjii_loop_resources('category');
     ?>
     </div>
     </div>

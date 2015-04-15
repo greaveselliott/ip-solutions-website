@@ -8,6 +8,9 @@ include_once('inc/theme-configuration.php');
 // Enqueue Scripts
 include_once('inc/enqueue.php');
 
+// WordPress utility
+include_once('inc/wordpress-utility.php');
+
 // Custom Post Types
 include_once('inc/custom-post-types.php');
 
