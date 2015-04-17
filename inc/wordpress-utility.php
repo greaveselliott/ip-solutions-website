@@ -8,3 +8,9 @@ function the_slug($echo=true){
     do_action('after_slug', $slug);
     return $slug;
 }
+
+function clean($string) {
+    $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+
+    return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+}

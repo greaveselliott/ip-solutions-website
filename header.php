@@ -15,8 +15,13 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
-
-<body <?php body_class(); ?>>
+<!--
+    Added the_slug() to the body_class() function
+    so the page title is added as a class to the <body> tag.
+    This class is used to style page specific styles,
+    specifically on the services template
+-->
+<body <?php body_class( the_slug(false)); ?>>
 <div class="social-sidebar display-none-important-tablet-portrait">
     <ul>
         <li class="twitter"><i class="fa fa-twitter"></i></i></li>
@@ -25,10 +30,10 @@
         <li class="email"><i class="fa fa-envelope"></i></i></li>
     </ul>
 </div>
-<?php if (has_post_thumbnail( $post->ID ) ): ?>
+<?php //if (has_post_thumbnail( $post->ID ) ): ?>
     <div class="featured-image-container position-relative">
     <!-- The .featured-image-container's closing tag exists in the page template file for example page-home.php -->
-<?php endif; ?>
+<?php //endif; ?>
     <div id="header-main-container" class="width-100">
         <header id="header-main" class="background-white opacity-80">
             <div class="container-fluid">

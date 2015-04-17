@@ -8,9 +8,6 @@
 <?php get_header(); ?>
 
 <?php
-
-
-
 function eemjii_get_taxonomies ($taxonomy) {
 
     $taxonomy_terms = get_terms($taxonomy, array(
@@ -25,7 +22,7 @@ function eemjii_get_taxonomies ($taxonomy) {
                 'field' => 'id',
                 'terms' => $taxonomy_terms,
             ),
-        ),
+        )
     ));
     // Transverse through $taxonomy_query to find and store taxonomy id list
     $taxonomy_list_id = $taxonomy_query->query['tax_query'][0]['terms'];
@@ -54,9 +51,9 @@ function eemjii_loop_resources ($taxonomy) {
 
     $taxonomies_obj = eemjii_get_taxonomies($taxonomy);
 
-//    echo '<pre>';
-//    print_r($taxonomies_obj);
-//    echo '</pre>';
+    //    echo '<pre>';
+    //    print_r($taxonomies_obj);
+    //    echo '</pre>';
 
     for ($i = 0; $i < count($taxonomies_obj); $i++ ){
         $this_taxonomy_obj = $taxonomies_obj[$i];
@@ -78,16 +75,18 @@ function eemjii_loop_resources ($taxonomy) {
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="mix-it-up-sub">
-                        <?php
-                            while ($the_query->have_posts()) : $the_query->the_post();
-                                $related_services = eemjii_get_related_posts('eemjii_services','related_services');
+                            <div class="row">
+                                <?php
+                                    while ($the_query->have_posts()) : $the_query->the_post();
+                                        $related_services = eemjii_get_related_posts('eemjii_services','related_services');
 
-                                $related_services_class = eemjii_set_related_post_classes($related_services, 'service-');
-                                echo '<div class="mix-service '.$related_services_class.'">';
-                                get_template_part('template','resources');
-                                echo '</div>';
-                            endwhile;
-                        ?>
+                                        $related_services_class = eemjii_set_related_post_classes($related_services, 'service-');
+                                        echo '<div class="mix-service '.$related_services_class.'">';
+                                        get_template_part('template','resources');
+                                        echo '</div>';
+                                    endwhile;
+                                ?>
+                            </div>
                         </div>
                     </div>
                 </div>

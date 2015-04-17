@@ -93,9 +93,9 @@
     </div>
 </div>
 <!-- Featured Image -->
-<?php if (has_post_thumbnail( $post->ID ) ): ?>
+<?php //if (has_post_thumbnail( $post->ID ) ): ?>
 </div><!-- End .featured-image-container tag -->
-<?php endif; ?>
+<?php //endif; ?>
 <!-- Transform your business with IP Solutions -->
 <div class="background-orange padding-top padding-bottom">
     <div class="container">
