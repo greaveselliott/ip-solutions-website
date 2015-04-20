@@ -4,9 +4,6 @@
  * Does what it says on the tin - enqueues all scripts / stylesheets
  */
 
-
-
-
 function enqueue_theme_stylesheet () {
     wp_register_style (
 	    'eemjii-theme-stylesheet',
@@ -30,6 +27,15 @@ function enqueue_twitter_bootstrap_scripts () {
 		true
 	);
 	wp_enqueue_script ('bootstrap');
+
+    wp_register_script(
+        'bootstrap-config',
+        get_stylesheet_directory_uri() . '/javascripts/bootstrap.config.js',
+        array('jquery','bootstrap'),
+        '3.3.4',
+        true
+    );
+    wp_enqueue_script ('bootstrap-config');
 }
 add_action('wp_enqueue_scripts','enqueue_twitter_bootstrap_scripts');
 

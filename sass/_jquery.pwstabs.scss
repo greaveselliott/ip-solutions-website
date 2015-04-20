@@ -184,14 +184,16 @@ $pws_tabs_bgcolor_active : $ips-green;;
   overflow: hidden;
   position: relative;
 }
-.pws_tab_single{
+.pws_tab_single {
   position: absolute;
-  top: 20px;
   padding-right: 20px;
   padding-right: 1.25em; // @1.2.0
-  @include transition('all','.3s','ease-in-out','.0');
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
-
 
 /**
   * ######################################################
@@ -241,6 +243,11 @@ $pws_tabs_bgcolor_active : $ips-green;;
         margin-right: 0;
         margin-left: 0;
         margin-bottom: 3px;
+        -webkit-transition: all 0.12s ease-in;
+        -moz-transition: all 0.12s ease-in;
+        -ms-transition: all 0.12s ease-in;
+        -o-transition: all 0.12s ease-in;
+        transition: all 0.12s ease-in;
       }
     }
   }

@@ -115,6 +115,11 @@
 // Added in colours.scss
 // All classes that need to loop through each brand-colour is declared in the loop found in colours.scss
 
+@include responsive_property('border-radius-1'){
+  -webkit-border-radius: $border-radius-1;
+  border-radius: $border-radius-1;
+};
+
 
 // Text Alignment
 @include responsive_property(text-align-left){text-align: left;}
@@ -125,3 +130,5 @@
 // white space
 @include responsive_property(white-space-nowrap){white-space: nowrap};
 
+// text decoration
+@include responsive_property(text-decoration-underline){text-decoration: underline;}

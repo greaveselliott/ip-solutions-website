@@ -408,7 +408,7 @@ if( function_exists('register_field_group') ):
 
     register_field_group(array (
         'key' => 'group_55086203ea483',
-        'title' => 'Services and Solutions',
+        'title' => 'Services',
         'fields' => array (
             array (
                 'key' => 'field_55086b7092526',
@@ -567,13 +567,6 @@ if( function_exists('register_field_group') ):
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'eemjii_services',
-                ),
-            ),
-            array (
-                array (
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'eemjii_solutions',
                 ),
             ),
         ),
@@ -989,5 +982,4 @@ if( function_exists('register_field_group') ):
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
     ));
-
 endif;
