@@ -111,6 +111,8 @@
 @include responsive_property('margin-top'){margin-top: $ips-padding-1}
 @include responsive_property('margin-bottom'){margin-bottom: $ips-padding-1}
 
+
+@include responsive_property('margin-0-auto'){margin: 0 auto;}
 // Borders -
 // Added in colours.scss
 // All classes that need to loop through each brand-colour is declared in the loop found in colours.scss
@@ -132,3 +134,9 @@
 
 // text decoration
 @include responsive_property(text-decoration-underline){text-decoration: underline;}
+
+// floats
+@include responsive_property(float-left){float: left;};
+@include responsive_property(float-right){float: right;};
+@include responsive_property(float-center){float: center;};
+@include responsive_property(float-none){float: none !important;};

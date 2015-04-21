@@ -8,7 +8,7 @@
   padding: 50%;
   position: relative;
 
-  .force-aspect-ratio {
+  @include responsive_property(force-aspect-ratio) {
       height: inherit;
       width: inherit;
       position: absolute;
@@ -41,6 +41,12 @@
     position: absolute;
     top: 0px;
     left: 0px;
+
+    .h5 {
+      @include respond-to('tablet-up') {
+        font-size: 1.1vw;
+      }
+    }
   }
 
   &:hover {

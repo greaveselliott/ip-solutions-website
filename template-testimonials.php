@@ -6,9 +6,6 @@
     . get_field('authors_job_role').', '.get_field('authors_company');?></h4>
     <span class="text-center display-block"><a class="btn btn-default btn-green text-green h4" href="#">Read Case Study</a></span>
     <!-- Image is used for the bullet thumbnail, using jQuery and the slickJS API, this image is inserted into the carousel -->
-    <?php
-
-    $testimonials_image = get_field('company_logo');?>
-        <img width="100px" height="100px" class="display-none-important" src="<?php echo !empty($testimonials_image) ? $testimonials_image : 'http://placehold.it/100x100'; ?>" />
+        <img width="100px" height="100px" class="display-none-important" src="<?php echo eemjii_get_acf_image_url('company_logo');?>" />
 
 </div>

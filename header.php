@@ -39,7 +39,7 @@
             <div class="container-fluid">
                 <div class="row padding-top-2 padding-bottom-2">
                     <div class="col-sm-12">
-                        <div class="pull-right">
+                        <div class="pull-right float-none-tablet-portrait text-align-center-tablet-portrait">
                             <div class="icon-links display-inline-block padding-right padding-right-0-tablet-portrait text-align-center-tablet-portrait">
                                 <span class="h3"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue h4 font-family-default display-inline-block"><?php eemjii_option_tel() ?></span>
                             </div>
@@ -53,7 +53,7 @@
                     <!-- Logo -->
                     <div class="col-sm-5">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
-                        <figure class="eemjii-logo display-table padding-right" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
+                        <figure class="eemjii-logo display-table padding-right padding-0-tablet-portrait margin-0-auto-tablet-portrait" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
                             <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                         </figure>
                     </div>

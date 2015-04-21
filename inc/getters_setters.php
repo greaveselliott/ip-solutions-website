@@ -156,12 +156,15 @@ function eemjii_post_command ($posts, $template_file) {
 
 // returns the url of a specific post ID
 // @property $post_ID expects INT
-function eemjii_get_featured_image_url ($post_ID){
+function eemjii_get_featured_image_url ($post_ID) {
     return $featured_image = has_post_thumbnail($post_ID) ? // CONDITION: This post thumbnail has a featured image?
         get_the_post_thumbnail($post_ID,'large') :          // TRUE: save the post thumnail
             "http://placehold.it/300x180";                  // FALSE: use the default image
 }
 
-
-
-
+function eemjii_get_acf_image_url ($field_name) {
+    $image = get_field($field_name);
+    return !empty($image) ?                 // CONDITION: Is this custom field image empty?
+        $image :                            // TRUE: Return the image URL
+            'http://placehold.it/100x100';  // FALSE: Return the default image
+}

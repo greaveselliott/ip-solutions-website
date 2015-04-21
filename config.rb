@@ -2,6 +2,8 @@ require 'bootstrap-sass'
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 require 'font-awesome-sass'
+# Removing all comments by applying a monkey patch to SASS compiler
+require "./remove-all-comments-monkey-patch"
 
 # No Cache
 asset_cache_buster :none

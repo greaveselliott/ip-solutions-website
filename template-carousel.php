@@ -18,8 +18,8 @@ if( have_rows('slickjs_carousel') ):
             <div class="container">
                 <div class="row padding-bottom">
                     <div class="col-sm-12">
-                        <h2 class="h1 text-white bold" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
-                        <p class="h3 text-white" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></p>
+                        <h2 class="h1 h3-tablet-portrait text-white bold" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
+                        <p class="h3 h5-tablet-portrait text-white" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></p>
                     </div>
                 </div>
             </div>

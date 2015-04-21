@@ -75,6 +75,10 @@ $respond-to-list:
   @else if $media == tablet-portrait {
     @media #{$tablet-portrait} {@content; }
   }
+    /* Portrait tablet to tablet or larger */
+  @else if $media == tablet-up {
+    @media #{$tablet-landscape-up} { @content; }
+  }
     /* Portrait tablet to landscape and desktop */
   @else if $media == tablet-landscape-desktop {
     @media #{$tablet-landscape-desktop} { @content; }
