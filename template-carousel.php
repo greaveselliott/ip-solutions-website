@@ -16,10 +16,10 @@ if( have_rows('slickjs_carousel') ):
         <!--slide -->
         <div class="width-100 height-100">
             <div class="container">
-                <div class="row padding-bottom">
+                <div class="row padding margin">
                     <div class="col-sm-12">
-                        <h2 class="h1 h3-tablet-portrait text-white bold" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
-                        <p class="h3 h5-tablet-portrait text-white" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></p>
+                        <h2 class="h3-tablet-portrait text-white bold" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
+                        <p class="h4 h5-tablet-portrait text-white" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></p>
                         <a class="btn btn-orange border-radius-1 h4" href="<?php the_permalink(); ?>">Find out more</a>
                     </div>
                 </div>

@@ -36,18 +36,6 @@
 <?php //endif; ?>
     <div id="header-main-container" class="width-100">
         <header id="header-main" class="background-white opacity-80">
-            <div class="container-fluid">
-                <div class="row padding-top-2 padding-bottom-2">
-                    <div class="col-sm-12">
-                        <div class="pull-right float-none-tablet-portrait text-align-center-tablet-portrait">
-                            <div class="icon-links display-inline-block padding-right padding-right-0-tablet-portrait text-align-center-tablet-portrait">
-                                <span class="h3"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue h4 font-family-default display-inline-block"><?php eemjii_option_tel() ?></span>
-                            </div>
-                            <a href="#" title="Customer Login Section" class="display-none-important-tablet-portrait">Customer Login</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
                 <div class="row">
                     <!-- Logo -->
@@ -57,10 +45,24 @@
                             <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                         </figure>
                     </div>
-                    <!-- Navigation -->
-                     <div class="col-sm-7 padding-right-0">
-                            <h2 class="hidden"><?php echo bloginfo('name'); ?> | Website Navigation</h2>
-                            <?php ubermenu( 'main' , array( 'theme_location' => 'primary' ) ); ?>
+                    <div class="col-sm-7">
+                        <div class="row padding-top-2 padding-bottom-2">
+                            <div class="col-sm-12">
+                                <div class="pull-right float-none-tablet-portrait text-align-center-tablet-portrait">
+                                    <div class="icon-links display-inline-block padding-right padding-right-0-tablet-portrait text-align-center-tablet-portrait">
+                                        <span class="h3"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue h4 font-family-default display-inline-block"><?php eemjii_option_tel() ?></span>
+                                    </div>
+                                    <a href="#" title="Customer Login Section" class="display-none-important-tablet-portrait">Customer Login</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Navigation -->
+                        <div class="row">
+                             <div class="col-sm-12 padding-right-0">
+                                    <h2 class="hidden"><?php echo bloginfo('name'); ?> | Website Navigation</h2>
+                                    <?php ubermenu( 'main' , array( 'theme_location' => 'primary' ) ); ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

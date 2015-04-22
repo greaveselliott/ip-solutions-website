@@ -6,7 +6,7 @@
   transition: all 0.17s ease-in;
 }
 .main-logo {
-  height: 65px;
+  height: 115px;
 }
 
 body.logged-in, body.admin-bar {
@@ -25,16 +25,13 @@ body.logged-in, body.admin-bar {
   width: 100%;
 
   .main-logo {
-    height: 65px;
+    height: 80px;
   }
 
-  .ubermenu-item-layout-text_only {
-    padding: 30px 20px !important;
-  }
 }
 
 .ubermenu-item-layout-text_only {
-  padding: 40px 20px !important;
+  padding: 3px 20px 15px !important;
 }
 
 .ubermenu-loc-primary {

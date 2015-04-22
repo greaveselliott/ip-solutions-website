@@ -58129,7 +58129,7 @@ body.logged-in, body.admin-bar {
 
 /* line 8, sass/_header-main.scss */
 .main-logo {
-  height: 65px;
+  height: 115px;
 }
 
 /* line 13, sass/_header-main.scss */
@@ -58152,19 +58152,15 @@ body.logged-in .sticky, body.admin-bar .sticky {
 }
 /* line 27, sass/_header-main.scss */
 .sticky .main-logo {
-  height: 65px;
-}
-/* line 31, sass/_header-main.scss */
-.sticky .ubermenu-item-layout-text_only {
-  padding: 30px 20px !important;
+  height: 80px;
 }
 
-/* line 36, sass/_header-main.scss */
+/* line 33, sass/_header-main.scss */
 .ubermenu-item-layout-text_only {
-  padding: 40px 20px !important;
+  padding: 3px 20px 15px !important;
 }
 
-/* line 40, sass/_header-main.scss */
+/* line 37, sass/_header-main.scss */
 .ubermenu-loc-primary {
   text-align: right;
 }
@@ -59009,14 +59005,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container .front .h1, .flip-container .front .h2, .flip-container .front .h3, .flip-container .front .h4, .flip-container .front .h5, .flip-container .front .h6, .flip-container .back .h1, .flip-container .back .h2, .flip-container .back .h3, .flip-container .back .h4, .flip-container .back .h5, .flip-container .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container .front p, .flip-container .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }
@@ -59083,14 +59079,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (max-width: 480px) and (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 480px) and (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container-phone .front .h1, .flip-container-phone .front .h2, .flip-container-phone .front .h3, .flip-container-phone .front .h4, .flip-container-phone .front .h5, .flip-container-phone .front .h6, .flip-container-phone .back .h1, .flip-container-phone .back .h2, .flip-container-phone .back .h3, .flip-container-phone .back .h4, .flip-container-phone .back .h5, .flip-container-phone .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container-phone .front p, .flip-container-phone .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }
@@ -59158,14 +59154,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (max-width: 767px) and (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 767px) and (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .front .h1, .flip-container-tablet-portrait .front .h2, .flip-container-tablet-portrait .front .h3, .flip-container-tablet-portrait .front .h4, .flip-container-tablet-portrait .front .h5, .flip-container-tablet-portrait .front .h6, .flip-container-tablet-portrait .back .h1, .flip-container-tablet-portrait .back .h2, .flip-container-tablet-portrait .back .h3, .flip-container-tablet-portrait .back .h4, .flip-container-tablet-portrait .back .h5, .flip-container-tablet-portrait .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .front p, .flip-container-tablet-portrait .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }
@@ -59233,14 +59229,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container-tablet-up .front .h1, .flip-container-tablet-up .front .h2, .flip-container-tablet-up .front .h3, .flip-container-tablet-up .front .h4, .flip-container-tablet-up .front .h5, .flip-container-tablet-up .front .h6, .flip-container-tablet-up .back .h1, .flip-container-tablet-up .back .h2, .flip-container-tablet-up .back .h3, .flip-container-tablet-up .back .h4, .flip-container-tablet-up .back .h5, .flip-container-tablet-up .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container-tablet-up .front p, .flip-container-tablet-up .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }
@@ -59308,14 +59304,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .front .h1, .flip-container-tablet-landscape-desktop .front .h2, .flip-container-tablet-landscape-desktop .front .h3, .flip-container-tablet-landscape-desktop .front .h4, .flip-container-tablet-landscape-desktop .front .h5, .flip-container-tablet-landscape-desktop .front .h6, .flip-container-tablet-landscape-desktop .back .h1, .flip-container-tablet-landscape-desktop .back .h2, .flip-container-tablet-landscape-desktop .back .h3, .flip-container-tablet-landscape-desktop .back .h4, .flip-container-tablet-landscape-desktop .back .h5, .flip-container-tablet-landscape-desktop .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .front p, .flip-container-tablet-landscape-desktop .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }
@@ -59383,14 +59379,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container-large-desktop .front .h1, .flip-container-large-desktop .front .h2, .flip-container-large-desktop .front .h3, .flip-container-large-desktop .front .h4, .flip-container-large-desktop .front .h5, .flip-container-large-desktop .front .h6, .flip-container-large-desktop .back .h1, .flip-container-large-desktop .back .h2, .flip-container-large-desktop .back .h3, .flip-container-large-desktop .back .h4, .flip-container-large-desktop .back .h5, .flip-container-large-desktop .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container-large-desktop .front p, .flip-container-large-desktop .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }
@@ -59458,14 +59454,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container-non-retina .front .h1, .flip-container-non-retina .front .h2, .flip-container-non-retina .front .h3, .flip-container-non-retina .front .h4, .flip-container-non-retina .front .h5, .flip-container-non-retina .front .h6, .flip-container-non-retina .back .h1, .flip-container-non-retina .back .h2, .flip-container-non-retina .back .h3, .flip-container-non-retina .back .h4, .flip-container-non-retina .back .h5, .flip-container-non-retina .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container-non-retina .front p, .flip-container-non-retina .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }
@@ -59533,14 +59529,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
   /* line 50, sass/_flip-cards.scss */
   .flip-container-retina .front .h1, .flip-container-retina .front .h2, .flip-container-retina .front .h3, .flip-container-retina .front .h4, .flip-container-retina .front .h5, .flip-container-retina .front .h6, .flip-container-retina .back .h1, .flip-container-retina .back .h2, .flip-container-retina .back .h3, .flip-container-retina .back .h4, .flip-container-retina .back .h5, .flip-container-retina .back .h6 {
-    font-size: 1.27vw;
+    font-size: 0.7vw;
   }
   /* line 54, sass/_flip-cards.scss */
   .flip-container-retina .front p, .flip-container-retina .back p {
-    font-size: 1.3vw;
+    font-size: 0.7vw;
     margin: 0;
   }
 }

@@ -14,11 +14,11 @@
 
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="text-align-center text-white h1 margin-top margin-bottom">Choose your starting point</h2>
+                        <h2 class="text-align-center text-white margin-top margin-bottom">Choose your starting point</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10 col-md-12 col-lg-offset-1 col-md-offset-0">
+                    <div class="col-md-8 col-md-offset-2">
                         <div class="row">
                             <section class="col-sm-3 col-xs-6 padding-bottom">
                                 <div class="flip-container-tablet-up">
@@ -34,7 +34,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="back background-orange padding padding-2-tablet-landscape-desktop text-align-center display-none-tablet-portrait border-radius-1-tablet-up">
+                                    <div class="back background-orange padding-2-tablet-landscape-desktop text-align-center display-none-tablet-portrait border-radius-1-tablet-up">
                                         <div class="table-center-container">
                                             <div class="table-center-cell">
                                                 <p class="text-white">Discover how to curb excessive spending, apportion costs, and  the best tariffs to suit your needs.</p>

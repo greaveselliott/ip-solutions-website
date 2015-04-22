@@ -46,13 +46,12 @@
       top: 0px;
       left: 0px;
     }
-    @include respond-to('tablet-landscape-desktop') {
+    @include respond-to('tablet-up') {
       .h1, .h2, .h3, .h4, .h5, .h6 {
-
-        font-size: 1.27vw;
+        font-size: 0.7vw;
       }
       p {
-        font-size: 1.3vw;
+        font-size: 0.7vw;
         margin: 0;
       }
     }
