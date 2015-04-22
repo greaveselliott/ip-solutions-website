@@ -85,8 +85,11 @@
 }
 
 @include respond-to('tablet-portrait') {
-  .front:hover {
-    background-color: $ips-orange;
+  .front {
+    height: 100px;
+    &:hover {
+      background-color: $ips-orange;
+    }
   }
 }
 

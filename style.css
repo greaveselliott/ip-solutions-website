@@ -13729,6 +13729,100 @@ button.close {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
+.width-50 {
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-50-phone {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-50-tablet-portrait {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-50-tablet-up {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-50-tablet-landscape-desktop {
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-50-large-desktop {
+    width: 50%;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-50-non-retina {
+    width: 50%;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-50-retina {
+    width: 50%;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.height-50 {
+  height: 50%;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-50-phone {
+    height: 50%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-50-tablet-portrait {
+    height: 50%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-50-tablet-up {
+    height: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-50-tablet-landscape-desktop {
+    height: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-50-large-desktop {
+    height: 50%;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-50-non-retina {
+    height: 50%;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-50-retina {
+    height: 50%;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
 .width-100 {
   width: 100%;
 }
@@ -59478,6 +59572,10 @@ body.logged-in .sticky, body.admin-bar .sticky {
 }
 @media (max-width: 767px) {
   /* line 88, sass/_flip-cards.scss */
+  .front {
+    height: 100px;
+  }
+  /* line 90, sass/_flip-cards.scss */
   .front:hover {
     background-color: #f89829;
   }
