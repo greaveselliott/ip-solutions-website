@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
-                <div class="row border-3-top-blue-opacity">
+                <div class="row">
                     <!-- Logo -->
                     <div class="col-sm-5">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>

@@ -139,10 +139,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 padding-0-tablet-up">
+                    <div class="col-lg-4 padding-right-0">
                         <p class="text-white">We’re comms technology experts - and deliver a range of exible and intuitive solutions. From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
                     </div>
-                    <div class="col-lg-8 padding-right-0-tablet-up padding-0-tablet-portrait">
+                    <div class="col-lg-8 padding-0-tablet-portrait">
                         <div class="embed-responsive embed-responsive-16by9">
                             <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/92117864" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/92117864">IP Solutions: Communications, Sorted</a> from <a href="https://vimeo.com/user26771751">IP Solutions</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                         </div>

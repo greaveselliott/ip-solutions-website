@@ -58129,7 +58129,7 @@ body.logged-in, body.admin-bar {
 
 /* line 8, sass/_header-main.scss */
 .main-logo {
-  height: 135px;
+  height: 65px;
 }
 
 /* line 13, sass/_header-main.scss */
@@ -58161,7 +58161,7 @@ body.logged-in .sticky, body.admin-bar .sticky {
 
 /* line 36, sass/_header-main.scss */
 .ubermenu-item-layout-text_only {
-  padding: 60px 20px !important;
+  padding: 40px 20px !important;
 }
 
 /* line 40, sass/_header-main.scss */
