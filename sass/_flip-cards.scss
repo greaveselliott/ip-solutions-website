@@ -17,17 +17,20 @@
   }
 }
 
+
+
 @include responsive_property(flip-container) {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 
   // Copied from .force-aspect-ratio-container
-  height: 100%;
-  width: 100%;
-  padding: 50%;
-  position: relative;
-
+  @include respond-to('tablet-up'){
+    height: 100%;
+    width: 100%;
+    padding: 50%;
+    position: relative;
+  }
   .front, .back {-moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -36,15 +39,21 @@
     transition: transform 0.6s ease-out;
 
     // Copied from .force-aspect-ratio;
-    height: inherit;
-    width: inherit;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    @include respond-to('tablet-up'){
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    @include respond-to('tablet-landscape-desktop') {
+      .h1, .h2, .h3, .h4, .h5, .h6 {
 
-    .h5 {
-      @include respond-to('tablet-up') {
-        font-size: 1.1vw;
+        font-size: 1.27vw;
+      }
+      p {
+        font-size: 1.3vw;
+        margin: 0;
       }
     }
   }
@@ -72,6 +81,12 @@
     -moz-transform:     perspective(1000px) rotateY(-180deg);
     -webkit-transform:  perspective(1000px) rotateY(-180deg);
     transform:          perspective(1000px) rotateY(-180deg);
+  }
+}
+
+@include respond-to('tablet-portrait') {
+  .front:hover {
+    background-color: $ips-orange;
   }
 }
 

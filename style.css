@@ -58886,12 +58886,17 @@ body.logged-in .sticky, body.admin-bar .sticky {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  height: 100%;
-  width: 100%;
-  padding: 50%;
-  position: relative;
 }
-/* line 31, sass/_flip-cards.scss */
+@media (min-width: 768px) {
+  /* line 108, sass/_bootstrap-media-queries.scss */
+  .flip-container {
+    height: 100%;
+    width: 100%;
+    padding: 50%;
+    position: relative;
+  }
+}
+/* line 34, sass/_flip-cards.scss */
 .flip-container .front, .flip-container .back {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
@@ -58899,37 +58904,47 @@ body.logged-in .sticky, body.admin-bar .sticky {
   -webkit-transition: transform 0.6s ease-out;
   -moz-transition: transform 0.6s ease-out;
   transition: transform 0.6s ease-out;
-  height: inherit;
-  width: inherit;
-  position: absolute;
-  top: 0px;
-  left: 0px;
 }
 @media (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container .front .h5, .flip-container .back .h5 {
-    font-size: 1.1vw;
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container .front, .flip-container .back {
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
 }
-/* line 53, sass/_flip-cards.scss */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container .front .h1, .flip-container .front .h2, .flip-container .front .h3, .flip-container .front .h4, .flip-container .front .h5, .flip-container .front .h6, .flip-container .back .h1, .flip-container .back .h2, .flip-container .back .h3, .flip-container .back .h4, .flip-container .back .h5, .flip-container .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container .front p, .flip-container .back p {
+    font-size: 1.3vw;
+    margin: 0;
+  }
+}
+/* line 62, sass/_flip-cards.scss */
 .flip-container:hover .front {
   -moz-transform: perspective(1000px) rotateY(180deg);
   -webkit-transform: perspective(1000px) rotateY(180deg);
   transform: perspective(1000px) rotateY(180deg);
 }
-/* line 58, sass/_flip-cards.scss */
+/* line 67, sass/_flip-cards.scss */
 .flip-container:hover .back {
   -moz-transform: perspective(1000px) rotateY(0deg);
   -webkit-transform: perspective(1000px) rotateY(0deg);
   transform: perspective(1000px) rotateY(0deg);
 }
-/* line 65, sass/_flip-cards.scss */
+/* line 74, sass/_flip-cards.scss */
 .flip-container .front {
   -moz-transform: perspective(1000px) rotateY(0deg);
   -webkit-transform: perspective(1000px) rotateY(0deg);
   transform: perspective(1000px) rotateY(0deg);
 }
-/* line 71, sass/_flip-cards.scss */
+/* line 80, sass/_flip-cards.scss */
 .flip-container .back {
   -moz-transform: perspective(1000px) rotateY(-180deg);
   -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -58942,12 +58957,19 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+@media (max-width: 480px) and (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .flip-container-phone {
     height: 100%;
     width: 100%;
     padding: 50%;
     position: relative;
   }
-  /* line 31, sass/_flip-cards.scss */
+}
+@media (max-width: 480px) {
+  /* line 34, sass/_flip-cards.scss */
   .flip-container-phone .front, .flip-container-phone .back {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -58955,6 +58977,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -webkit-transition: transform 0.6s ease-out;
     -moz-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
+  }
+}
+@media (max-width: 480px) and (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container-phone .front, .flip-container-phone .back {
     height: inherit;
     width: inherit;
     position: absolute;
@@ -58962,32 +58989,37 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (max-width: 480px) and (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container-phone .front .h5, .flip-container-phone .back .h5 {
-    font-size: 1.1vw;
+@media (max-width: 480px) and (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container-phone .front .h1, .flip-container-phone .front .h2, .flip-container-phone .front .h3, .flip-container-phone .front .h4, .flip-container-phone .front .h5, .flip-container-phone .front .h6, .flip-container-phone .back .h1, .flip-container-phone .back .h2, .flip-container-phone .back .h3, .flip-container-phone .back .h4, .flip-container-phone .back .h5, .flip-container-phone .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container-phone .front p, .flip-container-phone .back p {
+    font-size: 1.3vw;
+    margin: 0;
   }
 }
 @media (max-width: 480px) {
-  /* line 53, sass/_flip-cards.scss */
+  /* line 62, sass/_flip-cards.scss */
   .flip-container-phone:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 58, sass/_flip-cards.scss */
+  /* line 67, sass/_flip-cards.scss */
   .flip-container-phone:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 65, sass/_flip-cards.scss */
+  /* line 74, sass/_flip-cards.scss */
   .flip-container-phone .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 71, sass/_flip-cards.scss */
+  /* line 80, sass/_flip-cards.scss */
   .flip-container-phone .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59000,12 +59032,19 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+@media (max-width: 767px) and (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .flip-container-tablet-portrait {
     height: 100%;
     width: 100%;
     padding: 50%;
     position: relative;
   }
-  /* line 31, sass/_flip-cards.scss */
+}
+@media (max-width: 767px) {
+  /* line 34, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .front, .flip-container-tablet-portrait .back {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -59013,6 +59052,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -webkit-transition: transform 0.6s ease-out;
     -moz-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
+  }
+}
+@media (max-width: 767px) and (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container-tablet-portrait .front, .flip-container-tablet-portrait .back {
     height: inherit;
     width: inherit;
     position: absolute;
@@ -59020,32 +59064,37 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (max-width: 767px) and (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container-tablet-portrait .front .h5, .flip-container-tablet-portrait .back .h5 {
-    font-size: 1.1vw;
+@media (max-width: 767px) and (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container-tablet-portrait .front .h1, .flip-container-tablet-portrait .front .h2, .flip-container-tablet-portrait .front .h3, .flip-container-tablet-portrait .front .h4, .flip-container-tablet-portrait .front .h5, .flip-container-tablet-portrait .front .h6, .flip-container-tablet-portrait .back .h1, .flip-container-tablet-portrait .back .h2, .flip-container-tablet-portrait .back .h3, .flip-container-tablet-portrait .back .h4, .flip-container-tablet-portrait .back .h5, .flip-container-tablet-portrait .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container-tablet-portrait .front p, .flip-container-tablet-portrait .back p {
+    font-size: 1.3vw;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 53, sass/_flip-cards.scss */
+  /* line 62, sass/_flip-cards.scss */
   .flip-container-tablet-portrait:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 58, sass/_flip-cards.scss */
+  /* line 67, sass/_flip-cards.scss */
   .flip-container-tablet-portrait:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 65, sass/_flip-cards.scss */
+  /* line 74, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 71, sass/_flip-cards.scss */
+  /* line 80, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59058,12 +59107,19 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .flip-container-tablet-up {
     height: 100%;
     width: 100%;
     padding: 50%;
     position: relative;
   }
-  /* line 31, sass/_flip-cards.scss */
+}
+@media (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
   .flip-container-tablet-up .front, .flip-container-tablet-up .back {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -59071,6 +59127,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -webkit-transition: transform 0.6s ease-out;
     -moz-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container-tablet-up .front, .flip-container-tablet-up .back {
     height: inherit;
     width: inherit;
     position: absolute;
@@ -59078,32 +59139,37 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (min-width: 768px) and (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container-tablet-up .front .h5, .flip-container-tablet-up .back .h5 {
-    font-size: 1.1vw;
+@media (min-width: 768px) and (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container-tablet-up .front .h1, .flip-container-tablet-up .front .h2, .flip-container-tablet-up .front .h3, .flip-container-tablet-up .front .h4, .flip-container-tablet-up .front .h5, .flip-container-tablet-up .front .h6, .flip-container-tablet-up .back .h1, .flip-container-tablet-up .back .h2, .flip-container-tablet-up .back .h3, .flip-container-tablet-up .back .h4, .flip-container-tablet-up .back .h5, .flip-container-tablet-up .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container-tablet-up .front p, .flip-container-tablet-up .back p {
+    font-size: 1.3vw;
+    margin: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 53, sass/_flip-cards.scss */
+  /* line 62, sass/_flip-cards.scss */
   .flip-container-tablet-up:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 58, sass/_flip-cards.scss */
+  /* line 67, sass/_flip-cards.scss */
   .flip-container-tablet-up:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 65, sass/_flip-cards.scss */
+  /* line 74, sass/_flip-cards.scss */
   .flip-container-tablet-up .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 71, sass/_flip-cards.scss */
+  /* line 80, sass/_flip-cards.scss */
   .flip-container-tablet-up .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59116,12 +59182,19 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .flip-container-tablet-landscape-desktop {
     height: 100%;
     width: 100%;
     padding: 50%;
     position: relative;
   }
-  /* line 31, sass/_flip-cards.scss */
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 34, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .front, .flip-container-tablet-landscape-desktop .back {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -59129,6 +59202,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -webkit-transition: transform 0.6s ease-out;
     -moz-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container-tablet-landscape-desktop .front, .flip-container-tablet-landscape-desktop .back {
     height: inherit;
     width: inherit;
     position: absolute;
@@ -59136,32 +59214,37 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container-tablet-landscape-desktop .front .h5, .flip-container-tablet-landscape-desktop .back .h5 {
-    font-size: 1.1vw;
+@media (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container-tablet-landscape-desktop .front .h1, .flip-container-tablet-landscape-desktop .front .h2, .flip-container-tablet-landscape-desktop .front .h3, .flip-container-tablet-landscape-desktop .front .h4, .flip-container-tablet-landscape-desktop .front .h5, .flip-container-tablet-landscape-desktop .front .h6, .flip-container-tablet-landscape-desktop .back .h1, .flip-container-tablet-landscape-desktop .back .h2, .flip-container-tablet-landscape-desktop .back .h3, .flip-container-tablet-landscape-desktop .back .h4, .flip-container-tablet-landscape-desktop .back .h5, .flip-container-tablet-landscape-desktop .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container-tablet-landscape-desktop .front p, .flip-container-tablet-landscape-desktop .back p {
+    font-size: 1.3vw;
+    margin: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* line 53, sass/_flip-cards.scss */
+  /* line 62, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 58, sass/_flip-cards.scss */
+  /* line 67, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 65, sass/_flip-cards.scss */
+  /* line 74, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 71, sass/_flip-cards.scss */
+  /* line 80, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59174,12 +59257,19 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+@media (min-width: 1200px) and (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .flip-container-large-desktop {
     height: 100%;
     width: 100%;
     padding: 50%;
     position: relative;
   }
-  /* line 31, sass/_flip-cards.scss */
+}
+@media (min-width: 1200px) {
+  /* line 34, sass/_flip-cards.scss */
   .flip-container-large-desktop .front, .flip-container-large-desktop .back {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -59187,6 +59277,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -webkit-transition: transform 0.6s ease-out;
     -moz-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
+  }
+}
+@media (min-width: 1200px) and (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container-large-desktop .front, .flip-container-large-desktop .back {
     height: inherit;
     width: inherit;
     position: absolute;
@@ -59194,32 +59289,37 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media (min-width: 1200px) and (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container-large-desktop .front .h5, .flip-container-large-desktop .back .h5 {
-    font-size: 1.1vw;
+@media (min-width: 1200px) and (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container-large-desktop .front .h1, .flip-container-large-desktop .front .h2, .flip-container-large-desktop .front .h3, .flip-container-large-desktop .front .h4, .flip-container-large-desktop .front .h5, .flip-container-large-desktop .front .h6, .flip-container-large-desktop .back .h1, .flip-container-large-desktop .back .h2, .flip-container-large-desktop .back .h3, .flip-container-large-desktop .back .h4, .flip-container-large-desktop .back .h5, .flip-container-large-desktop .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container-large-desktop .front p, .flip-container-large-desktop .back p {
+    font-size: 1.3vw;
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
-  /* line 53, sass/_flip-cards.scss */
+  /* line 62, sass/_flip-cards.scss */
   .flip-container-large-desktop:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 58, sass/_flip-cards.scss */
+  /* line 67, sass/_flip-cards.scss */
   .flip-container-large-desktop:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 65, sass/_flip-cards.scss */
+  /* line 74, sass/_flip-cards.scss */
   .flip-container-large-desktop .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 71, sass/_flip-cards.scss */
+  /* line 80, sass/_flip-cards.scss */
   .flip-container-large-desktop .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59232,12 +59332,19 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .flip-container-non-retina {
     height: 100%;
     width: 100%;
     padding: 50%;
     position: relative;
   }
-  /* line 31, sass/_flip-cards.scss */
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 34, sass/_flip-cards.scss */
   .flip-container-non-retina .front, .flip-container-non-retina .back {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -59245,6 +59352,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -webkit-transition: transform 0.6s ease-out;
     -moz-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container-non-retina .front, .flip-container-non-retina .back {
     height: inherit;
     width: inherit;
     position: absolute;
@@ -59252,32 +59364,37 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container-non-retina .front .h5, .flip-container-non-retina .back .h5 {
-    font-size: 1.1vw;
+@media screen and (-webkit-max-device-pixel-ratio: 1) and (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container-non-retina .front .h1, .flip-container-non-retina .front .h2, .flip-container-non-retina .front .h3, .flip-container-non-retina .front .h4, .flip-container-non-retina .front .h5, .flip-container-non-retina .front .h6, .flip-container-non-retina .back .h1, .flip-container-non-retina .back .h2, .flip-container-non-retina .back .h3, .flip-container-non-retina .back .h4, .flip-container-non-retina .back .h5, .flip-container-non-retina .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container-non-retina .front p, .flip-container-non-retina .back p {
+    font-size: 1.3vw;
+    margin: 0;
   }
 }
 @media screen and (-webkit-max-device-pixel-ratio: 1) {
-  /* line 53, sass/_flip-cards.scss */
+  /* line 62, sass/_flip-cards.scss */
   .flip-container-non-retina:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 58, sass/_flip-cards.scss */
+  /* line 67, sass/_flip-cards.scss */
   .flip-container-non-retina:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 65, sass/_flip-cards.scss */
+  /* line 74, sass/_flip-cards.scss */
   .flip-container-non-retina .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 71, sass/_flip-cards.scss */
+  /* line 80, sass/_flip-cards.scss */
   .flip-container-non-retina .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59290,12 +59407,19 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .flip-container-retina {
     height: 100%;
     width: 100%;
     padding: 50%;
     position: relative;
   }
-  /* line 31, sass/_flip-cards.scss */
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 34, sass/_flip-cards.scss */
   .flip-container-retina .front, .flip-container-retina .back {
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -59303,6 +59427,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
     -webkit-transition: transform 0.6s ease-out;
     -moz-transition: transform 0.6s ease-out;
     transition: transform 0.6s ease-out;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+  /* line 34, sass/_flip-cards.scss */
+  .flip-container-retina .front, .flip-container-retina .back {
     height: inherit;
     width: inherit;
     position: absolute;
@@ -59310,36 +59439,47 @@ body.logged-in .sticky, body.admin-bar .sticky {
     left: 0px;
   }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
-  /* line 45, sass/_flip-cards.scss */
-  .flip-container-retina .front .h5, .flip-container-retina .back .h5 {
-    font-size: 1.1vw;
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px) {
+  /* line 50, sass/_flip-cards.scss */
+  .flip-container-retina .front .h1, .flip-container-retina .front .h2, .flip-container-retina .front .h3, .flip-container-retina .front .h4, .flip-container-retina .front .h5, .flip-container-retina .front .h6, .flip-container-retina .back .h1, .flip-container-retina .back .h2, .flip-container-retina .back .h3, .flip-container-retina .back .h4, .flip-container-retina .back .h5, .flip-container-retina .back .h6 {
+    font-size: 1.27vw;
+  }
+  /* line 54, sass/_flip-cards.scss */
+  .flip-container-retina .front p, .flip-container-retina .back p {
+    font-size: 1.3vw;
+    margin: 0;
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 53, sass/_flip-cards.scss */
+  /* line 62, sass/_flip-cards.scss */
   .flip-container-retina:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 58, sass/_flip-cards.scss */
+  /* line 67, sass/_flip-cards.scss */
   .flip-container-retina:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 65, sass/_flip-cards.scss */
+  /* line 74, sass/_flip-cards.scss */
   .flip-container-retina .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 71, sass/_flip-cards.scss */
+  /* line 80, sass/_flip-cards.scss */
   .flip-container-retina .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
     transform: perspective(1000px) rotateY(-180deg);
+  }
+}
+@media (max-width: 767px) {
+  /* line 88, sass/_flip-cards.scss */
+  .front:hover {
+    background-color: #f89829;
   }
 }
 /* line 2, sass/_template-awards.scss */
@@ -59465,11 +59605,12 @@ footer .menu, footer .menu * {
   font-style: italic;
 }
 
-/* line 33, sass/_wp-plugin-uber-menu.scss */
-.ubermenu-responsive-toggle {
-  text-align: center;
+@media (max-width: 767px) {
+  /* line 33, sass/_wp-plugin-uber-menu.scss */
+  .ubermenu-responsive-toggle {
+    text-align: center;
+  }
 }
-
 @media only screen and (max-width: 60em) {
   /* line 23, sass/_jquery.pwstabs.scss */
   .pws_tabs_container.pws_tabs_responsive {

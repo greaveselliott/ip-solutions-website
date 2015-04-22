@@ -29,7 +29,8 @@
     font-style: italic;
   }
 }
-
-.ubermenu-responsive-toggle {
-  text-align: center;
+@include respond-to('tablet-portrait') {
+  .ubermenu-responsive-toggle {
+    text-align: center;
+  }
 }
