@@ -16,108 +16,7 @@
                     <div class="col-sm-12">
                         <h2 class="text-align-center text-white margin-top margin-bottom">Choose your starting point</h2>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="row">
-                            <section class="col-sm-3 col-xs-6 padding-bottom">
-                                <div class="flip-container-tablet-up">
-                                    <div class="front border-1-orange border-radius-1-tablet-up">
-                                        <div class="padding-2 text-align-center force-aspect-ratio-container-tablet-up height-100-tablet-portrait">
-                                            <div class="force-aspect-ratio-tablet-up">
-                                                <div class="table-center-container">
-                                                    <div class="table-center-cell">
-                                                        <img src="<?php echo get_stylesheet_directory_uri() .'/images/home-cta-icon-01.png'; ?>" width="70%" class="display-none-tablet-portrait">
-                                        <h4 class="text-white uppercase h5 margin-0-tablet-portrait">Reduce your<br>comms costs</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="back background-orange padding-2-tablet-landscape-desktop text-align-center display-none-tablet-portrait border-radius-1-tablet-up">
-                                        <div class="table-center-container">
-                                            <div class="table-center-cell">
-                                                <p class="text-white">Discover how to curb excessive spending, apportion costs, and  the best tariffs to suit your needs.</p>
-                                                <a href="#" class="btn btn-white display-none-tablet-portrait">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="col-sm-3 col-xs-6 padding-bottom">
-                                <div class="flip-container-tablet-up">
-                                    <div class="front border-1-orange border-radius-1-tablet-up">
-                                         <div class="padding-2 text-align-center force-aspect-ratio-container-tablet-up height-100-tablet-portrait">
-                                             <div class="force-aspect-ratio-tablet-up">
-                                                 <div class="table-center-container">
-                                                     <div class="table-center-cell">
-                                                         <img src="<?php echo get_stylesheet_directory_uri() .'/images/home-cta-icon-02.png'; ?>" width="70%" class="display-none-tablet-portrait">
-                                                        <h4 class="text-white uppercase h5 margin-0-tablet-portrait">Boost your<br>customer service</h4>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="back background-orange padding-2 text-align-center display-none-tablet-portrait border-radius-1-tablet-up">
-                                        <div class="table-center-container">
-                                            <div class="table-center-cell">
-                                                <p class="text-white">Learn how call reporting and call recording can help you deliver higher levels of customer satisfaction.</p>
-                                                <a href="#" class="btn btn-white">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="col-sm-3 col-xs-6 padding-bottom">
-                                <div class="flip-container-tablet-up">
-                                    <div class="front border-1-orange border-radius-1-tablet-up">
-                                         <div class="padding-2 text-align-center force-aspect-ratio-container-tablet-up height-100-tablet-portrait">
-                                             <div class="force-aspect-ratio-tablet-up">
-                                                 <div class="table-center-container">
-                                                     <div class="table-center-cell">
-                                                         <img src="<?php echo get_stylesheet_directory_uri() .'/images/home-cta-icon-03.png'; ?>" width="70%" class="display-none-tablet-portrait">
-                                                        <h4 class="text-white uppercase h5 margin-0-tablet-portrait">Help with<br>your office</h4>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="back background-orange padding-2 text-align-center display-none-tablet-portrait border-radius-1-tablet-up">
-                                        <div class="table-center-container">
-                                            <div class="table-center-cell">
-                                                <p class="text-white">Grab the opportunity to not just replace an outdated comms infrastructure – but to stay ahead of the curve forever.</p>
-                                                <a href="#" class="btn btn-white">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section class="col-sm-3 col-xs-6 padding-bottom">
-                                <div class="flip-container-tablet-up">
-                                    <div class="front border-1-orange border-radius-1-tablet-up">
-                                         <div class="padding-2 text-align-center force-aspect-ratio-container-tablet-up height-100-tablet-portrait">
-                                            <div class="force-aspect-ratio-tablet-up">
-                                                <div class="table-center-container">
-                                                    <div class="table-center-cell">
-                                                        <img src="<?php echo get_stylesheet_directory_uri() .'/images/home-cta-icon-04.png'; ?>" width="70%" class="display-none-tablet-portrait">
-                                                        <h4 class="text-white uppercase h5 margin-0-tablet-portrait">Improve how your<br>workforce works</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="back background-orange padding-2 text-align-center display-none-tablet-portrait border-radius-1-tablet-up">
-                                        <div class="table-center-container">
-                                            <div class="table-center-cell">
-                                                <p class="text-white">Better, quicker, and more adaptable – discover how you can achieve a flexible, collaborative working environment.</p>
-                                                <a href="#" class="btn btn-white">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
+                    <?php get_template_part('loop', 'starting-point'); ?>
                 </div>
             </div>
         </article>
@@ -187,7 +86,7 @@
     <article class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h2 class="text-blue text-center h1 margin-top-0 margin-bottom">Our latest thinking</h2>
+                <h2 class="text-blue text-center margin-top-0 margin-bottom">Our latest thinking</h2>
             </div>
         </div>
         <div class="row">
