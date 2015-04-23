@@ -13917,6 +13917,100 @@ button.close {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
+.width-100-important {
+  width: 100% !important;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-100-important-phone {
+    width: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-100-important-tablet-portrait {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-100-important-tablet-up {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-100-important-tablet-landscape-desktop {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-100-important-large-desktop {
+    width: 100% !important;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-100-important-non-retina {
+    width: 100% !important;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-100-important-retina {
+    width: 100% !important;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.height-100-important, .main-logo, .ubermenu-main {
+  height: 100% !important;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-100-important-phone {
+    height: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-100-important-tablet-portrait {
+    height: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-100-important-tablet-up {
+    height: 100% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-100-important-tablet-landscape-desktop {
+    height: 100% !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-100-important-large-desktop {
+    height: 100% !important;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-100-important-non-retina {
+    height: 100% !important;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-100-important-retina {
+    height: 100% !important;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
 .width-auto {
   width: auto;
 }
@@ -14008,6 +14102,100 @@ button.close {
   /* line 113, sass/_bootstrap-media-queries.scss */
   .height-auto-retina {
     height: auto;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.height-inherit, .ubermenu-main > .ubermenu-nav, .ubermenu-main > .ubermenu-nav > .ubermenu-item, .ubermenu-main > .ubermenu-nav > .ubermenu-item > .ubermenu-target {
+  height: inherit !important;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-phone {
+    height: inherit !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-tablet-portrait {
+    height: inherit !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-tablet-up {
+    height: inherit !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-tablet-landscape-desktop {
+    height: inherit !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-large-desktop {
+    height: inherit !important;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-non-retina {
+    height: inherit !important;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-retina {
+    height: inherit !important;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.height-inherit, .ubermenu-main > .ubermenu-nav, .ubermenu-main > .ubermenu-nav > .ubermenu-item, .ubermenu-main > .ubermenu-nav > .ubermenu-item > .ubermenu-target {
+  height: inherit !important;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-phone {
+    height: inherit !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-tablet-portrait {
+    height: inherit !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-tablet-up {
+    height: inherit !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-tablet-landscape-desktop {
+    height: inherit !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-large-desktop {
+    height: inherit !important;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-non-retina {
+    height: inherit !important;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-inherit-retina {
+    height: inherit !important;
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
@@ -58118,51 +58306,45 @@ body.logged-in, body.admin-bar {
   background-color: #c3cf21;
 }
 
-/* line 1, sass/_header-main.scss */
-.main-logo, .ubermenu-item-layout-text_only {
-  -webkit-transition: all 0.17s ease-in;
-  -moz-transition: all 0.17s ease-in;
-  -ms-transition: all 0.17s ease-in;
-  -o-transition: all 0.17s ease-in;
-  transition: all 0.17s ease-in;
-}
-
-/* line 8, sass/_header-main.scss */
-.main-logo {
-  height: 115px;
-}
-
-/* line 13, sass/_header-main.scss */
+/* line 6, sass/_header-main.scss */
 body.logged-in .sticky, body.admin-bar .sticky {
   top: 28px !important;
 }
 @media (max-width: 767px) {
-  /* line 13, sass/_header-main.scss */
+  /* line 6, sass/_header-main.scss */
   body.logged-in .sticky, body.admin-bar .sticky {
     top: 0px !important;
   }
 }
 
-/* line 21, sass/_header-main.scss */
+/* line 14, sass/_header-main.scss */
 .sticky {
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
 }
-/* line 27, sass/_header-main.scss */
-.sticky .main-logo {
-  height: 80px;
+
+/* line 22, sass/_header-main.scss */
+#header-main-height {
+  -webkit-transition: all 0.17s ease-in;
+  -moz-transition: all 0.17s ease-in;
+  -ms-transition: all 0.17s ease-in;
+  -o-transition: all 0.17s ease-in;
+  transition: all 0.17s ease-in;
+}
+@media (min-width: 768px) {
+  /* line 22, sass/_header-main.scss */
+  #header-main-height {
+    height: 120px;
+  }
 }
 
-/* line 33, sass/_header-main.scss */
-.ubermenu-item-layout-text_only {
-  padding: 3px 20px 15px !important;
-}
-
-/* line 37, sass/_header-main.scss */
-.ubermenu-loc-primary {
-  text-align: right;
+@media (min-width: 768px) {
+  /* line 34, sass/_header-main.scss */
+  .sticky #header-main-height {
+    height: 90px;
+  }
 }
 
 /* line 3, javascripts/slick/slick/slick.scss */
@@ -59010,31 +59192,31 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container .front .h1, .flip-container .front .h2, .flip-container .front .h3, .flip-container .front .h4, .flip-container .front .h5, .flip-container .front .h6, .flip-container .back .h1, .flip-container .back .h2, .flip-container .back .h3, .flip-container .back .h4, .flip-container .back .h5, .flip-container .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container .front p, .flip-container .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
-/* line 62, sass/_flip-cards.scss */
+/* line 61, sass/_flip-cards.scss */
 .flip-container:hover .front {
   -moz-transform: perspective(1000px) rotateY(180deg);
   -webkit-transform: perspective(1000px) rotateY(180deg);
   transform: perspective(1000px) rotateY(180deg);
 }
-/* line 67, sass/_flip-cards.scss */
+/* line 66, sass/_flip-cards.scss */
 .flip-container:hover .back {
   -moz-transform: perspective(1000px) rotateY(0deg);
   -webkit-transform: perspective(1000px) rotateY(0deg);
   transform: perspective(1000px) rotateY(0deg);
 }
-/* line 74, sass/_flip-cards.scss */
+/* line 73, sass/_flip-cards.scss */
 .flip-container .front {
   -moz-transform: perspective(1000px) rotateY(0deg);
   -webkit-transform: perspective(1000px) rotateY(0deg);
   transform: perspective(1000px) rotateY(0deg);
 }
-/* line 80, sass/_flip-cards.scss */
+/* line 79, sass/_flip-cards.scss */
 .flip-container .back {
   -moz-transform: perspective(1000px) rotateY(-180deg);
   -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59084,32 +59266,32 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container-phone .front .h1, .flip-container-phone .front .h2, .flip-container-phone .front .h3, .flip-container-phone .front .h4, .flip-container-phone .front .h5, .flip-container-phone .front .h6, .flip-container-phone .back .h1, .flip-container-phone .back .h2, .flip-container-phone .back .h3, .flip-container-phone .back .h4, .flip-container-phone .back .h5, .flip-container-phone .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container-phone .front p, .flip-container-phone .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
 @media (max-width: 480px) {
-  /* line 62, sass/_flip-cards.scss */
+  /* line 61, sass/_flip-cards.scss */
   .flip-container-phone:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 67, sass/_flip-cards.scss */
+  /* line 66, sass/_flip-cards.scss */
   .flip-container-phone:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 74, sass/_flip-cards.scss */
+  /* line 73, sass/_flip-cards.scss */
   .flip-container-phone .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 80, sass/_flip-cards.scss */
+  /* line 79, sass/_flip-cards.scss */
   .flip-container-phone .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59159,32 +59341,32 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container-tablet-portrait .front .h1, .flip-container-tablet-portrait .front .h2, .flip-container-tablet-portrait .front .h3, .flip-container-tablet-portrait .front .h4, .flip-container-tablet-portrait .front .h5, .flip-container-tablet-portrait .front .h6, .flip-container-tablet-portrait .back .h1, .flip-container-tablet-portrait .back .h2, .flip-container-tablet-portrait .back .h3, .flip-container-tablet-portrait .back .h4, .flip-container-tablet-portrait .back .h5, .flip-container-tablet-portrait .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .front p, .flip-container-tablet-portrait .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
 @media (max-width: 767px) {
-  /* line 62, sass/_flip-cards.scss */
+  /* line 61, sass/_flip-cards.scss */
   .flip-container-tablet-portrait:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 67, sass/_flip-cards.scss */
+  /* line 66, sass/_flip-cards.scss */
   .flip-container-tablet-portrait:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 74, sass/_flip-cards.scss */
+  /* line 73, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 80, sass/_flip-cards.scss */
+  /* line 79, sass/_flip-cards.scss */
   .flip-container-tablet-portrait .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59234,32 +59416,32 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container-tablet-up .front .h1, .flip-container-tablet-up .front .h2, .flip-container-tablet-up .front .h3, .flip-container-tablet-up .front .h4, .flip-container-tablet-up .front .h5, .flip-container-tablet-up .front .h6, .flip-container-tablet-up .back .h1, .flip-container-tablet-up .back .h2, .flip-container-tablet-up .back .h3, .flip-container-tablet-up .back .h4, .flip-container-tablet-up .back .h5, .flip-container-tablet-up .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container-tablet-up .front p, .flip-container-tablet-up .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 62, sass/_flip-cards.scss */
+  /* line 61, sass/_flip-cards.scss */
   .flip-container-tablet-up:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 67, sass/_flip-cards.scss */
+  /* line 66, sass/_flip-cards.scss */
   .flip-container-tablet-up:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 74, sass/_flip-cards.scss */
+  /* line 73, sass/_flip-cards.scss */
   .flip-container-tablet-up .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 80, sass/_flip-cards.scss */
+  /* line 79, sass/_flip-cards.scss */
   .flip-container-tablet-up .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59309,32 +59491,32 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container-tablet-landscape-desktop .front .h1, .flip-container-tablet-landscape-desktop .front .h2, .flip-container-tablet-landscape-desktop .front .h3, .flip-container-tablet-landscape-desktop .front .h4, .flip-container-tablet-landscape-desktop .front .h5, .flip-container-tablet-landscape-desktop .front .h6, .flip-container-tablet-landscape-desktop .back .h1, .flip-container-tablet-landscape-desktop .back .h2, .flip-container-tablet-landscape-desktop .back .h3, .flip-container-tablet-landscape-desktop .back .h4, .flip-container-tablet-landscape-desktop .back .h5, .flip-container-tablet-landscape-desktop .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .front p, .flip-container-tablet-landscape-desktop .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* line 62, sass/_flip-cards.scss */
+  /* line 61, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 67, sass/_flip-cards.scss */
+  /* line 66, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 74, sass/_flip-cards.scss */
+  /* line 73, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 80, sass/_flip-cards.scss */
+  /* line 79, sass/_flip-cards.scss */
   .flip-container-tablet-landscape-desktop .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59384,32 +59566,32 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container-large-desktop .front .h1, .flip-container-large-desktop .front .h2, .flip-container-large-desktop .front .h3, .flip-container-large-desktop .front .h4, .flip-container-large-desktop .front .h5, .flip-container-large-desktop .front .h6, .flip-container-large-desktop .back .h1, .flip-container-large-desktop .back .h2, .flip-container-large-desktop .back .h3, .flip-container-large-desktop .back .h4, .flip-container-large-desktop .back .h5, .flip-container-large-desktop .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container-large-desktop .front p, .flip-container-large-desktop .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
 @media (min-width: 1200px) {
-  /* line 62, sass/_flip-cards.scss */
+  /* line 61, sass/_flip-cards.scss */
   .flip-container-large-desktop:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 67, sass/_flip-cards.scss */
+  /* line 66, sass/_flip-cards.scss */
   .flip-container-large-desktop:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 74, sass/_flip-cards.scss */
+  /* line 73, sass/_flip-cards.scss */
   .flip-container-large-desktop .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 80, sass/_flip-cards.scss */
+  /* line 79, sass/_flip-cards.scss */
   .flip-container-large-desktop .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59459,32 +59641,32 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container-non-retina .front .h1, .flip-container-non-retina .front .h2, .flip-container-non-retina .front .h3, .flip-container-non-retina .front .h4, .flip-container-non-retina .front .h5, .flip-container-non-retina .front .h6, .flip-container-non-retina .back .h1, .flip-container-non-retina .back .h2, .flip-container-non-retina .back .h3, .flip-container-non-retina .back .h4, .flip-container-non-retina .back .h5, .flip-container-non-retina .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container-non-retina .front p, .flip-container-non-retina .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
 @media screen and (-webkit-max-device-pixel-ratio: 1) {
-  /* line 62, sass/_flip-cards.scss */
+  /* line 61, sass/_flip-cards.scss */
   .flip-container-non-retina:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 67, sass/_flip-cards.scss */
+  /* line 66, sass/_flip-cards.scss */
   .flip-container-non-retina:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 74, sass/_flip-cards.scss */
+  /* line 73, sass/_flip-cards.scss */
   .flip-container-non-retina .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 80, sass/_flip-cards.scss */
+  /* line 79, sass/_flip-cards.scss */
   .flip-container-non-retina .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59534,32 +59716,32 @@ body.logged-in .sticky, body.admin-bar .sticky {
   .flip-container-retina .front .h1, .flip-container-retina .front .h2, .flip-container-retina .front .h3, .flip-container-retina .front .h4, .flip-container-retina .front .h5, .flip-container-retina .front .h6, .flip-container-retina .back .h1, .flip-container-retina .back .h2, .flip-container-retina .back .h3, .flip-container-retina .back .h4, .flip-container-retina .back .h5, .flip-container-retina .back .h6 {
     font-size: 0.7vw;
   }
-  /* line 54, sass/_flip-cards.scss */
+  /* line 53, sass/_flip-cards.scss */
   .flip-container-retina .front p, .flip-container-retina .back p {
     font-size: 0.7vw;
     margin: 0;
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 62, sass/_flip-cards.scss */
+  /* line 61, sass/_flip-cards.scss */
   .flip-container-retina:hover .front {
     -moz-transform: perspective(1000px) rotateY(180deg);
     -webkit-transform: perspective(1000px) rotateY(180deg);
     transform: perspective(1000px) rotateY(180deg);
   }
-  /* line 67, sass/_flip-cards.scss */
+  /* line 66, sass/_flip-cards.scss */
   .flip-container-retina:hover .back {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 74, sass/_flip-cards.scss */
+  /* line 73, sass/_flip-cards.scss */
   .flip-container-retina .front {
     -moz-transform: perspective(1000px) rotateY(0deg);
     -webkit-transform: perspective(1000px) rotateY(0deg);
     transform: perspective(1000px) rotateY(0deg);
   }
-  /* line 80, sass/_flip-cards.scss */
+  /* line 79, sass/_flip-cards.scss */
   .flip-container-retina .back {
     -moz-transform: perspective(1000px) rotateY(-180deg);
     -webkit-transform: perspective(1000px) rotateY(-180deg);
@@ -59567,11 +59749,11 @@ body.logged-in .sticky, body.admin-bar .sticky {
   }
 }
 @media (max-width: 767px) {
-  /* line 88, sass/_flip-cards.scss */
+  /* line 87, sass/_flip-cards.scss */
   .front {
     height: 100px;
   }
-  /* line 90, sass/_flip-cards.scss */
+  /* line 89, sass/_flip-cards.scss */
   .front:hover {
     background-color: #f89829;
   }
@@ -59705,6 +59887,34 @@ footer .menu, footer .menu * {
     text-align: center;
   }
 }
+/* line 37, sass/_wp-plugin-uber-menu.scss */
+.ubermenu-sub-indicators .ubermenu-has-submenu-drop > .ubermenu-target:after {
+  position: absolute;
+  right: 0px !important;
+  bottom: 0px;
+  margin: 0 !important;
+  content: "\f107";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 54, sass/_wp-plugin-uber-menu.scss */
+.ubermenu-item-layout-text_only {
+  padding: 3px 20px 15px !important;
+}
+
+/* line 58, sass/_wp-plugin-uber-menu.scss */
+.ubermenu-loc-primary {
+  text-align: right;
+}
+
 @media only screen and (max-width: 60em) {
   /* line 23, sass/_jquery.pwstabs.scss */
   .pws_tabs_container.pws_tabs_responsive {

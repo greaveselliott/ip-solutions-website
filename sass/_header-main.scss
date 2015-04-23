@@ -1,12 +1,5 @@
-.main-logo, .ubermenu-item-layout-text_only {
-  -webkit-transition: all 0.17s ease-in;
-  -moz-transition: all 0.17s ease-in;
-  -ms-transition: all 0.17s ease-in;
-  -o-transition: all 0.17s ease-in;
-  transition: all 0.17s ease-in;
-}
 .main-logo {
-  height: 115px;
+  @extend .height-100-important;
 }
 
 body.logged-in, body.admin-bar {
@@ -23,17 +16,27 @@ body.logged-in, body.admin-bar {
   top: 0;
   z-index: 10;
   width: 100%;
+}
 
-  .main-logo {
-    height: 80px;
+
+#header-main-height {
+  -webkit-transition: all 0.17s ease-in;
+  -moz-transition: all 0.17s ease-in;
+  -ms-transition: all 0.17s ease-in;
+  -o-transition: all 0.17s ease-in;
+  transition: all 0.17s ease-in;
+
+  @include respond-to('tablet-up') {
+    height: 120px;
   }
-
 }
 
-.ubermenu-item-layout-text_only {
-  padding: 3px 20px 15px !important;
+.sticky #header-main-height {
+  @include respond-to('tablet-up') {
+    height: 90px;
+  }
 }
 
-.ubermenu-loc-primary {
-  text-align: right;
-}
+
+
+

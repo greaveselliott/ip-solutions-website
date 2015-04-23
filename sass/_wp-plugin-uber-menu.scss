@@ -34,3 +34,40 @@
     text-align: center;
   }
 }
+.ubermenu-sub-indicators .ubermenu-has-submenu-drop>.ubermenu-target:after {
+  position: absolute;
+  right: 0px !important;
+  bottom: 0px;
+  margin: 0 !important;
+  content: "\f107";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  text-align: center;
+}
+
+.ubermenu-item-layout-text_only {
+  padding: 3px 20px 15px !important;
+}
+
+.ubermenu-loc-primary {
+  text-align: right;
+}
+
+.ubermenu-main {
+  @extend .height-100-important;
+  > .ubermenu-nav {
+    @extend .height-inherit;
+   > .ubermenu-item {
+      @extend .height-inherit;
+      > .ubermenu-target{
+        @extend .height-inherit;
+      }
+    }
+  }
+}
