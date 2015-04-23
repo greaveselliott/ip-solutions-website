@@ -46,7 +46,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-7 height-inherit">
-                        <div class="row height-50">
+                        <div class="row padding-top-2 padding-bottom-2 height-50">
                             <div class="col-sm-12">
                                 <div class="pull-right float-none-tablet-portrait text-align-center-tablet-portrait">
                                     <div class="icon-links display-inline-block padding-right padding-right-0-tablet-portrait text-align-center-tablet-portrait">

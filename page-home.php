@@ -4,8 +4,8 @@
 */
 ?>
 
-<?php get_header(); ?>
-    <div class="height-auto-important-tablet-portrait">
+        <?php get_header(); ?>
+        <div class="height-auto-important-tablet-portrait">
             <?php get_template_part('template','carousel'); ?>
         </div>
         <!-- Choose your starting point -->
@@ -21,7 +21,6 @@
             </div>
         </article>
     </div>
-</div>
 <!-- Featured Image -->
 <?php //if (has_post_thumbnail( $post->ID ) ): ?>
 </div><!-- End .featured-image-container tag -->
