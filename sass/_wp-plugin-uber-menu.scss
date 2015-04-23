@@ -67,6 +67,9 @@
       @extend .height-inherit;
       > .ubermenu-target{
         @extend .height-inherit;
+        > .ubermenu-target-text {
+          @extend .font-family-apex-medium;
+        }
       }
     }
   }
