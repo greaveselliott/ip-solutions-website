@@ -50,7 +50,7 @@
                             <div class="col-sm-12">
                                 <div class="pull-right float-none-tablet-portrait text-align-center-tablet-portrait">
                                     <div class="icon-links display-inline-block padding-right padding-right-0-tablet-portrait text-align-center-tablet-portrait">
-                                        <span class="h3"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue h4 font-family-default display-inline-block"><?php eemjii_option_tel() ?></span>
+                                        <span class="h4"><i class="fa fa-phone text-green"></i>&nbsp;</span><span class="text-blue h4 font-family-default display-inline-block"><?php eemjii_option_tel() ?></span>
                                     </div>
                                     <a href="#" title="Customer Login Section" class="display-none-important-tablet-portrait">Customer Login</a>
                                 </div>

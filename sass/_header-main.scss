@@ -18,7 +18,10 @@ body.logged-in, body.admin-bar {
   width: 100%;
 }
 
-
+#header-main-container {
+  z-index: 20;
+  position: relative;
+}
 #header-main-height {
   -webkit-transition: all 0.17s ease-in;
   -moz-transition: all 0.17s ease-in;

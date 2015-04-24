@@ -99,12 +99,31 @@ function eemjii_option_fax () {
         '<div class="alert alert-warning">You haven\'t entered your fax number in the theme \'customize\' options</div>'
     );
 }
-function eemjii_option_address () {
-    echo get_theme_mod(
+function eemjii_option_address ($args = array('return_rows' => false, 'explode_on' => ',','before_row'=>false,'after_row'=>false) ) {
+    $default = '<div class="alert alert-warning">You haven\'t entered your address in the theme \'customize\' options</div>';
+
+    $option_value = get_theme_mod(
         'eemjii_option_address',
-        '<div class="alert alert-warning">You haven\'t entered your address in the theme \'customize\' options</div>'
+        $default
     );
+
+    if ($option_value == $default) :
+        $return_value = $default;
+    elseif ($option_value !== $default && $args['return_rows'] == true):
+        $return_value = '';
+        $address_array = explode($args['explode_on'], $option_value);
+        foreach ($address_array as $address_line) {
+            $return_value .= $args['before_row'];
+            $return_value .= $address_line;
+            $return_value .= $args['after_row'];
+        }
+    else:
+        $return_value = $option_value;
+    endif;
+
+    return $return_value;
 }
+
 function eemjii_option_company_no () {
     echo get_theme_mod(
         'eemjii_option_company_no',

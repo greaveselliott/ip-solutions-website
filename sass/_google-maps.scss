@@ -3,11 +3,15 @@ $acf-map-height: 300px;
   height: $acf-map-height;
   width: 100%;
   border: #ccc solid 1px;
-  z-index: -10;
   position: absolute;
   top: 0px;
 }
 
 .acf-map-push-down {
   height: $acf-map-height - 120px + 15px; // $acf-map-height - header height + $padding
+  @include respond-to('tablet-portrait') {
+    height: 60px;
+  }
+  z-index: -20;
+  position: relative;
 }

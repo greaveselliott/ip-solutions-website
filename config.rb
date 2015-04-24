@@ -4,6 +4,7 @@ require 'compass/import-once/activate'
 require 'font-awesome-sass'
 # Removing all comments by applying a monkey patch to SASS compiler
 require "./remove-all-comments-monkey-patch"
+require 'sass-globbing'
 
 # No Cache
 asset_cache_buster :none
