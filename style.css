@@ -58765,32 +58765,40 @@ body.logged-in, body.admin-bar {
   background-color: #c3cf21;
 }
 
-/* line 6, sass/_header-main.scss */
+@media (max-width: 767px) {
+  /* line 1, sass/_header-main.scss */
+  .main-logo {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+
+/* line 10, sass/_header-main.scss */
 body.logged-in .sticky, body.admin-bar .sticky {
   top: 28px !important;
 }
 @media (max-width: 767px) {
-  /* line 6, sass/_header-main.scss */
+  /* line 10, sass/_header-main.scss */
   body.logged-in .sticky, body.admin-bar .sticky {
     top: 0px !important;
   }
 }
 
-/* line 14, sass/_header-main.scss */
-.sticky {
-  position: fixed;
+/* line 18, sass/_header-main.scss */
+#header-main-container {
+  position: fixed !important;
   top: 0;
   z-index: 10;
   width: 100%;
 }
 
-/* line 21, sass/_header-main.scss */
+/* line 29, sass/_header-main.scss */
 #header-main-container {
   z-index: 20;
   position: relative;
 }
 
-/* line 25, sass/_header-main.scss */
+/* line 33, sass/_header-main.scss */
 #header-main-height {
   -webkit-transition: all 0.17s ease-in;
   -moz-transition: all 0.17s ease-in;
@@ -58799,14 +58807,14 @@ body.logged-in .sticky, body.admin-bar .sticky {
   transition: all 0.17s ease-in;
 }
 @media (min-width: 768px) {
-  /* line 25, sass/_header-main.scss */
+  /* line 33, sass/_header-main.scss */
   #header-main-height {
     height: 120px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 37, sass/_header-main.scss */
+  /* line 45, sass/_header-main.scss */
   .sticky #header-main-height {
     height: 90px;
   }
@@ -60422,38 +60430,60 @@ footer .menu, footer .menu * {
   margin-top: 0px !important;
 }
 
-/* line 7, sass/_wp-plugin-uber-menu.scss */
+/* line 11, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-submenu {
   background-color: white !important;
   margin-top: 1px !important;
 }
-/* line 11, sass/_wp-plugin-uber-menu.scss */
+/* line 15, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-submenu .ubermenu-submenu {
   background-color: transparent !important;
 }
-/* line 19, sass/_wp-plugin-uber-menu.scss */
+@media (max-width: 767px) {
+  /* line 18, sass/_wp-plugin-uber-menu.scss */
+  .ubermenu-submenu .ubermenu-submenu .ubermenu-item {
+    padding: 0 !important;
+  }
+}
+/* line 24, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-submenu .ubermenu-item {
   padding: 10px !important;
 }
-/* line 22, sass/_wp-plugin-uber-menu.scss */
+/* line 26, sass/_wp-plugin-uber-menu.scss */
+.ubermenu-submenu .ubermenu-item.ubermenu-column {
+  padding: 0px;
+}
+/* line 30, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-submenu .ubermenu-image {
   padding-right: 10px !important;
 }
-/* line 25, sass/_wp-plugin-uber-menu.scss */
+@media (max-width: 767px) {
+  /* line 30, sass/_wp-plugin-uber-menu.scss */
+  .ubermenu-submenu .ubermenu-image {
+    display: none !important;
+  }
+}
+/* line 36, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-submenu .ubermenu-content-block {
   color: #c3cf21 !important;
   padding: 0px !important;
   font-size: 12px;
   font-style: italic;
 }
+@media (max-width: 767px) {
+  /* line 36, sass/_wp-plugin-uber-menu.scss */
+  .ubermenu-submenu .ubermenu-content-block {
+    display: none;
+  }
+}
 
 @media (max-width: 767px) {
-  /* line 33, sass/_wp-plugin-uber-menu.scss */
+  /* line 47, sass/_wp-plugin-uber-menu.scss */
   .ubermenu-responsive-toggle {
     text-align: center;
   }
 }
-/* line 37, sass/_wp-plugin-uber-menu.scss */
+/* line 51, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-sub-indicators .ubermenu-has-submenu-drop > .ubermenu-target:after {
   position: absolute;
   right: 0px !important;
@@ -60471,14 +60501,26 @@ footer .menu, footer .menu * {
   text-align: center;
 }
 
-/* line 54, sass/_wp-plugin-uber-menu.scss */
+/* line 68, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-item-layout-text_only {
   padding: 3px 20px 15px !important;
 }
 
-/* line 58, sass/_wp-plugin-uber-menu.scss */
+/* line 72, sass/_wp-plugin-uber-menu.scss */
 .ubermenu-loc-primary {
   text-align: right;
+}
+
+@media (max-width: 767px) {
+  /* line 80, sass/_wp-plugin-uber-menu.scss */
+  .ubermenu-main > .ubermenu-nav > .ubermenu-item {
+    text-align: center;
+  }
+}
+
+/* line 95, sass/_wp-plugin-uber-menu.scss */
+.ubermenu-responsive {
+  height: 100%;
 }
 
 @media only screen and (max-width: 60em) {
@@ -61100,6 +61142,12 @@ footer .menu, footer .menu * {
   height: 195px;
   z-index: -20;
   position: relative;
+}
+@media (max-width: 767px) {
+  /* line 10, sass/_google-maps.scss */
+  .acf-map-push-down {
+    height: 60px;
+  }
 }
 
 /* line 1, sass/gravity-forms-sass/_form-default.scss */

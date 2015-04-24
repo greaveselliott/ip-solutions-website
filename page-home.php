@@ -89,34 +89,17 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6">
-               <section class="row margin-bottom">
-                   <div class="col-sm-4 padding-0">
-                       <div class="force-aspect-ratio-container">
-                           <img class="force-aspect-ratio" src="<?php echo get_stylesheet_directory_uri() . "/images/numbers-01.jpg"; ?>">
-                       </div>
-                   </div>
-                   <div class="col-sm-8 padding-left">
-                       <h3 class="text-green margin-top-0">What’s in a number?</h3>
-                       <p class="text-blue">Contact Centres have changed; or, more precisely, they’re continuing to evolve. Whilst change is inevitable, it’s also a challenge to Contact Centre managers to offer the high levels of flexibility, responsiveness and customer service that people have come to expect, without incurring significant costs.</p>
-                       <a class="btn btn-orange" href="#">Read more</a>
-                   </div>
-               </section>
-            </div>
-            <div class="col-sm-6">
-                <section class="row margin-bottom">
-                    <div class="col-sm-4 padding-0">
-                        <div class="force-aspect-ratio-container">
-                            <img class="force-aspect-ratio" src="<?php echo get_stylesheet_directory_uri() . "/images/latest-thinking.jpg"; ?>">
-                        </div>
-                    </div>
-                    <div class="col-sm-8 padding-left">
-                        <h3 class="text-green margin-top-0">Inbound Innovation</h3>
-                        <p class="text-blue">Generating interest in your product or service is less than half the battle. If you’re operating an inbound contact centre, having done everything you can to encourage inbound enquiries, you have to make sure you deliver an excellent customer experience.</p>
-                        <a class="btn btn-orange" href="#">Read more</a>
-                    </div>
-                </section>
-            </div>
+            <?php
+                $post_query = new Eemjii_WP_Query(array(
+                    '_post_type'             => 'post',
+                    '_post_template_prefix'  => 'template',
+                    '_post_template_part'    => 'post',
+                    '_posts_per_page'        => 2,
+                    '_posts_per_row'         => 2,
+                    '_loop_wrapper'          => false,
+                    '_row_wrapper'           => false
+                ));
+            ?>
         </div>
     </article>
 </div>

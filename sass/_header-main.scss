@@ -1,5 +1,9 @@
 .main-logo {
   @extend .height-100-important;
+  @include respond-to ('tablet-portrait') {
+    height: auto !important;
+    width: 100% !important;
+  }
 }
 
 body.logged-in, body.admin-bar {
@@ -11,11 +15,15 @@ body.logged-in, body.admin-bar {
   }
 }
 
-.sticky {
-  position: fixed;
+#header-main-container {
+  position: fixed !important;
   top: 0;
   z-index: 10;
   width: 100%;
+}
+
+.sticky {
+
 }
 
 #header-main-container {
