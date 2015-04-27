@@ -61162,7 +61162,7 @@ footer .menu, footer .menu * {
   transition-delay: .3s;
 }
 
-/* line 2, sass/_google-maps.scss */
+/* line 3, sass/_google-maps.scss */
 .acf-map {
   height: 300px;
   width: 100%;
@@ -61170,17 +61170,23 @@ footer .menu, footer .menu * {
   position: absolute;
   top: 0px;
 }
+@media (max-width: 767px) {
+  /* line 3, sass/_google-maps.scss */
+  .acf-map {
+    height: 100px;
+  }
+}
 
-/* line 10, sass/_google-maps.scss */
+/* line 14, sass/_google-maps.scss */
 .acf-map-push-down {
-  height: 195px;
+  height: 300px;
   z-index: -20;
   position: relative;
 }
 @media (max-width: 767px) {
-  /* line 10, sass/_google-maps.scss */
+  /* line 14, sass/_google-maps.scss */
   .acf-map-push-down {
-    height: 60px;
+    height: 100px;
   }
 }
 

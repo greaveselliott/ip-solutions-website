@@ -1,16 +1,20 @@
 $acf-map-height: 300px;
+$acf-map-height-mobile: 100px;
 .acf-map {
   height: $acf-map-height;
   width: 100%;
   border: #ccc solid 1px;
   position: absolute;
   top: 0px;
+  @include respond-to('tablet-portrait') {
+    height: $acf-map-height-mobile;
+  }
 }
 
 .acf-map-push-down {
-  height: $acf-map-height - 120px + 15px; // $acf-map-height - header height + $padding
+  height: $acf-map-height; // $acf-map-height - header height + $padding
   @include respond-to('tablet-portrait') {
-    height: 60px;
+    height: $acf-map-height-mobile;
   }
   z-index: -20;
   position: relative;
