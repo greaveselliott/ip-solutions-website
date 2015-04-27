@@ -54,7 +54,7 @@
                     <h2 class="text-white h3 margin-top-0 margin-bottom">Award winning providers</h2>
                     <?php
                         $awards_query = new Eemjii_WP_Query(array(
-                            '_post_type'             => 'post',
+                            '_post_type'             => 'eemjii_awards',
                             '_post_template_prefix'  => 'template',
                             '_post_template_part'    => array(
                                 array('awards-first','first'),

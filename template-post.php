@@ -3,7 +3,7 @@
         <div class="col-sm-4 padding-0">
             <div class="force-aspect-ratio-container-tablet-up">
                 <div class="force-aspect-ratio-tablet-up specific-tablet-portrait">
-                    <?php echo eemjii_get_featured_image_url( get_the_ID(), 'medium', array('class'=>'width-100-tablet-up height-auto-tablet-up') ); ?>
+                    <?php echo eemjii_get_featured_image_url( get_the_ID(), 'thumbnail', array('class'=>'width-100-tablet-up height-auto-tablet-up') ); ?>
                 </div>
             </div>
         </div>
