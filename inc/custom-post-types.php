@@ -42,7 +42,8 @@ if ( ! function_exists('custom_post_type_clients') ) {
             'show_in_menu'        => true,
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
-            'menu_position'       => 5,
+            'menu_position'       => 4,
+            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-04.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -99,6 +100,7 @@ if ( ! function_exists('custom_post_type_testimonials') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
+            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-01.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => true,
@@ -155,6 +157,7 @@ if ( ! function_exists('custom_post_type_services') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
+            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-02.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -210,6 +213,7 @@ if ( ! function_exists('custom_post_type_solutions') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
+            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-03.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -226,36 +230,36 @@ if ( ! function_exists('custom_post_type_solutions') ) {
 
 }
 
-// Team
-if ( ! function_exists('custom_post_type_team') ) {
+// Awards
+if ( ! function_exists('custom_post_type_awards') ) {
 
 // Register Custom Post Type
-    function custom_post_type_team() {
+    function custom_post_type_awards() {
 
         $labels = array(
-            'name'                => _x( 'Our Team', 'Post Type General Name', 'twenty_fifteeen' ),
-            'singular_name'       => _x( 'Our Team', 'Post Type Singular Name', 'twenty_fifteeen' ),
-            'menu_name'           => __( 'Our Team', 'twenty_fifteeen' ),
-            'parent_item_colon'   => __( 'Parent Team:', 'twenty_fifteeen' ),
-            'all_items'           => __( 'All Team Members', 'twenty_fifteeen' ),
-            'view_item'           => __( 'View Team Member', 'twenty_fifteeen' ),
-            'add_new_item'        => __( 'Add New Team Member', 'twenty_fifteeen' ),
-            'add_new'             => __( 'Add New Team Member', 'twenty_fifteeen' ),
-            'edit_item'           => __( 'Edit Team Member', 'twenty_fifteeen' ),
-            'update_item'         => __( 'Update Item Member', 'twenty_fifteeen' ),
-            'search_items'        => __( 'Search Team Members', 'twenty_fifteeen' ),
+            'name'                => _x( 'Awards', 'Post Type General Name', 'twenty_fifteeen' ),
+            'singular_name'       => _x( 'Awards', 'Post Type Singular Name', 'twenty_fifteeen' ),
+            'menu_name'           => __( 'Awards', 'twenty_fifteeen' ),
+            'parent_item_colon'   => __( 'Parent Awards:', 'twenty_fifteeen' ),
+            'all_items'           => __( 'All Awards', 'twenty_fifteeen' ),
+            'view_item'           => __( 'View Awards', 'twenty_fifteeen' ),
+            'add_new_item'        => __( 'Add New Award', 'twenty_fifteeen' ),
+            'add_new'             => __( 'Add New Award', 'twenty_fifteeen' ),
+            'edit_item'           => __( 'Edit Award', 'twenty_fifteeen' ),
+            'update_item'         => __( 'Update Award', 'twenty_fifteeen' ),
+            'search_items'        => __( 'Search Awards', 'twenty_fifteeen' ),
             'not_found'           => __( 'Not found', 'twenty_fifteeen' ),
             'not_found_in_trash'  => __( 'Not found in Trash', 'twenty_fifteeen' ),
         );
         $rewrite = array(
-            'slug'                => 'our-team',
+            'slug'                => 'awards',
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => true,
         );
         $args = array(
-            'label'               => __( 'eemjii_team', 'twenty_fifteeen' ),
-            'description'         => __( 'Team', 'twenty_fifteeen' ),
+            'label'               => __( 'eemjii_awards', 'twenty_fifteeen' ),
+            'description'         => __( 'Awards', 'twenty_fifteeen' ),
             'labels'              => $labels,
             'supports'            => array('title'),
             //'taxonomies'          => array( 'category', 'post_tag' ),
@@ -265,7 +269,8 @@ if ( ! function_exists('custom_post_type_team') ) {
             'show_in_menu'        => true,
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
-            'menu_position'       => 5,
+            'menu_position'       => 4,
+            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-05.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -273,12 +278,12 @@ if ( ! function_exists('custom_post_type_team') ) {
             'rewrite'             => $rewrite,
             'capability_type'     => 'page',
         );
-        register_post_type( 'eemjii_team', $args );
+        register_post_type( 'eemjii_awards', $args );
 
     }
 
 // Hook into the 'init' action
-    add_action( 'init', 'custom_post_type_team', 0 );
+    add_action( 'init', 'custom_post_type_awards', 0 );
 
 }
 
@@ -322,7 +327,7 @@ if ( ! function_exists('custom_post_type_resources') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
-            'menu_icon'           => 'http://placehold.it/16x16',
+            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-06.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
