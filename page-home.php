@@ -5,7 +5,7 @@
 ?>
 
         <?php get_header(); ?>
-        <div class="height-auto-important-tablet-portrait">
+        <div class="height-auto-important-tablet-portrait position-relative-tablet-portrait">
             <?php get_template_part('template','carousel'); ?>
         </div>
         <!-- Choose your starting point -->

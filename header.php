@@ -30,10 +30,8 @@
         <li class="email"><i class="fa fa-envelope"></i></i></li>
     </ul>
 </div>
-<?php //if (has_post_thumbnail( $post->ID ) ): ?>
     <div class="featured-image-container position-relative">
     <!-- The .featured-image-container's closing tag exists in the page template file for example page-home.php -->
-<?php //endif; ?>
     <div id="header-main-container" class="width-100">
         <header id="header-main" class="background-white opacity-80">
             <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
@@ -41,7 +39,7 @@
                     <!-- Logo -->
                     <div class="col-xs-6 col-sm-5 height-inherit">
                         <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
-                        <figure class="eemjii-logo display-table padding-right padding-0-tablet-portrait margin-0-auto-tablet-portrait height-inherit" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
+                        <figure class="eemjii-logo display-table padding-right padding-0-tablet-portrait height-inherit" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
                             <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2 height-inherit" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                         </figure>
                     </div>

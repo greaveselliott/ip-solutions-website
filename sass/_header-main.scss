@@ -1,8 +1,8 @@
 .main-logo {
   @extend .height-100-important;
   @include respond-to ('tablet-portrait') {
-    height: auto !important;
-    width: 100% !important;
+    height: 50px !important;
+    width: auto !important;
   }
 }
 

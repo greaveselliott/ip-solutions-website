@@ -6,9 +6,10 @@
 }
 
 /* Dots */
-.slick-slider
-{
-  margin-bottom: 30px;
+@include respond-to('tablet-up') {
+  .slick-slider {
+    margin-bottom: 30px;
+  }
 }
 
 .slick-dots {
@@ -17,6 +18,10 @@
   padding: 0;
   list-style: none;
   text-align: center;
+  @include respond-to('tablet-portrait') {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
 }
 .slick-dots li {
   position: relative;

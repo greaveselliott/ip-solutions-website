@@ -58768,8 +58768,8 @@ body.logged-in, body.admin-bar {
 @media (max-width: 767px) {
   /* line 1, sass/_header-main.scss */
   .main-logo {
-    height: auto !important;
-    width: 100% !important;
+    height: 50px !important;
+    width: auto !important;
   }
 }
 
@@ -60277,12 +60277,13 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   height: inherit;
 }
 
-/* line 9, sass/_template-carousel.scss */
-.slick-slider {
-  margin-bottom: 30px;
+@media (min-width: 768px) {
+  /* line 10, sass/_template-carousel.scss */
+  .slick-slider {
+    margin-bottom: 30px;
+  }
 }
-
-/* line 14, sass/_template-carousel.scss */
+/* line 15, sass/_template-carousel.scss */
 .slick-dots {
   display: block;
   width: 100%;
@@ -60290,8 +60291,15 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   list-style: none;
   text-align: center;
 }
+@media (max-width: 767px) {
+  /* line 15, sass/_template-carousel.scss */
+  .slick-dots {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+}
 
-/* line 21, sass/_template-carousel.scss */
+/* line 26, sass/_template-carousel.scss */
 .slick-dots li {
   position: relative;
   background-color: #0078ae;
@@ -60304,16 +60312,16 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   padding: 0;
   cursor: pointer;
 }
-/* line 33, sass/_template-carousel.scss */
+/* line 38, sass/_template-carousel.scss */
 .slick-dots li:hover {
   background-color: #006695;
 }
-/* line 36, sass/_template-carousel.scss */
+/* line 41, sass/_template-carousel.scss */
 .slick-dots li.slick-active {
   background-color: #c3cf21;
 }
 
-/* line 40, sass/_template-carousel.scss */
+/* line 45, sass/_template-carousel.scss */
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
@@ -60328,32 +60336,32 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   background: transparent;
 }
 
-/* line 58, sass/_template-carousel.scss */
+/* line 63, sass/_template-carousel.scss */
 .slick-dots li button:hover,
 .slick-dots li button:focus {
   outline: none;
 }
 
-/* line 63, sass/_template-carousel.scss */
+/* line 68, sass/_template-carousel.scss */
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
   opacity: 1;
 }
 
-/* line 68, sass/_template-carousel.scss */
+/* line 73, sass/_template-carousel.scss */
 .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
 }
 
 @media (max-width: 767px) {
-  /* line 74, sass/_template-carousel.scss */
+  /* line 79, sass/_template-carousel.scss */
   .carousel-text {
     margin-top: 60px;
   }
 }
 @media (min-width: 768px) {
-  /* line 74, sass/_template-carousel.scss */
+  /* line 79, sass/_template-carousel.scss */
   .carousel-text {
     padding: 15px;
     margin: 15px;
