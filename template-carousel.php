@@ -16,7 +16,7 @@ if( have_rows('slickjs_carousel') ):
         <!--slide -->
         <div class="width-100 height-100">
             <div class="container">
-                <div class="row margin-top-tablet-portrait padding-top-tablet-portrait padding-tablet-up margin-tablet-up">
+                <div class="row carousel-text">
                     <div class="col-sm-12">
                         <h2 class="h6-tablet-portrait text-white bold" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
                         <p class="h3-tablet-up text-white" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></p>

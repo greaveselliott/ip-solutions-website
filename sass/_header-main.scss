@@ -7,10 +7,10 @@
 }
 
 body.logged-in, body.admin-bar {
-  .sticky {
+  #header-main-container {
     top: 28px !important;
     @include respond-to(tablet-portrait) {
-     top: 0px !important;
+     top: 46px !important;
     }
   }
 }

@@ -16,7 +16,7 @@
         <!--slide -->
         <div class="width-100 height-100">
             <div class="container">
-                <div class="row padding-bottom padding-top margin-bottom margin-top">
+                <div class="row">
                     <div class="col-sm-2 display-none-tablet-portrait">
                         <img src="http://placehold.it/130x200">
                     </div>

@@ -58774,13 +58774,13 @@ body.logged-in, body.admin-bar {
 }
 
 /* line 10, sass/_header-main.scss */
-body.logged-in .sticky, body.admin-bar .sticky {
+body.logged-in #header-main-container, body.admin-bar #header-main-container {
   top: 28px !important;
 }
 @media (max-width: 767px) {
   /* line 10, sass/_header-main.scss */
-  body.logged-in .sticky, body.admin-bar .sticky {
-    top: 0px !important;
+  body.logged-in #header-main-container, body.admin-bar #header-main-container {
+    top: 46px !important;
   }
 }
 
@@ -60340,10 +60340,25 @@ body.logged-in .sticky, body.admin-bar .sticky {
   opacity: 1;
 }
 
-/* line 90, sass/_template-carousel.scss */
+/* line 68, sass/_template-carousel.scss */
 .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
+}
+
+@media (max-width: 767px) {
+  /* line 74, sass/_template-carousel.scss */
+  .carousel-text {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 74, sass/_template-carousel.scss */
+  .carousel-text {
+    padding: 15px;
+    margin: 15px;
+    margin-top: 120px;
+  }
 }
 
 /* line 5, sass/_template-testimonials.scss */
@@ -60382,6 +60397,25 @@ body.logged-in .sticky, body.admin-bar .sticky {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 35px solid #0078ae;
+}
+
+@media (max-width: 767px) {
+  /* line 3, sass/_template-post.scss */
+  .template-post .specific-tablet-portrait {
+    height: 130px;
+    height: 25vh;
+    overflow: hidden;
+    position: relative;
+  }
+  /* line 8, sass/_template-post.scss */
+  .template-post .specific-tablet-portrait img {
+    background-color: #0078ae;
+    top: -65px;
+    top: -12.5vh;
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* line 14, sass/_navigation-header.scss */
