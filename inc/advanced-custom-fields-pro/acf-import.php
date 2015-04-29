@@ -878,6 +878,13 @@ if( function_exists('register_field_group') ):
                     'value' => 'eemjii_services',
                 ),
             ),
+            array (
+                array (
+                    'param' => 'page_template',
+                    'operator' => '==',
+                    'value' => 'page-clients.php',
+                ),
+            ),
         ),
         'menu_order' => 0,
         'position' => 'normal',

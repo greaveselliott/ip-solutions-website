@@ -3261,7 +3261,7 @@ th {
   }
 
   /* line 83, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_print.scss */
-  .btn > .caret, input[type="submit"] > .caret,
+  .btn > .caret, .comment-form input[type="submit"] > .caret, input[type="submit"] > .caret,
   input[type="reset"] > .caret,
   input[type="button"] > .caret,
   button > .caret,
@@ -7372,7 +7372,7 @@ select[multiple].input-lg,
 }
 
 /* line 9, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn, input[type="submit"],
+.btn, .comment-form input[type="submit"], input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button {
@@ -7656,7 +7656,7 @@ fieldset[disabled] button {
 }
 
 /* line 127, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > input[type="submit"],
+.btn-lg, .btn-group-lg > .btn, .comment-form .btn-group-lg > input[type="submit"], .btn-group-lg > input[type="submit"],
 .btn-group-lg > input[type="reset"],
 .btn-group-lg > input[type="button"],
 .btn-group-lg > button {
@@ -7667,7 +7667,7 @@ fieldset[disabled] button {
 }
 
 /* line 131, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > input[type="submit"],
+.btn-sm, .btn-group-sm > .btn, .comment-form .btn-group-sm > input[type="submit"], .btn-group-sm > input[type="submit"],
 .btn-group-sm > input[type="reset"],
 .btn-group-sm > input[type="button"],
 .btn-group-sm > button {
@@ -7678,7 +7678,7 @@ fieldset[disabled] button {
 }
 
 /* line 135, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-xs, .btn-group-xs > .btn, .btn-group-xs > input[type="submit"],
+.btn-xs, .btn-group-xs > .btn, .comment-form .btn-group-xs > input[type="submit"], .btn-group-xs > input[type="submit"],
 .btn-group-xs > input[type="reset"],
 .btn-group-xs > input[type="button"],
 .btn-group-xs > button {
@@ -7928,11 +7928,12 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 /* line 11, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn, .btn-group > input[type="submit"],
+.btn-group > .btn, .comment-form .btn-group > input[type="submit"], .btn-group > input[type="submit"],
 .btn-group > input[type="reset"],
 .btn-group > input[type="button"],
 .btn-group > button,
 .btn-group-vertical > .btn,
+.comment-form .btn-group-vertical > input[type="submit"],
 .btn-group-vertical > input[type="submit"],
 .btn-group-vertical > input[type="reset"],
 .btn-group-vertical > input[type="button"],
@@ -7941,35 +7942,39 @@ tbody.collapse.in {
   float: left;
 }
 /* line 15, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover, .btn-group > input[type="submit"]:hover,
+.btn-group > .btn:hover, .comment-form .btn-group > input[type="submit"]:hover, .btn-group > input[type="submit"]:hover,
 .btn-group > input[type="reset"]:hover,
 .btn-group > input[type="button"]:hover,
-.btn-group > button:hover, .btn-group > .btn:focus, .btn-group > input[type="submit"]:focus,
+.btn-group > button:hover, .btn-group > .btn:focus, .comment-form .btn-group > input[type="submit"]:focus, .btn-group > input[type="submit"]:focus,
 .btn-group > input[type="reset"]:focus,
 .btn-group > input[type="button"]:focus,
-.btn-group > button:focus, .btn-group > .btn:active, .btn-group > input[type="submit"]:active,
+.btn-group > button:focus, .btn-group > .btn:active, .comment-form .btn-group > input[type="submit"]:active, .btn-group > input[type="submit"]:active,
 .btn-group > input[type="reset"]:active,
 .btn-group > input[type="button"]:active,
-.btn-group > button:active, .btn-group > .btn.active, .btn-group > input.active[type="submit"],
+.btn-group > button:active, .btn-group > .btn.active, .comment-form .btn-group > input.active[type="submit"], .btn-group > input.active[type="submit"],
 .btn-group > input.active[type="reset"],
 .btn-group > input.active[type="button"],
 .btn-group > button.active,
 .btn-group-vertical > .btn:hover,
+.comment-form .btn-group-vertical > input[type="submit"]:hover,
 .btn-group-vertical > input[type="submit"]:hover,
 .btn-group-vertical > input[type="reset"]:hover,
 .btn-group-vertical > input[type="button"]:hover,
 .btn-group-vertical > button:hover,
 .btn-group-vertical > .btn:focus,
+.comment-form .btn-group-vertical > input[type="submit"]:focus,
 .btn-group-vertical > input[type="submit"]:focus,
 .btn-group-vertical > input[type="reset"]:focus,
 .btn-group-vertical > input[type="button"]:focus,
 .btn-group-vertical > button:focus,
 .btn-group-vertical > .btn:active,
+.comment-form .btn-group-vertical > input[type="submit"]:active,
 .btn-group-vertical > input[type="submit"]:active,
 .btn-group-vertical > input[type="reset"]:active,
 .btn-group-vertical > input[type="button"]:active,
 .btn-group-vertical > button:active,
 .btn-group-vertical > .btn.active,
+.comment-form .btn-group-vertical > input.active[type="submit"],
 .btn-group-vertical > input.active[type="submit"],
 .btn-group-vertical > input.active[type="reset"],
 .btn-group-vertical > input.active[type="button"],
@@ -7978,34 +7983,44 @@ tbody.collapse.in {
 }
 
 /* line 26, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group .btn + .btn, .btn-group input[type="submit"] + .btn,
+.btn-group .btn + .btn, .btn-group .comment-form input[type="submit"] + .btn, .btn-group input[type="submit"] + .btn,
 .btn-group input[type="reset"] + .btn,
 .btn-group input[type="button"] + .btn,
-.btn-group button + .btn, .btn-group .btn + input[type="submit"], .btn-group input[type="submit"] + input[type="submit"],
+.btn-group button + .btn, .btn-group .comment-form .btn + input[type="submit"],
+.btn-group .comment-form input[type="reset"] + input[type="submit"],
+.btn-group .comment-form input[type="button"] + input[type="submit"],
+.btn-group .comment-form button + input[type="submit"],
+.comment-form .btn-group button + input[type="submit"], .btn-group .btn + input[type="submit"], .btn-group .comment-form input[type="submit"] + input[type="submit"], .btn-group input[type="submit"] + input[type="submit"],
 .btn-group input[type="reset"] + input[type="submit"],
 .btn-group input[type="button"] + input[type="submit"],
 .btn-group button + input[type="submit"],
 .btn-group .btn + input[type="reset"],
+.btn-group .comment-form input[type="submit"] + input[type="reset"],
 .btn-group input[type="submit"] + input[type="reset"],
 .btn-group input[type="reset"] + input[type="reset"],
 .btn-group input[type="button"] + input[type="reset"],
 .btn-group button + input[type="reset"],
 .btn-group .btn + input[type="button"],
+.btn-group .comment-form input[type="submit"] + input[type="button"],
 .btn-group input[type="submit"] + input[type="button"],
 .btn-group input[type="reset"] + input[type="button"],
 .btn-group input[type="button"] + input[type="button"],
 .btn-group button + input[type="button"],
 .btn-group .btn + button,
+.btn-group .comment-form input[type="submit"] + button,
+.comment-form .btn-group input[type="submit"] + button,
 .btn-group input[type="submit"] + button,
 .btn-group input[type="reset"] + button,
 .btn-group input[type="button"] + button,
 .btn-group button + button,
 .btn-group .btn + .btn-group,
+.btn-group .comment-form input[type="submit"] + .btn-group,
 .btn-group input[type="submit"] + .btn-group,
 .btn-group input[type="reset"] + .btn-group,
 .btn-group input[type="button"] + .btn-group,
 .btn-group button + .btn-group,
 .btn-group .btn-group + .btn,
+.btn-group .comment-form .btn-group + input[type="submit"],
 .btn-group .btn-group + input[type="submit"],
 .btn-group .btn-group + input[type="reset"],
 .btn-group .btn-group + input[type="button"],
@@ -8033,7 +8048,7 @@ tbody.collapse.in {
   float: left;
 }
 /* line 43, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn, .btn-toolbar > input[type="submit"],
+.btn-toolbar > .btn, .comment-form .btn-toolbar > input[type="submit"], .btn-toolbar > input[type="submit"],
 .btn-toolbar > input[type="reset"],
 .btn-toolbar > input[type="button"],
 .btn-toolbar > button,
@@ -8043,7 +8058,7 @@ tbody.collapse.in {
 }
 
 /* line 50, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), .comment-form .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle),
 .btn-group > input[type="reset"]:not(:first-child):not(:last-child):not(.dropdown-toggle),
 .btn-group > input[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle),
 .btn-group > button:not(:first-child):not(:last-child):not(.dropdown-toggle) {
@@ -8051,14 +8066,14 @@ tbody.collapse.in {
 }
 
 /* line 55, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child, .btn-group > input[type="submit"]:first-child,
+.btn-group > .btn:first-child, .comment-form .btn-group > input[type="submit"]:first-child, .btn-group > input[type="submit"]:first-child,
 .btn-group > input[type="reset"]:first-child,
 .btn-group > input[type="button"]:first-child,
 .btn-group > button:first-child {
   margin-left: 0;
 }
 /* line 57, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), .comment-form .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle),
 .btn-group > input[type="reset"]:first-child:not(:last-child):not(.dropdown-toggle),
 .btn-group > input[type="button"]:first-child:not(:last-child):not(.dropdown-toggle),
 .btn-group > button:first-child:not(:last-child):not(.dropdown-toggle) {
@@ -8067,7 +8082,7 @@ tbody.collapse.in {
 }
 
 /* line 62, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child:not(:first-child), .btn-group > input[type="submit"]:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), .comment-form .btn-group > input[type="submit"]:last-child:not(:first-child), .btn-group > input[type="submit"]:last-child:not(:first-child),
 .btn-group > input[type="reset"]:last-child:not(:first-child),
 .btn-group > input[type="button"]:last-child:not(:first-child),
 .btn-group > button:last-child:not(:first-child),
@@ -8169,7 +8184,7 @@ button .caret {
 }
 
 /* line 144, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn, .btn-group-vertical > input[type="submit"],
+.btn-group-vertical > .btn, .comment-form .btn-group-vertical > input[type="submit"], .btn-group-vertical > input[type="submit"],
 .btn-group-vertical > input[type="reset"],
 .btn-group-vertical > input[type="button"],
 .btn-group-vertical > button,
@@ -8204,7 +8219,8 @@ button .caret {
 .btn-group-vertical > .btn + .btn, .btn-group-vertical > input[type="submit"] + .btn,
 .btn-group-vertical > input[type="reset"] + .btn,
 .btn-group-vertical > input[type="button"] + .btn,
-.btn-group-vertical > button + .btn, .btn-group-vertical > .btn + input[type="submit"], .btn-group-vertical > input[type="submit"] + input[type="submit"],
+.btn-group-vertical > button + .btn,
+.comment-form .btn-group-vertical > button + input[type="submit"], .btn-group-vertical > .btn + input[type="submit"], .btn-group-vertical > input[type="submit"] + input[type="submit"],
 .btn-group-vertical > input[type="reset"] + input[type="submit"],
 .btn-group-vertical > input[type="button"] + input[type="submit"],
 .btn-group-vertical > button + input[type="submit"],
@@ -8219,6 +8235,7 @@ button .caret {
 .btn-group-vertical > input[type="button"] + input[type="button"],
 .btn-group-vertical > button + input[type="button"],
 .btn-group-vertical > .btn + button,
+.comment-form .btn-group-vertical > input[type="submit"] + button,
 .btn-group-vertical > input[type="submit"] + button,
 .btn-group-vertical > input[type="reset"] + button,
 .btn-group-vertical > input[type="button"] + button,
@@ -8239,14 +8256,14 @@ button .caret {
 }
 
 /* line 171, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child),
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), .comment-form .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child), .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child),
 .btn-group-vertical > input[type="reset"]:not(:first-child):not(:last-child),
 .btn-group-vertical > input[type="button"]:not(:first-child):not(:last-child),
 .btn-group-vertical > button:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 /* line 174, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child:not(:last-child), .btn-group-vertical > input[type="submit"]:first-child:not(:last-child),
+.btn-group-vertical > .btn:first-child:not(:last-child), .comment-form .btn-group-vertical > input[type="submit"]:first-child:not(:last-child), .btn-group-vertical > input[type="submit"]:first-child:not(:last-child),
 .btn-group-vertical > input[type="reset"]:first-child:not(:last-child),
 .btn-group-vertical > input[type="button"]:first-child:not(:last-child),
 .btn-group-vertical > button:first-child:not(:last-child) {
@@ -8255,7 +8272,7 @@ button .caret {
   border-bottom-left-radius: 0;
 }
 /* line 178, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child:not(:first-child), .btn-group-vertical > input[type="submit"]:last-child:not(:first-child),
+.btn-group-vertical > .btn:last-child:not(:first-child), .comment-form .btn-group-vertical > input[type="submit"]:last-child:not(:first-child), .btn-group-vertical > input[type="submit"]:last-child:not(:first-child),
 .btn-group-vertical > input[type="reset"]:last-child:not(:first-child),
 .btn-group-vertical > input[type="button"]:last-child:not(:first-child),
 .btn-group-vertical > button:last-child:not(:first-child) {
@@ -8299,7 +8316,7 @@ button .caret {
   border-collapse: separate;
 }
 /* line 205, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-justified > .btn, .btn-group-justified > input[type="submit"],
+.btn-group-justified > .btn, .comment-form .btn-group-justified > input[type="submit"], .btn-group-justified > input[type="submit"],
 .btn-group-justified > input[type="reset"],
 .btn-group-justified > input[type="button"],
 .btn-group-justified > button,
@@ -8433,6 +8450,7 @@ button .caret {
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
+.comment-form .input-group-btn:first-child > input[type="submit"],
 .input-group-btn:first-child > input[type="submit"],
 .input-group-btn:first-child > input[type="reset"],
 .input-group-btn:first-child > input[type="button"],
@@ -8444,6 +8462,7 @@ button .caret {
 .input-group-btn:first-child > .btn-group > button,
 .input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.comment-form .input-group-btn:last-child > input[type="submit"]:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > input[type="submit"]:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > input[type="reset"]:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:last-child > input[type="button"]:not(:last-child):not(.dropdown-toggle),
@@ -8466,6 +8485,7 @@ button .caret {
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
+.comment-form .input-group-btn:last-child > input[type="submit"],
 .input-group-btn:last-child > input[type="submit"],
 .input-group-btn:last-child > input[type="reset"],
 .input-group-btn:last-child > input[type="button"],
@@ -8477,6 +8497,7 @@ button .caret {
 .input-group-btn:last-child > .btn-group > button,
 .input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child),
+.comment-form .input-group-btn:first-child > input[type="submit"]:not(:first-child),
 .input-group-btn:first-child > input[type="submit"]:not(:first-child),
 .input-group-btn:first-child > input[type="reset"]:not(:first-child),
 .input-group-btn:first-child > input[type="button"]:not(:first-child),
@@ -8502,7 +8523,7 @@ button .caret {
   white-space: nowrap;
 }
 /* line 140, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn, .input-group-btn > input[type="submit"],
+.input-group-btn > .btn, .comment-form .input-group-btn > input[type="submit"], .input-group-btn > input[type="submit"],
 .input-group-btn > input[type="reset"],
 .input-group-btn > input[type="button"],
 .input-group-btn > button {
@@ -8512,7 +8533,8 @@ button .caret {
 .input-group-btn > .btn + .btn, .input-group-btn > input[type="submit"] + .btn,
 .input-group-btn > input[type="reset"] + .btn,
 .input-group-btn > input[type="button"] + .btn,
-.input-group-btn > button + .btn, .input-group-btn > .btn + input[type="submit"], .input-group-btn > input[type="submit"] + input[type="submit"],
+.input-group-btn > button + .btn,
+.comment-form .input-group-btn > button + input[type="submit"], .input-group-btn > .btn + input[type="submit"], .input-group-btn > input[type="submit"] + input[type="submit"],
 .input-group-btn > input[type="reset"] + input[type="submit"],
 .input-group-btn > input[type="button"] + input[type="submit"],
 .input-group-btn > button + input[type="submit"],
@@ -8527,6 +8549,7 @@ button .caret {
 .input-group-btn > input[type="button"] + input[type="button"],
 .input-group-btn > button + input[type="button"],
 .input-group-btn > .btn + button,
+.comment-form .input-group-btn > input[type="submit"] + button,
 .input-group-btn > input[type="submit"] + button,
 .input-group-btn > input[type="reset"] + button,
 .input-group-btn > input[type="button"] + button,
@@ -8534,20 +8557,20 @@ button .caret {
   margin-left: -1px;
 }
 /* line 146, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn > .btn:hover, .input-group-btn > input[type="submit"]:hover,
+.input-group-btn > .btn:hover, .comment-form .input-group-btn > input[type="submit"]:hover, .input-group-btn > input[type="submit"]:hover,
 .input-group-btn > input[type="reset"]:hover,
 .input-group-btn > input[type="button"]:hover,
-.input-group-btn > button:hover, .input-group-btn > .btn:focus, .input-group-btn > input[type="submit"]:focus,
+.input-group-btn > button:hover, .input-group-btn > .btn:focus, .comment-form .input-group-btn > input[type="submit"]:focus, .input-group-btn > input[type="submit"]:focus,
 .input-group-btn > input[type="reset"]:focus,
 .input-group-btn > input[type="button"]:focus,
-.input-group-btn > button:focus, .input-group-btn > .btn:active, .input-group-btn > input[type="submit"]:active,
+.input-group-btn > button:focus, .input-group-btn > .btn:active, .comment-form .input-group-btn > input[type="submit"]:active, .input-group-btn > input[type="submit"]:active,
 .input-group-btn > input[type="reset"]:active,
 .input-group-btn > input[type="button"]:active,
 .input-group-btn > button:active {
   z-index: 2;
 }
 /* line 155, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:first-child > .btn, .input-group-btn:first-child > input[type="submit"],
+.input-group-btn:first-child > .btn, .comment-form .input-group-btn:first-child > input[type="submit"], .input-group-btn:first-child > input[type="submit"],
 .input-group-btn:first-child > input[type="reset"],
 .input-group-btn:first-child > input[type="button"],
 .input-group-btn:first-child > button,
@@ -8555,7 +8578,7 @@ button .caret {
   margin-right: -1px;
 }
 /* line 161, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_input-groups.scss */
-.input-group-btn:last-child > .btn, .input-group-btn:last-child > input[type="submit"],
+.input-group-btn:last-child > .btn, .comment-form .input-group-btn:last-child > input[type="submit"], .input-group-btn:last-child > input[type="submit"],
 .input-group-btn:last-child > input[type="reset"],
 .input-group-btn:last-child > input[type="button"],
 .input-group-btn:last-child > button,
@@ -9146,7 +9169,7 @@ button .caret {
   margin-bottom: 16px;
 }
 /* line 346, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .btn-group-sm > input.navbar-btn[type="submit"],
+.navbar-btn.btn-sm, .btn-group-sm > .navbar-btn.btn, .comment-form .btn-group-sm > input.navbar-btn[type="submit"], .btn-group-sm > input.navbar-btn[type="submit"],
 .btn-group-sm > input.navbar-btn[type="reset"],
 .btn-group-sm > input.navbar-btn[type="button"],
 .btn-group-sm > button.navbar-btn {
@@ -9154,7 +9177,7 @@ button .caret {
   margin-bottom: 18px;
 }
 /* line 349, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .btn-group-xs > input.navbar-btn[type="submit"],
+.navbar-btn.btn-xs, .btn-group-xs > .navbar-btn.btn, .comment-form .btn-group-xs > input.navbar-btn[type="submit"], .btn-group-xs > input.navbar-btn[type="submit"],
 .btn-group-xs > input.navbar-btn[type="reset"],
 .btn-group-xs > input.navbar-btn[type="button"],
 .btn-group-xs > button.navbar-btn {
@@ -10933,24 +10956,32 @@ button.close {
   clear: both;
 }
 /* line 110, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn + .btn, .modal-footer input[type="submit"] + .btn,
+.modal-footer .btn + .btn, .modal-footer .comment-form input[type="submit"] + .btn, .modal-footer input[type="submit"] + .btn,
 .modal-footer input[type="reset"] + .btn,
 .modal-footer input[type="button"] + .btn,
-.modal-footer button + .btn, .modal-footer .btn + input[type="submit"], .modal-footer input[type="submit"] + input[type="submit"],
+.modal-footer button + .btn, .modal-footer .comment-form .btn + input[type="submit"],
+.modal-footer .comment-form input[type="reset"] + input[type="submit"],
+.modal-footer .comment-form input[type="button"] + input[type="submit"],
+.modal-footer .comment-form button + input[type="submit"],
+.comment-form .modal-footer button + input[type="submit"], .modal-footer .btn + input[type="submit"], .modal-footer .comment-form input[type="submit"] + input[type="submit"], .modal-footer input[type="submit"] + input[type="submit"],
 .modal-footer input[type="reset"] + input[type="submit"],
 .modal-footer input[type="button"] + input[type="submit"],
 .modal-footer button + input[type="submit"],
 .modal-footer .btn + input[type="reset"],
+.modal-footer .comment-form input[type="submit"] + input[type="reset"],
 .modal-footer input[type="submit"] + input[type="reset"],
 .modal-footer input[type="reset"] + input[type="reset"],
 .modal-footer input[type="button"] + input[type="reset"],
 .modal-footer button + input[type="reset"],
 .modal-footer .btn + input[type="button"],
+.modal-footer .comment-form input[type="submit"] + input[type="button"],
 .modal-footer input[type="submit"] + input[type="button"],
 .modal-footer input[type="reset"] + input[type="button"],
 .modal-footer input[type="button"] + input[type="button"],
 .modal-footer button + input[type="button"],
 .modal-footer .btn + button,
+.modal-footer .comment-form input[type="submit"] + button,
+.comment-form .modal-footer input[type="submit"] + button,
 .modal-footer input[type="submit"] + button,
 .modal-footer input[type="reset"] + button,
 .modal-footer input[type="button"] + button,
@@ -10959,24 +10990,32 @@ button.close {
   margin-bottom: 0;
 }
 /* line 115, ../../../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group input[type="submit"] + .btn,
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .comment-form input[type="submit"] + .btn, .modal-footer .btn-group input[type="submit"] + .btn,
 .modal-footer .btn-group input[type="reset"] + .btn,
 .modal-footer .btn-group input[type="button"] + .btn,
-.modal-footer .btn-group button + .btn, .modal-footer .btn-group .btn + input[type="submit"], .modal-footer .btn-group input[type="submit"] + input[type="submit"],
+.modal-footer .btn-group button + .btn, .modal-footer .btn-group .comment-form .btn + input[type="submit"],
+.modal-footer .btn-group .comment-form input[type="reset"] + input[type="submit"],
+.modal-footer .btn-group .comment-form input[type="button"] + input[type="submit"],
+.modal-footer .btn-group .comment-form button + input[type="submit"],
+.comment-form .modal-footer .btn-group button + input[type="submit"], .modal-footer .btn-group .btn + input[type="submit"], .modal-footer .btn-group .comment-form input[type="submit"] + input[type="submit"], .modal-footer .btn-group input[type="submit"] + input[type="submit"],
 .modal-footer .btn-group input[type="reset"] + input[type="submit"],
 .modal-footer .btn-group input[type="button"] + input[type="submit"],
 .modal-footer .btn-group button + input[type="submit"],
 .modal-footer .btn-group .btn + input[type="reset"],
+.modal-footer .btn-group .comment-form input[type="submit"] + input[type="reset"],
 .modal-footer .btn-group input[type="submit"] + input[type="reset"],
 .modal-footer .btn-group input[type="reset"] + input[type="reset"],
 .modal-footer .btn-group input[type="button"] + input[type="reset"],
 .modal-footer .btn-group button + input[type="reset"],
 .modal-footer .btn-group .btn + input[type="button"],
+.modal-footer .btn-group .comment-form input[type="submit"] + input[type="button"],
 .modal-footer .btn-group input[type="submit"] + input[type="button"],
 .modal-footer .btn-group input[type="reset"] + input[type="button"],
 .modal-footer .btn-group input[type="button"] + input[type="button"],
 .modal-footer .btn-group button + input[type="button"],
 .modal-footer .btn-group .btn + button,
+.modal-footer .btn-group .comment-form input[type="submit"] + button,
+.comment-form .modal-footer .btn-group input[type="submit"] + button,
 .modal-footer .btn-group input[type="submit"] + button,
 .modal-footer .btn-group input[type="reset"] + button,
 .modal-footer .btn-group input[type="button"] + button,
@@ -14161,6 +14200,100 @@ button.close {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
+.width-0 {
+  width: 0%;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-0-phone {
+    width: 0%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-0-tablet-portrait {
+    width: 0%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-0-tablet-up {
+    width: 0%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-0-tablet-landscape-desktop {
+    width: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-0-large-desktop {
+    width: 0%;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-0-non-retina {
+    width: 0%;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-0-retina {
+    width: 0%;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.height-0 {
+  height: 0%;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-0-phone {
+    height: 0%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-0-tablet-portrait {
+    height: 0%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-0-tablet-up {
+    height: 0%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-0-tablet-landscape-desktop {
+    height: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-0-large-desktop {
+    height: 0%;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-0-non-retina {
+    height: 0%;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-0-retina {
+    height: 0%;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
 .width-50 {
   width: 50%;
 }
@@ -14252,6 +14385,100 @@ button.close {
   /* line 113, sass/_bootstrap-media-queries.scss */
   .height-50-retina {
     height: 50%;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.width-60 {
+  width: 60%;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-60-phone {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-60-tablet-portrait {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-60-tablet-up {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-60-tablet-landscape-desktop {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-60-large-desktop {
+    width: 60%;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-60-non-retina {
+    width: 60%;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .width-60-retina {
+    width: 60%;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.height-60 {
+  height: 60%;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-60-phone {
+    height: 60%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-60-tablet-portrait {
+    height: 60%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-60-tablet-up {
+    height: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-60-tablet-landscape-desktop {
+    height: 60%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-60-large-desktop {
+    height: 60%;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-60-non-retina {
+    height: 60%;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .height-60-retina {
+    height: 60%;
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
@@ -15117,7 +15344,7 @@ button.close {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
-.padding-left {
+.padding-left, .comment .children {
   padding-left: 25px;
 }
 
@@ -16606,6 +16833,20 @@ hr {
   width: 30%;
 }
 
+/* line 40, sass/_typography.scss */
+a {
+  color: #f89829;
+}
+/* line 42, sass/_typography.scss */
+a:hover {
+  color: #f78c10;
+}
+
+/* line 47, sass/_typography.scss */
+code {
+  color: #0078ae;
+}
+
 /* line 108, sass/_bootstrap-media-queries.scss */
 .text-blue, .btn-blue {
   color: #0078ae !important;
@@ -18051,7 +18292,7 @@ hr {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
-.border-1-blue, .slick-testimonial-home .slick-list {
+.border-1-blue {
   border: solid 3px #0078ae;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -22712,7 +22953,7 @@ hr {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
-.border-1-green {
+.border-1-green, .slick-testimonial-home .slick-list {
   border: solid 3px #c3cf21;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -39912,7 +40153,7 @@ hr {
 }
 
 /* line 108, sass/_bootstrap-media-queries.scss */
-.text-orange, .btn-orange {
+.text-orange, .btn-orange, .comment-form input[type="submit"] {
   color: #f89829 !important;
 }
 
@@ -41711,7 +41952,7 @@ hr {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
-.border-2-orange, .btn-orange, .btn-orange:hover {
+.border-2-orange, .btn-orange, .btn-orange:hover, .comment-form input[type="submit"], .comment-form input[type="submit"]:hover {
   border: solid 2px #f89829;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -44573,7 +44814,7 @@ hr {
 }
 
 /* line 108, sass/_bootstrap-media-queries.scss */
-.text-white, .btn-blue:hover, .btn-green:hover, .btn-grey:hover, .btn-cyan:hover, .btn-purple:hover, .btn-orange:hover, .btn-white, .btn-white:hover, .btn-black:hover, .btn-trasparent:hover, footer .menu, footer .menu * {
+.text-white, .btn-blue:hover, .btn-green:hover, .btn-grey:hover, .btn-cyan:hover, .btn-purple:hover, .btn-orange:hover, .btn-white, .btn-white:hover, .btn-black:hover, .btn-trasparent:hover, footer .menu, footer .menu *, .comment-form input[type="submit"]:hover {
   color: #FFFFFF !important;
 }
 
@@ -58791,14 +59032,18 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   z-index: 10;
   width: 100%;
 }
+/* line 24, sass/_header-main.scss */
+#header-main-container a {
+  color: #0078ae;
+}
 
-/* line 29, sass/_header-main.scss */
+/* line 31, sass/_header-main.scss */
 #header-main-container {
   z-index: 20;
   position: relative;
 }
 
-/* line 33, sass/_header-main.scss */
+/* line 35, sass/_header-main.scss */
 #header-main-height {
   -webkit-transition: all 0.17s ease-in;
   -moz-transition: all 0.17s ease-in;
@@ -58807,15 +59052,165 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   transition: all 0.17s ease-in;
 }
 @media (min-width: 768px) {
-  /* line 33, sass/_header-main.scss */
+  /* line 35, sass/_header-main.scss */
   #header-main-height {
     height: 120px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 45, sass/_header-main.scss */
+  /* line 47, sass/_header-main.scss */
   .sticky #header-main-height {
+    height: 90px;
+  }
+}
+
+/* line 108, sass/_bootstrap-media-queries.scss */
+.header-offset {
+  height: 120px;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.17s ease-in;
+  -moz-transition: all 0.17s ease-in;
+  -ms-transition: all 0.17s ease-in;
+  -o-transition: all 0.17s ease-in;
+  transition: all 0.17s ease-in;
+}
+
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .header-offset-phone {
+    height: 120px;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.17s ease-in;
+    -moz-transition: all 0.17s ease-in;
+    -ms-transition: all 0.17s ease-in;
+    -o-transition: all 0.17s ease-in;
+    transition: all 0.17s ease-in;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .header-offset-tablet-portrait {
+    height: 120px;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.17s ease-in;
+    -moz-transition: all 0.17s ease-in;
+    -ms-transition: all 0.17s ease-in;
+    -o-transition: all 0.17s ease-in;
+    transition: all 0.17s ease-in;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .header-offset-tablet-up {
+    height: 120px;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.17s ease-in;
+    -moz-transition: all 0.17s ease-in;
+    -ms-transition: all 0.17s ease-in;
+    -o-transition: all 0.17s ease-in;
+    transition: all 0.17s ease-in;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .header-offset-tablet-landscape-desktop {
+    height: 120px;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.17s ease-in;
+    -moz-transition: all 0.17s ease-in;
+    -ms-transition: all 0.17s ease-in;
+    -o-transition: all 0.17s ease-in;
+    transition: all 0.17s ease-in;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .header-offset-large-desktop {
+    height: 120px;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.17s ease-in;
+    -moz-transition: all 0.17s ease-in;
+    -ms-transition: all 0.17s ease-in;
+    -o-transition: all 0.17s ease-in;
+    transition: all 0.17s ease-in;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .header-offset-non-retina {
+    height: 120px;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.17s ease-in;
+    -moz-transition: all 0.17s ease-in;
+    -ms-transition: all 0.17s ease-in;
+    -o-transition: all 0.17s ease-in;
+    transition: all 0.17s ease-in;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .header-offset-retina {
+    height: 120px;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.17s ease-in;
+    -moz-transition: all 0.17s ease-in;
+    -ms-transition: all 0.17s ease-in;
+    -o-transition: all 0.17s ease-in;
+    transition: all 0.17s ease-in;
+  }
+}
+/* line 108, sass/_bootstrap-media-queries.scss */
+.sticky .header-offset {
+  height: 90px;
+}
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .sticky .header-offset-phone {
+    height: 90px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .sticky .header-offset-tablet-portrait {
+    height: 90px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .sticky .header-offset-tablet-up {
+    height: 90px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .sticky .header-offset-tablet-landscape-desktop {
+    height: 90px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .sticky .header-offset-large-desktop {
+    height: 90px;
+  }
+}
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .sticky .header-offset-non-retina {
+    height: 90px;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .sticky .header-offset-retina {
     height: 90px;
   }
 }
@@ -60276,15 +60671,14 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
 .acf-slickjs-carousel-background .slick-list, .acf-slickjs-carousel-background .slick-track {
   height: inherit;
 }
-
 @media (min-width: 768px) {
   /* line 10, sass/_template-carousel.scss */
-  .slick-slider {
+  .acf-slickjs-carousel-background .slick-slider {
     margin-bottom: 30px;
   }
 }
 /* line 15, sass/_template-carousel.scss */
-.slick-dots {
+.acf-slickjs-carousel-background .slick-dots {
   display: block;
   width: 100%;
   padding: 0;
@@ -60293,14 +60687,13 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
 }
 @media (max-width: 767px) {
   /* line 15, sass/_template-carousel.scss */
-  .slick-dots {
+  .acf-slickjs-carousel-background .slick-dots {
     margin-bottom: 0px;
     padding-bottom: 20px;
   }
 }
-
 /* line 26, sass/_template-carousel.scss */
-.slick-dots li {
+.acf-slickjs-carousel-background .slick-dots li {
   position: relative;
   background-color: #0078ae;
   display: inline-block;
@@ -60313,16 +60706,15 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   cursor: pointer;
 }
 /* line 38, sass/_template-carousel.scss */
-.slick-dots li:hover {
+.acf-slickjs-carousel-background .slick-dots li:hover {
   background-color: #006695;
 }
 /* line 41, sass/_template-carousel.scss */
-.slick-dots li.slick-active {
+.acf-slickjs-carousel-background .slick-dots li.slick-active {
   background-color: #c3cf21;
 }
-
 /* line 45, sass/_template-carousel.scss */
-.slick-dots li button {
+.acf-slickjs-carousel-background .slick-dots li button {
   font-size: 0;
   line-height: 0;
   display: block;
@@ -60335,34 +60727,30 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   outline: none;
   background: transparent;
 }
-
 /* line 63, sass/_template-carousel.scss */
-.slick-dots li button:hover,
-.slick-dots li button:focus {
+.acf-slickjs-carousel-background .slick-dots li button:hover,
+.acf-slickjs-carousel-background .slick-dots li button:focus {
   outline: none;
 }
-
 /* line 68, sass/_template-carousel.scss */
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
+.acf-slickjs-carousel-background .slick-dots li button:hover:before,
+.acf-slickjs-carousel-background .slick-dots li button:focus:before {
   opacity: 1;
 }
-
 /* line 73, sass/_template-carousel.scss */
-.slick-dots li.slick-active button:before {
+.acf-slickjs-carousel-background .slick-dots li.slick-active button:before {
   opacity: .75;
   color: black;
 }
-
 @media (max-width: 767px) {
   /* line 79, sass/_template-carousel.scss */
-  .carousel-text {
+  .acf-slickjs-carousel-background .carousel-text {
     margin-top: 60px;
   }
 }
 @media (min-width: 768px) {
   /* line 79, sass/_template-carousel.scss */
-  .carousel-text {
+  .acf-slickjs-carousel-background .carousel-text {
     padding: 15px;
     margin: 15px;
     margin-top: 120px;
@@ -60375,48 +60763,114 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   text-align: center;
   margin-bottom: 0px !important;
 }
-/* line 12, sass/_template-testimonials.scss */
+/* line 9, sass/_template-testimonials.scss */
+.slick-testimonial-home .slick-dots li {
+  width: auto;
+  height: auto;
+}
+/* line 14, sass/_template-testimonials.scss */
 .slick-testimonial-home .slick-dots li:hover {
   cursor: pointer;
 }
-/* line 15, sass/_template-testimonials.scss */
+/* line 17, sass/_template-testimonials.scss */
 .slick-testimonial-home .slick-dots li img {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   filter: gray;
   -webkit-filter: grayscale(100%);
 }
-/* line 21, sass/_template-testimonials.scss */
+/* line 23, sass/_template-testimonials.scss */
 .slick-testimonial-home .slick-dots li.slick-active img {
   filter: none;
   -webkit-filter: grayscale(0%);
 }
-/* line 30, sass/_template-testimonials.scss */
+/* line 32, sass/_template-testimonials.scss */
 .slick-testimonial-home .speech-bubble-tail {
   position: relative;
 }
-/* line 32, sass/_template-testimonials.scss */
+/* line 34, sass/_template-testimonials.scss */
 .slick-testimonial-home .speech-bubble-tail .arrow-down {
+  bottom: 9px;
   position: relative;
   left: 110px;
   content: "";
   display: block;
-  width: 0px;
-  height: 0px;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 35px solid #0078ae;
+  width: 60px;
+  height: 60px;
+  background-image: url("images/speech-bubble-tail.png");
+}
+
+/* line 1, sass/_template-blog.scss */
+.speech-bubble-background {
+  background: url("images/blog-speech-bubbles-bkgd.jpg") top center;
+  z-index: -10;
+  background-size: cover;
+}
+
+/* line 6, sass/_template-blog.scss */
+figure.speech-bubble {
+  position: relative;
+}
+/* line 9, sass/_template-blog.scss */
+figure.speech-bubble figcaption {
+  position: absolute;
+  top: 56%;
+  width: 60%;
+  text-align: center;
+  margin: 0 20%;
+}
+
+/* line 19, sass/_template-blog.scss */
+.slick-blog .slick-prev, .slick-blog .slick-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  font-size: 40px;
+  color: #f89829;
+}
+/* line 25, sass/_template-blog.scss */
+.slick-blog .slick-prev:hover, .slick-blog .slick-next:hover {
+  color: #959ca1;
+}
+/* line 29, sass/_template-blog.scss */
+.slick-blog .slick-prev {
+  left: -70px;
+}
+/* line 32, sass/_template-blog.scss */
+.slick-blog .slick-next {
+  right: -70px;
+}
+
+/* line 1, sass/_template-post.scss */
+.template-post {
+  margin: 0px 2px;
+}
+/* line 3, sass/_template-post.scss */
+.template-post .image-position-container {
+  width: 100%;
+  height: 100%;
+  padding: 37.5% 50%;
+  position: relative;
+}
+/* line 8, sass/_template-post.scss */
+.template-post .image-position-container .image-position {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
-  /* line 3, sass/_template-post.scss */
-  .template-post .specific-tablet-portrait {
+  /* line 3, sass/_template-post-home.scss */
+  .template-post-home .specific-tablet-portrait {
     height: 130px;
     height: 25vh;
     overflow: hidden;
     position: relative;
   }
-  /* line 8, sass/_template-post.scss */
-  .template-post .specific-tablet-portrait img {
+  /* line 8, sass/_template-post-home.scss */
+  .template-post-home .specific-tablet-portrait img {
     background-color: #0078ae;
     top: -65px;
     top: -12.5vh;
@@ -61196,6 +61650,391 @@ footer .menu, footer .menu * {
   .acf-map-push-down {
     height: 100px;
   }
+}
+
+/* line 10, sass/_comments-lingonberry.scss */
+.comments-title,
+#reply-title,
+.pingbacks-title {
+  font-size: 1.75em;
+  font-weight: 400;
+  color: #333;
+}
+
+/* line 18, sass/_comments-lingonberry.scss */
+.comments-title {
+  margin-bottom: 30px;
+}
+
+/* line 20, sass/_comments-lingonberry.scss */
+li.comment,
+li > div.comment {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+/* line 26, sass/_comments-lingonberry.scss */
+.comment .children {
+  border-left: 2px solid #EEE;
+}
+
+/* line 31, sass/_comments-lingonberry.scss */
+.comment .children li:last-child {
+  margin-bottom: 0;
+}
+
+/* line 34, sass/_comments-lingonberry.scss */
+.commentlist {
+  padding-left: 0px;
+  list-style-type: none;
+}
+/* line 37, sass/_comments-lingonberry.scss */
+.commentlist ol, .commentlist ul {
+  list-style-type: none;
+}
+
+/* line 41, sass/_comments-lingonberry.scss */
+.commentlist > li.comment:last-child,
+.commentlist > li.comment div.comment:last-child {
+  margin-bottom: 0;
+}
+
+/* line 50, sass/_comments-lingonberry.scss */
+.comments .pingbacks {
+  margin-top: 5.5%;
+}
+
+/* line 52, sass/_comments-lingonberry.scss */
+.pingbacks-inner {
+  margin: 0 auto;
+}
+
+/* line 54, sass/_comments-lingonberry.scss */
+.pingbacks-title {
+  margin-bottom: 20px;
+}
+
+/* line 56, sass/_comments-lingonberry.scss */
+.pingbacklist li {
+  padding: 0.5em;
+  line-height: 130%;
+}
+
+/* line 61, sass/_comments-lingonberry.scss */
+.pingbacklist a:hover {
+  text-decoration: underline;
+}
+
+/* line 63, sass/_comments-lingonberry.scss */
+.pingbacklist li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* line 65, sass/_comments-lingonberry.scss */
+.pingbacklist .comment-edit-link {
+  color: #999;
+}
+
+/* line 66, sass/_comments-lingonberry.scss */
+.pingbacklist .comment-edit-link:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+/* line 72, sass/_comments-lingonberry.scss */
+.comment-meta {
+  margin-bottom: 1em;
+}
+
+/* line 74, sass/_comments-lingonberry.scss */
+.comment-meta .avatar {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  float: left;
+}
+
+/* line 84, sass/_comments-lingonberry.scss */
+.comment-actions {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+/* line 90, sass/_comments-lingonberry.scss */
+.comment-actions a,
+a#cancel-comment-reply-link {
+  display: inline-block;
+  background: #DDD;
+  padding: 9px 10px 8px 10px;
+  text-transform: uppercase;
+  color: #FFF;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/* line 106, sass/_comments-lingonberry.scss */
+.comment-actions a:last-child,
+a#cancel-comment-reply-link:last-child {
+  margin-right: 0;
+}
+
+/* line 111, sass/_comments-lingonberry.scss */
+a#cancel-comment-reply-link:hover,
+.comment-actions a:hover {
+  background: #0078ae;
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 118, sass/_comments-lingonberry.scss */
+.comment-content .comment-actions {
+  display: none;
+}
+
+/* line 124, sass/_comments-lingonberry.scss */
+.comment-meta-content {
+  margin-left: 65px;
+  padding-top: 7px;
+}
+
+/* line 129, sass/_comments-lingonberry.scss */
+.comment-meta-content cite {
+  font-size: 1.075em;
+  color: #2B323A;
+  margin-bottom: 5px;
+  display: block;
+  font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+/* line 138, sass/_comments-lingonberry.scss */
+.bypostauthor .comment-meta-content cite .post-author {
+  font-weight: 400;
+  color: #666;
+  margin-left: 3px;
+  letter-spacing: 0;
+}
+
+/* line 140, sass/_comments-lingonberry.scss */
+.comment-meta-content cite a {
+  color: #2B323A;
+}
+
+/* line 141, sass/_comments-lingonberry.scss */
+.comment-meta-content cite a:hover {
+  color: #0078ae;
+}
+
+/* line 143, sass/_comments-lingonberry.scss */
+.comment-meta-content p {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+/* line 148, sass/_comments-lingonberry.scss */
+.comment-meta-content p a {
+  color: #BBB;
+}
+
+/* line 149, sass/_comments-lingonberry.scss */
+.comment-meta-content p a:hover {
+  color: #FF6558;
+}
+
+/* line 151, sass/_comments-lingonberry.scss */
+.comment-awaiting-moderation {
+  margin-left: 100px;
+  margin-bottom: 1em;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  background: #CCC;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 0.8em;
+  color: #FFF;
+}
+
+/* line 165, sass/_comments-lingonberry.scss */
+.comment-awaiting-moderation:hover {
+  background: #2B323A;
+}
+
+/* line 171, sass/_comments-lingonberry.scss */
+.comment-nav-below {
+  padding: 5.5% 0 0 0;
+  border-top: 1px solid #EEE;
+  margin-top: 5.5%;
+  background: none;
+}
+
+/* line 178, sass/_comments-lingonberry.scss */
+.comment-nav-below h3 {
+  padding-bottom: 3.25%;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+/* line 188, sass/_comments-lingonberry.scss */
+.comment-content h1,
+.comment-content h2,
+.comment-content h3,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+
+/* line 212, sass/_comments-lingonberry.scss */
+#reply-title {
+  margin-bottom: 20px;
+}
+
+/* line 214, sass/_comments-lingonberry.scss */
+#respond a:hover {
+  text-decoration: underline;
+}
+
+/* line 216, sass/_comments-lingonberry.scss */
+#respond .content-section-right {
+  border-radius: 0 0 4px 4px;
+  border-top: 1px solid #EEE;
+  z-index: 12;
+}
+
+/* line 222, sass/_comments-lingonberry.scss */
+.nocomments {
+  padding: 6.5% 5.5%;
+  color: #666;
+  text-align: center;
+}
+
+/* line 228, sass/_comments-lingonberry.scss */
+#cancel-comment-reply-link {
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+
+/* line 233, sass/_comments-lingonberry.scss */
+a#cancel-comment-reply-link:hover {
+  text-decoration: none !important;
+}
+
+/* line 235, sass/_comments-lingonberry.scss */
+#respond p,
+#respond code {
+  line-height: 150%;
+}
+
+/* line 240, sass/_comments-lingonberry.scss */
+#respond code {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+/* line 242, sass/_comments-lingonberry.scss */
+.comment-form p {
+  margin-bottom: 1em;
+}
+
+/* line 243, sass/_comments-lingonberry.scss */
+.comment-form p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 245, sass/_comments-lingonberry.scss */
+p.comment-notes,
+p.logged-in-as {
+  margin-bottom: 2em;
+  color: #666;
+}
+
+/* line 251, sass/_comments-lingonberry.scss */
+.comment-form input {
+  max-width: 75%;
+}
+
+/* line 253, sass/_comments-lingonberry.scss */
+.comment-form label {
+  display: none;
+}
+
+/* line 255, sass/_comments-lingonberry.scss */
+.comment-form-author .required,
+.comment-form-email .required,
+.comment-form-url .required,
+.comment-form-comment .required {
+  display: none;
+}
+
+/* line 262, sass/_comments-lingonberry.scss */
+.comment-form input,
+.comment-form textarea {
+  -webkit-appearance: none;
+  border: none;
+  background: #FAFAFA no-repeat 96% center;
+  background-size: 20px auto;
+  font-size: 1em;
+  color: #444;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 18px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #EEE;
+}
+
+/* line 287, sass/_comments-lingonberry.scss */
+.comment-form textarea {
+  line-height: 160%;
+  height: 250px;
+}
+
+/* line 303, sass/_comments-lingonberry.scss */
+.comment-form input[type="submit"] {
+  width: auto;
+  background: transparent !important;
+  -webkit-transition: all 0.12s ease-in;
+  -moz-transition: all 0.12s ease-in;
+  -ms-transition: all 0.12s ease-in;
+  -o-transition: all 0.12s ease-in;
+  transition: all 0.12s ease-in;
+}
+
+/* line 327, sass/_comments-lingonberry.scss */
+.comment-form input[type="submit"]:hover {
+  background: #f89829 !important;
+}
+
+/* line 336, sass/_comments-lingonberry.scss */
+.comment-form input[type="submit"]:active {
+  top: 1px;
+  position: relative;
+}
+
+/* line 341, sass/_comments-lingonberry.scss */
+p.form-allowed-tags {
+  margin-top: 1.5em;
+  line-height: 160%;
+}
+
+/* line 346, sass/_comments-lingonberry.scss */
+.form-submit {
+  margin-top: 1.5em;
 }
 
 /* line 1, sass/gravity-forms-sass/_form-default.scss */

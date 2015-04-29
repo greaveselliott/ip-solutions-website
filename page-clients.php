@@ -5,6 +5,14 @@
 ?>
 
 <?php get_header(); ?>
+    <div class="height-auto-important-tablet-portrait">
+        <div class="header-offset"></div>
+        <?php get_template_part('template','clients-carousel'); ?>
+    </div>
+</div>
+<!-- End .featured-image-container tag -->
+
+<?php get_template_part('loop', 'testimonials'); ?>
 <?php
 $services_query = new Eemjii_WP_Query(array(
     '_post_type'             => 'eemjii_clients',

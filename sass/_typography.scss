@@ -36,3 +36,14 @@ p {
 hr {
   width: 30%;
 }
+
+a {
+  color: $ips-orange;
+  &:hover {
+    color: darken($ips-orange,5);
+  }
+}
+
+code {
+  color: $ips-blue;
+}

@@ -11,6 +11,9 @@ include_once('inc/enqueue.php');
 // WordPress utility
 include_once('inc/wordpress-utility.php');
 
+// Image Sizes
+include_once('inc/image-size.php');
+
 // Custom Post Types
 include_once('inc/custom-post-types.php');
 
@@ -38,4 +41,7 @@ include_once('inc/wp-bootstrap-navwalker/wp_bootstrap_navwalker.php');
 
 // Getter Setter Functions
 include_once('inc/getters_setters.php');
+
+// Imported from Theme: Lingonberry Comments
+include_once('inc/lingonberry-comments.php');
 

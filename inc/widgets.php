@@ -29,3 +29,18 @@ function footer_sitemap_widget() {
 
 }
 add_action( 'widgets_init', 'footer_sitemap_widget' );
+
+// Social Media Bar
+function social_media_sharing_widget() {
+
+    register_sidebar( array(
+        'name'          => 'Social Media Sharing',
+        'id'            => 'social-media-sharing',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ) );
+
+}
+add_action( 'widgets_init', 'social_media_sharing_widget' );

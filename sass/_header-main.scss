@@ -20,11 +20,13 @@ body.logged-in, body.admin-bar {
   top: 0;
   z-index: 10;
   width: 100%;
+
+  a {
+    color: $ips-blue;
+  }
 }
 
-.sticky {
 
-}
 
 #header-main-container {
   z-index: 20;
@@ -47,6 +49,23 @@ body.logged-in, body.admin-bar {
     height: 90px;
   }
 }
+
+@include responsive_property('header-offset') {
+  height: 120px;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.17s ease-in;
+  -moz-transition: all 0.17s ease-in;
+  -ms-transition: all 0.17s ease-in;
+  -o-transition: all 0.17s ease-in;
+  transition: all 0.17s ease-in;
+}
+.sticky {
+  @include responsive_property('header-offset'){
+    height: 90px;
+  }
+}
+
 
 
 

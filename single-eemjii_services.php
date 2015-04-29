@@ -1,6 +1,7 @@
 <?php get_header(); ?>
     <!-- Background Image / Carousel -->
     <div class="height-auto-important-tablet-portrait">
+        <div class="header-offset"></div>
         <?php get_template_part('template','services-carousel'); ?>
     </div>
     <!-- Service Icons-->

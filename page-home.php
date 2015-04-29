@@ -4,7 +4,7 @@
 */
 ?>
 
-        <?php get_header(); ?>
+    <?php get_header(); ?>
         <div class="height-auto-important-tablet-portrait position-relative-tablet-portrait">
             <?php get_template_part('template','carousel'); ?>
         </div>
@@ -20,11 +20,8 @@
                 </div>
             </div>
         </article>
-    </div>
 <!-- Featured Image -->
-<?php //if (has_post_thumbnail( $post->ID ) ): ?>
 </div><!-- End .featured-image-container tag -->
-<?php //endif; ?>
 <!-- Transform your business with IP Solutions -->
 <div class="position-relative">
 <div class="padding-top padding-bottom position-relative">
@@ -93,7 +90,7 @@
                 $post_query = new Eemjii_WP_Query(array(
                     '_post_type'             => 'post',
                     '_post_template_prefix'  => 'template',
-                    '_post_template_part'    => 'post',
+                    '_post_template_part'    => 'post-home',
                     '_posts_per_page'        => 2,
                     '_posts_per_row'         => 2,
                     '_loop_wrapper'          => false,

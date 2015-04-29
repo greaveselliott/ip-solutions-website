@@ -5,7 +5,7 @@
  */
 ?>
 <!-- slide wrapper -->
-    <div class="acf-slickjs-carousel">
+    <div class="acf-slickjs-carousel acf-slickjs-carousel-background">
 <?php
 // check if the repeater field has rows of data
 if( have_rows('slickjs_carousel') ):

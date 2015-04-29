@@ -1,18 +1,17 @@
 .template-post {
-  @include respond-to('tablet-portrait'){
-    .specific-tablet-portrait {
-      height: 130px;
-      height: 25vh;
-      overflow: hidden;
-      position: relative;
-      img {
-        background-color: $ips-blue;
-        top: -65px;
-        top: -12.5vh;
-        position:absolute;
+    margin: 0px 2px;
+    .image-position-container {
         width: 100%;
-        height: auto;
-      }
+        height: 100%;
+        padding: 37.5% 50%;
+        position: relative;
+        .image-position {
+          height: inherit;
+          width: inherit;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          overflow: hidden;
+        }
     }
-  }
 }
