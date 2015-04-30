@@ -66,6 +66,12 @@ body.logged-in, body.admin-bar {
   }
 }
 
+.header-offset, .sticky .header-offset {
+  @include respond-to('tablet-portrait') {
+    height: 50px;
+  }
+}
+
 
 
 

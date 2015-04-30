@@ -4,3 +4,9 @@ body.logged-in, body.admin-bar {
     margin-top: 46px !important;
   }
 }
+
+#wpadminbar {
+  @include respond-to('tablet-portrait') {
+    position: fixed;
+  }
+}

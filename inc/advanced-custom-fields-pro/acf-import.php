@@ -334,6 +334,102 @@ if( function_exists('register_field_group') ):
     ));
 
     register_field_group(array (
+        'key' => 'group_554215829dd44',
+        'title' => 'Related Case Study',
+        'fields' => array (
+            array (
+                'key' => 'field_5542158c8614f',
+                'label' => 'related_case_study',
+                'name' => 'related_case_study',
+                'prefix' => '',
+                'type' => 'relationship',
+                'instructions' => 'Select 1 case study which should be link to this client',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'eemjii_case_studies',
+                ),
+                'taxonomy' => '',
+                'filters' => array (
+                    0 => 'search',
+                ),
+                'elements' => '',
+                'max' => 1,
+                'return_format' => 'object',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_clients',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+    ));
+
+    register_field_group(array (
+        'key' => 'group_554108dcc61f5',
+        'title' => 'Related Clients',
+        'fields' => array (
+            array (
+                'key' => 'field_554108e91d16e',
+                'label' => 'Related Client',
+                'name' => 'related_client',
+                'prefix' => '',
+                'type' => 'relationship',
+                'instructions' => 'Select the client',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => '',
+                'taxonomy' => '',
+                'filters' => array (
+                    0 => 'search',
+                    1 => 'post_type',
+                    2 => 'taxonomy',
+                ),
+                'elements' => array (
+                    0 => 'featured_image',
+                ),
+                'max' => 1,
+                'return_format' => 'object',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_testimonials',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+    ));
+
+    register_field_group(array (
         'key' => 'group_552baa36d00a8',
         'title' => 'Related Resources',
         'fields' => array (
@@ -1137,7 +1233,7 @@ if( function_exists('register_field_group') ):
                 array (
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'eemjii_testimonials',
+                    'value' => 'eemjii_clients',
                 ),
             ),
         ),

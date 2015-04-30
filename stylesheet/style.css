@@ -18869,7 +18869,7 @@ footer .menu * {
 	box-sizing: border-box;
 }
 
-/* line 1, sass/_admin-bar.scss */
+/* line 1, sass/_wp-admin-bar.scss */
 
 body.logged-in,
 body.admin-bar {
@@ -60789,7 +60789,7 @@ td.visible-xs {
 	box-sizing: border-box;
 }
 
-/* line 1, sass/_admin-bar.scss */
+/* line 1, sass/_wp-admin-bar.scss */
 
 body.logged-in,
 body.admin-bar {

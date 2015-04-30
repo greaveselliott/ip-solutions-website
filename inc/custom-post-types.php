@@ -60,35 +60,35 @@ if ( ! function_exists('custom_post_type_clients') ) {
 
 }
 
-// Testimonials
-if ( ! function_exists('custom_post_type_testimonials') ) {
+// Case Studies
+if ( ! function_exists('custom_post_type_case_studies') ) {
 
 // Register Custom Post Type
-    function custom_post_type_testimonials() {
+    function custom_post_type_case_studies() {
 
         $labels = array(
-            'name'                => _x( 'Testimonial', 'Post Type General Name', 'twentyfifteen' ),
-            'singular_name'       => _x( 'Testimonials', 'Post Type Singular Name', 'twentyfifteen' ),
-            'menu_name'           => __( 'Testimonial', 'twentyfifteen' ),
-            'parent_item_colon'   => __( 'Parent Testimonial:', 'twentyfifteen' ),
-            'all_items'           => __( 'All Testimonials', 'twentyfifteen' ),
-            'view_item'           => __( 'View Testimonial', 'twentyfifteen' ),
-            'add_new_item'        => __( 'Add New Testimonial', 'twentyfifteen' ),
-            'add_new'             => __( 'Add New Testimonial', 'twentyfifteen' ),
-            'edit_item'           => __( 'Edit Testimonial', 'twentyfifteen' ),
-            'update_item'         => __( 'Update Testimonial', 'twentyfifteen' ),
-            'search_items'        => __( 'Search Testimonial', 'twentyfifteen' ),
+            'name'                => _x( 'Case Studies', 'Post Type General Name', 'twentyfifteen' ),
+            'singular_name'       => _x( 'Case Study', 'Post Type Singular Name', 'twentyfifteen' ),
+            'menu_name'           => __( 'Case Studies', 'twentyfifteen' ),
+            'parent_item_colon'   => __( 'Parent Case Studies:', 'twentyfifteen' ),
+            'all_items'           => __( 'All Case Studies', 'twentyfifteen' ),
+            'view_item'           => __( 'View Case Studies', 'twentyfifteen' ),
+            'add_new_item'        => __( 'Add New Case Study', 'twentyfifteen' ),
+            'add_new'             => __( 'Add New Case Study', 'twentyfifteen' ),
+            'edit_item'           => __( 'Edit Case Study', 'twentyfifteen' ),
+            'update_item'         => __( 'Update Case Study', 'twentyfifteen' ),
+            'search_items'        => __( 'Search Case Studies', 'twentyfifteen' ),
             'not_found'           => __( 'Not found', 'twentyfifteen' ),
             'not_found_in_trash'  => __( 'Not found in Trash', 'twentyfifteen' ),
         );
         $rewrite = array(
-            'slug'                => 'our-testimonials',
+            'slug'                => 'our-case-studies',
             'with_front'          => true,
             'pages'               => true,
             'feeds'               => true,
         );
         $args = array(
-            'label'               => __( 'eemjii_testimonials', 'twentyfifteen' ),
+            'label'               => __( 'eemjii_case_studies', 'twentyfifteen' ),
             'description'         => __( 'Post Type Description', 'twentyfifteen' ),
             'labels'              => $labels,
             'supports'            => array('title','revisions'),
@@ -108,12 +108,12 @@ if ( ! function_exists('custom_post_type_testimonials') ) {
             'rewrite'             => $rewrite,
             'capability_type'     => 'page',
         );
-        register_post_type( 'eemjii_testimonials', $args );
+        register_post_type( 'eemjii_case_studies', $args );
 
     }
 
 // Hook into the 'init' action
-    add_action( 'init', 'custom_post_type_testimonials', 0 );
+    add_action( 'init', 'custom_post_type_case_studies', 0 );
 
 }
 
