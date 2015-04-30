@@ -10,13 +10,8 @@
             <div class="col-12-sm">
                 <div class="slick-testimonial-home">
                     <?php
-                    $services_query = new Eemjii_WP_Query(array(
-                        '_post_type'             => 'eemjii_testimonials',
-                        '_post_template_prefix'  => 'template',
-                        '_post_template_part'    => 'testimonials',
-                        '_loop_wrapper'          => false,
-                        '_row_wrapper'          => false
-                    ));
+                    $related_testimonials = eemjii_simple_post_query('eemjii_clients');
+                    eemjii_post_command($related_testimonials,'template-testimonials-related.php');
                     ?>
                 </div>
             </div>

@@ -17,7 +17,7 @@
         <!--slide -->
         <div class="width-100 height-100">
             <div class="container">
-                <div class="row">
+                <div class="row padding-top padding-bottom">
                     <div class="col-sm-6">
                         <h2 class="h5 text-white margin-left margin-right margin-top-0 margin-bottom-0" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></h2>
                     </div>

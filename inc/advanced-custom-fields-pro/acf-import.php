@@ -21,29 +21,7 @@ if( function_exists('register_field_group') ):
                 ),
                 'return_format' => 'url',
                 'preview_size' => 'thumbnail',
-                'library' => 'uploadedTo',
-            ),
-            array (
-                'key' => 'field_5509a854d92f2',
-                'label' => 'Company Name',
-                'name' => 'company_name',
-                'prefix' => '',
-                'type' => 'text',
-                'instructions' => 'What is the organisations name?',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-                'readonly' => 0,
-                'disabled' => 0,
+                'library' => 'all',
             ),
             array (
                 'key' => 'field_5509a898d92f3',
@@ -338,14 +316,39 @@ if( function_exists('register_field_group') ):
         'title' => 'Related Case Study',
         'fields' => array (
             array (
+                'key' => 'field_55423351ac01c',
+                'label' => 'Toggle Case Study',
+                'name' => 'case_study',
+                'prefix' => '',
+                'type' => 'true_false',
+                'instructions' => 'Toggle this button to link a case study to this client',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+            ),
+            array (
                 'key' => 'field_5542158c8614f',
-                'label' => 'related_case_study',
+                'label' => 'Related Case Study',
                 'name' => 'related_case_study',
                 'prefix' => '',
                 'type' => 'relationship',
                 'instructions' => 'Select 1 case study which should be link to this client',
                 'required' => 0,
-                'conditional_logic' => 0,
+                'conditional_logic' => array (
+                    array (
+                        array (
+                            'field' => 'field_55423351ac01c',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
@@ -1119,25 +1122,24 @@ if( function_exists('register_field_group') ):
 
     register_field_group(array (
         'key' => 'group_5509a2253108d',
-        'title' => 'Testimonials',
+        'title' => 'Related Testimonials',
         'fields' => array (
             array (
-                'key' => 'field_5509a9f5152d3',
-                'label' => 'Company Logo',
-                'name' => 'company_logo',
+                'key' => 'field_55423d3209d27',
+                'label' => 'Toggle Testimonial',
+                'name' => 'toggle_testimonial',
                 'prefix' => '',
-                'type' => 'image',
-                'instructions' => '',
-                'required' => 1,
+                'type' => 'true_false',
+                'instructions' => 'Check this box to add this clients testimonial',
+                'required' => 0,
                 'conditional_logic' => 0,
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
                     'id' => '',
                 ),
-                'return_format' => 'url',
-                'preview_size' => 'thumbnail',
-                'library' => 'all',
+                'message' => '',
+                'default_value' => 0,
             ),
             array (
                 'key' => 'field_5509a5c4b5e84',
@@ -1146,8 +1148,16 @@ if( function_exists('register_field_group') ):
                 'prefix' => '',
                 'type' => 'text',
                 'instructions' => 'Whats is the name of the testimonials author?',
-                'required' => 1,
-                'conditional_logic' => 0,
+                'required' => 0,
+                'conditional_logic' => array (
+                    array (
+                        array (
+                            'field' => 'field_55423d3209d27',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
@@ -1169,7 +1179,15 @@ if( function_exists('register_field_group') ):
                 'type' => 'text',
                 'instructions' => 'What is thier job role?',
                 'required' => 0,
-                'conditional_logic' => 0,
+                'conditional_logic' => array (
+                    array (
+                        array (
+                            'field' => 'field_55423d3209d27',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
@@ -1184,36 +1202,22 @@ if( function_exists('register_field_group') ):
                 'disabled' => 0,
             ),
             array (
-                'key' => 'field_5509a70d39c97',
-                'label' => 'Authors Company',
-                'name' => 'authors_company',
-                'prefix' => '',
-                'type' => 'text',
-                'instructions' => 'What company does they work for?',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-                'readonly' => 0,
-                'disabled' => 0,
-            ),
-            array (
                 'key' => 'field_5509a76339c98',
                 'label' => 'Testimonial',
                 'name' => 'testimonial',
                 'prefix' => '',
                 'type' => 'textarea',
                 'instructions' => 'Enter their testimonial here - 500 characters Max',
-                'required' => 1,
-                'conditional_logic' => 0,
+                'required' => 0,
+                'conditional_logic' => array (
+                    array (
+                        array (
+                            'field' => 'field_55423d3209d27',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
                 'wrapper' => array (
                     'width' => '',
                     'class' => '',
@@ -1222,7 +1226,7 @@ if( function_exists('register_field_group') ):
                 'default_value' => '',
                 'placeholder' => '',
                 'maxlength' => 539,
-                'rows' => 47,
+                'rows' => 20,
                 'new_lines' => 'wpautop',
                 'readonly' => 0,
                 'disabled' => 0,
@@ -1244,5 +1248,4 @@ if( function_exists('register_field_group') ):
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
     ));
-
 endif;
