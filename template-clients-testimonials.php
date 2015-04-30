@@ -8,14 +8,16 @@
         </div>
         <div class="row">
             <div class="col-12-sm">
-                <div class="slick-testimonial-home">
+                <section class="slick-testimonial-home">
                     <?php
                     $related_testimonials = eemjii_simple_post_query('eemjii_clients');
                     eemjii_post_command($related_testimonials,'template-testimonials-related.php');
                     ?>
-                </div>
+                </section>
             </div>
         </div>
+        <div class="row">
 
+        </div>
     </article>
 </div>

@@ -312,78 +312,6 @@ if( function_exists('register_field_group') ):
     ));
 
     register_field_group(array (
-        'key' => 'group_554215829dd44',
-        'title' => 'Related Case Study',
-        'fields' => array (
-            array (
-                'key' => 'field_55423351ac01c',
-                'label' => 'Toggle Case Study',
-                'name' => 'case_study',
-                'prefix' => '',
-                'type' => 'true_false',
-                'instructions' => 'Toggle this button to link a case study to this client',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'message' => '',
-                'default_value' => 0,
-            ),
-            array (
-                'key' => 'field_5542158c8614f',
-                'label' => 'Related Case Study',
-                'name' => 'related_case_study',
-                'prefix' => '',
-                'type' => 'relationship',
-                'instructions' => 'Select 1 case study which should be link to this client',
-                'required' => 0,
-                'conditional_logic' => array (
-                    array (
-                        array (
-                            'field' => 'field_55423351ac01c',
-                            'operator' => '==',
-                            'value' => '1',
-                        ),
-                    ),
-                ),
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'post_type' => array (
-                    0 => 'eemjii_case_studies',
-                ),
-                'taxonomy' => '',
-                'filters' => array (
-                    0 => 'search',
-                ),
-                'elements' => '',
-                'max' => 1,
-                'return_format' => 'object',
-            ),
-        ),
-        'location' => array (
-            array (
-                array (
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'eemjii_clients',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-    ));
-
-    register_field_group(array (
         'key' => 'group_554108dcc61f5',
         'title' => 'Related Clients',
         'fields' => array (
@@ -401,7 +329,9 @@ if( function_exists('register_field_group') ):
                     'class' => '',
                     'id' => '',
                 ),
-                'post_type' => '',
+                'post_type' => array (
+                    0 => 'eemjii_clients',
+                ),
                 'taxonomy' => '',
                 'filters' => array (
                     0 => 'search',
@@ -420,7 +350,7 @@ if( function_exists('register_field_group') ):
                 array (
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'eemjii_testimonials',
+                    'value' => 'eemjii_case_studies',
                 ),
             ),
         ),
@@ -1127,7 +1057,7 @@ if( function_exists('register_field_group') ):
             array (
                 'key' => 'field_55423d3209d27',
                 'label' => 'Toggle Testimonial',
-                'name' => 'toggle_testimonial',
+                'name' => 'toggled_testimonial',
                 'prefix' => '',
                 'type' => 'true_false',
                 'instructions' => 'Check this box to add this clients testimonial',
@@ -1248,4 +1178,5 @@ if( function_exists('register_field_group') ):
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
     ));
+
 endif;

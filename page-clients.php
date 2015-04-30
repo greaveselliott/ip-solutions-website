@@ -1,9 +1,4 @@
-<?php
-/*
-    Template Name: Clients
-*/
-?>
-
+<?php /* Template Name: Clients */ ?>
 <?php get_header(); ?>
     <div class="height-auto-important-tablet-portrait">
         <div class="header-offset"></div>
@@ -13,13 +8,25 @@
 <!-- End .featured-image-container tag -->
 
 <?php get_template_part('template', 'clients-testimonials'); ?>
-<?php
-$services_query = new Eemjii_WP_Query(array(
-    '_post_type'             => 'eemjii_clients',
-    '_post_template_prefix'  => 'template',
-    '_post_template_part'    => 'clients',
-    '_posts_per_page'        => 10,
-    '_posts_per_row'         => 3
-));
-?>
+<div class="background-white padding-top padding-bottom">
+    <article class="container">
+        <div class="row display-none">
+            <div class="col-12-sm">
+                <h2 class="h1 margin-top-0 margin-bottom">Clients</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12-sm">
+                <?php
+                // get: query SOLUTIONS related to this post
+
+
+
+                $clients = eemjii_simple_post_query('eemjii_clients');
+                eemjii_post_command($clients,'template-clients.php');
+                ?>
+            </div>
+        </div>
+    </article>
+</div>
 <?php get_footer(); ?>

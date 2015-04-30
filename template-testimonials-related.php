@@ -1,7 +1,7 @@
 <div class="padding">
-    <h2 class="text-blue text-center margin-bottom margin-top-0">
+    <p class="h2 text-blue text-center margin-bottom margin-top-0">
         <span class="padding"><i class="fa fa-quote-left"></i></span><?php the_field('testimonial', $post->ID, false); ?><span class="padding"><i class="fa fa-quote-right"></i></span>
-    </h2>
+    </p>
     <h4 class="text-center text-green padding-bottom">
         <?php echo get_field('author_name',$post->ID) .
                     ',&nbsp;&nbsp;' .
