@@ -3,6 +3,12 @@
  * Template creates a carousel using Eliot Condons Advanced Custom Field Plugin with and SlickJS
  *
  */
+
+/*
+ * Bugs:
+ * Featured images not loading correctly
+ * Header image needs placehold.it graphic swapped for dynamic content
+ */
 ?>
 <!-- slide wrapper -->
 <div class="acf-slickjs-carousel">

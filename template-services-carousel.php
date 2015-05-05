@@ -19,6 +19,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-2 display-none-tablet-portrait">
+
                         <img src="http://placehold.it/130x200">
                     </div>
                     <div class="col-sm-10 border-3-top-white border-3-bottom-white">

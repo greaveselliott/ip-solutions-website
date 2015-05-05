@@ -1043,6 +1043,13 @@ if( function_exists('register_field_group') ):
                     'value' => 'page-clients.php',
                 ),
             ),
+            array (
+                array (
+                    'param' => 'page_template',
+                    'operator' => '==',
+                    'value' => 'page-partners.php',
+                ),
+            ),
         ),
         'menu_order' => 0,
         'position' => 'normal',
@@ -1243,3 +1250,4 @@ if( function_exists('register_field_group') ):
     ));
 
 endif;
+?>
