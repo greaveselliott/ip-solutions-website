@@ -134,11 +134,12 @@ function eemjii_reverse_post_query ($post_type, $relationship_field, $current_po
 }
 
 function eemjii_simple_post_query ($post_type, $post_per_page = 0) {
+    $nopaging = $post_per_page == 0 ? true : false;
     // Query posts
     $posts = get_posts(array(
                         'post_type'         => $post_type,
                         'posts_per_page'    => $post_per_page,
-                        'nopaging'          => true // overrides the default paging settings which would only return 5 posts
+                        'nopaging'          => $nopaging // overrides the default paging settings which would only return 5 posts
     ));
 
     // Resetting Query

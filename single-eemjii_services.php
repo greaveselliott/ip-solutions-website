@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <?php
-                    $related_services = eemjii_simple_post_query('eemjii_services');
+                    $related_services = eemjii_simple_post_query('eemjii_services', 3);
                     eemjii_post_command($related_services,'template-services-navigation.php');
                 ?>
             </div>
