@@ -43,7 +43,8 @@ if ( ! function_exists('custom_post_type_clients') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 4,
-            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-04.png',
+            'menu_icon'           => 'dashicons-groups',
+//            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-04.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -100,7 +101,8 @@ if ( ! function_exists('custom_post_type_case_studies') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
-            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-01.png',
+            'menu_icon'           => 'dashicons-star-filled',
+//            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-01.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => true,
@@ -157,7 +159,8 @@ if ( ! function_exists('custom_post_type_services') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
-            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-02.png',
+            'menu_icon'           => 'dashicons-performance',
+//            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-02.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -213,7 +216,8 @@ if ( ! function_exists('custom_post_type_solutions') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
-            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-03.png',
+            'menu_icon'           => 'dashicons-chart-area',
+            //'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-03.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -270,7 +274,8 @@ if ( ! function_exists('custom_post_type_awards') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 4,
-            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-05.png',
+            'menu_icon'           => 'dashicons-awards',
+            //'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-05.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -284,6 +289,63 @@ if ( ! function_exists('custom_post_type_awards') ) {
 
 // Hook into the 'init' action
     add_action( 'init', 'custom_post_type_awards', 0 );
+
+}
+
+if ( ! function_exists('custom_post_type_partners') ) {
+
+// Register Custom Post Type
+    function custom_post_type_partners() {
+
+        $labels = array(
+            'name'                => _x( 'Partners', 'Post Type General Name', 'twentyfifteen' ),
+            'singular_name'       => _x( 'Partner', 'Post Type Singular Name', 'twentyfifteen' ),
+            'menu_name'           => __( 'Partners', 'twentyfifteen' ),
+            'name_admin_bar'      => __( 'Post Type', 'twentyfifteen' ),
+            'parent_item_colon'   => __( 'Parent Partner:', 'twentyfifteen' ),
+            'all_items'           => __( 'All Partners', 'twentyfifteen' ),
+            'add_new_item'        => __( 'Add New Partner', 'twentyfifteen' ),
+            'add_new'             => __( 'Add Partner', 'twentyfifteen' ),
+            'new_item'            => __( 'New Partner', 'twentyfifteen' ),
+            'edit_item'           => __( 'Edit Partner', 'twentyfifteen' ),
+            'update_item'         => __( 'Update Partner', 'twentyfifteen' ),
+            'view_item'           => __( 'View Partner', 'twentyfifteen' ),
+            'search_items'        => __( 'Search Partners', 'twentyfifteen' ),
+            'not_found'           => __( 'Not found', 'twentyfifteen' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'twentyfifteen' ),
+        );
+        $rewrite = array(
+            'slug'                => 'partners',
+            'with_front'          => true,
+            'pages'               => true,
+            'feeds'               => true,
+        );
+        $args = array(
+            'label'               => __( 'eemjii_partners', 'twentyfifteen' ),
+            'description'         => __( 'List of partners', 'twentyfifteen' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'thumbnail', ),
+            'hierarchical'        => false,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'menu_position'       => 5,
+            'menu_icon'           => 'dashicons-nametag',
+            'show_in_admin_bar'   => true,
+            'show_in_nav_menus'   => false,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'rewrite'             => $rewrite,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'eemjii_partners', $args );
+
+    }
+
+// Hook into the 'init' action
+    add_action( 'init', 'custom_post_type_partners', 0 );
 
 }
 
@@ -327,7 +389,8 @@ if ( ! function_exists('custom_post_type_resources') ) {
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'menu_position'       => 5,
-            'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-06.png',
+            'menu_icon'           => 'dashicons-format-aside',
+            //'menu_icon'           => get_stylesheet_directory_uri() .'/images/admin/admin-post-type-icons-06.png',
             'can_export'          => true,
             'has_archive'         => true,
             'exclude_from_search' => false,
@@ -343,3 +406,4 @@ if ( ! function_exists('custom_post_type_resources') ) {
     add_action( 'init', 'custom_post_type_resources', 0 );
 
 }
+

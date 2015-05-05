@@ -50,8 +50,6 @@ function eemjii_get_related_posts ($post_type, $custom_field) {
             'order'             => 'ASC',
             'orderby'        	=> 'title'
         ));
-
-
         return $the_query->posts;
     endif;
 }

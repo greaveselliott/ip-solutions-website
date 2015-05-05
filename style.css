@@ -14952,7 +14952,7 @@ button.close {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
-.box-sizing-border-box, .slick-testimonial-home .slick-dots li.slick-active img {
+.box-sizing-border-box {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -20067,7 +20067,7 @@ code {
   }
 }
 /* line 108, sass/_bootstrap-media-queries.scss */
-.outline-1-blue, .slick-testimonial-home .slick-dots li.slick-active img {
+.outline-1-blue {
   outline: solid 2px #0078ae;
   -moz-box-sizing: outline-box;
   -webkit-box-sizing: outline-box;
@@ -60786,22 +60786,11 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
 .slick-testimonial-home .slick-dots li:hover {
   cursor: pointer;
 }
-/* line 17, sass/_template-testimonials.scss */
-.slick-testimonial-home .slick-dots li img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  filter: gray;
-  -webkit-filter: grayscale(100%);
-}
-/* line 23, sass/_template-testimonials.scss */
-.slick-testimonial-home .slick-dots li.slick-active img {
-  filter: none;
-  -webkit-filter: grayscale(0%);
-}
-/* line 32, sass/_template-testimonials.scss */
+/* line 19, sass/_template-testimonials.scss */
 .slick-testimonial-home .speech-bubble-tail {
   position: relative;
 }
-/* line 34, sass/_template-testimonials.scss */
+/* line 21, sass/_template-testimonials.scss */
 .slick-testimonial-home .speech-bubble-tail .arrow-down {
   bottom: 9px;
   position: relative;
@@ -60811,6 +60800,20 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   width: 60px;
   height: 60px;
   background-image: url("images/speech-bubble-tail.png");
+}
+
+/* line 35, sass/_template-testimonials.scss */
+.single-client img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  cursor: pointer;
+}
+
+/* line 41, sass/_template-testimonials.scss */
+.single-client.has-testimonial.active-slide img {
+  filter: none;
+  -webkit-filter: grayscale(0%);
 }
 
 /* line 1, sass/_template-blog.scss */

@@ -80,7 +80,7 @@ Class Eemjii_WP_Query {
         $this -> _column_size = round($total_columns / $posts_per_row);
 
         $this -> _row_has_empty_space =
-            !$posts_per_row % $total_columns ? // Is modulo Fa;se or equal to 0
+            !$posts_per_row % $total_columns ? // Is modulo False or equal to 0
                 true:  // True:     Set _row_has_empty_space to True
                 false; // False:    Set _row_has_empty_space to False
 
@@ -90,12 +90,10 @@ Class Eemjii_WP_Query {
 
     public function opening_wrapper (){
         ?>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
                         <div class="container">
                             <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-xs-12">
         <?
     }
 
@@ -104,9 +102,6 @@ Class Eemjii_WP_Query {
                                 </div><!-- END .col-lg-12 .col-md-12 .col-sm-12 .col-xs-12 -->
                             </div><!-- END .row -->
                         </div><!-- END .container -->
-                    </div><!-- END .col-lg-12 .col-md-12 .col-sm-12 .col-xs-12 -->
-                </div><!-- END .row -->
-            </div><!-- END .container-fluid -->
         <?php
     }
 
@@ -187,7 +182,9 @@ Class Eemjii_WP_Query {
     }
 
     protected function get_post_template() {
-        get_template_part($this->_post_template_prefix, $this->_current_post_template_part);
+        $template = $this->_post_template_prefix . '-' . $this->_current_post_template_part . '.php';
+        include(locate_template($template));
+        //get_template_part($this->_post_template_prefix, $this->_current_post_template_part);
     }
 
     public function loop () {
@@ -223,7 +220,6 @@ Class Eemjii_WP_Query {
 
             // Loop over posts
             for ( $i = 0; $the_query->have_posts(); $i++ ) : $the_query->the_post();
-
                 $last_loop = $i == count($the_query->posts)-1 ? true : false;
 
                 // Are we using a row wrapper?
@@ -240,7 +236,6 @@ Class Eemjii_WP_Query {
                     $this -> has_loop_condition($the_query->current_post);
                     $this -> set_post_template();
                     $this -> get_post_template();
-                    // get_template_part($this->_post_template_prefix, $this->_post_template_part);
 
                 // Are we using a row wrapper?
                 if ($row_wrapper):
