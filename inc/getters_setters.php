@@ -167,10 +167,18 @@ function eemjii_get_featured_image_url ($post_ID, $size = 'large', $attr = array
 
 function eemjii_get_acf_image_url ($field_name, $sub_field = false, $post_id = null) {
     if (!$sub_field):
-        $image = get_field($field_name, $post_id);
-        elseif($sub_field):
+        if ($post_id) :
+            $image = get_field($field_name);
+        else:
+            $image = get_field($field_name, $post_id);
+        endif;
+    elseif($sub_field):
+        if ($post_id) :
             $image = get_sub_field($field_name, $post_id);
-            endif;
+        else:
+            $image = get_sub_field($field_name);
+        endif;
+    endif;
     return !empty($image) ?                 // CONDITION: Is this custom field image empty?
         $image :                            // TRUE: Return the image URL
             'http://placehold.it/100x100';  // FALSE: Return the default image

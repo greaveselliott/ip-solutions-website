@@ -210,8 +210,8 @@ $pws_tabs_bgcolor_active : $ips-orange;;
 }
 .pws_tab_single {
   position: absolute;
-  padding-right: 20px;
-  padding-right: 1.25em; // @1.2.0
+//  padding-right: 20px;
+//  padding-right: 1.25em; // @1.2.0
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;

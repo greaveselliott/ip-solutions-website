@@ -18,11 +18,10 @@
         <div class="width-100 height-100">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-2 display-none-tablet-portrait">
-
-                        <img src="http://placehold.it/130x200">
-                    </div>
-                    <div class="col-sm-10 border-3-top-white border-3-bottom-white">
+<!--                    <div class="col-sm-2 display-none-tablet-portrait">-->
+<!--                        <img src="http://placehold.it/130x200">-->
+<!--                    </div>-->
+                    <div class="col-sm-10 col-sm-offset-1 margin-top margin-bottom border-3-top-white border-3-bottom-white">
                         <h2 class="h3 text-white margin" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
                     </div>
                 </div>
