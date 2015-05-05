@@ -79,6 +79,10 @@
 @include responsive_property("width-auto-important"){width: auto !important;}
 @include responsive_property("height-auto-important"){height: auto !important;}
 
+
+// min height
+@include responsive_property('min-height-200px') {min-height: 200px;};
+
 // Box Sizing
 @include responsive_property('box-sizing-border-box') {
   -moz-box-sizing: border-box;

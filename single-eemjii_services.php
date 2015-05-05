@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <?php
-                    $related_services = eemjii_simple_post_query('eemjii_services', 3);
+                    $related_services = eemjii_simple_post_query('eemjii_services', 6);
                     eemjii_post_command($related_services,'template-services-navigation.php');
                 ?>
             </div>
@@ -42,21 +42,18 @@
 </section>
 </div><!-- End .featured-image-container tag -->
 <article class="container">
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row padding-top padding-bottom">
+        <div class="col-md-3">
+            <img src="<?php echo eemjii_get_acf_image_url('featured_image'); ?>" width="70%" class="display-none-phone width-100 height-auto">
+        </div>
+        <div class="col-md-9">
             <h2 class="text-blue text-align-center text-decoration-underline"><?php the_title(); ?></h2>
+            <p class="text-blue"><?php the_field('service_content_top'); ?></p>
         </div>
     </div>
     <div class="row">
         <!-- Main Content -->
         <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="text-orange h3"><?php the_field('service_content_top_title'); ?></h4>
-                    <p><?php the_field('service_content_top'); ?></p>
-                </div>
-            </div>
-            <hr class="border-3-orange width-100 margin-top margin-bottom">
             <div class="row">
                 <div class="col-md-12">
                     <div class="pwstabs">
@@ -66,13 +63,15 @@
                                 $i = 0;
                                 while ( have_rows('service_content') ) : the_row();
                                 ?>
-                                    <div
-                                        data-pws-tab="tab-<?php echo $i?>"
-                                        data-pws-tab-name="<?php the_sub_field('section_heading') ?>">
+                                    <div data-pws-tab="tab-<?php echo $i?>" data-pws-tab-name="<?php the_sub_field('section_heading') ?>">
+                                        <div class="padding-2 border-3-orange">
                                         <section>
-                                            <h5 class="text-orange margin-top-0 h3"><?php the_sub_field('section_heading') ?></h5>
-                                            <p><?php the_sub_field('section_content'); ?></p>
+                                            <div class="background-blue padding-top padding-bottom">
+                                                <h5 class="text-white margin-top-0 h4 padding-2"><?php the_sub_field('section_heading') ?></h5>
+                                            </div>
+                                            <p class="text-blue"><?php the_sub_field('section_content'); ?></p>
                                         </section>
+                                        </div>
                                     </div>
                                 <?
                                 $i++;
@@ -85,7 +84,7 @@
         </div>
         <!-- Sidebar: Related Resources -->
         <aside class="col-md-4">
-            <h3 class="text-orange">Resources</h3>
+            <h3 class="text-orange margin-top-0">Resources</h3>
             <?php
                 // get: query resources related to this post
                 $related_resources = eemjii_reverse_post_query('eemjii_resources', 'related_services', get_the_ID() );

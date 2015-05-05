@@ -1,3 +1,21 @@
-<div class="block-grid-item single-partner">
-    <img src="<?php echo get_field('client_logo', $post->ID);?>" title="<?php echo $post->post_name?>">
+<?php
+if ( have_posts() ) {
+while ( have_posts() ) {
+    the_post();
+?>
+<div class="block-grid-item single-partner <?php echo $post->post_name; ?>">
+    <?php
+
+            $thumbnail = get_the_post_thumbnail($post->ID,'medium', array('class'=>'width-100 height-auto'));
+        if ( $thumbnail) {
+            echo $thumbnail;
+        } else {
+            echo '<img src="http://placehold.it/300x300" class="width-100 height-auto">';
+        }
+    ?>
 </div>
+
+<?php
+    } // end while
+} // end if
+?>

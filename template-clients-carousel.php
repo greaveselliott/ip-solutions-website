@@ -25,7 +25,11 @@
             <div class="container">
                 <div class="row padding-top padding-bottom">
                     <div class="col-sm-6">
+                        <div class="padding-top padding-bottom">
+                        <hr class="border-3-white width-100">
                         <h2 class="h5 text-white margin-left margin-right margin-top-0 margin-bottom-0" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></h2>
+                        <hr class="border-3-white width-100">
+                        </div>
                     </div>
                 </div>
             </div>
