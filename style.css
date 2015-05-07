@@ -61392,6 +61392,51 @@ figure.speech-bubble figcaption {
   height: 40px;
 }
 
+/* line 1, sass/_template-solutions.scss */
+.template-solution-heading-cloud {
+  position: absolute;
+  top: 40%;
+  display: block;
+  width: 50%;
+  left: 25%;
+}
+
+/* line 9, sass/_template-solutions.scss */
+.corner-image {
+  width: 80px;
+  height: auto;
+  top: -50px;
+  left: -50px;
+  position: absolute;
+}
+
+/* line 16, sass/_template-solutions.scss */
+.margin-bottom-large {
+  margin-bottom: 50px;
+  width: 100%;
+  display: block;
+}
+
+/* line 21, sass/_template-solutions.scss */
+.circle-bottom-green {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+/* line 25, sass/_template-solutions.scss */
+.circle-bottom-green:after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background-color: #c3cf21;
+  position: absolute;
+  left: -50%;
+  bottom: -15px;
+}
+
 /* line 14, sass/_navigation-header.scss */
 header nav {
   width: 100%;

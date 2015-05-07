@@ -16,7 +16,7 @@
             </div>
         </div>
     </nav>
-<!-- Related Services -->
+<!-- Related Solution -->
 <section class="background-blue opacity-90">
     <div class="container">
         <div class="row">
