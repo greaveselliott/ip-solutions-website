@@ -50,8 +50,11 @@ function eemjii_get_related_posts ($post_type, $custom_field) {
             'order'             => 'ASC',
             'orderby'        	=> 'title'
         ));
+        // resetting the WP_Query to avoid conflicting errors
+        wp_reset_query();
         return $the_query->posts;
     endif;
+    return 'nothing returned';
 }
 
 function eemjii_set_related_post_classes ($related_posts, $prefix ='') {
@@ -150,9 +153,11 @@ function eemjii_simple_post_query ($post_type, $post_per_page = 0) {
 }
 
 function eemjii_post_command ($posts, $template_file) {
+    $i = 0;
     if( $posts ):
             foreach( $posts as $post ):
                 include( locate_template($template_file) );
+                $i++;
             endforeach;
     endif;
 }
@@ -168,9 +173,9 @@ function eemjii_get_featured_image_url ($post_ID, $size = 'large', $attr = array
 function eemjii_get_acf_image_url ($field_name, $sub_field = false, $post_id = null) {
     if (!$sub_field):
         if ($post_id) :
-            $image = get_field($field_name);
-        else:
             $image = get_field($field_name, $post_id);
+        else:
+            $image = get_field($field_name);
         endif;
     elseif($sub_field):
         if ($post_id) :

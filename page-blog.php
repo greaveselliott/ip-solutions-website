@@ -30,7 +30,7 @@ get_header(); ?>
                 <div class="slick-blog margin-0">
                     <?php
                         $post_query = new Eemjii_WP_Query(array(
-                            '_post_type'             => 'post',
+                            '_post_type'             => 'eemjii_awards',
                             '_post_template_prefix'  => 'template',
                             '_post_template_part'    => 'post',
                             '_posts_per_page'        => 0,

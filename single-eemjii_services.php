@@ -44,7 +44,7 @@
 <article class="container">
     <div class="row padding-top padding-bottom">
         <div class="col-md-3">
-            <img src="<?php echo eemjii_get_acf_image_url('featured_image'); ?>" width="70%" class="display-none-phone width-100 height-auto">
+            <img src="<?php echo eemjii_get_acf_image_url('featured_image_rolled_over'); ?>" width="70%" class="display-none-phone width-100 height-auto">
         </div>
         <div class="col-md-9">
             <h2 class="text-blue text-align-center text-decoration-underline"><?php the_title(); ?></h2>

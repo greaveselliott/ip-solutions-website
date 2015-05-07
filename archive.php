@@ -13,6 +13,10 @@
  */
 
 get_header(); ?>
+<div class="height-auto-important-tablet-portrait">
+    <div class="header-offset"></div>
+</div>
+</div>
 
 <h1>archive</h1>
 

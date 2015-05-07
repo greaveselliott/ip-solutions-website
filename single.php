@@ -33,7 +33,6 @@ get_header();
     </div>
 </div>
 <!-- End .featured-image-container tag -->
-
 <div class="background-purple">
     <div class="container">
         <div class="row padding-2">
@@ -43,23 +42,6 @@ get_header();
         </div>
     </div>
 </div>
-
-<!--<div class="background-white border-3-bottom-orange">-->
-<!--    <div class="container">-->
-<!--        <div class="row padding-top padding-bottom">-->
-<!--            <div class="col-sm-10 col-sm-offset-1">-->
-<!--                --><?php //if( is_active_sidebar( 'social-media-sharing' ) ) : ?>
-<!--                    <h3 class="line-height-h3 margin-0 text-grey display-inline-block">Share this post</h3>-->
-<!--                    <div class="display-inline-block">-->
-<!--                        --><?php //dynamic_sidebar( 'social-media-sharing' ); ?>
-<!--                    </div>-->
-<!--                --><?php //else : ?>
-<!--                    <div class="alert alert-warning">You haven't added the Social Media Sharing widget yet. Why not pop over to the the WordPress admin panel and navigate to appearence > widgets options to add the social media widget?</div>-->
-<!--                --><?php //endif; ?>
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 <div class="background-white border-3-bottom-orange">
     <div class="container padding-top padding-bottom">
         <div class="row">

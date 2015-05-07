@@ -54,9 +54,9 @@
                             '_post_type'             => 'eemjii_awards',
                             '_post_template_prefix'  => 'template',
                             '_post_template_part'    => array(
-                                array('awards-first','first'),
-                                array('awards-last','last'),
-                                array('awards','default')
+                                array('awards-home-first','first'),
+                                array('awards-home-last','last'),
+                                array('awards-home','default')
                             ),
                             '_posts_per_page'        => 3,
                             '_posts_per_row'         => 3,

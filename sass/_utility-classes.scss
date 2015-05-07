@@ -82,6 +82,8 @@
 
 // min height
 @include responsive_property('min-height-200px') {min-height: 200px;};
+@include responsive_property('min-height-400px') {min-height: 400px;};
+@include responsive_property('min-height-600px') {min-height: 600px;};
 
 // Box Sizing
 @include responsive_property('box-sizing-border-box') {
@@ -150,7 +152,15 @@
 @include responsive_property(text-decoration-underline){text-decoration: underline;}
 
 // floats
-@include responsive_property(float-left){float: left;};
-@include responsive_property(float-right){float: right;};
-@include responsive_property(float-center){float: center;};
-@include responsive_property(float-none){float: none !important;};
+@include responsive_property(float-left){float: left;}
+@include responsive_property(float-right){float: right;}
+@include responsive_property(float-center){float: center;}
+@include responsive_property(float-none){float: none !important;}
+
+@include responsive_property(z-index-0){z-index: 0;}
+@include responsive_property(z-index--10){z-index: -10;}
+@include responsive_property(z-index--20){z-index: -20;}
+@include responsive_property(z-index--30){z-index: -30;}
+@include responsive_property(z-index--40){z-index: -40;}
+@include responsive_property(z-index--50){z-index: -50;}
+@include responsive_property(z-index--60){z-index: -60;}

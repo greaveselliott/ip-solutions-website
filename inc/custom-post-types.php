@@ -92,7 +92,7 @@ if ( ! function_exists('custom_post_type_case_studies') ) {
             'label'               => __( 'eemjii_case_studies', 'twentyfifteen' ),
             'description'         => __( 'Post Type Description', 'twentyfifteen' ),
             'labels'              => $labels,
-            'supports'            => array('title','revisions'),
+            'supports'            => array('title','revisions','thumbnail'),
             //'taxonomies'          => array( 'category', 'post_tag' ),
             'hierarchical'        => false,
             'public'              => true,

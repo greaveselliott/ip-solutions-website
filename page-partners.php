@@ -3,17 +3,16 @@
 	Template name: Partners
 */
 ?>
-
 <?php get_header(); ?>
 <div class="height-auto-important-tablet-portrait">
-    <div class="header-offset"></div>
+<!--    <div class="header-offset"></div>-->
     <?php get_template_part('template','carousel'); ?>
 </div>
 </div>
 
 <div class="container">
-    <div class="row padding-top padding-bottom">
-        <div class="col-sm-8 col-sm-offset-2">
+    <div class="row padding-top">
+        <div class="col-sm-12">
             <?php
             // TO SHOW THE PAGE CONTENTS
             while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->

@@ -10,7 +10,7 @@
 <div class="background-white">
     <div class="container">
         <div class="row display-none">
-            <div class="col-12-sm">
+            <div class="col-sm-12">
                 <h2 class="h1 margin-top-0 margin-bottom">Clients</h2>
             </div>
         </div>
@@ -26,7 +26,7 @@
     </div>
     <div class="border-3-top-blue">
     <div class="container">
-        <div class="row padding-bottom">
+        <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-align-center">
                 <h3 class="text-orange"><?php the_field('text_area_title') ?></h3>
                 <p><?php the_field('text_area_paragraph') ?></p>
