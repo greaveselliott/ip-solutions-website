@@ -153,11 +153,9 @@ function eemjii_simple_post_query ($post_type, $post_per_page = 0) {
 }
 
 function eemjii_post_command ($posts, $template_file) {
-    $i = 0;
     if( $posts ):
             foreach( $posts as $post ):
                 include( locate_template($template_file) );
-                $i++;
             endforeach;
     endif;
 }

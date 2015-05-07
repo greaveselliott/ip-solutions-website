@@ -73,12 +73,10 @@ echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'
 <!-- Related Case Studies -->
 <div class="container">
     <div class="row">
-        <div class="col-sm-12">
-            <h3 class="text-orange">More Case Studies</h3>
+        <div class="col-sm-12 text-align-center padding-top padding-bottom">
+            <h3 class="text-orange margin-top-0"><?php the_field('footer_textbox_title');?></h3>
             <div class="display-inline-block">
-                <?php $other_case_studies = eemjii_simple_post_query('eemjii_case_studies'); ?>
-<!--                <pre>--><?php //print_r($other_case_studies); ?><!--</pre>-->
-                <?php eemjii_post_command($other_case_studies, 'template-case-studies-more.php'); ?>
+                <?php the_field('footer_textbox'); ?>
             </div>
         </div>
     </div>
