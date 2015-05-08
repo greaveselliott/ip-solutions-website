@@ -161,6 +161,47 @@ if( function_exists('register_field_group') ):
     ));
 
     register_field_group(array (
+        'key' => 'group_554b7336aa54e',
+        'title' => 'Awards Post',
+        'fields' => array (
+            array (
+                'key' => 'field_554b7353df226',
+                'label' => 'Short Description',
+                'name' => 'short_description',
+                'prefix' => '',
+                'type' => 'wysiwyg',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 0,
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_awards',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+    ));
+
+    register_field_group(array (
         'key' => 'group_5523a7fcd7063',
         'title' => 'Carousel',
         'fields' => array (
@@ -287,7 +328,7 @@ if( function_exists('register_field_group') ):
                 array (
                     'param' => 'page_template',
                     'operator' => '==',
-                    'value' => 'single-eemjii_solutions.php',
+                    'value' => 'page-home.php',
                 ),
             ),
             array (
@@ -617,7 +658,7 @@ if( function_exists('register_field_group') ):
                 array (
                     'param' => 'page_template',
                     'operator' => '==',
-                    'value' => 'single-eemjii_solutions.php',
+                    'value' => 'page-home.php',
                 ),
             ),
             array (
@@ -778,7 +819,7 @@ if( function_exists('register_field_group') ):
                     'class' => '',
                     'id' => '',
                 ),
-                'return_format' => 'array',
+                'return_format' => 'url',
                 'preview_size' => 'medium',
                 'library' => 'all',
             ),
@@ -789,6 +830,13 @@ if( function_exists('register_field_group') ):
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'eemjii_services',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_solutions',
                 ),
             ),
         ),
@@ -1219,6 +1267,25 @@ if( function_exists('register_field_group') ):
                 'max_size' => 10,
                 'mime_types' => '',
             ),
+            array (
+                'key' => 'field_554b8fa7e502e',
+                'label' => 'Resource Description',
+                'name' => 'resource_description',
+                'prefix' => '',
+                'type' => 'wysiwyg',
+                'instructions' => 'Write a short description about this resource.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+            ),
         ),
         'location' => array (
             array (
@@ -1234,7 +1301,9 @@ if( function_exists('register_field_group') ):
         'style' => 'default',
         'label_placement' => 'top',
         'instruction_placement' => 'label',
-        'hide_on_screen' => '',
+        'hide_on_screen' => array (
+            0 => 'the_content',
+        ),
     ));
 
     register_field_group(array (

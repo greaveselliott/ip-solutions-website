@@ -5,16 +5,16 @@
  */
 ?>
 <article class="background-grey opacity-25 padding template-post">
-    <div class="image-position-container">
-        <div class="image-position">
-            <div class="force-aspect-ratio-container">
-                <figure class="force-aspect-ratio">
-                <?php echo eemjii_get_featured_image_url( get_the_ID(), 'template-post', array('class'=>'width-100-tablet-up height-auto-tablet-up') ); ?>
-                </figure>
-            </div>
+    <div class="text-align-center">
+        <div class="display-inline-block">
+            <?php
+            if ( has_post_thumbnail() ) {
+                the_post_thumbnail('original');
+            } else {}
+            ?>
         </div>
     </div>
     <h3 class="text-grey h4"><?php the_title(); ?></h3>
-    <p class="text-grey"><?php echo get_the_excerpt(); ?></p>
+    <p class="text-grey"><?php the_field('short_description'); ?></p>
     <a href="<?php the_permalink(); ?>" title="<?php the_title();?>" class="btn btn-orange">Continue reading</a>
 </article>

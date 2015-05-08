@@ -58,6 +58,7 @@ function eemjii_get_related_posts ($post_type, $custom_field) {
 }
 
 function eemjii_set_related_post_classes ($related_posts, $prefix ='') {
+
     $post_count = count($related_posts);
     $classes = '';
     for ( $i = 0; $i < $post_count; $i++ ) {

@@ -19370,25 +19370,25 @@ footer .menu * {
 	font-style: italic;
 }
 
-/* line 140, sass/_jquery.pwstabs.scss */
+/* line 140, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container {
 	width: 100%;
 }
 
-/* line 143, sass/_jquery.pwstabs.scss */
+/* line 143, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container ul.pws_tabs_controll {
 	list-style: none;
 }
 
-/* line 145, sass/_jquery.pwstabs.scss */
+/* line 145, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container ul.pws_tabs_controll li {
 	display: inline-block;
 }
 
-/* line 147, sass/_jquery.pwstabs.scss */
+/* line 147, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container ul.pws_tabs_controll li a {
 	display: block;
@@ -19400,33 +19400,33 @@ footer .menu * {
 	margin-right: 3px;
 }
 
-/* line 155, sass/_jquery.pwstabs.scss */
+/* line 155, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container ul.pws_tabs_controll li a:hover {
 	background-color: #f78c10;
 }
 
-/* line 158, sass/_jquery.pwstabs.scss */
+/* line 158, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container ul.pws_tabs_controll li a i {
 	margin-right: 8px;
 }
 
-/* line 161, sass/_jquery.pwstabs.scss */
+/* line 161, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container ul.pws_tabs_controll li a.pws_tab_noname i {
 	margin-right: 0;
 	margin-left: 0;
 }
 
-/* line 165, sass/_jquery.pwstabs.scss */
+/* line 165, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #c3cf21;
 	color: white;
 }
 
-/* line 176, sass/_jquery.pwstabs.scss */
+/* line 176, sass/jquery.pwstabs.scss */
 
 .pws_tabs_list {
 	display: block;
@@ -19446,7 +19446,7 @@ footer .menu * {
 	position: relative;
 }
 
-/* line 187, sass/_jquery.pwstabs.scss */
+/* line 187, sass/jquery.pwstabs.scss */
 
 .pws_tab_single {
 	position: absolute;
@@ -19459,28 +19459,28 @@ footer .menu * {
 	transition: all 0.3s ease-in;
 }
 
-/* line 203, sass/_jquery.pwstabs.scss */
+/* line 203, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_rtl {
 	text-align: right;
 	direction: rtl;
 }
 
-/* line 206, sass/_jquery.pwstabs.scss */
+/* line 206, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_rtl ul.pws_tabs_controll li a {
 	margin-right: 0;
 	margin-left: 3px;
 }
 
-/* line 209, sass/_jquery.pwstabs.scss */
+/* line 209, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_rtl ul.pws_tabs_controll li a i {
 	margin-left: 8px;
 	margin-right: 0;
 }
 
-/* line 214, sass/_jquery.pwstabs.scss */
+/* line 214, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_rtl .pws_tab_single {
 	padding-right: 0;
@@ -19488,14 +19488,14 @@ footer .menu * {
 	padding-left: 1.25em;
 }
 
-/* line 227, sass/_jquery.pwstabs.scss */
+/* line 227, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_vertical {
 	display: block;
 	position: relative;
 }
 
-/* line 231, sass/_jquery.pwstabs.scss */
+/* line 231, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_vertical:after {
 	display: block;
@@ -19503,7 +19503,7 @@ footer .menu * {
 	clear: both;
 }
 
-/* line 235, sass/_jquery.pwstabs.scss */
+/* line 235, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_vertical ul.pws_tabs_controll {
 	width: auto;
@@ -19512,13 +19512,13 @@ footer .menu * {
 	padding: 0;
 }
 
-/* line 240, sass/_jquery.pwstabs.scss */
+/* line 240, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_vertical ul.pws_tabs_controll li {
 	display: block;
 }
 
-/* line 242, sass/_jquery.pwstabs.scss */
+/* line 242, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_vertical ul.pws_tabs_controll li a {
 	margin-right: 0;
@@ -19531,7 +19531,7 @@ footer .menu * {
 	transition: all 0.12s ease-in;
 }
 
-/* line 255, sass/_jquery.pwstabs.scss */
+/* line 255, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_vertical .pws_tabs_list {
 	position: relative;
@@ -19539,247 +19539,247 @@ footer .menu * {
 	padding-top: 0px;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_violet .pws_responsive_small_menu {
 	background-color: #c72c66;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_violet .pws_responsive_small_menu a:hover {
 	background-color: #a6164c;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_violet ul.pws_tabs_controll li a {
 	background-color: #c72c66;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_violet ul.pws_tabs_controll li a:hover {
 	background-color: #a6164c;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_violet ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_green .pws_responsive_small_menu {
 	background-color: #86c447;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_green .pws_responsive_small_menu a:hover {
 	background-color: #539312;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_green ul.pws_tabs_controll li a {
 	background-color: #86c447;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_green ul.pws_tabs_controll li a:hover {
 	background-color: #539312;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_green ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_yellow .pws_responsive_small_menu {
 	background-color: #fdb813;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_yellow .pws_responsive_small_menu a:hover {
 	background-color: #ffa500;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_yellow ul.pws_tabs_controll li a {
 	background-color: #fdb813;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_yellow ul.pws_tabs_controll li a:hover {
 	background-color: #ffa500;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_yellow ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_gold .pws_responsive_small_menu {
 	background-color: #f89827;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_gold .pws_responsive_small_menu a:hover {
 	background-color: #fa7b00;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_gold ul.pws_tabs_controll li a {
 	background-color: #f89827;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_gold ul.pws_tabs_controll li a:hover {
 	background-color: #fa7b00;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_gold ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_orange .pws_responsive_small_menu {
 	background-color: #f15b42;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_orange .pws_responsive_small_menu a:hover {
 	background-color: #fd2e0b;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_orange ul.pws_tabs_controll li a {
 	background-color: #f15b42;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_orange ul.pws_tabs_controll li a:hover {
 	background-color: #fd2e0b;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_orange ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_red .pws_responsive_small_menu {
 	background-color: #e41937;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_red .pws_responsive_small_menu a:hover {
 	background-color: #d70726;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_red ul.pws_tabs_controll li a {
 	background-color: #e41937;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_red ul.pws_tabs_controll li a:hover {
 	background-color: #d70726;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_red ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_purple .pws_responsive_small_menu {
 	background-color: #672e8d;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_purple .pws_responsive_small_menu a:hover {
 	background-color: #470871;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_purple ul.pws_tabs_controll li a {
 	background-color: #672e8d;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_purple ul.pws_tabs_controll li a:hover {
 	background-color: #470871;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_purple ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 277, sass/_jquery.pwstabs.scss */
+/* line 277, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_grey .pws_responsive_small_menu {
 	background-color: #4d4d4f;
 }
 
-/* line 279, sass/_jquery.pwstabs.scss */
+/* line 279, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_theme_grey .pws_responsive_small_menu a:hover {
 	background-color: #000000;
 }
 
-/* line 283, sass/_jquery.pwstabs.scss */
+/* line 283, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_grey ul.pws_tabs_controll li a {
 	background-color: #4d4d4f;
 }
 
-/* line 285, sass/_jquery.pwstabs.scss */
+/* line 285, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_grey ul.pws_tabs_controll li a:hover {
 	background-color: #000000;
 }
 
-/* line 288, sass/_jquery.pwstabs.scss */
+/* line 288, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_theme_grey ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: #fff;
 }
 
-/* line 310, sass/_jquery.pwstabs.scss */
+/* line 310, sass/jquery.pwstabs.scss */
 
 .pws_tabs_noeffect .pws_tabs_list {
 	-webkit-transition: all .1s ease-in-out 0;
@@ -19789,7 +19789,7 @@ footer .menu * {
 	transition: all .1s ease-in-out 0;
 }
 
-/* line 313, sass/_jquery.pwstabs.scss */
+/* line 313, sass/jquery.pwstabs.scss */
 
 .pws_tabs_noeffect .pws_tab_single {
 	-webkit-transition: none;
@@ -19799,19 +19799,19 @@ footer .menu * {
 	transition: none;
 }
 
-/* line 317, sass/_jquery.pwstabs.scss */
+/* line 317, sass/jquery.pwstabs.scss */
 
 .pws_tabs_none_hide {
 	display: none;
 }
 
-/* line 320, sass/_jquery.pwstabs.scss */
+/* line 320, sass/jquery.pwstabs.scss */
 
 .pws_tabs_none_show {
 	display: block;
 }
 
-/* line 329, sass/_jquery.pwstabs.scss */
+/* line 329, sass/jquery.pwstabs.scss */
 
 .pws_tabs_scale_hide {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -19824,7 +19824,7 @@ footer .menu * {
 	transform: scale(0.9);
 }
 
-/* line 333, sass/_jquery.pwstabs.scss */
+/* line 333, sass/jquery.pwstabs.scss */
 
 .pws_tabs_scale_show {
 	z-index: 1;
@@ -19843,7 +19843,7 @@ footer .menu * {
 	transition-delay: .3s;
 }
 
-/* line 345, sass/_jquery.pwstabs.scss */
+/* line 345, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_left_hide {
 	-webkit-transform: translateX(-100%);
@@ -19856,7 +19856,7 @@ footer .menu * {
 	opacity: 0;
 }
 
-/* line 349, sass/_jquery.pwstabs.scss */
+/* line 349, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_left_show {
 	-webkit-transform: translateX(0px);
@@ -19874,7 +19874,7 @@ footer .menu * {
 	transition-delay: .3s;
 }
 
-/* line 360, sass/_jquery.pwstabs.scss */
+/* line 360, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_right_hide {
 	-webkit-transform: translateX(200%);
@@ -19887,7 +19887,7 @@ footer .menu * {
 	opacity: 0;
 }
 
-/* line 364, sass/_jquery.pwstabs.scss */
+/* line 364, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_right_show {
 	-webkit-transform: translateX(0px);
@@ -19905,7 +19905,7 @@ footer .menu * {
 	transition-delay: .3s;
 }
 
-/* line 376, sass/_jquery.pwstabs.scss */
+/* line 376, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_top_hide {
 	-webkit-transform: translateY(-100%);
@@ -19918,7 +19918,7 @@ footer .menu * {
 	opacity: 0;
 }
 
-/* line 380, sass/_jquery.pwstabs.scss */
+/* line 380, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_top_show {
 	-webkit-transform: translateY(0px);
@@ -19936,7 +19936,7 @@ footer .menu * {
 	transition-delay: .3s;
 }
 
-/* line 391, sass/_jquery.pwstabs.scss */
+/* line 391, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_down_hide {
 	-webkit-transform: translateY(200%);
@@ -19949,7 +19949,7 @@ footer .menu * {
 	opacity: 0;
 }
 
-/* line 395, sass/_jquery.pwstabs.scss */
+/* line 395, sass/jquery.pwstabs.scss */
 
 .pws_tabs_slide_down_show {
 	-webkit-transform: translateY(0px);
@@ -67193,26 +67193,26 @@ body.admin-bar .sticky {
 
 @media only screen and (max-width: 60em) {
 
-/* line 23, sass/_jquery.pwstabs.scss */
+/* line 23, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive {
 	width: 100% !important;
 }
 
-/* line 25, sass/_jquery.pwstabs.scss */
+/* line 25, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive ul.pws_tabs_controll {
 	width: 100%;
 }
 
-/* line 27, sass/_jquery.pwstabs.scss */
+/* line 27, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive ul.pws_tabs_controll li {
 	vertical-align: top;
 	text-align: center;
 }
 
-/* line 30, sass/_jquery.pwstabs.scss */
+/* line 30, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive ul.pws_tabs_controll li a {
 	margin: 0;
@@ -67221,21 +67221,21 @@ body.admin-bar .sticky {
 	overflow: hidden;
 }
 
-/* line 35, sass/_jquery.pwstabs.scss */
+/* line 35, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive ul.pws_tabs_controll li a i {
 	display: block;
 	margin: 0 0 5px 0;
 }
 
-/* line 47, sass/_jquery.pwstabs.scss */
+/* line 47, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_tabs_vertical {
 	display: block;
 	position: relative;
 }
 
-/* line 50, sass/_jquery.pwstabs.scss */
+/* line 50, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_tabs_vertical:after {
 	display: block;
@@ -67243,7 +67243,7 @@ body.admin-bar .sticky {
 	clear: both;
 }
 
-/* line 54, sass/_jquery.pwstabs.scss */
+/* line 54, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_tabs_vertical ul.pws_tabs_controll {
 	width: 100%;
@@ -67252,19 +67252,19 @@ body.admin-bar .sticky {
 	padding: 0;
 }
 
-/* line 59, sass/_jquery.pwstabs.scss */
+/* line 59, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_tabs_vertical ul.pws_tabs_controll li {
 	display: inline-block;
 }
 
-/* line 61, sass/_jquery.pwstabs.scss */
+/* line 61, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_tabs_vertical ul.pws_tabs_controll li a {
 	margin: 0;
 }
 
-/* line 67, sass/_jquery.pwstabs.scss */
+/* line 67, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_tabs_vertical .pws_tabs_list {
 	position: relative;
@@ -67275,14 +67275,14 @@ body.admin-bar .sticky {
 
 @media only screen and (max-width: 37.5em) {
 
-/* line 81, sass/_jquery.pwstabs.scss */
+/* line 81, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive {
 	width: 100% !important;
 	position: relative;
 }
 
-/* line 84, sass/_jquery.pwstabs.scss */
+/* line 84, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive .pws_responsive_small_menu {
 	width: 100%;
@@ -67291,7 +67291,7 @@ body.admin-bar .sticky {
 	display: block;
 }
 
-/* line 89, sass/_jquery.pwstabs.scss */
+/* line 89, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive .pws_responsive_small_menu a {
 	width: 40px;
@@ -67308,13 +67308,13 @@ body.admin-bar .sticky {
 	-moz-box-sizing: border-box;
 }
 
-/* line 100, sass/_jquery.pwstabs.scss */
+/* line 100, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive .pws_responsive_small_menu a:hover {
 	background-color: #f78c10;
 }
 
-/* line 106, sass/_jquery.pwstabs.scss */
+/* line 106, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive ul.pws_tabs_controll.pws_tabs_menu_popup {
 	display: block;
@@ -67330,14 +67330,14 @@ body.admin-bar .sticky {
 	-moz-box-sizing: border-box;
 }
 
-/* line 116, sass/_jquery.pwstabs.scss */
+/* line 116, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive ul.pws_tabs_controll.pws_tabs_menu_popup li {
 	display: block;
 	float: none;
 }
 
-/* line 119, sass/_jquery.pwstabs.scss */
+/* line 119, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive ul.pws_tabs_controll.pws_tabs_menu_popup li a i {
 	display: inline-block;
@@ -67345,7 +67345,7 @@ body.admin-bar .sticky {
 	margin: 0 0.1875em 0 0;
 }
 
-/* line 129, sass/_jquery.pwstabs.scss */
+/* line 129, sass/jquery.pwstabs.scss */
 
 .pws_tabs_container.pws_tabs_responsive.pws_tabs_rtl ul.pws_tabs_controll.pws_tabs_menu_popup li a i {
 	display: inline-block;

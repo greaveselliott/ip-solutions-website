@@ -43,10 +43,10 @@
 </div><!-- End .featured-image-container tag -->
 <article class="container">
     <div class="row padding-top padding-bottom">
-        <div class="col-md-3">
-            <img src="<?php echo eemjii_get_acf_image_url('featured_image_rolled_over'); ?>" width="70%" class="display-none-phone width-100 height-auto">
+        <div class="col-sm-3 display-none-tablet-portrait">
+            <img src="<?php echo get_field('featured_image', get_the_ID() ); ?>" width="70%" class="display-none-phone width-100 height-auto">
         </div>
-        <div class="col-md-9">
+        <div class="col-sm-9">
             <h2 class="text-blue text-align-center text-decoration-underline"><?php the_title(); ?></h2>
             <p class="text-blue"><?php the_field('service_content_top'); ?></p>
         </div>
@@ -54,33 +54,37 @@
     <div class="row">
         <!-- Main Content -->
         <div class="col-md-8">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="pwstabs">
-                       <?php
-                            if( have_rows('service_content') ):
-                                // loop through the rows of data
-                                $i = 0;
-                                while ( have_rows('service_content') ) : the_row();
-                                ?>
-                                    <div data-pws-tab="tab-<?php echo $i?>" data-pws-tab-name="<?php the_sub_field('section_heading') ?>">
-                                        <div class="padding-2 border-3-orange">
-                                        <section>
-                                            <div class="background-blue padding-top padding-bottom">
-                                                <h5 class="text-white margin-top-0 h4 padding-2"><?php the_sub_field('section_heading') ?></h5>
-                                            </div>
-                                            <p class="text-blue"><?php the_sub_field('section_content'); ?></p>
-                                        </section>
-                                        </div>
-                                    </div>
-                                <?
-                                $i++;
-                                endwhile;
-                            endif;
-                       ?>
+            <?php if( have_rows('service_content') ):?>
+                <div class="row">
+                    <div class="col-sm-4">
+                <ul class="tabs_controll padding-0">
+                    <?php while ( have_rows('service_content') ) : the_row();?>
+                        <li>
+                            <a><?php the_sub_field('section_heading') ?></a>
+                        </li>
+                    <?php endwhile;?>
+                </ul>
                     </div>
+                    <div class="col-sm-8">
+                <div class="service-tabs border-3-orange">
+                <?php
+                // loop through the rows of data
+                while ( have_rows('service_content') ) : the_row();?>
+                    <div class="service-tab-single">
+                    <div class="padding-2">
+                        <section>
+                            <div class="background-blue padding-top padding-bottom">
+                                <h5 class="text-white margin-top-0 h4 padding-2"><?php the_sub_field('section_heading') ?></h5>
+                            </div>
+                            <?php the_sub_field('section_content'); ?>
+                        </section>
+                    </div>
+                    </div>
+                <?php endwhile;?>
+                </div>
                 </div>
             </div>
+            <?php endif;?>
         </div>
         <!-- Sidebar: Related Resources -->
         <aside class="col-md-4">
@@ -92,13 +96,15 @@
                 eemjii_post_command($related_resources,'template-resources-related.php');
             ?>
         </aside>
+        </div>
     </article>
     <hr class="border-3-blue width-100 margin-top margin-bottom">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 margin-bottom">
-            <h3 class="text-orange text-align-center margin-top-0"><?php the_field('service_content_bottom_title'); ?></h3>
-            <p class="text-align-center"><?php the_field('service_content_bottom'); ?></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 margin-bottom">
+                <h3 class="text-orange text-align-center margin-top-0"><?php the_field('service_content_bottom_title'); ?></h3>
+                <p class="text-align-center"><?php the_field('service_content_bottom'); ?></p>
+            </div>
         </div>
     </div>
-</div>
 <?php get_footer(); ?>

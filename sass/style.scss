@@ -62,6 +62,7 @@
 @import "template-case-studies-single";
 @import "template-services";
 @import "template-solutions";
+@import "template-resources";
 
 // header menu
 @import "navigation-header";
@@ -75,8 +76,7 @@
 // Uber Menu plugin
 @import "wp-plugin-uber-menu";
 
-// PWStabs
-@import "jquery.pwstabs";
+
 
 // Google Maps
 @import "google-maps";
@@ -89,5 +89,8 @@
 @import "gravity-forms-sass/form-mixins";
 @import "gravity-forms-sass/form-default";
 @import "gravity-forms-sass/form-gravity";
+
+@import "tabs";
+//@import "../javascripts/Responsive-Tabs/scss/responsive-tabs-theme";
 
 

@@ -13,7 +13,7 @@ echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <h3 class="h2 text-white">Case Study</h3>
+                    <h3 class="h2 text-white">Case Study:<br> <?php the_title(); ?></h3>
                 </div>
                 <!-- Client Logo inside cloud -->
                 <div class="col-sm-5 display-none-tablet-portrait">

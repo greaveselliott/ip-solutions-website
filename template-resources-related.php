@@ -3,11 +3,11 @@
     <a href="<?php echo get_permalink($post->ID); ?>" class="display-block">
         <figure class="padding">
             <?php
-                $featured_image = has_post_thumbnail() ?          // CONDITION: This post thumbnail has a featured image?
-                   get_the_post_thumbnail($post->ID,'large') :    // TRUE: save the post thumnail
+                $featured_image = has_post_thumbnail($post->ID) ?          // CONDITION: This post thumbnail has a featured image?
+                   get_the_post_thumbnail($post->ID,'large',array('class'=>'width-100 height-auto')) :    // TRUE: save the post thumnail
                     "http://placehold.it/300x180";                // FALSE: use the default image
             ?>
-            <img src="<?php echo $featured_image; ?>" class="width-100">
+            <?php echo $featured_image; ?>
             <figcaption class="text-orange h4"><?php echo $post->post_title;?></figcaption>
 
         </figure>

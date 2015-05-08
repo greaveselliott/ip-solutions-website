@@ -207,28 +207,3 @@ function enqueue_mixitup () {
 
 }
 add_action('wp_enqueue_scripts','enqueue_mixitup');
-
-// PWS Tabs
-function enqueue_pws_tabs () {
-    // MixItUp
-    wp_register_script(
-        'pws-tabs',
-        get_stylesheet_directory_uri() . '/javascripts/pwstabs/assets/jquery.pwstabs-1.2.1.js',
-        array('jquery'),
-        '',
-        true
-    );
-    wp_enqueue_script ('pws-tabs');
-
-    // MixItUp Config
-    wp_register_script(
-        'pws-tabs-config',
-        get_stylesheet_directory_uri() . '/javascripts/pwstabs/assets/jquery.pwstabs.config.js',
-        array('jquery','pws-tabs'),
-        '',
-        true
-    );
-    wp_enqueue_script ('pws-tabs-config');
-
-}
-add_action('wp_enqueue_scripts','enqueue_pws_tabs');
