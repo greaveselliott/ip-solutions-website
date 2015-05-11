@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-md-5 col-md-offset-1 padding-right-0-tablet-up text-align-center-tablet-portrait">
 
-                        <p class="text-blue h3 line-height-h3 margin-top-0">We’re comms technology experts - and deliver a range of exible and intuitive solutions.</p><p class="text-white h4"> From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
+                        <p class="text-blue h3 line-height-h3 margin-top-0">We’re comms technology experts - and deliver a range of flexible and intuitive solutions.</p><p class="text-white h4"> From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
                     </div>
                     <div class="col-md-5 padding-0-tablet-portrait">
                         <div class="embed-responsive embed-responsive-16by9">

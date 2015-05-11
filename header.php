@@ -35,6 +35,8 @@
 
         ?></title>
 	<?php wp_head(); ?>
+    <script type="text/javascript" src="http://aws.predictiveresponse.net/http/trac.js"> </script>
+    <script type="text/javascript"> trackPredictive(); </script>
 </head>
 <!--
     Added the_slug() to the body_class() function
