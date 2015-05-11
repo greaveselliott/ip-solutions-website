@@ -1,0 +1,35 @@
+.speech-bubble-background {
+  background: url("images/blog-speech-bubbles-bkgd.jpg") top center;
+  z-index: -10;
+  background-size: cover;
+}
+figure.speech-bubble {
+  position: relative;
+
+  figcaption {
+    position: absolute;
+    top: 56%;
+    width: 60%;
+    text-align: center;
+    margin: 0 20%;
+  }
+}
+
+.slick-blog {
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 40px;
+    color: $ips-orange;
+    &:hover {
+      color: $ips-grey;
+    }
+  }
+  .slick-prev {
+    left: -70px;
+  }
+  .slick-next {
+    right: -70px;
+  }
+}

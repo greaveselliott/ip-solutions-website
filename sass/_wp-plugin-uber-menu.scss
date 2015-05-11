@@ -1,0 +1,102 @@
+.sticky {
+  .ubermenu-submenu {
+    margin-top: 0px !important;
+  }
+}
+
+.ubermenu-column {
+
+}
+.ubermenu-item {
+  @include respond-to('tablet-portrait') {
+    padding: 0 !important;
+  }
+}
+.ubermenu-submenu {
+  background-color: rgba(white, 1) !important;
+  margin-top: 1px !important;
+
+  .ubermenu-submenu {
+    background-color: transparent !important;
+    @include respond-to('tablet-portrait') {
+      .ubermenu-item {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .ubermenu-item {
+    padding: 10px !important;
+    &.ubermenu-column {
+      padding: 0px;
+    }
+  }
+  .ubermenu-image {
+    padding-right: 10px !important;
+    @include respond-to('tablet-portrait') {
+      display: none !important;
+    }
+  }
+  .ubermenu-content-block {
+    color: $ips-green !important;
+    padding: 0px !important;
+    font-size: 12px;
+    font-style: italic;
+    @include respond-to('tablet-portrait') {
+      display: none;
+    }
+  }
+}
+@include respond-to('tablet-portrait') {
+  .ubermenu-responsive-toggle {
+    text-align: center;
+  }
+}
+.ubermenu-sub-indicators .ubermenu-has-submenu-drop>.ubermenu-target:after {
+  position: absolute;
+  right: 0px !important;
+  bottom: 0px;
+  margin: 0 !important;
+  content: "\f107";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  text-align: center;
+}
+
+.ubermenu-item-layout-text_only {
+  padding: 3px 20px 15px !important;
+}
+
+.ubermenu-loc-primary {
+  text-align: right;
+}
+
+.ubermenu-main {
+  @extend .height-100-important;
+  > .ubermenu-nav {
+    @extend .height-inherit;
+   > .ubermenu-item {
+     @include respond-to('tablet-portrait'){
+       text-align: center;
+     }
+      @extend .height-inherit;
+      > .ubermenu-target{
+        @extend .height-inherit;
+        > .ubermenu-target-text {
+          @extend .font-family-apex-medium;
+        }
+      }
+    }
+  }
+}
+
+.ubermenu-responsive {
+  height: 100%;
+}
+

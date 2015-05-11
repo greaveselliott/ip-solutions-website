@@ -1,0 +1,17 @@
+footer {
+  .block-grid-item {
+    border-left: solid 1px white;
+    &:first-child {
+      border-left: none;
+    }
+  }
+  .menu {
+    padding-left: 0px;
+  }
+  .menu, .menu * {
+    @extend .text-align-center !optional;
+    @extend .text-white !optional;
+    list-style-type: none;
+
+  }
+}

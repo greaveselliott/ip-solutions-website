@@ -1,0 +1,118 @@
+/**
+ * Responsive mixin. The media breakpoints are as defined
+ * in the twitter bootstrap framework:
+ *
+ * - phone
+ * - tablet-portrait
+ * - tablet-landscape-desktop
+ * - large-desktop
+ *
+ * Additional parameters for tagetting retina and non-retina
+ * devices
+ *
+ * - retina
+ * - non-retina
+ *
+ * Moreover, a specific value in px can be passed which is
+ * used to generate a max-width media query.
+ */
+
+/* Landscape phones and down */
+$phone: "(max-width: 480px)";
+
+/* Landscape phone to portrait tablet */
+$tablet-portrait: "(max-width: 767px)";
+$tablet-portrait-only: "(min-width: 480px) and (max-width: 767px)";
+
+$tablet-landscape-up: "(min-width: 768px)";
+
+/* Portrait tablet to landscape and desktop */
+$tablet-landscape-desktop: "(min-width: 768px) and (max-width: 1199px)";
+
+/* Large desktop */
+$large-desktop: "(min-width: 1200px)";
+
+/* Non-Retina */
+$non-retina: "screen and (-webkit-max-device-pixel-ratio: 1)";
+
+/* Retina Only */
+$retina: "screen and (-webkit-min-device-pixel-ratio: 2)";
+
+
+$respond-to-list:
+  "phone" $phone
+
+  /* Landscape phone to portrait tablet */
+  "tablet-portrait" $tablet-portrait
+  "tablet-portrait-only" $tablet-portrait-only
+
+  /* Tablets and bigger */
+  "tablet-up" $tablet-landscape-up
+  /* Portrait tablet to landscape and desktop */
+  "tablet-landscape-desktop" $tablet-landscape-desktop
+
+  /* Large desktop */
+  "large-desktop" $large-desktop
+
+  /* Non-Retina */
+  "non-retina" $non-retina
+
+  /* Retina Only */
+  "retina" $retina;
+
+/*
+  Arguements
+  $media expects 'string' of any media type listed above ^
+  $specific-max-width expects 'boolean' - if true sets the media-query max-width to the value given to $media
+*/
+
+@mixin respond-to($media, $specific-max-width: false) {
+  /* Landscape phones and down */
+  @if $media == phone {
+    @media #{$phone} { @content; }
+  }
+    /* Landscape phone to portrait tablet */
+  @else if $media == tablet-portrait {
+    @media #{$tablet-portrait} {@content; }
+  }
+    /* Portrait tablet to tablet or larger */
+  @else if $media == tablet-up {
+    @media #{$tablet-landscape-up} { @content; }
+  }
+    /* Portrait tablet to landscape and desktop */
+  @else if $media == tablet-landscape-desktop {
+    @media #{$tablet-landscape-desktop} { @content; }
+  }
+    /* Large desktop */
+  @else if $media == large-desktop {
+    @media #{$large-desktop} { @content; }
+  }
+    // Non-Retina
+  @else if $media == non-retina {
+    @media #{$non-retina} { @content; }
+  }
+    // Retina Only
+  @else if $media == retina {
+    @media #{$retina} { @content; }
+  }
+    // Specific max width
+
+  @else if $specific-max-width == true {
+    @media only screen and (max-width: #{$media}px) { @content; }
+  }
+}
+
+// generates a class for each screen size
+// This allows you to create generic responsive classes quickly
+@mixin responsive_property($selector) {
+  .#{$selector}{
+    @content;
+  }
+  @each $i in $respond-to-list {
+    @include respond-to(#{nth($i,1)}){
+      .#{$selector}-#{nth($i,1)} {
+        @content;
+      }
+    }
+  }
+}

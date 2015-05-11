@@ -1,0 +1,48 @@
+.social-sidebar {
+  display: block;
+  width: 55px;
+  height: 200px;
+  position: fixed;
+  left: 0px;
+  top: 40%;
+  z-index: 100;
+  ul {
+    display: block;
+    width: 55px;
+    height: 160px;
+    position: relative;
+    padding: 0px;
+    li {
+      display: block;
+      height: 50px;
+      width: 50px;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      padding-left: 5px;
+      padding-right: 5px;
+      -webkit-transition: all 120ms $ips-animation-ease; /* older webkit */
+      -webkit-transition: all 120ms $ips-animation-ease;
+      -moz-transition: all 120ms $ips-animation-ease;
+      -o-transition: all 120ms $ips-animation-ease;
+      transition: all 120ms $ips-animation-ease;
+      line-height: 45px;
+      &:hover {
+        width: 65px;
+        cursor: pointer;
+      }
+      &.twitter{
+        background-color: #00aced
+      }
+      &.facebook{
+        background-color: #3b5998;
+      }
+      &.linkedin{
+        background-color: #007bb6;
+      }
+      &.email{
+        background-color: $ips-green;
+      }
+    }
+  }
+}

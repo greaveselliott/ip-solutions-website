@@ -1,0 +1,88 @@
+.acf-slickjs-carousel-background2 {
+  height: inherit;
+  .slick-list, .slick-track {
+    height: inherit;
+  }
+}
+
+/* Dots */
+@include respond-to('tablet-up') {
+  .slick-slider {
+    margin-bottom: 30px;
+  }
+}
+
+.slick-dots {
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  @include respond-to('tablet-portrait') {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+}
+.slick-dots li {
+  position: relative;
+  background-color: $ips-blue;
+  display: inline-block;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  padding: 0;
+
+  cursor: pointer;
+  &:hover {
+    background-color: darken($ips-blue,5);
+  }
+  &.slick-active {
+    background-color: $ips-green
+  }
+}
+.slick-dots li button
+{
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before
+{
+  opacity: .75;
+  color: black;
+}
+
+.carousel-text {
+  @include respond-to('tablet-portrait') {
+    margin-top: 60px;
+  }
+  @include respond-to('tablet-up') {
+    padding: $grid-gutter-width/2;
+    margin: $grid-gutter-width/2;
+    margin-top: 120px;
+  }
+}

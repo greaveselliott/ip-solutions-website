@@ -1,0 +1,28 @@
+{
+  "name": "ip-solutions",
+  "version": "1.0.0",
+  "description": "IPS NPM FILE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greaveselliott/ip-solutions-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greaveselliott/ip-solutions-website/issues"
+  },
+  "homepage": "https://github.com/greaveselliott/ip-solutions-website",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.2"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-combine-media-queries": "^1.0.19"
+  }
+}
