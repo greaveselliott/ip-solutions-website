@@ -57,13 +57,25 @@ function eemjii_get_related_posts ($post_type, $custom_field) {
     return 'nothing returned';
 }
 
-function eemjii_set_related_post_classes ($related_posts, $prefix ='') {
-
+function eemjii_set_related_post_classes ($related_posts) {
     $post_count = count($related_posts);
     $classes = '';
-    for ( $i = 0; $i < $post_count; $i++ ) {
-        $classes .= ' '.$prefix .$related_posts[$i]->post_name;
-    }
+
+    $prefix = explode('_',$related_posts[0]->post_type)[1];
+    ?>
+<!--    <pre>-->
+<!--            --><?php //print_r($related_posts);?>
+<!--        </pre>-->
+    <?php
+    if($post_count > 0 ) :
+        for ( $i = 0; $i < $post_count; $i++ ) :
+            $classes .= ' ';
+            $classes .= $prefix.'_'.$related_posts[$i]->post_name;
+        endfor;
+
+    else :
+        $classes = 'no_related_post';
+    endif;
     return $classes;
 }
 
@@ -82,6 +94,7 @@ function eemjii_related_post_filter2 ($related_posts, $prefix ='') {
 function eemjii_related_post_filter ($wp_query_args, $mix_args) {
     $the_query = new WP_Query($wp_query_args);
     $mark_up = '';
+
     if ($the_query -> have_posts()):
         $mark_up .= '<select class="'.$mix_args['select_class'].'">';
         $mark_up .= '<option class="filter" data-filter="all" value="all">All</option>';

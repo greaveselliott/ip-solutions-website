@@ -40,7 +40,7 @@
                                 ),
                                 array(
                                     'select_class'      => 'mix-filter-services',
-                                    'class_prefix'      => 'service-'
+                                    'class_prefix'      => 'services_'
                                 )
                             );
                             ?>
@@ -55,14 +55,21 @@
 <div class="row">
     <div class="mix-it-up">
         <?php
-        $taxonomies_obj = eemjii_get_taxonomies('category');
+        $taxonomies_obj = eemjii_get_taxonomies('resource_type');
 
         for ($i = 0; $i < count($taxonomies_obj); $i++ ){
         $this_taxonomy_obj = $taxonomies_obj[$i];
         $the_query = new WP_Query(
         array(
             'post_type'     => 'eemjii_resources',
-            'category_name' => $this_taxonomy_obj->slug
+            //'category_name' => $this_taxonomy_obj->slug
+            'tax_query' => array(
+                array(
+                    'taxonomy'  =>  'resource_type',
+                    'field'     =>  'slug',
+                    'terms'     =>  $this_taxonomy_obj->slug
+                )
+            )
             )
         ); ?>
 
