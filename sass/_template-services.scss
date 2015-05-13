@@ -1,0 +1,16 @@
+.related-service-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.box-button-height {
+  @include respond-to('tablet-landscape-desktop') {
+    height: 165px;
+  }
+}
+
+.background-none-tablet-portrait {
+  @include respond-to('tablet-portrait'){
+    background-image: none !important;
+  }
+}

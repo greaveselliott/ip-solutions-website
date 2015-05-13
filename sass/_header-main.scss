@@ -1,0 +1,80 @@
+.main-logo {
+  @extend .height-100-important;
+  @include respond-to ('tablet-portrait') {
+    height: 50px !important;
+    width: auto !important;
+  }
+  z-index: 50;
+  position: relative;
+}
+
+body.logged-in, body.admin-bar {
+  #header-main-container {
+    top: 28px !important;
+    @include respond-to(tablet-portrait) {
+     top: 46px !important;
+    }
+  }
+}
+
+#header-main-container {
+  position: fixed !important;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+
+  a {
+    color: $ips-blue;
+  }
+}
+
+
+
+#header-main-container {
+  z-index: 20;
+  position: relative;
+}
+#header-main-height {
+  -webkit-transition: all 0.17s ease-in;
+  -moz-transition: all 0.17s ease-in;
+  -ms-transition: all 0.17s ease-in;
+  -o-transition: all 0.17s ease-in;
+  transition: all 0.17s ease-in;
+
+  @include respond-to('tablet-up') {
+    height: 120px;
+  }
+}
+
+.sticky #header-main-height {
+  @include respond-to('tablet-up') {
+    height: 90px;
+  }
+}
+
+@include responsive_property('header-offset') {
+  height: 120px;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.17s ease-in;
+  -moz-transition: all 0.17s ease-in;
+  -ms-transition: all 0.17s ease-in;
+  -o-transition: all 0.17s ease-in;
+  transition: all 0.17s ease-in;
+}
+.sticky {
+  @include responsive_property('header-offset'){
+    height: 90px;
+  }
+}
+
+.header-offset, .sticky .header-offset {
+  @include respond-to('tablet-portrait') {
+    height: 50px;
+  }
+}
+
+
+
+
+

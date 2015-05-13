@@ -1,0 +1,95 @@
+// Sass files for animated flip cards
+
+
+// Force Aspect Ratio
+@include responsive_property(force-aspect-ratio-container){
+  height: 100%;
+  width: 100%;
+  padding: 50%;
+  position: relative;
+
+  @include responsive_property(force-aspect-ratio) {
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+  }
+}
+
+
+
+@include responsive_property(flip-container) {
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  // Copied from .force-aspect-ratio-container
+  @include respond-to('tablet-up'){
+    height: 100%;
+    width: 100%;
+    padding: 50%;
+    position: relative;
+  }
+  .front, .back {-moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: transform 0.6s ease-out;
+    -moz-transition: transform 0.6s ease-out;
+    transition: transform 0.6s ease-out;
+
+    // Copied from .force-aspect-ratio;
+    @include respond-to('tablet-up'){
+      height: inherit;
+      width: inherit;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+      .h1, .h2, .h3, .h4, .h5, .h6, .btn {
+        font-size: 13px;
+      }
+      p {
+        font-size: 13px;
+        margin: 0;
+      }
+  }
+
+  &:hover {
+    .front {
+      -moz-transform:     perspective(1000px) rotateY(180deg);
+      -webkit-transform:  perspective(1000px) rotateY(180deg);
+      transform:          perspective(1000px) rotateY(180deg);
+    }
+    .back {
+      -moz-transform:     perspective(1000px) rotateY(0deg);
+      -webkit-transform:  perspective(1000px) rotateY(0deg);
+      transform:          perspective(1000px) rotateY(0deg);
+    }
+  }
+
+  .front {
+    -moz-transform:     perspective(1000px) rotateY(0deg);
+    -webkit-transform:  perspective(1000px) rotateY(0deg);
+    transform:          perspective(1000px) rotateY(0deg);
+  }
+
+  .back {
+    -moz-transform:     perspective(1000px) rotateY(-180deg);
+    -webkit-transform:  perspective(1000px) rotateY(-180deg);
+    transform:          perspective(1000px) rotateY(-180deg);
+  }
+}
+
+@include respond-to('tablet-portrait') {
+  .front {
+    height: 100px;
+    &:hover {
+      background-color: $ips-orange;
+    }
+  }
+}
+
+
+
