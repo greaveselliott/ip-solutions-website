@@ -7,13 +7,13 @@
                 <div class="table-center-cell">
                     <?php
                         if ( has_post_thumbnail() ) {
-                            the_post_thumbnail('template-post-3by2', array('class'=>'width-100 height-auto'));
+                            the_post_thumbnail('resources', array('class'=>'width-100 height-auto'));
                         } else {
-                            echo '<img src="'.get_stylesheet_directory_uri().'/images/placeholder-225x150.jpg" class="width-100 height-auto">';
+                            echo '<img src="'.get_stylesheet_directory_uri().'/images/resource-placeholder.jpg" class="width-100 height-auto">';
                         }
                     ?>
 
-                    <h4 class="text-blue"><?php the_title(); ?></h4>
+                    <h4 class="text-blue h5"><?php the_title(); ?></h4>
                     <?php
                     if( get_field('file_attachments') ): ?>
                     <a href="<?php the_field('file_attachments'); ?>" target="_blank" title="Click here to download the file attachment" class="btn btn-orange"><i class="fa fa-download"></i>&nbsp;Download File</a><?php

@@ -38,23 +38,28 @@ function eemjii_get_taxonomies ($taxonomy) {
     return $taxonomy_list_object;
 }
 
-function eemjii_get_related_posts ($post_type, $custom_field) {
-    $the_ID = get_field($custom_field,false , false);
+function eemjii_get_related_posts ($post_type, $custom_field, $ID = false) {
+    // get the relationship field
+    $acf_relationship_object = get_field($custom_field, $ID, false);
+    // define the $value variable
+    $value = null;
 
-    if (count($the_ID) > 0):
+    // Does the relationship object has a value?
+    if ($acf_relationship_object):
         $the_query = new WP_Query(array(
             'post_type'      	=> $post_type,
             'posts_per_page'	=> 0,
-            'post__in'		    => $the_ID,
+            'post__in'		    => $acf_relationship_object,
             'post_status'		=> 'any',
             'order'             => 'ASC',
             'orderby'        	=> 'title'
         ));
         // resetting the WP_Query to avoid conflicting errors
         wp_reset_query();
-        return $the_query->posts;
+        // Set $value to the queries posts
+        $value = $the_query->posts;
     endif;
-    return 'nothing returned';
+    return $value;
 }
 
 function eemjii_set_related_post_classes ($related_posts) {

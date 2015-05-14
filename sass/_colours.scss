@@ -112,6 +112,7 @@ $ips-colours-list:
     background: transparent !important;
     @extend .border-2-#{nth($i,1)};
     @extend .text-#{nth($i,1)};
+    @extend .border-radius-2;
     -webkit-transition: all 0.12s ease-in;
     -moz-transition: all 0.12s ease-in;
     -ms-transition: all 0.12s ease-in;

@@ -28,8 +28,8 @@
                             <div class="table-center-container">
                                 <div class="table-center-cell">
                                     <!-- The back content -->
-                                    <div class="padding-2">
-                                        <p class="text-white"><?php echo get_sub_field('starting_point_text'); ?></p>
+                                    <div class="padding-1_5">
+                                        <p class="text-white padding-bottom-2"><?php echo get_sub_field('starting_point_text'); ?></p>
                                         <button class="btn btn-white display-none-tablet-portrait">Read more</button>
                                     </div>
                                 </div>

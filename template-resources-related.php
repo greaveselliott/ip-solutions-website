@@ -6,15 +6,15 @@
             <div class="table-center-container">
                 <div class="table-center-cell">
                     <?php
-                    $thumbnail = get_the_post_thumbnail($post->ID, 'medium',array('class'=>'width-100 height-auto'));
+                    $thumbnail = get_the_post_thumbnail($post->ID, 'resources',array('class'=>'width-100 height-auto'));
                     if ( $thumbnail ) {
                         echo $thumbnail;
                     } else {
-                        echo '<img src="'.get_stylesheet_directory_uri().'/images/placeholder-225x150.jpg" class="width-100 height-auto">';
+                        echo '<img src="'.get_stylesheet_directory_uri().'/images/resource-placeholder.jpg" class="width-100 height-auto">';
                     }
                     ?>
 
-                    <h4 class="text-blue"><?php echo $post->post_name; ?></h4>
+                    <h4 class="text-blue h5"><?php echo $post->post_name; ?></h4>
                     <?php
                     if( get_field('file_attachments',$post->ID) ): ?>
                     <a href="<?php the_field('file_attachments',$post->ID); ?>" target="_blank" title="Click here to download the file attachment" class="btn btn-orange"><i class="fa fa-download"></i>&nbsp;Download File</a><?php

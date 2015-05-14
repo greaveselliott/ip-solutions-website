@@ -5,13 +5,6 @@
   }
 }
 
-/* Dots */
-@include respond-to('tablet-up') {
-  .slick-slider {
-    margin-bottom: 30px;
-  }
-}
-
 .slick-dots {
   display: block;
   width: 100%;
@@ -77,12 +70,8 @@
 }
 
 .carousel-text {
-  @include respond-to('tablet-portrait') {
-    margin-top: 60px;
-  }
   @include respond-to('tablet-up') {
-    padding: $grid-gutter-width/2;
+    padding: $grid-gutter-width/2 0;
     margin: $grid-gutter-width/2;
-    margin-top: 120px;
   }
 }

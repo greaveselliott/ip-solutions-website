@@ -1,14 +1,14 @@
 <?php get_header();
+$eemjii_post_ID = get_the_ID();
 $related_services = eemjii_simple_post_query('eemjii_services', 6);
 // get: query SOLUTIONS related to this post
-$related_solutions = eemjii_reverse_post_query('eemjii_solutions', 'related_services', get_the_ID() );
+$related_solutions = eemjii_reverse_post_query('eemjii_solutions', 'related_services', $eemjii_post_ID );
 // get: query resources related to this post
 $related_resources = eemjii_get_related_posts('eemjii_resources', 'related_resources');
 ?>
 
     <!-- Background Image / Carousel -->
     <div class="height-auto-important-tablet-portrait">
-        <div class="header-offset"></div>
         <?php get_template_part('template','carousel'); ?>
     </div>
     <!-- Service Icons-->
@@ -93,7 +93,8 @@ $related_resources = eemjii_get_related_posts('eemjii_resources', 'related_resou
             <?php endif;?>
         </div>
         <!-- Sidebar: Related Resources -->
-        <?php if ( !empty($related_resources) ): ?>
+        <?php
+            if ( !empty($related_resources) ): ?>
         <aside class="col-md-4">
             <h3 class="text-orange margin-top-0">Resources</h3>
             <?php

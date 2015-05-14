@@ -4,6 +4,7 @@
  *
  */
 ?>
+<div class="header-offset"></div>
 <!-- slide wrapper -->
     <div class="acf-slickjs-carousel acf-slickjs-carousel-background">
 <?php
@@ -17,7 +18,7 @@ if( have_rows('slickjs_carousel') ):
         <div class="width-100 height-100">
             <div class="container">
                 <div class="row carousel-text">
-                    <div class="col-sm-8">
+                    <div class="col-md-6 padding-0">
                         <h2 class="h3 h6-tablet-portrait text-white bold" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
                         <p class="h3-tablet-up text-white" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></p>
                         <?php if ( get_sub_field('slide_link') ): ?>

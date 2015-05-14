@@ -50,7 +50,7 @@
                         </figure>
                     </div>
                     <div class="col-sm-7 height-inherit">
-                        <div class="row padding-top-2 padding-bottom-2 height-50 display-none-tablet-portrait">
+                        <div class="row padding-bottom-2 height-50 display-none-tablet-portrait">
                             <div class="col-sm-12">
                                 <div class="float-right float-none-tablet-portrait text-align-center-tablet-portrait">
                                     <!-- Telephone Number -->

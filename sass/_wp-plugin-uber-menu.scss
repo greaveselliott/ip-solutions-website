@@ -3,10 +3,6 @@
     margin-top: 0px !important;
   }
 }
-
-.ubermenu-column {
-
-}
 .ubermenu-item {
   @include respond-to('tablet-portrait') {
     padding: 0 !important;
@@ -14,23 +10,51 @@
 }
 .ubermenu-submenu {
   background-color: rgba(white, 1) !important;
-  margin-top: 1px !important;
 
-  .ubermenu-submenu {
-    background-color: transparent !important;
-    @include respond-to('tablet-portrait') {
+  @include respond-to('tablet-portrait') {
+    .ubermenu-item {
+      padding: 0 !important;
+    }
+  }
+  .ubermenu-item {
+    padding: 10px !important;
+
+    &:first-child {
+      margin-top: 0px !important;
+    }
+    &.ubermenu-column {
+      padding: 0px !important;
       .ubermenu-item {
-        padding: 0 !important;
+        position: relative !important;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left:0;
+          background-color: $ips-blue;
+          height: 100%;
+          width: 0;
+          -webkit-transition: width 0.08s ease-in;
+          -moz-transition: width 0.08s ease-in;
+          -ms-transition: width 0.08s ease-in;
+          -o-transition: width 0.08s ease-in;
+          transition: width 0.08s ease-in;
+        }
+        &:hover {
+          &:before {
+            width: 6px;
+          }
+        }
+        &.ubermenu-current-menu-item {
+          &:before {
+            width: 6px;
+            background-color: $ips-green;
+          }
+        }
       }
     }
   }
 
-  .ubermenu-item {
-    padding: 10px !important;
-    &.ubermenu-column {
-      padding: 0px;
-    }
-  }
   .ubermenu-image {
     padding-right: 10px !important;
     @include respond-to('tablet-portrait') {
@@ -52,7 +76,7 @@
     text-align: center;
   }
 }
-.ubermenu-sub-indicators .ubermenu-has-submenu-drop>.ubermenu-target:after {
+.ubermenu-sub-indicators .ubermenu-has-submenu-drop > .ubermenu-target:after {
   position: absolute;
   right: 0px !important;
   bottom: 0px;

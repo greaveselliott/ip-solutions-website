@@ -1,5 +1,5 @@
 <!-- Testimonials / Clients -->
-<div class="background-white padding-top padding-bottom">
+<div class="background-white padding-top">
     <article class="container">
         <div class="row display-none">
             <div class="col-12-sm">

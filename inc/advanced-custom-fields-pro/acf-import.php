@@ -649,7 +649,7 @@ if( function_exists('register_field_group') ):
                         ),
                         'default_value' => '',
                         'placeholder' => '',
-                        'maxlength' => '',
+                        'maxlength' => 100,
                         'rows' => '',
                         'new_lines' => '',
                         'readonly' => 0,
