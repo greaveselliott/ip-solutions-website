@@ -53,6 +53,7 @@
 // Position
 @include responsive_property("position-absolute"){position: absolute}
 @include responsive_property("position-relative"){position: relative}
+@include responsive_property("position-relative-important"){position: relative !important}
 @include responsive_property("position-static"){position: static}
 
 // Border Placement

@@ -5,7 +5,7 @@ Description: A bespoke WordPress Theme, hand-crafted for IP Solutions by Pulse C
 Author:       Pulse Comms
 Author URI:   http://www.pulsecomms.com/
 Template:     twentyten
-Version:      1.1
+Version:      1.1.1
 License:      GNU General Public License v2 or later
 License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 Tags:         Home, Services, Clients, Testimonials, Resources, Contact
@@ -15009,6 +15009,69 @@ button.close {
   /* line 113, sass/_bootstrap-media-queries.scss */
   .position-relative-retina {
     position: relative;
+  }
+}
+/* Landscape phones and down */
+/* line 108, sass/_bootstrap-media-queries.scss */
+.position-relative-important {
+  position: relative !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .position-relative-important-phone {
+    position: relative !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (max-width: 767px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .position-relative-important-tablet-portrait {
+    position: relative !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .position-relative-important-tablet-up {
+    position: relative !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .position-relative-important-tablet-landscape-desktop {
+    position: relative !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media (min-width: 1200px) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .position-relative-important-large-desktop {
+    position: relative !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .position-relative-important-non-retina {
+    position: relative !important;
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones and down */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  /* line 113, sass/_bootstrap-media-queries.scss */
+  .position-relative-important-retina {
+    position: relative !important;
   }
 }
 /* Landscape phones and down */
@@ -70229,7 +70292,7 @@ body.logged-in, body.admin-bar {
 }
 
 /* line 1, sass/_social-sidebar.scss */
-.social-sidebar {
+.social-sidebar, .social {
   display: block;
   width: 55px;
   height: 200px;
@@ -70239,7 +70302,7 @@ body.logged-in, body.admin-bar {
   z-index: 100;
 }
 /* line 9, sass/_social-sidebar.scss */
-.social-sidebar ul {
+.social-sidebar ul, .social ul {
   display: block;
   width: 55px;
   height: 160px;
@@ -70247,7 +70310,7 @@ body.logged-in, body.admin-bar {
   padding: 0px;
 }
 /* line 15, sass/_social-sidebar.scss */
-.social-sidebar ul li {
+.social-sidebar ul li, .social ul li {
   display: block;
   height: 50px;
   width: 50px;
@@ -70265,24 +70328,24 @@ body.logged-in, body.admin-bar {
   line-height: 45px;
 }
 /* line 30, sass/_social-sidebar.scss */
-.social-sidebar ul li:hover {
+.social-sidebar ul li:hover, .social ul li:hover {
   width: 65px;
   cursor: pointer;
 }
 /* line 34, sass/_social-sidebar.scss */
-.social-sidebar ul li.twitter {
+.social-sidebar ul li.twitter, .social ul li.twitter {
   background-color: #00aced;
 }
 /* line 37, sass/_social-sidebar.scss */
-.social-sidebar ul li.facebook {
+.social-sidebar ul li.facebook, .social ul li.facebook {
   background-color: #3b5998;
 }
 /* line 40, sass/_social-sidebar.scss */
-.social-sidebar ul li.linkedin {
+.social-sidebar ul li.linkedin, .social ul li.linkedin {
   background-color: #007bb6;
 }
 /* line 43, sass/_social-sidebar.scss */
-.social-sidebar ul li.email {
+.social-sidebar ul li.email, .social ul li.email {
   background-color: #c3cf21;
 }
 

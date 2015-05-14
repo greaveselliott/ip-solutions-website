@@ -2,7 +2,7 @@
 $eemjii_post_ID = get_the_ID();
 $related_services = eemjii_simple_post_query('eemjii_services', 6);
 // get: query SOLUTIONS related to this post
-$related_solutions = eemjii_reverse_post_query('eemjii_solutions', 'related_services', $eemjii_post_ID );
+$related_solutions = eemjii_get_related_posts('eemjii_solutions', 'related_solutions', $eemjii_post_ID );
 // get: query resources related to this post
 $related_resources = eemjii_get_related_posts('eemjii_resources', 'related_resources');
 ?>
