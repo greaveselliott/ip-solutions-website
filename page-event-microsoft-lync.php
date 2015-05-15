@@ -50,20 +50,29 @@ $rootDir = get_stylesheet_directory_uri();
         <li class="email"><a href="mailto:info@ipsolutions.co.uk" class="text-white"><i class="fa fa-envelope"></i></a></li>
     </ul>
 </div>
-<div class="container">
-<header class="row">
-    <div class="col-sm-12">
-        <!-- header -->
-        <div class="float-left">
-            <div id="logos" class="padding-top-10 margin-bottom-10">
-                <img src="<?php echo $rootDir; ?>/images/ipsolutionslogo.png">
-                <img src="<?php echo $rootDir; ?>/images/lync_logo_1.jpg">
-                <img src="<?php echo $rootDir; ?>/images/microsoft-logo.png">
+
+<?php if (have_rows('sponser_logos') ):?>
+    <div class="container">
+        <header class="row">
+            <div class="col-sm-12">
+                <!-- header -->
+                <div class="float-left">
+                    <div id="logos" class="padding-top-10 margin-bottom-10">
+                    <?php
+                        while (have_rows('sponser_logos')): the_row();
+
+                           // echo '<div></div>'. get_the_post_thumbnail(get_sub_field('event_sponser_logo'), 'event-logos',array('class'=>'width-100 height-auto'));
+                            $logo_ID = get_sub_field('event_sponser_logo');
+                            echo '<div class="display-inline-block padding-right padding-bottom">'.wp_get_attachment_image($logo_ID, 'event-logos').'
+                            </div>';
+                        endwhile;
+                    ?>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
     </div>
-</header>
-</div>
+<?php endif;?>
 <!-- row 1: -->
 <div class="width-100 position-relative" id="row1">
     <section class="container padding-top">
@@ -100,8 +109,8 @@ $rootDir = get_stylesheet_directory_uri();
 -->
 <section class="container">
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
-            <h2 class="text-upper-case text-green"><?php the_field('row_two_title'); ?></h2>
+        <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2">
+            <h2 class="text-align-center text-green"><?php the_field('row_two_title'); ?></h2>
             <table class="text-grey table table-hover">
                 <?php
                     if (have_rows('schedule') ):
@@ -122,12 +131,12 @@ $rootDir = get_stylesheet_directory_uri();
 <div class="background-blue">
 <section class="container">
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
-            <h2 class="text-upper-case text-center text-white"><?php the_field('row_three_title') ?></h2>
+        <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2">
+            <h2 class="text-align-center text-white"><?php the_field('row_three_title') ?></h2>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2">
             <figure class="margin-bottom width-100">
                 <?php
                 $location = get_field('map_location');
@@ -153,10 +162,10 @@ $rootDir = get_stylesheet_directory_uri();
 -->
 <section class="container margin-top">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 background-grey opacity-25">
+        <div class="col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 ">
         <!-- FORM START -->
             <!-- Title -->
-            <div class="table-center-container">
+            <div class="table-center-container background-grey opacity-25">
                 <div class="table-center-cell">
                     <div class="padding margin">
                         <h3 class="h1 text-upper-case margin-0 ips-white text-center">Register today to attend</h3>
@@ -177,7 +186,7 @@ $rootDir = get_stylesheet_directory_uri();
     <div class="row">
         <div class="col-sm-12 text-center">
             <h3 class="text-upper-case display-inline-block hide-for-small ips-white">Connect with us</h3>
-            <nav class="display-inline-block">
+            <nav class="display-inline-block social-sidebar-horizontal">
                 <ul>
                     <li class="twitter"><a href="https://twitter.com/IPSolutionsUK" target="_blank" title="Follow IP Solutions on twitter" class="text-white"><i class="fa fa-twitter"></i></a></li>
                     <li class="linkedin"><a href="https://www.linkedin.com/company/ip-solutions-uk-ltd" target="_blank" title="Connect with IP Solutions on Linked-in" class="text-white"><i class="fa fa-linkedin"></i></a></li>
