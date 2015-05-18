@@ -168,7 +168,7 @@ $rootDir = get_stylesheet_directory_uri();
             <div class="table-center-container background-grey opacity-25">
                 <div class="table-center-cell">
                     <div class="padding margin">
-                        <h3 class="h1 text-upper-case margin-0 ips-white text-center">Register today to attend</h3>
+                        <h3 class="h1 text-upper-case margin-0 text-blue text-center">Register today to attend</h3>
                         <!-- Sign up -->
                         <a href="#row1" class="btn btn-orange h3">Register now</a>
                     </div>
