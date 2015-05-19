@@ -1,0 +1,8 @@
+.modal-dialog,.modal-dialog * {
+    max-width: 1000px !important;
+  -webkit-transition: all 0.22s ease-in;
+  -moz-transition: all 0.22s ease-in;
+  -ms-transition: all 0.22s ease-in;
+  -o-transition: all 0.22s ease-in;
+  transition: all 0.22s ease-in;
+}

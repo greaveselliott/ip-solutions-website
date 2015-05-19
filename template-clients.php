@@ -7,9 +7,15 @@
     $client_class      .= ' '; // The space between each class
     $client_class      .= get_field('toggled_testimonial', $post->ID) ? 'has-testimonial' : 'no-testimonial';
 ?>
-<div class="block-grid-item single-client <?php echo $client_class; ?>">
-    <img src="<?php echo get_field('client_logo', $post->ID);?>" title="<?php echo $post->post_name?>">
-    <?php if ($has_case_study) : ?>
-        <a href="<?php echo $related_case_study[0]->guid ?>" class="btn btn-orange">Read Case Study</a>
+<div class="block-grid-item single-client <?php echo $client_class; ?>  text-align-center">
+    <?php if ( $has_case_study && is_page_template( 'page-home.php' )) :
+   ?>
+    <a href="<?php echo $related_case_study[0]->guid ?>" class="width-100 height-100 display-block"  data-toggle="tooltip" data-placement="bottom" title="<?php echo 'Read the ' . $related_case_study[0] -> post_title . ' Case Study.' ?>">
+    <?php endif; ?>
+    <img src="<?php echo get_field('client_logo', $post->ID);?>" title="<?php echo $post->post_name?>" class="width-100 height-auto">
+    <?php if ( $has_case_study && !is_page_template( 'page-home.php' ))  : ?>
+        <a href="<?php echo $related_case_study[0]->guid ?>" class="btn btn-orange display-inline-block margin-top">Read Case Study</a>
+    <?php else : ?>
+        </a>
     <?php endif; ?>
 </div>

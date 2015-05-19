@@ -21,9 +21,9 @@ function footer_sitemap_widget() {
 	register_sidebar( array(
 		'name'          => 'Footer Site Map',
 		'id'            => 'footer-site-map',
-		'before_widget' => '<div class="block-grid-item">',
+		'before_widget' => '<div class="block-grid-item text-align-left text-white">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
+		'before_title'  => '<h2 class="h5 text-white margin-top-0">',
 		'after_title'   => '</h2>',
 	) );
 
@@ -44,3 +44,18 @@ function social_media_sharing_widget() {
 
 }
 add_action( 'widgets_init', 'social_media_sharing_widget' );
+
+// Social Media Bar
+function twitter_feed() {
+
+    register_sidebar( array(
+        'name'          => 'Twitter Feed',
+        'id'            => 'twitter-feed',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ) );
+
+}
+add_action( 'widgets_init', 'twitter_feed' );

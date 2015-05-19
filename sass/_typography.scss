@@ -4,16 +4,15 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  @extend .font-family-apex;
+  @extend .font-family-default;
+  //@extend .font-family-apex;
   //text-transform: lowercase;
-  &::first-letter{
-   // text-transform: uppercase;
-  }
   .text-x2 {
     font-size: 2em;
   }
   &.bold {
-    @extend .font-family-apex-medium;
+    //@extend .font-family-default;
+    //@extend .font-family-apex-medium;
   }
 }
 
@@ -22,10 +21,11 @@ h6, .h6 {
 }
 
 .font-family-default {
-  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Arial, sans-serif !important;
+  font-family: Arial, sans-serif !important;
 }
 
 p {
+  @extend .font-family-default;
   &.h1, &.h2,
   &.h3, &.h4,
   &.h5, &.h6 {
@@ -39,6 +39,7 @@ hr {
 
 a {
   color: $ips-orange;
+  @extend .font-family-default;
   &:hover {
     color: darken($ips-orange,5);
   }

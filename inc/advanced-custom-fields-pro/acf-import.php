@@ -3,7 +3,7 @@ if( function_exists('register_field_group') ):
 
     register_field_group(array (
         'key' => 'group_554a21843e4f0',
-        'title' => 'About',
+        'title' => 'About (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_554a21a3d8c96',
@@ -74,11 +74,12 @@ if( function_exists('register_field_group') ):
             12 => 'tags',
             13 => 'send-trackbacks',
         ),
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_554a34b20b6c2',
-        'title' => 'Awards',
+        'title' => 'Awards (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_554a350eddfde',
@@ -158,11 +159,12 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'the_content',
         ),
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_554b7336aa54e',
-        'title' => 'Awards Post',
+        'title' => 'Awards Post (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_554b7353df226',
@@ -199,11 +201,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5523a7fcd7063',
-        'title' => 'Carousel',
+        'title' => 'Carousel (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_5523a83cdade8',
@@ -337,6 +340,24 @@ if( function_exists('register_field_group') ):
                         'default_value' => '',
                         'placeholder' => '',
                     ),
+                    array (
+                        'key' => 'field_555b2fb470449',
+                        'label' => 'Slide Featured Image',
+                        'name' => 'slide_featured_image',
+                        'prefix' => '',
+                        'type' => 'image',
+                        'instructions' => 'Add a featured image to this slide',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array (
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'return_format' => 'id',
+                        'preview_size' => 'medium',
+                        'library' => 'all',
+                    ),
                 ),
             ),
         ),
@@ -415,7 +436,7 @@ if( function_exists('register_field_group') ):
 
     register_field_group(array (
         'key' => 'group_554ab0d85c46e',
-        'title' => 'Case Study',
+        'title' => 'Case Study (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_554ab12042d75',
@@ -550,11 +571,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5523da55b11bf',
-        'title' => 'Choose your starting point',
+        'title' => 'Choose your starting point (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_5538ccd3ab03f',
@@ -700,11 +722,12 @@ if( function_exists('register_field_group') ):
             0 => 'the_content',
             1 => 'featured_image',
         ),
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5509a4af94b19',
-        'title' => 'Clients',
+        'title' => 'Clients (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_5509a8ddd92f4',
@@ -762,11 +785,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55086dc15912d',
-        'title' => 'Contact Page',
+        'title' => 'Contact Page (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_55086e28d9c0f',
@@ -803,11 +827,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5554b37986f01',
-        'title' => 'Event Template',
+        'title' => 'Event Template (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_5555c515af7eb',
@@ -1443,7 +1468,7 @@ if( function_exists('register_field_group') ):
                 array (
                     'param' => 'page_template',
                     'operator' => '==',
-                    'value' => 'page-event-microsoft-lync.php',
+                    'value' => 'page-event-landing-page.php',
                 ),
             ),
         ),
@@ -1455,11 +1480,12 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'the_content',
         ),
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55361f9cc4e6e',
-        'title' => 'Featured Image with Roll Over',
+        'title' => 'Featured Image with Roll Over (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_55361e6c3ffd6',
@@ -1522,11 +1548,12 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'featured_image',
         ),
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55086e6b8d372',
-        'title' => 'Global',
+        'title' => 'Global (Recovered)',
         'fields' => array (
         ),
         'location' => array (
@@ -1544,11 +1571,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_554108dcc61f5',
-        'title' => 'Related Clients',
+        'title' => 'Related Clients (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_554108e91d16e',
@@ -1595,11 +1623,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_552baa36d00a8',
-        'title' => 'Related Resources',
+        'title' => 'Related Resources (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_552baa4230f9b',
@@ -1646,11 +1675,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_552ba9eaeb650',
-        'title' => 'Related Services',
+        'title' => 'Related Services (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_552ba9f69ccfd',
@@ -1711,11 +1741,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_552baa63d316c',
-        'title' => 'Related Solutions',
+        'title' => 'Related Solutions (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_552baa70bb03f',
@@ -1769,11 +1800,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5509a2253108d',
-        'title' => 'Related Testimonials',
+        'title' => 'Related Testimonials (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_55423d3209d27',
@@ -1898,11 +1930,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55099947ddea8',
-        'title' => 'Resources',
+        'title' => 'Resources (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_55099cec56727',
@@ -1978,11 +2011,12 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'the_content',
         ),
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55086203ea483',
-        'title' => 'Services',
+        'title' => 'Services (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_5531073ec0f82',
@@ -2165,11 +2199,12 @@ if( function_exists('register_field_group') ):
             0 => 'the_content',
             1 => 'custom_fields',
         ),
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_554b353a79332',
-        'title' => 'solutions',
+        'title' => 'solutions (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_554b372a9e58c',
@@ -2368,11 +2403,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55099d6c54422',
-        'title' => 'Team',
+        'title' => 'Team (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_5509a11275516',
@@ -2495,11 +2531,12 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5548c8510375c',
-        'title' => 'Text Area',
+        'title' => 'Text Area (Recovered)',
         'fields' => array (
             array (
                 'key' => 'field_5548c85d3add7',
@@ -2558,6 +2595,7 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
+        'local' => 'php',
     ));
 
 endif;

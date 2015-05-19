@@ -1,6 +1,6 @@
 <?php
 /*
- Template Name: Event - Microsoft Lync
+ Template Name: Event Landing Page
 */
 $rootDir = get_stylesheet_directory_uri();
 ?>

@@ -207,3 +207,28 @@ function enqueue_mixitup () {
 
 }
 add_action('wp_enqueue_scripts','enqueue_mixitup');
+
+// Lightbox
+function enqueue_lightbox () {
+    // MixItUp
+    wp_register_script(
+        'lightbox',
+        get_stylesheet_directory_uri() . '/javascripts/lightbox/dist/ekko-lightbox.min.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('swipebox');
+
+    // config
+    wp_register_script(
+        'lightbox-config',
+        get_stylesheet_directory_uri() . '/javascripts/lightbox/lightbox.config.js',
+        array('jquery','lightbox'),
+        '',
+        true
+    );
+    wp_enqueue_script ('lightbox-config');
+
+}
+add_action('wp_enqueue_scripts','enqueue_lightbox');

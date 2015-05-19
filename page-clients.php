@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="block-grid-lg-5 block-grid-md-5 block-grid-sm-3 block-grid-xs-2">
+            <div class="block-grid-lg-4 block-grid-md-4 block-grid-sm-4 block-grid-xs-2">
                 <?php
                 // get: query SOLUTIONS related to this post
                 $clients = eemjii_simple_post_query('eemjii_clients');

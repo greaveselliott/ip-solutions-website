@@ -9,9 +9,16 @@
             <?php get_template_part('template','carousel'); ?>
         </div>
         <!-- Choose your starting point -->
-        <article class="starting-point background-blue opacity-90 width-100">
+        <article class="starting-point background-navy-blue opacity-90 width-100">
             <div class="container">
-
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text-white text-align-center">
+                        <p class="h4 margin-top">We’re comms technology experts - and deliver a range of flexible and intuitive solutions.</p><p class="text-white h4"> From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
+                        <h3>Discover how the cloud can transform your business
+                            <a href="https://player.vimeo.com/video/127074788" data-toggle="lightbox" class="text-white h1" title="Watch the IP Solutions promotional video"><i class="fa fa-youtube-play" style="vertical-align: bottom;"></i></a></h3>
+                        <hr class="border-bottom-white-1 margin-bottom-0">
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-12">
                         <h2 class="text-align-center text-white margin-top margin-bottom">Choose your starting point</h2>
@@ -23,57 +30,37 @@
 <!-- Featured Image -->
 </div><!-- End .featured-image-container tag -->
 <!-- Transform your business with IP Solutions -->
-<div class="position-relative">
-<div class="padding-top padding-bottom position-relative">
+<div class="padding-top padding-bottom position-relative background-light-grey">
     <div class="container">
         <div class="row">
             <article class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-12 padding-0-tablet-up">
-                        <h2 class="text-white margin-top-0 text-align-center margin-bottom">Transform your business</h2>
+                <div class="row padding-top padding-bottom">
+                    <div class="col-md-6">
+                        <div class="background-white opacity-50 padding border-radius-1 margin-bottom-tablet-portrait">
+                            <h4 class="text-align-center h3 text-navy-blue">Our Clients</h4>
+                            <div class="block-grid-lg-2 block-grid-md-2 block-grid-sm-2 block-grid-xs-2">
+                                <?php
+                                // get: query SOLUTIONS related to this post
+                                $clients = eemjii_simple_post_query('eemjii_clients', 4);
+                                eemjii_post_command($clients,'template-clients.php');
+                                ?>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5 col-md-offset-1 padding-right-0-tablet-up text-align-center-tablet-portrait">
-
-                        <p class="text-blue h3 line-height-h3 margin-top-0">We’re comms technology experts - and deliver a range of flexible and intuitive solutions.</p><p class="text-white h4"> From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
-                    </div>
-                    <div class="col-md-5 padding-0-tablet-portrait">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe src="https://player.vimeo.com/video/127074788" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    <div class="col-md-6">
+                        <div class="background-white opacity-50 padding border-radius-1">
+                            <h4 class="text-align-center h3 text-navy-blue">Our Partners</h4>
+                            <div class="block-grid-lg-2 block-grid-md-2 block-grid-sm-2 block-grid-xs-2">
+                                <?php
+                                // get: query SOLUTIONS related to this post
+                                $partners = eemjii_simple_post_query('eemjii_partners', 4);
+                                eemjii_post_command($partners,'template-partners.php');
+                                ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
-
-<!--            <!-- Award winning experts -->
-<!--            <article class="col-sm-6">-->
-<!--                <div class="padding-left text-align-center">-->
-<!--                    <h2 class="text-white h3 margin-top-0 margin-bottom">Award winning providers</h2>-->
-<!--                    --><?php
-//                        $awards_query = new Eemjii_WP_Query(array(
-//                            '_post_type'             => 'eemjii_awards',
-//                            '_post_template_prefix'  => 'template',
-//                            '_post_template_part'    => array(
-//                                array('awards-home-first','first'),
-//                                array('awards-home-last','last'),
-//                                array('awards-home','default')
-//                            ),
-//                            '_posts_per_page'        => 3,
-//                            '_posts_per_row'         => 3,
-//                            '_loop_wrapper'          => false,
-//                            '_row_wrapper'           => false
-//                        ));
-//                    ?>
-<!--                    <a href="#" class="btn btn-orange h4">Read more</a>-->
-<!--                </div>-->
-<!--            </article>-->
-        </div>
-    </div>
-</div>
-    <div class="position-absolute container-fluid height-100 width-100 top-0 left-0" style="z-index: -10;">
-        <div class="row height-100">
-            <div class="col-sm-12 height-100 background-green"></div>
         </div>
     </div>
 </div>
@@ -81,22 +68,33 @@
 <div class="background-white padding-top padding-bottom">
     <article class="container">
         <div class="row">
-            <div class="col-sm-12">
-                <h2 class="text-blue text-center margin-top-0 margin-bottom">Our latest thinking</h2>
+            <div class="col-sm-6">
+                <h2 class="text-blue text-center margin-top-0 margin-bottom">Insights</h2>
+
+                    <?php
+                    $post_query = new Eemjii_WP_Query(array(
+                        '_post_type'             => 'post',
+                        '_post_template_prefix'  => 'template',
+                        '_post_template_part'    => 'post-home',
+                        '_posts_per_page'        => 2,
+                        '_posts_per_row'         => 1,
+                        '_loop_wrapper'          => false,
+                        '_row_wrapper'           => false
+                    ));
+                    ?>
             </div>
-        </div>
-        <div class="row">
-            <?php
-                $post_query = new Eemjii_WP_Query(array(
-                    '_post_type'             => 'post',
-                    '_post_template_prefix'  => 'template',
-                    '_post_template_part'    => 'post-home',
-                    '_posts_per_page'        => 2,
-                    '_posts_per_row'         => 2,
-                    '_loop_wrapper'          => false,
-                    '_row_wrapper'           => false
-                ));
-            ?>
+            <div class="col-sm-6">
+                <h2 class="text-blue text-center margin-top-0 margin-bottom">Social Media</h2>
+                <?php if( is_active_sidebar( 'twitter-feed' ) ) :?>
+                    <?php dynamic_sidebar( 'twitter-feed' ); ?>
+                <?php else: ?>
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <h3>Hey! You haven't set a Twitter Feed widget yet. Why not set when in your WordPress Admin panel?</h3>
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
     </article>
 </div>

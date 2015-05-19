@@ -18,7 +18,7 @@
 }
 .slick-dots li {
   position: relative;
-  background-color: $ips-blue;
+  background-color: $ips-navy-blue;
   display: inline-block;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -32,7 +32,7 @@
     background-color: darken($ips-blue,5);
   }
   &.slick-active {
-    background-color: $ips-green
+    background-color: $ips-orange
   }
 }
 .slick-dots li button
