@@ -19,7 +19,7 @@ if( !empty($location) ):?>
     <!-- Featured Image -->
 </div><!-- End .featured-image-container tag -->
 
-
+<h1 class="display-none"><?php the_title(); ?></h1>
 <!-- END Google Maps -->
 <div class="position-relative">
     <div class="container">

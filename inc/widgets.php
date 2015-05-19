@@ -21,7 +21,7 @@ function footer_sitemap_widget() {
 	register_sidebar( array(
 		'name'          => 'Footer Site Map',
 		'id'            => 'footer-site-map',
-		'before_widget' => '<div class="block-grid-item text-align-left text-white">',
+		'before_widget' => '<div class="block-grid-item text-align-left text-white  padding-top-0">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="h5 text-white margin-top-0">',
 		'after_title'   => '</h2>',

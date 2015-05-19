@@ -57,7 +57,7 @@
                 <?php
                 $taxonomies_obj = eemjii_get_taxonomies('resource_type');
 
-                for ($i = 0; $i < count($taxonomies_obj); $i++ ){
+                for ($i = 0; $i < count($taxonomies_obj); $i++ ) :
                     $this_taxonomy_obj = $taxonomies_obj[$i];
                     $the_query = new WP_Query(
                         array(
@@ -75,27 +75,25 @@
 
                     <div class="width-100 mix <?php echo $this_taxonomy_obj->slug?>" data-myorder="<?php echo $i; ?>">
                         <?php echo '<h2 class="display-block text-orange">' .$this_taxonomy_obj->name . '</h2>';?>
-                        <div class="mix-it-up-sub">
+                        <div class="mix-it-up-sub block-grid-lg-3 block-grid-md-3 block-grid-sm-3 block-grid-xs-1">
                             <?php
-                            foreach ($the_query->posts as $post) {
-
+                            foreach ($the_query->posts as $post) :
                                 $related_services = get_field('related_services', $post->ID);
-
-                                $related_services_class = eemjii_set_related_post_classes($related_services, 'service-');
-                                echo '<div class="mix-service ' . $related_services_class . '" style="width: 25%;">';
-
-                                include( locate_template('template-resources.php') );
+                                $related_classes = !empty($related_services) ?
+                                    eemjii_set_related_post_classes($related_services, 'service-') :
+                                        null;
+                                echo '<div class="mix-service block-grid-item '.$related_classes . '">';
+                                        include( locate_template('template-resources.php') );
                                 echo '</div>';
-                            }
+                            endforeach;
                             ?>
                         </div>
                     </div>
                     <?php
                     // Does this query have any posts?
-
                     // resetting the WP_Query to avoid conflicting errors
                     wp_reset_query();
-                }
+                endfor;
                 ?>
             </div>
         </div>
