@@ -15,8 +15,8 @@ $the_sidebars   = wp_get_sidebars_widgets();
                                 <img class="display-block width-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions-white.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                         </figure>
                     </div>
-                    <div class="col-lg-2 col-md-2 text-white">
-                        <h4>Contact us</h4>
+                    <section class="col-lg-2 col-md-2 text-white">
+                        <h3 class="margin-top-0">Contact us</h3>
                         <div class="footer-company-info"><?php echo eemjii_option_address() ;?></div>
                         <div>
                             <span class="footer-company-info">Company No. </span><span class="footer-company-info"><?php eemjii_option_company_no() ?></span>
@@ -24,13 +24,14 @@ $the_sidebars   = wp_get_sidebars_widgets();
                         <div>
                             <span class="footer-company-info">Tel. </span><span class="footer-company-info"><?php eemjii_option_tel() ?></span>
                         </div>
-                    </div>
-                    <div class="col-lg-5 col-md-4">
+                    </section>
+                    <section class="col-lg-5 col-md-4">
+                        <h3 class="hide">Sitemap</h3>
                         <?php if( is_active_sidebar( 'footer-site-map' ) ) :
                             $side_bar_count = count( $the_sidebars['footer-site-map'] );
                             ?>
                             <nav>
-                                <h1 class="hide"><?php bloginfo('name');?>&nbsp;<?php bloginfo('description');?>&#58;&nbsp;Site Map</h1>
+                                <h2 class="hide"><?php bloginfo('name');?>&nbsp;<?php bloginfo('description');?>&#58;&nbsp;Site Map</h2>
                                 <div class="block-grid-lg-<?php echo $side_bar_count; ?> block-grid-md-<?php echo $side_bar_count; ?> block-grid-sm-<?php echo $side_bar_count; ?> block-grid-xs-1">
                                     <?php dynamic_sidebar( 'footer-site-map' ); ?>
                                 </div>
@@ -42,18 +43,19 @@ $the_sidebars   = wp_get_sidebars_widgets();
                                 </div>
                             </div>
                         <?php endif; ?>
-                    </div>
-                    <div class="col-lg-2 col-md-4 padding-top">
-                        <nav class="display-inline-block social-sidebar-horizontal margin-bottom">
+                    </section>
+                    <nav class="col-lg-2 col-md-4 padding-top">
+                        <div class="display-inline-block social-sidebar-horizontal margin-bottom">
+                            <h3><?php echo bloginfo('name'); ?> social network pages</h3>
                             <ul>
                                 <li class="twitter"><a href="https://twitter.com/IPSolutionsUK" target="_blank" title="Follow IP Solutions on twitter" class="text-white"><i class="fa fa-twitter"></i></a></li>
                                 <li class="linkedin"><a href="https://www.linkedin.com/company/ip-solutions-uk-ltd" target="_blank" title="Connect with IP Solutions on Linked-in" class="text-white"><i class="fa fa-linkedin"></i></a></li>
                                 <li class="facebook"><a href="https://www.facebook.com/ipsolutionsuk" target="_blank" title="Friend us on Facebook!" class="text-white"><i class="fa fa-facebook"></i></a></li>
                                 <li class="email"><a href="mailto:info@ipsolutions.co.uk" class="text-white"><i class="fa fa-envelope"></i></a></li>
                             </ul>
-                        </nav>
+                        </div>
                         <a href="http://www.ipsolutions.co.uk/customer-login/" title="IP Solutions Customer login" class="text-align-right text-white">Customer Login</a>
-                    </div>
+                    </nav>
 				</div>
 			</div>
         </div>

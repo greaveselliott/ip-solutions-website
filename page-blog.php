@@ -17,9 +17,9 @@ get_header(); ?>
         <!-- Title -->
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
-                <h2 class="display-none-tablet-up text-align-center text-orange margin-top-0">Our latest thinking</h2>
+                <h1 class="h2 display-none-tablet-up text-align-center text-orange margin-top-0"><?php echo the_title(); ?></h1>
                 <figure class="speech-bubble display-none-tablet-portrait"><img src="<?php echo get_stylesheet_directory_uri() . '/images/blog-speech-bubbles.png'; ?>" class="width-100 height-auto">
-                    <figcaption class="h2 h3-tablet-landscape-desktop">Our latest thinking</figcaption>
+                    <figcaption class="h2 h3-tablet-landscape-desktop"><?php echo the_title(); ?> </figcaption>
                 </figure>
             </div>
         </div>

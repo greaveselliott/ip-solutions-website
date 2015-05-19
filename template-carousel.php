@@ -19,11 +19,22 @@ if( have_rows('slickjs_carousel') ):
             <div class="container">
                 <div class="row carousel-text">
                     <div class="col-md-6">
+                        <?php
+                        $slide_title = get_sub_field('slide_title');
+                        if($slide_title): ?>
                         <h2 class="h3 h6-tablet-portrait text-white bold" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_title'); ?></span></h2>
+                        <?php endif;
+                        $slide_paragraph = get_sub_field('slide_paragraph');
+                        if ($slide_paragraph):
+                        ?>
                         <p class="h3-tablet-up text-white" style="color:<?php echo explode(":",get_sub_field('slide_text_color'))[0]; ?> !important;"><span class="text-x2"><?php the_sub_field('slide_paragraph'); ?></span></p>
-                        <?php if ( get_sub_field('slide_link') ): ?>
+                        <?php
+                        endif;
+                        if ( get_sub_field('slide_link') ): ?>
                         <a class="btn btn-orange h4 margin-bottom-tablet-portrait" href="<?php the_sub_field('slide_link'); ?>" title="<?php the_sub_field('slide_title');?>">Find out more</a>
-                        <?php endif; ?>
+                        <?php
+                        endif;
+                        ?>
                     </div>
                     <!-- Slide featured image -->
                     <?php

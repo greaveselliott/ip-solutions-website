@@ -6,14 +6,11 @@
     </div>
 </div>
 <!-- End .featured-image-container tag -->
+
 <?php get_template_part('template', 'clients-testimonials'); ?>
-<div class="background-white">
+<article class="background-white">
+    <h1 class="hide"><?php the_title(); ?></h1>
     <div class="container">
-        <div class="row display-none">
-            <div class="col-sm-12">
-                <h2 class="h1 margin-top-0 margin-bottom">Clients</h2>
-            </div>
-        </div>
         <div class="row">
             <div class="block-grid-lg-4 block-grid-md-4 block-grid-sm-4 block-grid-xs-2">
                 <?php
@@ -25,14 +22,14 @@
         </div>
     </div>
     <div class="border-3-top-blue">
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-align-center">
                 <h3 class="text-orange"><?php the_field('text_area_title') ?></h3>
                 <p><?php the_field('text_area_paragraph') ?></p>
             </div>
         </div>
+    </section>
     </div>
-    </div>
-</div>
+</article>
 <?php get_footer(); ?>

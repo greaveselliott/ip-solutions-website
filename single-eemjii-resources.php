@@ -1,1 +1,1 @@
-<h1>test</h1>
+<h1>This theme does not currently support a individual resource template.</h1>

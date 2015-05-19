@@ -3,6 +3,7 @@
  * Template name: Awards
  */
 get_header(); ?>
+<h1 class="hide"><?php the_title(); ?></h1>
 <div class="height-auto-important-tablet-portrait">
     <!--    <div class="header-offset"></div>-->
     <?php get_template_part('template','carousel'); ?>

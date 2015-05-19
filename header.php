@@ -44,7 +44,8 @@
                 <div id="header-main-height" class="row">
                     <!-- Logo -->
                     <div class="col-xs-6 col-sm-5 height-inherit">
-                        <h1 class="hidden"><?php echo bloginfo('name'); ?> | <?php echo bloginfo('description');?></h1>
+
+                        <?php echo is_front_page() ? '<h1 class="hidden">': '<p class="hidden">'; echo bloginfo('name'); ?> | <?php echo bloginfo('description'); echo is_front_page() ? '</h1>': '</p>';?>
                         <figure class="eemjii-logo display-table padding-right padding-0-tablet-portrait height-inherit" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
                             <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2 height-inherit" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                         </figure>

@@ -3,7 +3,7 @@
     <article class="container">
         <div class="row display-none">
             <div class="col-12-sm">
-                <h2 class="h1 margin-top-0 margin-bottom">IP Solutions Testimonials</h2>
+                <h2 class="h1 margin-top-0 margin-bottom">Testimonials</h2>
             </div>
         </div>
         <div class="row">

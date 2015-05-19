@@ -7,7 +7,8 @@
     $client_class      .= ' '; // The space between each class
     $client_class      .= get_field('toggled_testimonial', $post->ID) ? 'has-testimonial' : 'no-testimonial';
 ?>
-<div class="block-grid-item single-client <?php echo $client_class; ?>  text-align-center">
+<section class="block-grid-item single-client <?php echo $client_class; ?>  text-align-center">
+    <h3 class="hide"><?php echo $post->post_name; ?></h3>
     <?php if ( $has_case_study && is_page_template( 'page-home.php' )) :
    ?>
     <a href="<?php echo $related_case_study[0]->guid ?>" class="width-100 height-100 display-block"  data-toggle="tooltip" data-placement="bottom" title="<?php echo 'Read the ' . $related_case_study[0] -> post_title . ' Case Study.' ?>">
@@ -18,4 +19,4 @@
     <?php else : ?>
         </a>
     <?php endif; ?>
-</div>
+</section>

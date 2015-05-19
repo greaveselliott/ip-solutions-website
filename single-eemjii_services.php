@@ -13,7 +13,7 @@ $related_resources = eemjii_get_related_posts('eemjii_resources', 'related_resou
     </div>
     <!-- Service Icons-->
     <nav class="starting-point background-blue opacity-90 width-100 padding-top">
-        <h2 class="display-none">Services Navigation</h2>
+        <h1 class="display-none h2">Services Navigation</h1>
         <div class="container">
             <div class="row">
                 <?php

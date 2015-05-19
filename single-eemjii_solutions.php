@@ -15,7 +15,7 @@ $related_resources = eemjii_reverse_post_query('eemjii_resources', 'related_serv
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h2 class="text-align-center text-white margin-top margin-bottom">Choose your starting point</h2>
+                    <h1 class="text-align-center text-white margin-top margin-bottom h2">Choose your starting point</h1>
                 </div>
                 <?php get_template_part('template', 'starting-point'); ?>
             </div>
