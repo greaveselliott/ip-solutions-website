@@ -18,7 +18,7 @@ if( have_rows('slickjs_carousel') ):
         <div class="width-100 height-100">
             <div class="container">
                 <div class="row carousel-text">
-                    <div class="col-md-6">
+                    <div class="col-xs-6">
                         <?php
                         $slide_title = get_sub_field('slide_title');
                         if($slide_title): ?>
@@ -40,7 +40,7 @@ if( have_rows('slickjs_carousel') ):
                     <?php
                     $slide_featured_image = get_sub_field('slide_featured_image');
                     if ($slide_featured_image) : ?>
-                    <div class="col-md-6 padding-top">
+                    <div class="col-xs-6 padding-top">
                         <img src="<?php echo wp_get_attachment_image_src( $slide_featured_image, 'full')[0]; ?>" class="width-100 height-auto">
                     </div>
                     <?php endif; ?>

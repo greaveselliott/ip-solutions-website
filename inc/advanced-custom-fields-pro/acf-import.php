@@ -2535,6 +2535,91 @@ if( function_exists('register_field_group') ):
     ));
 
     register_field_group(array (
+        'key' => 'group_555c517e94fcd',
+        'title' => 'Template Home',
+        'fields' => array (
+            array (
+                'key' => 'field_555c519af40f7',
+                'label' => 'Clients Heading Link',
+                'name' => 'clients_heading_link',
+                'prefix' => '',
+                'type' => 'page_link',
+                'instructions' => 'Select a page within this website to link the clients heading to.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'page',
+                ),
+                'taxonomy' => '',
+                'allow_null' => 0,
+                'multiple' => 0,
+            ),
+            array (
+                'key' => 'field_555c5258f40f8',
+                'label' => 'Partners Heading Link',
+                'name' => 'partners_heading_link',
+                'prefix' => '',
+                'type' => 'page_link',
+                'instructions' => 'Select a page within this website to link the partners heading to',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'page',
+                ),
+                'taxonomy' => '',
+                'allow_null' => 0,
+                'multiple' => 0,
+            ),
+            array (
+                'key' => 'field_555c526ef40f9',
+                'label' => 'Insights Heading Link',
+                'name' => 'insights_heading_link',
+                'prefix' => '',
+                'type' => 'page_link',
+                'instructions' => 'Select a page within this website to link the \'insights\' heading to',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'page',
+                ),
+                'taxonomy' => '',
+                'allow_null' => 0,
+                'multiple' => 0,
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page_template',
+                    'operator' => '==',
+                    'value' => 'page-home.php',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+    ));
+
+    register_field_group(array (
         'key' => 'group_5548c8510375c',
         'title' => 'Text Area (Recovered)',
         'fields' => array (
