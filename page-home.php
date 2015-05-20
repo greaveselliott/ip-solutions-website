@@ -38,7 +38,7 @@
                     <div class="col-md-6">
                         <div class="background-white opacity-50 padding border-radius-1 margin-bottom-tablet-portrait">
                             <?php $heading_link = get_field('clients_heading_link'); ?>
-                            <h4 class="text-align-center h3 text-navy-blue"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions clients" class="text-navy-blue">Clients</a>': 'Clients';?></h4>
+                            <h4 class="text-align-center h3 text-navy-blue"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions clients" class="text-navy-blue h3">Clients</a>': 'Clients';?></h4>
                             <div class="block-grid-lg-2 block-grid-md-2 block-grid-sm-2 block-grid-xs-2">
                                 <?php
                                 // get: query SOLUTIONS related to this post
@@ -51,7 +51,7 @@
                     <div class="col-md-6">
                         <div class="background-white opacity-50 padding border-radius-1">
                             <?php $heading_link = get_field('partners_heading_link'); ?>
-                            <h4 class="text-align-center h3 text-navy-blue"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions partners" class="text-navy-blue">Partners</a>': 'Partners';?></h4>
+                            <h4 class="text-align-center h3 text-navy-blue"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions partners" class="text-navy-blue h3">Partners</a>': 'Partners';?></h4>
                             <div class="block-grid-lg-2 block-grid-md-2 block-grid-sm-2 block-grid-xs-2">
                                 <?php
                                 // get: query SOLUTIONS related to this post
@@ -72,7 +72,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <?php $heading_link = get_field('insights_heading_link'); ?>
-                <h2 class="text-blue text-center margin-top-0 margin-bottom"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions latest news articles" class="text-navy-blue">Insights</a>': 'Insights';?></h2>
+                <h2 class="text-blue text-center margin-top-0 margin-bottom"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions latest news articles" class="text-navy-blue h3">Insights</a>': 'Insights';?></h2>
 
                     <?php
                     $post_query = new Eemjii_WP_Query(array(
@@ -87,7 +87,7 @@
                     ?>
             </div>
             <div class="col-sm-6">
-                <h2 class="text-navy-blue text-center margin-top-0 margin-bottom">Social Media</h2>
+                <h2 class="text-navy-blue text-center margin-top-0 margin-bottom h3">Social Media</h2>
                 <?php if( is_active_sidebar( 'twitter-feed' ) ) :?>
                     <?php dynamic_sidebar( 'twitter-feed' ); ?>
                 <?php else: ?>
