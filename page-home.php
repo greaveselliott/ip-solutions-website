@@ -14,8 +14,8 @@
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text-white text-align-center">
                         <p class="h4 margin-top">We’re comms technology experts - and deliver a range of flexible and intuitive solutions.</p><p class="text-white h4"> From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
-                        <h3>Discover how the cloud can transform your business
-                            <a data-toggle="lightbox" class="text-white h1" title="Watch the IP Solutions promotional video" data-remote="https://player.vimeo.com/video/127074788"><i class="fa fa-youtube-play" style="vertical-align: bottom;"></i></a></h3>
+                        <h3><a data-toggle="lightbox" class="h3" title="Watch the IP Solutions promotional video" data-remote="https://player.vimeo.com/video/127074788">Discover how the cloud can transform your business
+                           <span class="h1"><i class="fa fa-youtube-play" style="vertical-align: bottom;"></i></span></a></h3>
                         <hr class="border-bottom-white-1 margin-bottom-0">
                     </div>
                 </div>

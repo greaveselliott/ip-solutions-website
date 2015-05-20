@@ -37,13 +37,19 @@ body.logged-in, body.admin-bar {
   -o-transition: all 0.17s ease-in;
   transition: all 0.17s ease-in;
 
-  @include respond-to('tablet-up') {
+  @include respond-to('desktop-down') {
+    height: 100px;
+  }
+  @include respond-to('large-desktop') {
     height: 120px;
   }
 }
 
 .sticky #header-main-height {
-  @include respond-to('tablet-up') {
+  @include respond-to('desktop-down') {
+    height: 72px;
+  }
+  @include respond-to('large-desktop') {
     height: 90px;
   }
 }

@@ -24,7 +24,7 @@ h6, .h6 {
   font-family: Arial, sans-serif !important;
 }
 
-p {
+p, a {
   @extend .font-family-default;
   &.h1, &.h2,
   &.h3, &.h4,
@@ -39,9 +39,15 @@ hr {
 
 a {
   color: $ips-orange;
-  @extend .font-family-default;
+  -webkit-transition: color 0.17s ease-in;
+  -moz-transition: color 0.17s ease-in;
+  -ms-transition: color 0.17s ease-in;
+  -o-transition: color 0.17s ease-in;
+  transition: color 0.17s ease-in;
   &:hover {
     color: darken($ips-orange,5);
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 

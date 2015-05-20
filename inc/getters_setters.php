@@ -184,7 +184,7 @@ function eemjii_post_command ($posts, $template_file) {
 function eemjii_get_featured_image_url ($post_ID, $size = 'large', $attr = array()) {
     return $featured_image = has_post_thumbnail($post_ID) ? // CONDITION: This post thumbnail has a featured image?
         get_the_post_thumbnail($post_ID, $size,$attr) :          // TRUE: save the post thumnail
-        '<img src="http://placehold.it/100x100" class="width-100 height-100">';                  // FALSE: use the default image
+        '<img src="http://placehold.it/100x100" class="width-100 height-100" alt="This post does not have a image defined so a non-specific placeholder graphic has been loaded in instead.">';                  // FALSE: use the default image
 }
 
 function eemjii_get_acf_image_url ($field_name, $sub_field = false, $post_id = null) {

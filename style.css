@@ -19036,7 +19036,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6, p, p.h1, p.h2, p.h3, p.h4, p.h5, p.h6, a, .ubermenu-main > .ubermenu-nav > .ubermenu-item > .ubermenu-target > .ubermenu-target-text {
+h6, .h6, p, a, p.h1, p.h2, p.h3, p.h4, p.h5, p.h6, a.h1, a.h2, a.h3, a.h4, a.h5, a.h6, .ubermenu-main > .ubermenu-nav > .ubermenu-item > .ubermenu-target > .ubermenu-target-text {
   font-family: Arial, sans-serif !important;
 }
 
@@ -19048,13 +19048,20 @@ hr {
 /* line 40, sass/_typography.scss */
 a {
   color: #f89829;
+  -webkit-transition: color 0.17s ease-in;
+  -moz-transition: color 0.17s ease-in;
+  -ms-transition: color 0.17s ease-in;
+  -o-transition: color 0.17s ease-in;
+  transition: color 0.17s ease-in;
 }
-/* line 43, sass/_typography.scss */
+/* line 47, sass/_typography.scss */
 a:hover {
   color: #f78c10;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/* line 48, sass/_typography.scss */
+/* line 54, sass/_typography.scss */
 code {
   color: #0078ae;
 }
@@ -23931,6 +23938,11 @@ code {
   color: #0078ae !important;
 }
 
+/* line 140, sass/_colours.scss */
+a.blue:hover {
+  color: #0078ae;
+}
+
 /* line 116, sass/_bootstrap-media-queries.scss */
 .text-green, .btn-green {
   color: #c3cf21 !important;
@@ -28801,6 +28813,11 @@ code {
 .background-green input[type="button"]:hover,
 .background-green button:hover {
   color: #c3cf21 !important;
+}
+
+/* line 140, sass/_colours.scss */
+a.green:hover {
+  color: #c3cf21;
 }
 
 /* line 116, sass/_bootstrap-media-queries.scss */
@@ -33675,6 +33692,11 @@ code {
   color: #959ca1 !important;
 }
 
+/* line 140, sass/_colours.scss */
+a.grey:hover {
+  color: #959ca1;
+}
+
 /* line 116, sass/_bootstrap-media-queries.scss */
 .text-light-grey, .btn-light-grey {
   color: #e1e3e4 !important;
@@ -38545,6 +38567,11 @@ code {
 .background-light-grey input[type="button"]:hover,
 .background-light-grey button:hover {
   color: #e1e3e4 !important;
+}
+
+/* line 140, sass/_colours.scss */
+a.light-grey:hover {
+  color: #e1e3e4;
 }
 
 /* line 116, sass/_bootstrap-media-queries.scss */
@@ -43419,6 +43446,11 @@ code {
   color: #0c374b !important;
 }
 
+/* line 140, sass/_colours.scss */
+a.navy-blue:hover {
+  color: #0c374b;
+}
+
 /* line 116, sass/_bootstrap-media-queries.scss */
 .text-purple, .btn-purple {
   color: #9c8dc3 !important;
@@ -48289,6 +48321,11 @@ code {
 .background-purple input[type="button"]:hover,
 .background-purple button:hover {
   color: #9c8dc3 !important;
+}
+
+/* line 140, sass/_colours.scss */
+a.purple:hover {
+  color: #9c8dc3;
 }
 
 /* line 116, sass/_bootstrap-media-queries.scss */
@@ -53163,6 +53200,11 @@ code {
   color: #f89829 !important;
 }
 
+/* line 140, sass/_colours.scss */
+a.orange:hover {
+  color: #f89829;
+}
+
 /* line 116, sass/_bootstrap-media-queries.scss */
 .text-white, .btn-blue:hover, .btn-green:hover, .btn-grey:hover, .btn-light-grey:hover, .btn-navy-blue:hover, .btn-purple:hover, .btn-orange:hover, .btn-white, .btn-white:hover, .btn-black:hover, .btn-trasparent:hover, footer .menu, footer .menu *, .comment-form input[type="submit"]:hover {
   color: #FFFFFF !important;
@@ -58033,6 +58075,11 @@ code {
 .background-white input[type="button"]:hover,
 .background-white button:hover {
   color: #FFFFFF !important;
+}
+
+/* line 140, sass/_colours.scss */
+a.white:hover {
+  color: white;
 }
 
 /* line 116, sass/_bootstrap-media-queries.scss */
@@ -62907,6 +62954,11 @@ code {
   color: #000000 !important;
 }
 
+/* line 140, sass/_colours.scss */
+a.black:hover {
+  color: black;
+}
+
 /* line 116, sass/_bootstrap-media-queries.scss */
 .text-trasparent, .btn-trasparent {
   color: transparent !important;
@@ -67779,6 +67831,11 @@ code {
   color: transparent !important;
 }
 
+/* line 140, sass/_colours.scss */
+a.trasparent:hover {
+  color: transparent;
+}
+
 /* line 116, sass/_bootstrap-media-queries.scss */
 .border-none {
   border: none;
@@ -68115,20 +68172,34 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   -o-transition: all 0.17s ease-in;
   transition: all 0.17s ease-in;
   /* Landscape phones and down */
+  /* Landscape phones and down */
 }
-@media (min-width: 768px) {
+@media (max-width: 1199px) {
+  /* line 33, sass/_header-main.scss */
+  #header-main-height {
+    height: 100px;
+  }
+}
+@media (min-width: 1200px) {
   /* line 33, sass/_header-main.scss */
   #header-main-height {
     height: 120px;
   }
 }
 
-/* line 45, sass/_header-main.scss */
+/* line 48, sass/_header-main.scss */
 .sticky #header-main-height {
   /* Landscape phones and down */
+  /* Landscape phones and down */
 }
-@media (min-width: 768px) {
-  /* line 45, sass/_header-main.scss */
+@media (max-width: 1199px) {
+  /* line 48, sass/_header-main.scss */
+  .sticky #header-main-height {
+    height: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 48, sass/_header-main.scss */
   .sticky #header-main-height {
     height: 90px;
   }
@@ -68238,7 +68309,7 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   }
 }
 /* Landscape phones and down */
-/* line 61, sass/_header-main.scss */
+/* line 67, sass/_header-main.scss */
 .sticky {
   /* Landscape phones and down */
   /* Landscape phones and down */
@@ -68296,12 +68367,12 @@ body.logged-in #header-main-container, body.admin-bar #header-main-container {
   }
 }
 
-/* line 67, sass/_header-main.scss */
+/* line 73, sass/_header-main.scss */
 .header-offset, .sticky .header-offset {
   /* Landscape phones and down */
 }
 @media (max-width: 767px) {
-  /* line 67, sass/_header-main.scss */
+  /* line 73, sass/_header-main.scss */
   .header-offset, .sticky .header-offset {
     height: 50px;
   }
