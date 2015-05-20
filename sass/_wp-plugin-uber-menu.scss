@@ -3,14 +3,34 @@
     margin-top: 0px !important;
   }
 }
+.ubermenu-item-level-0 {
+  font-size: 16px;
+  @include respond-to('tablet-landscape-desktop') {
+    font-size: 13px;
+  }
+}
+.ubermenu-item-level-1 {
+  font-size: 14px;
+  @include respond-to('tablet-landscape-desktop') {
+    font-size: 12px;
+  }
+}
 .ubermenu-item {
+  &.ubermenu-current-menu-item {
+    color: $ips-blue;
+  }
+  a {
+    color: $ips-navy-blue;
+    &:hover {
+      color: $ips-blue;
+    }
+  }
   @include respond-to('tablet-portrait') {
     padding: 0 !important;
   }
 }
 .ubermenu-submenu {
   background-color: rgba(white, 1) !important;
-
   @include respond-to('tablet-portrait') {
     .ubermenu-item {
       padding: 0 !important;
@@ -18,7 +38,6 @@
   }
   .ubermenu-item {
     padding: 10px !important;
-
     &:first-child {
       margin-top: 0px !important;
     }
@@ -62,12 +81,14 @@
     }
   }
   .ubermenu-content-block {
-    color: $ips-green !important;
+    color: $ips-blue !important;
     padding: 0px !important;
-    font-size: 14px;
-    font-style: italic;
+    font-size: 13px;
     @include respond-to('tablet-portrait') {
       display: none;
+    }
+    @include respond-to('tablet-landscape-desktop') {
+      font-size: 11px;
     }
   }
 }

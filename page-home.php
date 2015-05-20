@@ -35,8 +35,8 @@
         <div class="row">
             <article class="col-sm-12">
                 <div class="row padding-top padding-bottom">
-                    <div class="col-md-6">
-                        <div class="background-white opacity-50 padding border-radius-1 margin-bottom-tablet-portrait">
+                    <div class="col-sm-6">
+                        <div class="background-white opacity-50 padding margin-bottom-tablet-portrait">
                             <?php $heading_link = get_field('clients_heading_link'); ?>
                             <h4 class="text-align-center h3 text-navy-blue"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions clients" class="text-navy-blue h3">Clients</a>': 'Clients';?></h4>
                             <div class="block-grid-lg-2 block-grid-md-2 block-grid-sm-2 block-grid-xs-2">
@@ -48,8 +48,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="background-white opacity-50 padding border-radius-1">
+                    <div class="col-sm-6 margin-top-tablet-portrait">
+                        <div class="background-white opacity-50 padding">
                             <?php $heading_link = get_field('partners_heading_link'); ?>
                             <h4 class="text-align-center h3 text-navy-blue"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions partners" class="text-navy-blue h3">Partners</a>': 'Partners';?></h4>
                             <div class="block-grid-lg-2 block-grid-md-2 block-grid-sm-2 block-grid-xs-2">

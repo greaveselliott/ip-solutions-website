@@ -4,7 +4,7 @@
  * Currently used on page template: Blog
  */
 ?>
-<article class="background-grey opacity-25 padding template-post">
+<article class="background-light-grey padding template-post">
     <div class="text-align-center">
         <div class="display-inline-block">
             <?php

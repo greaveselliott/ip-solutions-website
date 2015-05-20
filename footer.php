@@ -12,11 +12,11 @@ $the_sidebars   = wp_get_sidebars_widgets();
                 <div class="col-lg-3 col-md-2">
                     <figure class="width-100" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
                         <a href="<?php echo home_url();?>" class="display-block width-100" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page">
-                            <img class="display-block width-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions-white.png" alt="<?php echo bloginfo('name'); ?> Logo"></a>
+                            <img class="display-block width-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions-white.svg" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                     </figure>
                 </div>
-                <section class="col-lg-2 col-md-2 text-white">
-                    <h2 class="margin-top-0 h5">Contact us</h2>
+                <section class="col-lg-2 col-md-2 text-white text-align-center-desktop-down margin-bottom-desktop-down">
+                    <h2 class="margin-top-0 h5-tablet-up h4-tablet-portrait">Contact us</h2>
                     <div class="footer-company-info"><?php echo eemjii_option_address() ;?></div>
                     <div>
                         <span class="footer-company-info">Company No. </span><span class="footer-company-info"><?php eemjii_option_company_no() ?></span>
@@ -45,7 +45,7 @@ $the_sidebars   = wp_get_sidebars_widgets();
                     <?php endif; ?>
                 </section>
                 <nav class="col-lg-2 col-md-4">
-                    <div class="display-inline-block social-sidebar-horizontal margin-0">
+                    <div class="display-inline-block social-sidebar-horizontal margin-0-large-desktop">
                         <h3 class="hide"><?php echo bloginfo('name'); ?> social network pages</h3>
                         <ul>
                             <li class="twitter"><a href="https://twitter.com/IPSolutionsUK" target="_blank" title="Follow IP Solutions on twitter" class="text-white"><i class="fa fa-twitter"></i></a></li>

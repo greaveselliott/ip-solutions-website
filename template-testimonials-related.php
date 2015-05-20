@@ -5,7 +5,7 @@ if ( get_field('toggled_testimonial', $post->ID) ) : ?>
         <p class="h2 text-blue text-center margin-bottom margin-top-0">
             <span class="padding"><i class="fa fa-quote-left"></i></span><?php the_field('testimonial', $post->ID, false); ?><span class="padding"><i class="fa fa-quote-right"></i></span>
         </p>
-        <h4 class="text-center text-green padding-bottom">
+        <h4 class="text-center text-orange padding-bottom">
             <?php echo get_field('author_name',$post->ID) .
                         ',&nbsp;&nbsp;' .
                         get_field('authors_job_role',$post->ID) .

@@ -39,15 +39,37 @@ function enqueue_twitter_bootstrap_scripts () {
 }
 add_action('wp_enqueue_scripts','enqueue_twitter_bootstrap_scripts');
 
+// Custom Modernizr Script
+function enqueue_custom_modernizr () {
+    wp_register_script(
+        'custom-modernzir',
+        get_stylesheet_directory_uri() . '/javascripts/modernizr.custom.70730.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('custom-modernzir');
+    wp_register_script(
+        'custom-modernzir-svg',
+        get_stylesheet_directory_uri() . '/javascripts/modernizr.svg.js',
+        array('jquery'),
+        '',
+        true
+    );
+    wp_enqueue_script ('custom-modernzir-svg');
+}
+add_action('wp_enqueue_scripts','enqueue_custom_modernizr');
+
+
 // Google Maps API Scripts
 function enqueue_google_maps_scripts () {
     // Google Maps API
     wp_register_script(
         'google-maps',
         "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false",
-        array('jquery'),
+        array(),
         '',
-        true
+        false
     );
     wp_enqueue_script ('google-maps');
 

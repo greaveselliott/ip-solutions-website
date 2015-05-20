@@ -1,9 +1,6 @@
 // WordPress heading
 @import "wordpress-theme-init";
 
-// Apex Font
-@import "font-apex";
-
 // Import Font Awesome;
 @import "font-awesome";
 
@@ -27,6 +24,9 @@
 
 // Utility Class
 @import "utility-classes";
+
+// Mixin
+@import "mixin-font-size";
 
 // Typography
 @import "typography";

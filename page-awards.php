@@ -18,7 +18,7 @@ get_header(); ?>
 </div>
 <div class="container margin-bottom">
     <div class="row">
-        <div class="col-sm-10 col-sm-offset-1 padding border-2-green-tablet-up">
+        <div class="col-sm-10 col-sm-offset-1">
             <div class="slick-blog margin-0">
                 <?php
                 $awards_query = new Eemjii_WP_Query(array(
