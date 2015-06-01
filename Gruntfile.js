@@ -4,6 +4,9 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         cmq: {
+            options: {
+                log: true
+            },
             your_target: {
                 files: {
                     'stylesheet':['./style.css']
@@ -11,15 +14,14 @@ module.exports = function(grunt) {
             }
         },
         cssmin: {
-            options: {
-                shorthandCompacting: false,
-                roundingPrecision: -1
-            },
             target: {
-                files: {
-
-                    	'./style.css' : ['./style.css']
-                }
+                files: [{
+                    expand: true,
+                    cwd: './',
+                    src: ['*.css', '!*.min.css'],
+                    dest: './',
+                    ext: '.css'
+                }]
             }
         }
     });

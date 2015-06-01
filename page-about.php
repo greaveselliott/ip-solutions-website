@@ -16,12 +16,12 @@
             <div class="col-sm-5">
                 <?php echo eemjii_get_featured_image_url(get_the_ID(), 'large', array('class'=>'width-100 height-auto')); ?>
             </div>
-            <div class="col-sm-7 text-blue">
+            <div class="col-sm-7 text-black">
                 <?php the_field('text_area_1');?>
             </div>
         </div>
         <div class="row padding-top padding-bottom">
-            <div class="col-sm-12 text-blue">
+            <div class="col-sm-12 text-black">
                 <?php the_field('text_area_2'); ?>
             </div>
         </div>

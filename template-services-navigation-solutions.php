@@ -1,10 +1,5 @@
-<?php
-
-$eemjii_the_ID = get_the_ID();
-?>
-
-<section class="col-md-2 col-sm-4 col-xs-6 margin-bottom service-nav-item">
-    <a href="<?php echo get_permalink($post->ID); ?>" class=" padding-2 text-align-center display-block border-radius-1 border-1-<?php echo $post->ID == get_the_ID() ? 'orange' : 'white'?>">
+<section class="col-md-2 col-sm-2 col-xs-4 margin-bottom service-nav-item">
+    <a href="<?php echo get_permalink($post->ID); ?>" class=" padding-2 text-align-center display-block border-radius-1 background-navy-blue position-relative z-index-0">
         <div class="padding-2 text-align-center force-aspect-ratio-container height-100">
             <div class="force-aspect-ratio height-100">
                 <div class="table-center-container">
@@ -18,6 +13,6 @@ $eemjii_the_ID = get_the_ID();
                 </div>
             </div>
         </div>
-<!--        <div class="service-nav-gradient position-absolute top-0 left-0 width-100 height-100 border-radius-1 z-index--10"></div>-->
+        <div class="service-nav-gradient position-absolute top-0 left-0 width-100 height-100 border-radius-1 z-index--10"></div>
     </a>
 </section>

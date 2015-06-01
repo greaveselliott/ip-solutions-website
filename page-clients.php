@@ -1,7 +1,7 @@
 <?php /* Template Name: Clients */ ?>
 <?php get_header(); ?>
     <div class="height-auto-important-tablet-portrait">
-        <div class="header-offset"></div>
+<!--        <div class="header-offset"></div>-->
         <?php get_template_part('template','carousel'); ?>
     </div>
 </div>
@@ -22,10 +22,10 @@
         </div>
     </div>
     <div class="border-3-top-blue">
-    <section class="container">
+    <section class="container padding-top padding-bottom">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-align-center">
-                <h3 class="text-orange"><?php the_field('text_area_title') ?></h3>
+                <h3 class="text-orange margin-top-0 line-height-h3"><?php the_field('text_area_title') ?></h3>
                 <p><?php the_field('text_area_paragraph') ?></p>
             </div>
         </div>

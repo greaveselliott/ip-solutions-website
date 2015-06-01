@@ -34,7 +34,7 @@ echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'
             <!-- Testimonial -->
             <?php if(get_field('toggled_testimonial', $related_client[0]->ID) ) : ?>
             <div class="row">
-                <div class="col-sm-10 col-sm-offset-1 text-green">
+                <div class="col-sm-10 col-sm-offset-1 text-orange">
                     <?php echo get_field('testimonial', $related_client[0]->ID); ?>
                 </div>
             </div>
@@ -44,19 +44,19 @@ echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'
 <div class="border-3-bottom-grey">
     <div class="container">
         <div class="row padding-bottom">
-            <div class="col-sm-6 text-blue">
-                <h3 class="text-orange">Background</h3>
+            <div class="col-sm-6 text-dark-grey">
+                <h3 class="text-dark-grey">Background</h3>
                 <?php the_field('background'); ?>
                 <hr class="width-100 border-3-bottom-grey">
-                <h3 class="text-orange">The Challenge</h3>
+                <h3 class="text-dark-grey">The Challenge</h3>
                 <?php the_field('the_challenge'); ?>
             </div>
-            <div class="col-sm-6 padding-bottom text-blue">
-                <h3 class="text-orange">The Solution</h3>
+            <div class="col-sm-6 padding-bottom text-dark-grey">
+                <h3 class="text-dark-grey">The Solution</h3>
                 <div class="background-grey opacity-10 margin-bottom padding">
                     <?php the_field('the_solution'); ?>
                 </div>
-                <h3 class="text-orange">Results</h3>
+                <h3 class="text-dark-grey">Results</h3>
                 <div class="background-grey opacity-10 padding">
                     <?php the_field('result'); ?>
                 </div>
@@ -74,7 +74,7 @@ echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'
 <div class="container">
     <div class="row">
         <div class="col-sm-12 text-align-center padding-top padding-bottom">
-            <h3 class="text-orange margin-top-0"><?php the_field('footer_textbox_title');?></h3>
+            <h3 class="text-dark-grey margin-top-0"><?php the_field('footer_textbox_title');?></h3>
             <div class="display-inline-block">
                 <?php the_field('footer_textbox'); ?>
             </div>

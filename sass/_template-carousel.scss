@@ -17,6 +17,11 @@
   }
 }
 .slick-dots li {
+  -webkit-transition: background-color 0.17s ease-in;
+  -moz-transition: background-color 0.17s ease-in;
+  -ms-transition: background-color 0.17s ease-in;
+  -o-transition: background-color 0.17s ease-in;
+  transition: background-color 0.17s ease-in;
   position: relative;
   background-color: $ips-navy-blue;
   display: inline-block;

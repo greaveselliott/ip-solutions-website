@@ -74,8 +74,8 @@
                     ); ?>
 
                     <div class="width-100 mix <?php echo $this_taxonomy_obj->slug?>" data-myorder="<?php echo $i; ?>">
-                        <?php echo '<h2 class="display-block text-orange">' .$this_taxonomy_obj->name . '</h2>';?>
-                        <div class="mix-it-up-sub block-grid-lg-3 block-grid-md-3 block-grid-sm-3 block-grid-xs-1">
+                        <?php echo '<h2 class="display-block text-black padding-left-1_5">' .$this_taxonomy_obj->name . '</h2>';?>
+                        <div class="mix-it-up-sub block-grid-lg-4 block-grid-md-3 block-grid-sm-3 block-grid-xs-1">
                             <?php
                             foreach ($the_query->posts as $post) :
                                 $related_services = get_field('related_services', $post->ID);

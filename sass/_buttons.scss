@@ -1,3 +1,8 @@
 .btn {
   @extend .border-radius-1;
 }
+
+.gform_button {
+  @extend .btn;
+  @extend .btn-orange;
+}

@@ -1,0 +1,107 @@
+.request-quote {
+  position:   fixed;
+  top:        25%;
+  right:      0px;
+  display:    block;
+  width:      400px;
+  height:     auto;
+  z-index:    1000;
+}
+.request-quote-inner {
+  position:   relative;
+  display:    block;
+  width:      inherit;
+  height:     inherit;
+  background-color: $ips-light-grey;
+
+  left: 100%;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.request-quote-active {
+  .request-quote-inner {
+    left: 0%;
+  }
+}
+
+.request-quote-trigger {
+  position:   absolute;
+  display:    block;
+  top:        0px;
+  right:      100%;
+  width: 70px;
+  height: auto;
+  color: white;
+  cursor: pointer;
+  .request-quote-trigger-inner {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    // Copied from .force-aspect-ratio-container
+    @include respond-to('tablet-up'){
+      height: 100%;
+      width: 100%;
+      padding: 50%;
+      position: relative;
+    }
+    .front, .back {-moz-backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: transform 0.5s ease-out, background 0.17s ease-out;
+      -moz-transition: transform 0.5s ease-out, background 0.17s ease-out;
+      transition: transform 0.5s ease-out, background 0.17s ease-out;
+
+      // Copied from .force-aspect-ratio;
+      @include respond-to('tablet-up'){
+        height: inherit;
+        width: inherit;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+    }
+
+    .front {
+      background-color: $ips-orange;
+      -moz-transform:     perspective(1000px) rotateY(0deg);
+      -webkit-transform:  perspective(1000px) rotateY(0deg);
+      transform:          perspective(1000px) rotateY(0deg);
+      &:hover {
+        background-color: lighten($ips-orange,10);
+      }
+    }
+
+    .back {
+      background-color: $ips-orange;
+      -moz-transform:     perspective(1000px) rotateY(-180deg);
+      -webkit-transform:  perspective(1000px) rotateY(-180deg);
+      transform:          perspective(1000px) rotateY(-180deg);
+      &:hover {
+        background-color: lighten($ips-orange,10);
+      }
+    }
+  }
+}
+.request-quote-active .request-quote-trigger {
+    .front {
+      -moz-transform:     perspective(1000px) rotateY(180deg);
+      -webkit-transform:  perspective(1000px) rotateY(180deg);
+      transform:          perspective(1000px) rotateY(180deg);
+    }
+    .back {
+      -moz-transform:     perspective(1000px) rotateY(0deg);
+      -webkit-transform:  perspective(1000px) rotateY(0deg);
+      transform:          perspective(1000px) rotateY(0deg);
+    }
+}
+
+.request-quote-content {
+  display:    block;
+  width:      inherit;
+  height:     inherit;
+}

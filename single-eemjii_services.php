@@ -2,17 +2,15 @@
 $eemjii_post_ID = get_the_ID();
 $related_services = eemjii_simple_post_query('eemjii_services', 6);
 // get: query SOLUTIONS related to this post
-$related_solutions = eemjii_get_related_posts('eemjii_solutions', 'related_solutions', $eemjii_post_ID );
+//$related_solutions = eemjii_get_related_posts('eemjii_solutions', 'related_solutions', $eemjii_post_ID );
 // get: query resources related to this post
-$related_resources = eemjii_get_related_posts('eemjii_resources', 'related_resources');
+
 ?>
 
-    <!-- Background Image / Carousel -->
-    <div class="height-auto-important-tablet-portrait">
-        <?php get_template_part('template','carousel'); ?>
-    </div>
+    <div class="header-offset"></div>
+    <div class="position-absolute z-index--10 width-100 height-100 top-0 left-0" style="background: url('<?php echo get_field('background_image')['url']; ?>') center no-repeat;background-size: cover;"></div>
     <!-- Service Icons-->
-    <nav class="starting-point background-blue opacity-90 width-100 padding-top">
+    <nav class="starting-point background-navy-blue opacity-90 width-100 padding-top">
         <h1 class="display-none h2">Services Navigation</h1>
         <div class="container">
             <div class="row">
@@ -22,92 +20,103 @@ $related_resources = eemjii_get_related_posts('eemjii_resources', 'related_resou
             </div>
         </div>
     </nav>
-<?php if (!empty($related_solutions)): ?>
-<!-- Related Solution -->
-<section class="background-blue opacity-90">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2 padding-0-tablet-portrait">
-                <h3 class="text-white h4 margin-0 padding-2 background-green opacity-90">Related Solutions</h3>
-            </div>
-        </div>
-    </div>
-    <div class="starting-point background-green opacity-90 width-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <?php
-                    // set: display ALL resources relating to this post
-                    eemjii_post_command($related_solutions,'template-solutions-related.php');
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<?php endif; ?>
+
 </div><!-- End .featured-image-container tag -->
-<article class="container">
-    <div class="row padding-top padding-bottom">
-        <div class="col-sm-3 display-none-tablet-portrait">
-            <img src="<?php echo get_field('featured_image_rolled_over', get_the_ID() ); ?>" width="70%" class="display-none-phone width-100 height-auto">
-        </div>
-        <div class="col-sm-9">
-            <h2 class="text-blue text-align-center text-decoration-underline"><?php the_title(); ?></h2>
-            <p class="text-blue"><?php the_field('service_content_top'); ?></p>
-        </div>
+<?php $service_top_additional_text = get_field('use_text_instead');?>
+<div class="container padding-top padding-bottom">
+    <div class="row">
+        <div class="col-sm-12"><h2 class="text-navy-blue margin-top-0 line-height-h2"><?php the_title(); ?></h2></div>
     </div>
     <div class="row">
-        <!-- Main Content -->
-        <div class="<?php echo !empty($related_resources) ? 'col-sm-8 margin-bottom-tablet-portrait' : 'col-sm-12' ?>">
-            <?php if( have_rows('service_content') ):?>
+        <div class="<?php echo $service_top_additional_text ? 'col-sm-6' : 'col-sm-8';?>">
+            <?php the_field('service_content_top'); ?>
+        </div>
+        <?php
+        // Is the top service content using an image?
+        if(!$service_top_additional_text):
+            // True: Show the image
+        ?>
+        <div class="col-sm-4 display-none-tablet-portrait padding-2 padding-top-0 padding-left-0 padding-right-0">
+            <?php $image =  get_field('services_content_top_image',$eemjii_post_ID);?>
+            <img src="<?php echo $image ? $image['url'] : "http://placehold.it/75x75"; ?>" alt="<?php echo $image['alt']; ?>" class="display-none-phone width-100 height-auto">
+        </div>
+        <?php
+        elseif($service_top_additional_text && have_rows('service_additional_content')):
+            // False: Show the Content
+            $counter = 0;
+            // Count the number of rows
+            while(have_rows('service_additional_content')): the_row();
+                $counter++;
+            endwhile;
+            // Get the column width for the additional content
+            $column_width = 12 / $counter;
+            ?>
+            <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-sm-4">
-                <ul class="tabs_controll padding-0">
-                    <?php while ( have_rows('service_content') ) : the_row();?>
-                        <li>
-                            <a><?php the_sub_field('section_heading') ?></a>
-                        </li>
-                    <?php endwhile;?>
-                </ul>
-                    </div>
-                    <div class="col-sm-8">
-                <div class="service-tabs border-3-orange">
-                <?php
-                // loop through the rows of data
-                while ( have_rows('service_content') ) : the_row();?>
-                    <div class="service-tab-single">
-                        <div class="padding-2">
-                            <section>
-                                <div class="text-align-center-tablet-portrait background-none-tablet-portrait background-blue padding-top padding-bottom" style="background: url(<?php echo get_sub_field('section_icon',get_the_ID()); ?>) right center no-repeat #0078ae">
-                                    <h5 class="text-white margin-top-0 h4 padding-2"><?php the_sub_field('section_heading') ?></h5>
-                                </div>
-                                <?php the_sub_field('section_content'); ?>
-                            </section>
+                    <?php while(have_rows('service_additional_content')): the_row();?>
+                        <div class="col-lg-<?php echo $column_width?> height-100 margin-bottom-desktop-down">
+                            <div class="background-navy-blue padding-1_5">
+                                <h4 class="text-white margin-top-0"><?php the_sub_field('title'); ?></h4>
+                                <p class="text-white"><?php the_sub_field('paragraph'); ?></p>
+                            </div>
                         </div>
-                    </div>
-                <?php endwhile;?>
-                </div>
+                    <?php endwhile; ?>
                 </div>
             </div>
-            <?php endif;?>
-        </div>
-        <!-- Sidebar: Related Resources -->
         <?php
-            if ( !empty($related_resources) ): ?>
-        <aside class="col-md-4">
-            <h3 class="text-orange margin-top-0">Resources</h3>
-            <?php
-
-                // set: display ALL resources relating to this post
-                eemjii_post_command($related_resources,'template-resources-related.php');
-            ?>
-        </aside>
-        <?php endif; ?>
-        </div>
-    </article>
-    <hr class="border-3-blue width-100 margin-top margin-bottom">
+        endif;
+        ?>
+    </div>
+</div>
+<?php if( have_rows('service_content') ):?>
+<div class="background-navy-blue margin-bottom">
     <div class="container">
+        <div class="service-tabs-heading">
+            <?php while ( have_rows('service_content') ) : the_row();?>
+                    <div>
+                        <div class="padding-top padding-bottom text-align-center-desktop-up" style="background: url('<?php echo get_sub_field('section_icon',get_the_ID())['url']; ?>') center center no-repeat; background-size: auto 80%;">
+                        <h5 class="text-white margin-0 h4"><?php the_sub_field('section_heading') ?></h5></div>
+                    </div>
+            <?php endwhile;?>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row padding-bottom">
+        <!-- Main Content -->
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul class="tabs_controll padding-0">
+                        <?php while ( have_rows('service_content') ) : the_row();?>
+                            <li>
+                                <a><?php the_sub_field('section_heading') ?></a>
+                            </li>
+                        <?php endwhile;?>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <div class="service-tabs background-light-grey opacity-50">
+                    <?php
+                    // loop through the rows of data
+                    while ( have_rows('service_content') ) : the_row();?>
+                        <div class="service-tab-single">
+                            <div class="padding">
+                                <section>
+                                    <?php the_sub_field('section_content'); ?>
+                                </section>
+                            </div>
+                        </div>
+                    <?php endwhile;?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php endif;?>
+    </div>
+<?php get_template_part('template','related-content'); ?>
+    <div class="container padding-top">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 margin-bottom text-align-center">
                 <h3 class="text-orange margin-top-0"><?php the_field('service_content_bottom_title'); ?></h3>
@@ -115,4 +124,5 @@ $related_resources = eemjii_get_related_posts('eemjii_resources', 'related_resou
             </div>
         </div>
     </div>
+
 <?php get_footer(); ?>

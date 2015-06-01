@@ -15,6 +15,7 @@
     font-size: 12px;
   }
 }
+
 .ubermenu-item {
   &.ubermenu-current-menu-item {
     color: $ips-blue;
@@ -45,12 +46,19 @@
       padding: 0px !important;
       .ubermenu-item {
         position: relative !important;
+        &:first-of-type > a{
+          padding-top: 13px !important;
+        }
+        &:last-of-type > a{
+          padding-bottom: 13px !important;
+        }
+
         &:before {
           content: "";
           display: block;
           position: absolute;
           left:0;
-          background-color: $ips-blue;
+          background-color: $ips-navy-blue;
           height: 100%;
           width: 0;
           -webkit-transition: width 0.08s ease-in;
@@ -67,7 +75,7 @@
         &.ubermenu-current-menu-item {
           &:before {
             width: 6px;
-            background-color: $ips-green;
+            background-color: $ips-orange;
           }
         }
       }

@@ -17,3 +17,12 @@ header {
     float: none !important;
   }
 }
+
+.header-nav-list {
+  width: 50%;
+  display: block;
+  padding: 0px;
+  list-style-position: inside;
+  float: left;
+  white-space: nowrap;
+}

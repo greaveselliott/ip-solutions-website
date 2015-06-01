@@ -1,11 +1,12 @@
 $ips-colours-list:
 "blue"    $ips-blue,
 "green"   $ips-green,
+"dark-grey" $ips-dark-grey,
 "grey"    $ips-grey,
 "light-grey"    $ips-light-grey,
 "navy-blue"    $ips-navy-blue,
 //"cyan"    $ips-cyan,
-"purple"  $ips-purple,
+//"purple"  $ips-purple,
 "orange"  $ips-orange,
 "white" #FFFFFF,
 "black" #000000,
@@ -111,32 +112,30 @@ $ips-colours-list:
 
   // buttons
   .btn-#{nth($i,1)} {
-    background: transparent !important;
-    @extend .border-2-#{nth($i,1)};
-    @extend .text-#{nth($i,1)};
+    background: #{nth($i,1)};
+    border: solid 2px transparent;
+    color: white;
     @extend .border-radius-2;
     -webkit-transition: all 0.12s ease-in;
     -moz-transition: all 0.12s ease-in;
     -ms-transition: all 0.12s ease-in;
     -o-transition: all 0.12s ease-in;
     transition: all 0.12s ease-in;
-
     &:hover {
-      background: nth($i, 2) !important;
-      @extend .border-2-#{nth($i,1)};
-      @extend .text-white;
-      @if #{nth($i,1)} == "white" {
-        @extend .text-black;
-      }
+      background: transparent !important;
+      border: solid 2px #{nth($i,2)} !important;
+      color:#{nth($i,2)};
     }
   }
   // If the buttons parent element has a background-color set, set buttons text colour on hover to the background colour - Creating the illusion of masking text
   .background-#{nth($i,1)} {
-    .btn:hover {
-      color: nth($i, 2) !important;
+    .btn-white {
+      color: black;
+      :hover {
+        color: nth($i, 2) !important;
+      }
     }
   }
-
   a.#{nth($i,1)}:hover {
     color: darken(nth($i, 2), 0.05);
   }

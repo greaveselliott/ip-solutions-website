@@ -3,7 +3,7 @@ if( function_exists('register_field_group') ):
 
     register_field_group(array (
         'key' => 'group_554a21843e4f0',
-        'title' => 'About (Recovered)',
+        'title' => 'About',
         'fields' => array (
             array (
                 'key' => 'field_554a21a3d8c96',
@@ -74,12 +74,11 @@ if( function_exists('register_field_group') ):
             12 => 'tags',
             13 => 'send-trackbacks',
         ),
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_554a34b20b6c2',
-        'title' => 'Awards (Recovered)',
+        'title' => 'Awards',
         'fields' => array (
             array (
                 'key' => 'field_554a350eddfde',
@@ -159,12 +158,11 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'the_content',
         ),
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_554b7336aa54e',
-        'title' => 'Awards Post (Recovered)',
+        'title' => 'Awards Post',
         'fields' => array (
             array (
                 'key' => 'field_554b7353df226',
@@ -201,12 +199,58 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
+    ));
+
+    register_field_group(array (
+        'key' => 'group_555def712fff5',
+        'title' => 'Background Image',
+        'fields' => array (
+            array (
+                'key' => 'field_555def8e11ad7',
+                'label' => 'Background Image',
+                'name' => 'background_image',
+                'prefix' => '',
+                'type' => 'image',
+                'instructions' => 'Select a background image',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'large',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_solutions',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_services',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
     ));
 
     register_field_group(array (
         'key' => 'group_5523a7fcd7063',
-        'title' => 'Carousel (Recovered)',
+        'title' => 'Carousel',
         'fields' => array (
             array (
                 'key' => 'field_5523a83cdade8',
@@ -436,7 +480,7 @@ if( function_exists('register_field_group') ):
 
     register_field_group(array (
         'key' => 'group_554ab0d85c46e',
-        'title' => 'Case Study (Recovered)',
+        'title' => 'Case Study',
         'fields' => array (
             array (
                 'key' => 'field_554ab12042d75',
@@ -571,12 +615,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5523da55b11bf',
-        'title' => 'Choose your starting point (Recovered)',
+        'title' => 'Choose your starting point',
         'fields' => array (
             array (
                 'key' => 'field_5538ccd3ab03f',
@@ -722,12 +765,11 @@ if( function_exists('register_field_group') ):
             0 => 'the_content',
             1 => 'featured_image',
         ),
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5509a4af94b19',
-        'title' => 'Clients (Recovered)',
+        'title' => 'Clients',
         'fields' => array (
             array (
                 'key' => 'field_5509a8ddd92f4',
@@ -785,12 +827,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55086dc15912d',
-        'title' => 'Contact Page (Recovered)',
+        'title' => 'Contact Page',
         'fields' => array (
             array (
                 'key' => 'field_55086e28d9c0f',
@@ -827,12 +868,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5554b37986f01',
-        'title' => 'Event Template (Recovered)',
+        'title' => 'Event Template',
         'fields' => array (
             array (
                 'key' => 'field_5555c515af7eb',
@@ -943,7 +983,7 @@ if( function_exists('register_field_group') ):
                 ),
                 'default_value' => '',
                 'placeholder' => '',
-                'maxlength' => 100,
+                'maxlength' => '',
                 'rows' => '',
                 'new_lines' => '',
                 'readonly' => 0,
@@ -965,7 +1005,7 @@ if( function_exists('register_field_group') ):
                 ),
                 'default_value' => '',
                 'placeholder' => '',
-                'maxlength' => 100,
+                'maxlength' => '',
                 'rows' => '',
                 'new_lines' => '',
                 'readonly' => 0,
@@ -1378,7 +1418,7 @@ if( function_exists('register_field_group') ):
                         ),
                         'default_value' => '',
                         'placeholder' => '',
-                        'maxlength' => 50,
+                        'maxlength' => '',
                         'rows' => '',
                         'new_lines' => '',
                         'readonly' => 0,
@@ -1480,12 +1520,11 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'the_content',
         ),
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55361f9cc4e6e',
-        'title' => 'Featured Image with Roll Over (Recovered)',
+        'title' => 'Featured Image with Roll Over',
         'fields' => array (
             array (
                 'key' => 'field_55361e6c3ffd6',
@@ -1548,12 +1587,11 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'featured_image',
         ),
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55086e6b8d372',
-        'title' => 'Global (Recovered)',
+        'title' => 'Global',
         'fields' => array (
         ),
         'location' => array (
@@ -1571,12 +1609,67 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
+    ));
+
+    register_field_group(array (
+        'key' => 'group_555e03d174aa7',
+        'title' => 'Related Case Studies',
+        'fields' => array (
+            array (
+                'key' => 'field_555e03deb2962',
+                'label' => 'Related Case Studies',
+                'name' => 'related_case_studies',
+                'prefix' => '',
+                'type' => 'relationship',
+                'instructions' => 'Select case-studies that relate to this service',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'post_type' => array (
+                    0 => 'eemjii_case_studies',
+                ),
+                'taxonomy' => '',
+                'filters' => array (
+                    0 => 'search',
+                    1 => 'post_type',
+                    2 => 'taxonomy',
+                ),
+                'elements' => '',
+                'max' => '',
+                'return_format' => 'object',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_services',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_solutions',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
     ));
 
     register_field_group(array (
         'key' => 'group_554108dcc61f5',
-        'title' => 'Related Clients (Recovered)',
+        'title' => 'Related Clients',
         'fields' => array (
             array (
                 'key' => 'field_554108e91d16e',
@@ -1623,12 +1716,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_552baa36d00a8',
-        'title' => 'Related Resources (Recovered)',
+        'title' => 'Related Resources',
         'fields' => array (
             array (
                 'key' => 'field_552baa4230f9b',
@@ -1668,6 +1760,13 @@ if( function_exists('register_field_group') ):
                     'value' => 'eemjii_services',
                 ),
             ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_solutions',
+                ),
+            ),
         ),
         'menu_order' => 0,
         'position' => 'normal',
@@ -1675,12 +1774,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_552ba9eaeb650',
-        'title' => 'Related Services (Recovered)',
+        'title' => 'Related Services',
         'fields' => array (
             array (
                 'key' => 'field_552ba9f69ccfd',
@@ -1741,12 +1839,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_552baa63d316c',
-        'title' => 'Related Solutions (Recovered)',
+        'title' => 'Related Solutions',
         'fields' => array (
             array (
                 'key' => 'field_552baa70bb03f',
@@ -1800,12 +1897,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_5509a2253108d',
-        'title' => 'Related Testimonials (Recovered)',
+        'title' => 'Related Testimonials',
         'fields' => array (
             array (
                 'key' => 'field_55423d3209d27',
@@ -1930,12 +2026,11 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55099947ddea8',
-        'title' => 'Resources (Recovered)',
+        'title' => 'Resources',
         'fields' => array (
             array (
                 'key' => 'field_55099cec56727',
@@ -2011,19 +2106,18 @@ if( function_exists('register_field_group') ):
         'hide_on_screen' => array (
             0 => 'the_content',
         ),
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_55086203ea483',
-        'title' => 'Services (Recovered)',
+        'title' => 'Services',
         'fields' => array (
             array (
                 'key' => 'field_5531073ec0f82',
                 'label' => 'Service Content Top Title',
                 'name' => 'service_content_top_title',
                 'prefix' => '',
-                'type' => 'text',
+                'type' => 'wysiwyg',
                 'instructions' => 'Write a title for the service summary',
                 'required' => 0,
                 'conditional_logic' => 0,
@@ -2033,12 +2127,125 @@ if( function_exists('register_field_group') ):
                     'id' => '',
                 ),
                 'default_value' => '',
-                'placeholder' => '',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-                'readonly' => 0,
-                'disabled' => 0,
+                'tabs' => 'all',
+                'toolbar' => 'full',
+                'media_upload' => 1,
+            ),
+            array (
+                'key' => 'field_555decc51889a',
+                'label' => 'Use text instead of an image',
+                'name' => 'use_text_instead',
+                'prefix' => '',
+                'type' => 'true_false',
+                'instructions' => 'Check this box if you wish have additional text columns, instead of an image.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
+            ),
+            array (
+                'key' => 'field_555dd98a5872c',
+                'label' => 'Services Content Top Image',
+                'name' => 'services_content_top_image',
+                'prefix' => '',
+                'type' => 'image',
+                'instructions' => 'Select an image to display to the right of the content at the top of the page.',
+                'required' => 0,
+                'conditional_logic' => array (
+                    array (
+                        array (
+                            'field' => 'field_555decc51889a',
+                            'operator' => '!=',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'return_format' => 'array',
+                'preview_size' => 'medium',
+                'library' => 'all',
+            ),
+            array (
+                'key' => 'field_555ded6a1889b',
+                'label' => 'Service Additional Content',
+                'name' => 'service_additional_content',
+                'prefix' => '',
+                'type' => 'repeater',
+                'instructions' => 'Create up to 3 columns of additional content',
+                'required' => 0,
+                'conditional_logic' => array (
+                    array (
+                        array (
+                            'field' => 'field_555decc51889a',
+                            'operator' => '==',
+                            'value' => '1',
+                        ),
+                    ),
+                ),
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'min' => '',
+                'max' => 3,
+                'layout' => 'block',
+                'button_label' => 'Add Column',
+                'sub_fields' => array (
+                    array (
+                        'key' => 'field_555dee83d7bb2',
+                        'label' => 'Title',
+                        'name' => 'title',
+                        'prefix' => '',
+                        'type' => 'text',
+                        'instructions' => 'Give this column a title',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array (
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'maxlength' => '',
+                        'readonly' => 0,
+                        'disabled' => 0,
+                    ),
+                    array (
+                        'key' => 'field_555dee90d7bb3',
+                        'label' => 'Paragraph',
+                        'name' => 'paragraph',
+                        'prefix' => '',
+                        'type' => 'textarea',
+                        'instructions' => 'Input this columns the paragraph content here ',
+                        'required' => 0,
+                        'conditional_logic' => 0,
+                        'wrapper' => array (
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'maxlength' => '',
+                        'rows' => '',
+                        'new_lines' => '',
+                        'readonly' => 0,
+                        'disabled' => 0,
+                    ),
+                ),
             ),
             array (
                 'key' => 'field_553102fbc0f81',
@@ -2106,7 +2313,7 @@ if( function_exists('register_field_group') ):
                         'name' => 'section_icon',
                         'prefix' => '',
                         'type' => 'image',
-                        'instructions' => 'The icon that appears next the the sub-headings text',
+                        'instructions' => 'The section icon',
                         'required' => 0,
                         'conditional_logic' => 0,
                         'wrapper' => array (
@@ -2114,7 +2321,7 @@ if( function_exists('register_field_group') ):
                             'class' => '',
                             'id' => '',
                         ),
-                        'return_format' => 'url',
+                        'return_format' => 'array',
                         'preview_size' => 'template-post-3by2',
                         'library' => 'all',
                     ),
@@ -2199,12 +2406,11 @@ if( function_exists('register_field_group') ):
             0 => 'the_content',
             1 => 'custom_fields',
         ),
-        'local' => 'php',
     ));
 
     register_field_group(array (
         'key' => 'group_554b353a79332',
-        'title' => 'solutions (Recovered)',
+        'title' => 'solutions',
         'fields' => array (
             array (
                 'key' => 'field_554b372a9e58c',
@@ -2330,6 +2536,28 @@ if( function_exists('register_field_group') ):
                 'button_label' => 'Add Row',
                 'sub_fields' => array (
                     array (
+                        'key' => 'field_555effb917893',
+                        'label' => 'Title',
+                        'name' => 'title',
+                        'prefix' => '',
+                        'type' => 'text',
+                        'instructions' => 'The title for this section',
+                        'required' => 1,
+                        'conditional_logic' => 0,
+                        'wrapper' => array (
+                            'width' => '',
+                            'class' => '',
+                            'id' => '',
+                        ),
+                        'default_value' => '',
+                        'placeholder' => '',
+                        'prepend' => '',
+                        'append' => '',
+                        'maxlength' => '',
+                        'readonly' => 0,
+                        'disabled' => 0,
+                    ),
+                    array (
                         'key' => 'field_554b37d52834c',
                         'label' => 'Row Image',
                         'name' => 'image',
@@ -2343,8 +2571,8 @@ if( function_exists('register_field_group') ):
                             'class' => '',
                             'id' => '',
                         ),
-                        'return_format' => 'url',
-                        'preview_size' => 'thumbnail',
+                        'return_format' => 'array',
+                        'preview_size' => 'medium',
                         'library' => 'all',
                     ),
                     array (
@@ -2403,135 +2631,6 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
-    ));
-
-    register_field_group(array (
-        'key' => 'group_55099d6c54422',
-        'title' => 'Team (Recovered)',
-        'fields' => array (
-            array (
-                'key' => 'field_5509a11275516',
-                'label' => 'Name',
-                'name' => 'name',
-                'prefix' => '',
-                'type' => 'text',
-                'instructions' => 'What\'s their name?',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => 'Batman',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-                'readonly' => 0,
-                'disabled' => 0,
-            ),
-            array (
-                'key' => 'field_5509a13693bcf',
-                'label' => 'Job role',
-                'name' => 'role',
-                'prefix' => '',
-                'type' => 'text',
-                'instructions' => 'What\'s their job role within IP Solutions?',
-                'required' => 1,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => 'Superhero',
-                'prepend' => '',
-                'append' => '',
-                'maxlength' => '',
-                'readonly' => 0,
-                'disabled' => 0,
-            ),
-            array (
-                'key' => 'field_5509a1a70be59',
-                'label' => 'Department',
-                'name' => 'department',
-                'prefix' => '',
-                'type' => 'taxonomy',
-                'instructions' => 'What department are they in?',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'taxonomy' => 'department',
-                'field_type' => 'select',
-                'allow_null' => 0,
-                'load_save_terms' => 0,
-                'return_format' => 'id',
-                'multiple' => 0,
-            ),
-            array (
-                'key' => 'field_5509a46da8908',
-                'label' => 'Bio',
-                'name' => 'short_bio',
-                'prefix' => '',
-                'type' => 'textarea',
-                'instructions' => 'Tell us about them in 140 words',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'default_value' => '',
-                'placeholder' => 'Enjoys eating burritos on Mondays, Tuesdays, Thursday, Fridays... and goes for a naked burrito on Wednesday...',
-                'maxlength' => 140,
-                'rows' => '',
-                'new_lines' => 'wpautop',
-                'readonly' => 0,
-                'disabled' => 0,
-            ),
-            array (
-                'key' => 'field_5509be581280f',
-                'label' => 'Team Member Portrait',
-                'name' => 'portrait',
-                'prefix' => '',
-                'type' => 'image',
-                'instructions' => 'Upload a portrait of your team member',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'return_format' => 'url',
-                'preview_size' => 'thumbnail',
-                'library' => 'all',
-            ),
-        ),
-        'location' => array (
-            array (
-                array (
-                    'param' => 'post_type',
-                    'operator' => '==',
-                    'value' => 'eemjii_team',
-                ),
-            ),
-        ),
-        'menu_order' => 0,
-        'position' => 'normal',
-        'style' => 'default',
-        'label_placement' => 'top',
-        'instruction_placement' => 'label',
-        'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
     register_field_group(array (
@@ -2621,7 +2720,7 @@ if( function_exists('register_field_group') ):
 
     register_field_group(array (
         'key' => 'group_5548c8510375c',
-        'title' => 'Text Area (Recovered)',
+        'title' => 'Text Area',
         'fields' => array (
             array (
                 'key' => 'field_5548c85d3add7',
@@ -2680,7 +2779,6 @@ if( function_exists('register_field_group') ):
         'label_placement' => 'top',
         'instruction_placement' => 'label',
         'hide_on_screen' => '',
-        'local' => 'php',
     ));
 
 endif;

@@ -1,17 +1,11 @@
-<?php get_header(); ?>
-
-
-<?php
-// get: query services related to this solution
-$related_services = eemjii_reverse_post_query('eemjii_services', 'related_solutions', get_the_ID() );
-// get: query resources related to this solution
-$related_resources = eemjii_reverse_post_query('eemjii_resources', 'related_services', get_the_ID() );
+<?php get_header();
+$background_image =  get_field('background_image');
 ?>
-    <div class="height-auto-important-tablet-portrait position-relative-tablet-portrait">
-        <?php get_template_part('template','carousel'); ?>
-    </div>
+
+    <div class="header-offset"></div>
+    <div class="position-absolute z-index--10 width-100 height-100 top-0 left-0" style="background: url('<?php echo $background_image ? $background_image['url'] :''; ?>') center no-repeat;background-size: cover;"></div>
     <!-- Choose your starting point -->
-    <article class="starting-point background-blue opacity-90 width-100">
+    <article class="starting-point background-navy-blue opacity-90 width-100">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -22,106 +16,81 @@ $related_resources = eemjii_reverse_post_query('eemjii_resources', 'related_serv
         </div>
     </article>
     <!-- Featured Image -->
-    <!-- Related Services -->
-    <?php if (!empty($related_services)): ?>
-    <section class="background-blue opacity-90">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2">
-                    <h3 class="text-white h4 margin-0 padding-2 background-green opacity-90">Related Services</h3>
-                </div>
-            </div>
-        </div>
-        <div class="starting-point background-green opacity-90 width-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <?php
-                        eemjii_post_command($related_services,'template-solutions-related.php');
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <?php endif; ?>
     </div><!-- End .featured-image-container tag -->
     <!-- Transform your business with IP Solutions -->
     <div class="container">
-        <div class="row text-align-center text-blue">
-            <div class="col-sm-12">
+        <div class="row text-align-center margin-bottom">
+            <div class="col-sm-10 col-sm-offset-1">
                 <h3><?php the_field('textbox_top_title'); ?></h3>
                 <?php the_field('textbox_top'); ?>
             </div>
         </div>
-        <div class="row">
-            <div class="<?php echo !empty($related_resources) ? 'col-sm-8' : 'col-sm-12' ?>">
-                <div class="row margin-bottom-large">
-                    <div class="col-sm-4 col-sm-offset-4">
-                        <figure class="table-center-container">
-                            <div class="table-center-cell">
-                                <h3 class="text-white template-solution-heading-cloud"><?php the_field('subheading_inside_cloud'); ?></h3>
-                                <img src="<?php echo get_stylesheet_directory_uri() . '/images/cloud-blue-large.png'; ?>" alt="A big blue cloud icon" class="width-100">
-                            </div>
-                        </figure>
-                        <div class="circle-bottom-green"></div>
+    </div>
+    <?php
+    // check if the repeater field has rows of data
+    if( have_rows('the_solution') ):
+        // loop through the rows of data
+        $counter = 0;
+        ?>
+        <?php
+        while ( have_rows('the_solution') ) : the_row();
+            if ($counter % 2 != 0) :
+            ?>
+            <div class="background-white padding-top padding-bottom">
+                <div class="container">
+                    <div class="row position-relative">
+                        <div class="col-sm-3 col-sm-offset-2">
+                            <img src="<?php echo get_sub_field('image')['url']; ?>" alt="An Icon relating to this this solution" class="width-100 height-auto">
+                        </div>
+                        <div class="col-sm-5">
+                            <h3><?php the_sub_field('title'); ?></h3>
+                            <?php the_sub_field('solution_content');?>
+                        </div>
                     </div>
                 </div>
-                <?php
-                // check if the repeater field has rows of data
-                if( have_rows('the_solution') ):
-                    // loop through the rows of data
-                    while ( have_rows('the_solution') ) : the_row();
-                        ?>
-                        <div class="row margin-bottom-large position-relative text-blue">
-
-                            <div class="col-sm-12">
-                                <div class="corner-image">
-                                    <img src="<?php the_sub_field('image'); ?>" alt="An Icon relating to this this solution">
-                                </div>
-                                <div class="circle-bottom-green"></div>
-                                <div class="padding border-1-green">
-                                    <div class="padding-top">
-                                        <?php the_sub_field('solution_content');?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php
-                    endwhile;
-                    else :
-
-                    // no rows found
-
-                    endif;?>
             </div>
-            <?php if ( !empty($related_resources) ): ?>
-            <aside class="col-sm-4">
-                <h3 class="text-orange margin-top-0">Resources</h3>
-
-                <pre>
-                    <?php print_r($related_resources); ?>
-                </pre>
-                <?php
-                // set: display ALL resources relating to this post
-                eemjii_post_command($related_resources,'template-resources.php');
-                ?>
-            </aside>
-            <?php endif; ?>
-        </div>
-        <!-- contact us -->
-        <div class="row">
-            <div class="col-md-2 col-sm-4 col-md-offset-5 col-sm-offset-4">
-                <a href="<?php the_field('contact_us_link'); ?>" title="Contact IP Solutions">
-                    <figure class="table-center-container">
-                        <div class="table-center-cell">
-                            <h3 class="h4 text-white template-solution-heading-cloud">Contact Us</h3>
-                            <img src="<?php echo get_stylesheet_directory_uri() . '/images/cloud-blue-large.png'; ?>" alt="A big blue cloud icon" class="width-100">
+        <?php else : ?>
+            <div class="background-light-grey opacity-50 padding-top padding-bottom">
+                <div class="container">
+                    <div class="row position-relative">
+                        <div class="col-sm-5 col-sm-offset-2">
+                            <h3><?php the_sub_field('title'); ?></h3>
+                            <?php the_sub_field('solution_content');?>
                         </div>
-                    </figure>
-                </a>
+                        <div class="col-sm-3">
+                            <img src="<?php echo get_sub_field('image')['url']; ?>" alt="An Icon relating to this this solution" class="width-100 height-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php
+            endif;
+            $counter++;
+        endwhile;
+        endif;?>
+
+<section class="container padding-top">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h3>Discover more about our services</h3>
+        </div>
+    </div>
+    <div class="row">
+<!--        <div class="col-sm-10 col-sm-offset-1">-->
+        <div class="col-lg-8 col-md-10 col-sm-12 col-lg-offset-2 col-md-offset-1">
+            <div class="row">
+    <?php
+    $related_services = eemjii_simple_post_query('eemjii_services', 6);
+    eemjii_post_command($related_services,'template-services-navigation-solutions.php');
+    ?>
+<!--        </div>-->
             </div>
         </div>
+    </div>
+</section>
+            <?php get_template_part('template','related-content'); ?>
+
+<div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-align-center padding-top padding-bottom">
                 <h3 class="text-orange margin-top-0"><?php the_field('footer_textbox_title');?></h3>
@@ -131,4 +100,5 @@ $related_resources = eemjii_reverse_post_query('eemjii_resources', 'related_serv
             </div>
         </div>
     </div>
+
 <?php get_footer(); ?>

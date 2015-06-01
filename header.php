@@ -56,6 +56,39 @@
         <li class="email"><a href="mailto:info@ipsolutions.co.uk" class="text-white"><i class="fa fa-envelope"></i></a></li>
     </ul>
 </div>
+<!-- Request Quote -->
+<?php if (is_active_sidebar('request-quote') ) : ?>
+    <div class="display-none-tablet-portrait">
+        <div class="request-quote">
+            <div class="request-quote-inner">
+                <div class="request-quote-trigger">
+                    <div class="request-quote-trigger-inner">
+<!--                    <div class="force-aspect-ratio-container">-->
+<!--                        <div class="force-aspect-ratio">-->
+                            <div class="front padding-2">
+                                <div class="table-center-container">
+                                    <div class="table-center-cell">Request a Quote</div>
+                                </div>
+                            </div>
+                            <div class="back padding-2">
+                                <div class="table-center-container">
+                                    <div class="table-center-cell">
+                                        <span class="h2"><i class="fa fa-times"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+<!--                        </div>-->
+<!--                    </div>-->
+                    </div>
+                </div>
+                <div class="request-quote-content">
+                    <?php dynamic_sidebar('request-quote'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
 <div class="featured-image-container position-relative">
     <!-- The .featured-image-container's closing tag exists in the page template file for example page-home.php -->
     <div id="header-main-container" class="width-100">
@@ -70,7 +103,7 @@
                             <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2 height-inherit" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block main-logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.svg" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                         </figure>
                     </div>
-                    <div class="col-xs-6 col-md-8 col-sm-9 height-inherit">
+                    <div class="col-sm-6 col-md-8 col-sm-9 height-inherit">
                         <div class="row padding-bottom-2 height-50 display-none-tablet-portrait">
                             <div class="col-sm-12">
                                 <div class="float-right float-none-tablet-portrait text-align-center-tablet-portrait">

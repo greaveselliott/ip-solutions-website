@@ -1,7 +1,16 @@
 <?php
 get_header();
+
+$eemjii_the_ID = get_the_ID();
+$thumbnail = get_the_post_thumbnail($eemjii_the_ID, 'wide-1000-3-1', array('class'=>'width-100 height-auto'));
 ?>
-    <?php echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'=>'width-100 height-auto wide-featured-image') ); ?>
+    <?php
+        if ( $thumbnail ) :
+            echo $thumbnail;
+        else :
+            echo '<div class="header-offset"></div>';
+        endif;
+    ?>
     <!-- Featured Image -->
     <div class="background-purple">
         <div class="container">

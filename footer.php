@@ -9,15 +9,15 @@ $the_sidebars   = wp_get_sidebars_widgets();
     <div class="background-navy-blue padding-bottom padding-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-2">
+                <div class="col-lg-3">
                     <figure class="width-100" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
                         <a href="<?php echo home_url();?>" class="display-block width-100" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page">
                             <img class="display-block width-100" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions-white.svg" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                     </figure>
                 </div>
-                <section class="col-lg-2 col-md-2 text-white text-align-center-desktop-down margin-bottom-desktop-down">
+                <section class="col-lg-2 text-white text-align-center-desktop-down margin-bottom-desktop-down">
                     <h2 class="margin-top-0 h5-tablet-up h4-tablet-portrait">Contact us</h2>
-                    <div class="footer-company-info"><?php echo eemjii_option_address() ;?></div>
+                    <div class="footer-company-info"><?php echo eemjii_option_address( array('return_rows'=>true, 'explode_on'=>',','after_row'=>'<br>') ) ;?></div>
                     <div>
                         <span class="footer-company-info">Company No. </span><span class="footer-company-info"><?php eemjii_option_company_no() ?></span>
                     </div>
@@ -25,7 +25,7 @@ $the_sidebars   = wp_get_sidebars_widgets();
                         <span class="footer-company-info">Tel. </span><span class="footer-company-info"><?php eemjii_option_tel() ?></span>
                     </div>
                 </section>
-                <section class="col-lg-5 col-md-4">
+                <section class="col-lg-5">
                     <h3 class="hide">Sitemap</h3>
                     <?php if( is_active_sidebar( 'footer-site-map' ) ) :
                         $side_bar_count = count( $the_sidebars['footer-site-map'] );
@@ -44,7 +44,7 @@ $the_sidebars   = wp_get_sidebars_widgets();
                         </div>
                     <?php endif; ?>
                 </section>
-                <nav class="col-lg-2 col-md-4">
+                <nav class="col-lg-2">
                     <div class="display-inline-block social-sidebar-horizontal margin-0-large-desktop">
                         <h3 class="hide"><?php echo bloginfo('name'); ?> social network pages</h3>
                         <ul>
@@ -54,7 +54,6 @@ $the_sidebars   = wp_get_sidebars_widgets();
                             <li class="email"><a href="mailto:info@ipsolutions.co.uk" class="text-white"><i class="fa fa-envelope"></i></a></li>
                         </ul>
                     </div>
-                    <a href="http://www.ipsolutions.co.uk/customer-login/" title="IP Solutions Customer login" class="text-align-right text-white">Customer Login</a>
                 </nav>
             </div>
         </div>

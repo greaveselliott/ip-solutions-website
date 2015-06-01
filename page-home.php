@@ -34,7 +34,7 @@
     <div class="container">
         <div class="row">
             <article class="col-sm-12">
-                <div class="row padding-top padding-bottom">
+                <div class="row">
                     <div class="col-sm-6">
                         <div class="background-white opacity-50 padding margin-bottom-tablet-portrait">
                             <?php $heading_link = get_field('clients_heading_link'); ?>
@@ -72,7 +72,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <?php $heading_link = get_field('insights_heading_link'); ?>
-                <h2 class="text-blue text-center margin-top-0 margin-bottom"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions latest news articles" class="text-navy-blue h3">Insights</a>': 'Insights';?></h2>
+                <h4 class="text-navy-blue h3 text-center margin-top-0 margin-bottom"><?php echo $heading_link ? '<a href="'.$heading_link.'" title="View IP Solutions latest news articles" class="text-navy-blue h3">Insights</a>': 'Insights';?></h4>
 
                     <?php
                     $post_query = new Eemjii_WP_Query(array(
@@ -87,7 +87,7 @@
                     ?>
             </div>
             <div class="col-sm-6">
-                <h2 class="text-navy-blue text-center margin-top-0 margin-bottom h3">Social Media</h2>
+                <h4 class="text-navy-blue text-center margin-top-0 margin-bottom h3">Social Media</h4>
                 <?php if( is_active_sidebar( 'twitter-feed' ) ) :?>
                     <?php dynamic_sidebar( 'twitter-feed' ); ?>
                 <?php else: ?>

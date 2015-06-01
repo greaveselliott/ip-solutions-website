@@ -1,1 +1,0 @@
-<h1>This theme does not currently support a individual resource template.</h1>

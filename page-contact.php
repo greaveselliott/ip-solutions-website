@@ -27,7 +27,7 @@ if( !empty($location) ):?>
             <div class="col-sm-6 col-sm-offset-3 height-100">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="text-orange text-align-center">
+                        <h2 class="text-black text-align-center">
                             <span class="padding-right-2">
                                 <i class="fa fa-map-marker"></i>
                             </span>Find us</h2>
@@ -37,14 +37,14 @@ if( !empty($location) ):?>
                     <div class="col-sm-6 text-align-right text-align-center-tablet-portrait">
                         <!-- Telephone Number -->
                         <div class="padding-bottom-2">
-                            <span class="margin-0"><i class="fa fa-phone text-green"></i></span>
-                            <h5 class="display-inline text-green">Tel.</h5>
+                            <span class="margin-0"><i class="fa fa-phone text-orange"></i></span>
+                            <h5 class="display-inline text-orange">Tel.</h5>
                             <span class="text-blue font-family-default display-inline-block margin-0"><?php eemjii_option_tel() ?></span>
                         </div>
                         <!-- Fax Number -->
                         <div class="padding-bottom-2">
-                            <span class="margin-0"><i class="fa fa-fax text-green"></i></span>
-                            <h5 class="display-inline text-green">Fax.</h5>
+                            <span class="margin-0"><i class="fa fa-fax text-orange"></i></span>
+                            <h5 class="display-inline text-orange">Fax.</h5>
                             <span class="text-blue font-family-default display-inline-block margin-0"><?php eemjii_option_fax() ?></span>
                         </div>
                         <!-- VAT No. -->
@@ -79,7 +79,7 @@ if( !empty($location) ):?>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3">
                 <div>
-                    <h2 class="text-orange text-align-center"><span class="padding-right-2"><i class="fa fa-envelope"></i></span>Get in touch</h2>
+                    <h2 class="text-black text-align-center"><span class="padding-right-2"><i class="fa fa-envelope"></i></span>Get in touch</h2>
                     <?php gravity_form( 1, $display_title = false, $display_description = true, $display_inactive = false, $field_values = null, $ajax = true); ?>
                 </div>
             </div>

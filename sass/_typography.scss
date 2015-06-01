@@ -1,3 +1,8 @@
+* {
+  -webkit-hyphens: none !important;
+  -moz-hyphens: none !important;
+  hyphens: none !important;
+}
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -48,6 +53,9 @@ a {
     color: darken($ips-orange,5);
     text-decoration: none;
     cursor: pointer;
+  }
+  &:focus {
+    outline: none !important;
   }
 }
 

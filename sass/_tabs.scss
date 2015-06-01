@@ -1,12 +1,15 @@
 
-$pws_tabs_bgcolor_default : $ips-blue;
-$pws_tabs_bgcolor_hover : darken($ips-blue,5);
+$pws_tabs_bgcolor_default : $ips-navy-blue;
+$pws_tabs_bgcolor_hover : darken($pws_tabs_bgcolor_default,5);
 $pws_tabs_bgcolor_active : $ips-orange;
 ul.tabs_controll{
   list-style: none;
   li{
     display: block;
     cursor: pointer;
+    @include respond-to('tablet-up'){
+      margin-bottom: $ips-padding-2;
+    }
     @include respond-to('tablet-portrait') {
       display: inline-block;
       width: 50px;
@@ -19,6 +22,11 @@ ul.tabs_controll{
           display: none !important;
         }
       }
+      -webkit-transition: all 0.17s ease-in;
+      -moz-transition: all 0.17s ease-in;
+      -ms-transition: all 0.17s ease-in;
+      -o-transition: all 0.17s ease-in;
+      transition: all 0.17s ease-in;
       display: block;
       background-color: #{$pws_tabs_bgcolor_default}; // 1.2.1
       padding: 15px 20px;
@@ -28,21 +36,16 @@ ul.tabs_controll{
       margin-right: 3px;
       /* Added by Elliott Greaves */
       position: relative;
-      &:after {
-        position: absolute;
-        left: 100%;
-        content: ' ';
-        border-top: 1.66em solid transparent;
-        border-bottom: 1.66em solid transparent;
-        border-left: 0px solid #{$pws_tabs_bgcolor_default};
-        z-index: 10;
-        top: 0;
-        -webkit-transition: all 0.09s ease-in;
-        -moz-transition: all 0.09s ease-in;
-        -ms-transition: all 0.09s ease-in;
-        -o-transition: all 0.09s ease-in;
-        transition: all 0.09s ease-in;
-      }
+//      &:after {
+//        position: absolute;
+//        left: 100%;
+//        content: ' ';
+//        border-top: 1.66em solid transparent;
+//        border-bottom: 1.66em solid transparent;
+//        border-left: 0px solid #{$pws_tabs_bgcolor_default};
+//        z-index: 10;
+//        top: 0;
+//      }
       /* End added by Elliott Greaves */
       &:hover{
         background-color: #{$pws_tabs_bgcolor_hover};
@@ -57,7 +60,7 @@ ul.tabs_controll{
         background-color: #{$pws_tabs_bgcolor_active};
         color: white;
         &:after {
-          border-left: 17px solid #{$pws_tabs_bgcolor_active};
+//          border-left: 17px solid #{$pws_tabs_bgcolor_active};
         }
       }
     }

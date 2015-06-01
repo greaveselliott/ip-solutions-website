@@ -169,6 +169,9 @@
 @include responsive_property(float-center){float: center;}
 @include responsive_property(float-none){float: none !important;}
 
+@include responsive_property(z-index-30){z-index: 30;}
+@include responsive_property(z-index-20){z-index: 20;}
+@include responsive_property(z-index-10){z-index: 10;}
 @include responsive_property(z-index-0){z-index: 0;}
 @include responsive_property(z-index--10){z-index: -10;}
 @include responsive_property(z-index--20){z-index: -20;}
