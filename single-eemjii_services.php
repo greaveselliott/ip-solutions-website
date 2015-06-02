@@ -57,7 +57,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
                         <div class="col-lg-<?php echo $column_width?> height-100 margin-bottom-desktop-down">
                             <div class="background-navy-blue padding-1_5">
                                 <h4 class="text-white margin-top-0"><?php the_sub_field('title'); ?></h4>
-                                <p class="text-white"><?php the_sub_field('paragraph'); ?></p>
+                                <p class="text-white margin-bottom-0"><?php the_sub_field('paragraph'); ?></p>
                             </div>
                         </div>
                     <?php endwhile; ?>
