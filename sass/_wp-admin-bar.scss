@@ -1,12 +1,12 @@
-body.logged-in, body.admin-bar {
-  margin-top: 28px !important;
-  @include respond-to(tablet-portrait) {
-    margin-top: 46px !important;
-  }
-}
-
-#wpadminbar {
-  @include respond-to('tablet-portrait') {
-    position: fixed;
-  }
-}
+//body.logged-in, body.admin-bar {
+//  margin-top: 28px !important;
+//  @include respond-to(tablet-portrait) {
+//    margin-top: 46px !important;
+//  }
+//}
+//
+//#wpadminbar {
+//  @include respond-to('tablet-portrait') {
+//    position: fixed;
+//  }
+//}

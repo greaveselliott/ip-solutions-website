@@ -209,27 +209,24 @@ function eemjii_enqueue () {
     );
     wp_enqueue_script ('lightbox-config');
 
-    // request-quote
-    wp_register_script(
-        'eemjii-request-quote',
-        get_stylesheet_directory_uri() . '/javascripts/request-quote/jquery-ui.request-quote.js',
+    // Off Canvas
+    wp_register_script (
+        'eemjii-offcanvas',
+        get_stylesheet_directory_uri() . '/javascripts/off-canvas/jquery-ui.offcanvas.js',
         array('jquery','jquery-ui-widget'),
         '',
         true
     );
-    // include wordpress inclded jqueryUI widget script required by the request-quote-script
-    wp_enqueue_script('jquery-ui-widget');
-    wp_enqueue_script ('eemjii-request-quote');
+    wp_enqueue_script('eemjii-offcanvas');
 
-    // request-quote config
+    // Off Canvas Config
     wp_register_script (
-        'eemjii-request-quote-config',
-        get_stylesheet_directory_uri() . '/javascripts/request-quote/jquery-ui.request-quote.config.js',
-        array('jquery','jquery-ui-widget','eemjii-request-quote'),
+        'eemjii-offcanvas-config',
+        get_stylesheet_directory_uri() . '/javascripts/off-canvas/jquery-ui.offcanvas.config.js',
+        array('jquery','jquery-ui-widget','eemjii-offcanvas'),
         '',
         true
     );
-    wp_enqueue_script('eemjii-request-quote-config');
-
+    wp_enqueue_script('eemjii-offcanvas-config');
 }
 add_action('wp_enqueue_scripts','eemjii_enqueue');

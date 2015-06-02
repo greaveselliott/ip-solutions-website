@@ -45,8 +45,8 @@ function eemjii_widgets() {
         'id'            => 'request-quote',
         'before_widget' => '<div>',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2>',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3 class="margin-top-0">',
+        'after_title'   => '</h3>',
     ) );
 }
 add_action( 'widgets_init', 'eemjii_widgets' );

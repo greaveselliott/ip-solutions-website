@@ -22,7 +22,7 @@ $the_sidebars   = wp_get_sidebars_widgets();
                         <span class="footer-company-info">Company No. </span><span class="footer-company-info"><?php eemjii_option_company_no() ?></span>
                     </div>
                     <div>
-                        <span class="footer-company-info">Tel. </span><span class="footer-company-info"><?php eemjii_option_tel() ?></span>
+                        <span class="footer-company-info">Tel. </span><span class="footer-company-info"><?php eemjii_option_tel('white') ?></span>
                     </div>
                 </section>
                 <section class="col-lg-5">
@@ -59,6 +59,12 @@ $the_sidebars   = wp_get_sidebars_widgets();
         </div>
     </div>
 </footer>
+<!-- Start: Closing </div> - for .off-canvas-inner -->
+</div>
+<!-- End: Closing </div> - for .off-canvas-inner -->
+<!-- Start: Closing </div> - for .off-canvas-wrapper -->
+</div>
+<!-- End: Closing </div> - for .off-canvas-wrapper -->
 <?php
 /*
 * Always have wp_footer() just before the closing </body>

@@ -179,3 +179,6 @@
 @include responsive_property(z-index--40){z-index: -40;}
 @include responsive_property(z-index--50){z-index: -50;}
 @include responsive_property(z-index--60){z-index: -60;}
+
+// background image
+@include responsive_property(background-image-none-important){background-image: none !important;}

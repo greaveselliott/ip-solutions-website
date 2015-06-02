@@ -75,8 +75,12 @@
 }
 
 .carousel-text {
-  @include respond-to('tablet-up') {
-    padding: $grid-gutter-width/2 0;
+//  @include respond-to('tablet-up') {
+    padding: $grid-gutter-width/2;
     margin: $grid-gutter-width/2;
-  }
+//  }
+    @include respond-to('tablet-portrait') {
+      padding: $grid-gutter-width/2 0;
+      margin: $grid-gutter-width/2 0;
+    }
 }

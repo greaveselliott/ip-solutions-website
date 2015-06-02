@@ -1,9 +1,11 @@
+$request-quote-block-width: 400px;
+
 .request-quote {
   position:   fixed;
-  top:        25%;
-  right:      0px;
+  bottom:      0px;
+  left:       100%;
   display:    block;
-  width:      400px;
+  width:      $request-quote-block-width;
   height:     auto;
   z-index:    1000;
 }
@@ -12,9 +14,8 @@
   display:    block;
   width:      inherit;
   height:     inherit;
-  background-color: $ips-light-grey;
-
-  left: 100%;
+  background-color: rgba($ips-light-grey, 0.8);
+  left: 0px;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -ms-transition: all 0.25s ease-out;
@@ -24,7 +25,8 @@
 
 .request-quote-active {
   .request-quote-inner {
-    left: 0%;
+    opacity: 1;
+    left: -$request-quote-block-width;
   }
 }
 
@@ -49,7 +51,8 @@
       padding: 50%;
       position: relative;
     }
-    .front, .back {-moz-backface-visibility: hidden;
+    .front, .back {
+      -moz-backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       -webkit-transition: transform 0.5s ease-out, background 0.17s ease-out;
@@ -57,7 +60,7 @@
       transition: transform 0.5s ease-out, background 0.17s ease-out;
 
       // Copied from .force-aspect-ratio;
-      @include respond-to('tablet-up'){
+      @include respond-to('tablet-up') {
         height: inherit;
         width: inherit;
         position: absolute;

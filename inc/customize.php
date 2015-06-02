@@ -88,10 +88,11 @@ add_action( 'customize_register', 'wptuts_theme_customizer', 11 );
 
 
 // Functions for outputting options
-function eemjii_option_tel () {
-    echo get_theme_mod(
-        'eemjii_option_telephone',
-        '<div class="alert alert-warning"><strong>Oops! </strong>You haven\'t entered your telephone number in the theme \'customize\' options</div>');
+function eemjii_option_tel ($color = 'navy-blue') {
+    $tel = get_theme_mod(
+            'eemjii_option_telephone',
+            '<div class="alert alert-warning"><strong>Oops! </strong>You haven\'t entered your telephone number in the theme \'customize\' options</div>');
+    echo '<a href="tel:'.$tel.'" class="text-'.$color.'-tablet-up">'.$tel.'</a>';
 }
 function eemjii_option_fax () {
     echo get_theme_mod(

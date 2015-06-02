@@ -74,8 +74,8 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
         <div class="service-tabs-heading">
             <?php while ( have_rows('service_content') ) : the_row();?>
                     <div>
-                        <div class="padding-top padding-bottom text-align-center-desktop-up" style="background: url('<?php echo get_sub_field('section_icon',get_the_ID())['url']; ?>') center center no-repeat; background-size: auto 80%;">
-                        <div class="text-white margin-0 h4"><?php the_sub_field('section_heading') ?></div></div>
+                        <div class="padding-top padding-bottom text-align-center-desktop-up background-image-none-important-tablet-portrait" style="background: url('<?php echo get_sub_field('section_icon',get_the_ID())['url']; ?>') center center no-repeat; background-size: auto 80%;">
+                        <div class="text-white margin-0 h4 h5-tablet-portrait"><?php the_sub_field('section_heading') ?></div></div>
                     </div>
             <?php endwhile;?>
         </div>
@@ -86,7 +86,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
         <!-- Main Content -->
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-3 display-none-tablet-portrait">
                     <ul class="tabs_controll padding-0">
                         <?php while ( have_rows('service_content') ) : the_row();?>
                             <li>

@@ -1,4 +1,6 @@
-
+<?php
+$description = get_field('description',$post->ID);
+?>
 <div class="border-3-black padding-2 margin margin-left-0 margin-top-0 margin-right-0">
     <div class="display-inline-block" style="width:30%;">
     <?php $thumbnail = get_the_post_thumbnail($post->ID,'thumbnail', array('class'=>'width-100 height-auto','style'=>'vertical-align:bottom') );
@@ -7,6 +9,9 @@
     </div>
     <div class="display-inline-block" style="width: 60%; vertical-align: top;">
         <p><?php echo $post->post_title; ?></p>
-        <a class="btn btn-orange" href="<?php echo $post->guid;?>">Find out more</a>
+        <?php if ($description) : ?>
+            <p class="h6"><?php echo $description?></p>
+        <?php endif; ?>
+        <a class="btn btn-orange" href="<?php echo $post->guid;?>" title="<?php echo $post->post_name;?>">Find out more</a>
     </div>
 </div>

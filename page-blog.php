@@ -12,12 +12,12 @@ get_header(); ?>
 </div>
 <!-- End .featured-image-container tag -->
 <section class="width-100 position-relative">
-    <div class="header-offset-tablet-portrait"></div>
+    <div class="header-offset display-none-important-tablet-up"></div>
     <div class="container">
         <!-- Title -->
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
-                <h1 class="h2 display-none-tablet-up text-align-center text-orange margin-top-0"><?php echo the_title(); ?></h1>
+                <h1 class="h2 display-none-tablet-up text-align-center text-orange margin-top margin-bottom-0"><?php echo the_title(); ?></h1>
                 <figure class="speech-bubble display-none-tablet-portrait"><img src="<?php echo get_stylesheet_directory_uri() . '/images/blog-speech-bubbles.png'; ?>" class="width-100 height-auto">
                     <figcaption class="h2 h3-tablet-landscape-desktop"><?php echo the_title(); ?> </figcaption>
                 </figure>

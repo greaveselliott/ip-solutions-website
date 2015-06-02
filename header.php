@@ -4,6 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Icon -->
     <?php $eemjii_stylesheet_dir = get_stylesheet_directory_uri() .'/images/icons'; ?>
@@ -56,38 +57,33 @@
         <li class="email"><a href="mailto:info@ipsolutions.co.uk" class="text-white"><i class="fa fa-envelope"></i></a></li>
     </ul>
 </div>
-<!-- Request Quote -->
-<?php if (is_active_sidebar('request-quote') ) : ?>
-    <div class="display-none-tablet-portrait">
-        <div class="request-quote">
-            <div class="request-quote-inner">
-                <div class="request-quote-trigger">
-                    <div class="request-quote-trigger-inner">
-<!--                    <div class="force-aspect-ratio-container">-->
-<!--                        <div class="force-aspect-ratio">-->
-                            <div class="front padding-2">
-                                <div class="table-center-container">
-                                    <div class="table-center-cell">Request a Quote</div>
-                                </div>
-                            </div>
-                            <div class="back padding-2">
-                                <div class="table-center-container">
-                                    <div class="table-center-cell">
-                                        <span class="h2"><i class="fa fa-times"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-
-<!--                        </div>-->
-<!--                    </div>-->
-                    </div>
-                </div>
-                <div class="request-quote-content">
-                    <?php dynamic_sidebar('request-quote'); ?>
+<?php if ( is_active_sidebar('request-quote') ) : ?>
+<div class="off-canvas-trigger" data-transition="ease">
+    <div class="off-canvas-trigger-inner">
+        <div class="front padding-2">
+            <div class="table-center-container">
+                <div class="table-center-cell">Request a Quote</div>
+            </div>
+        </div>
+        <div class="back padding-2">
+            <div class="table-center-container">
+                <div class="table-center-cell">
+                    <span class="h2"><i class="fa fa-times"></i></span>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<?php endif; ?>
+<div class="off-canvas-wrapper">
+<div class="off-canvas-inner">
+<?php if ( is_active_sidebar('request-quote') ) : ?>
+<div class="off-canvas-content">
+    <div class="request-quote-content padding-left padding padding-right-2 padding-top-2">
+        <?php dynamic_sidebar('request-quote'); ?>
+        <div class="off-canvas-trigger-internal display-block text-align-center text-grey"><span class="h2"><i class="fa fa-times"></i></span></div>
+    </div>
+</div>
 <?php endif; ?>
 <div class="featured-image-container position-relative">
     <!-- The .featured-image-container's closing tag exists in the page template file for example page-home.php -->

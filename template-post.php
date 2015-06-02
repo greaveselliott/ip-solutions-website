@@ -14,7 +14,7 @@
         <div class="image-position">
             <div class="force-aspect-ratio-container">
                 <figure class="force-aspect-ratio">
-                <?php echo eemjii_get_featured_image_url( get_the_ID(), 'template-post', array('class'=>'width-100-tablet-up height-auto-tablet-up') ); ?>
+                <?php echo eemjii_get_featured_image_url( get_the_ID(), 'template-post', array('class'=>'width-100 height-auto') ); ?>
                 </figure>
             </div>
         </div>
