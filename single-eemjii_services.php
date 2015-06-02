@@ -11,7 +11,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
     <div class="position-absolute z-index--10 width-100 height-100 top-0 left-0" style="background: url('<?php echo get_field('background_image')['url']; ?>') center no-repeat;background-size: cover;"></div>
     <!-- Service Icons-->
     <nav class="starting-point background-navy-blue opacity-90 width-100 padding-top">
-        <h1 class="display-none h2">Services Navigation</h1>
+        <h2 class="display-none">Services Navigation</h2>
         <div class="container">
             <div class="row">
                 <?php
@@ -25,7 +25,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
 <?php $service_top_additional_text = get_field('use_text_instead');?>
 <div class="container padding-top padding-bottom">
     <div class="row">
-        <div class="col-sm-12"><h2 class="text-navy-blue margin-top-0 line-height-h2"><?php the_title(); ?></h2></div>
+        <div class="col-sm-12"><h1 class="h2 text-navy-blue margin-top-0 line-height-h2"><?php the_title(); ?></h1></div>
     </div>
     <div class="row">
         <div class="<?php echo $service_top_additional_text ? 'col-sm-6' : 'col-sm-8';?>">
@@ -75,7 +75,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
             <?php while ( have_rows('service_content') ) : the_row();?>
                     <div>
                         <div class="padding-top padding-bottom text-align-center-desktop-up" style="background: url('<?php echo get_sub_field('section_icon',get_the_ID())['url']; ?>') center center no-repeat; background-size: auto 80%;">
-                        <h5 class="text-white margin-0 h4"><?php the_sub_field('section_heading') ?></h5></div>
+                        <div class="text-white margin-0 h4"><?php the_sub_field('section_heading') ?></div></div>
                     </div>
             <?php endwhile;?>
         </div>
@@ -103,6 +103,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
                         <div class="service-tab-single">
                             <div class="padding">
                                 <section>
+                                    <h3 class="display-none"><?php the_sub_field('section_heading'); ?></h3>
                                     <?php the_sub_field('section_content'); ?>
                                 </section>
                             </div>
