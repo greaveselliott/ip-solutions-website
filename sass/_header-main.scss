@@ -8,14 +8,14 @@
   position: relative;
 }
 
-//body.logged-in, body.admin-bar {
-//  #header-main-container {
-//    top: 28px !important;
-//    @include respond-to(tablet-portrait) {
-//     top: 46px !important;
-//    }
-//  }
-//}
+body.logged-in, body.admin-bar {
+  #header-main-container {
+    top: 28px !important;
+    @include respond-to(tablet-portrait) {
+     top: 46px !important;
+    }
+  }
+}
 
 #header-main-container {
   position: fixed !important;

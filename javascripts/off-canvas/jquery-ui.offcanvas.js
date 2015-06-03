@@ -57,13 +57,11 @@
             });
 
             $trigger.on('click', function () {
-                console.log($.inArray(transitionClass, special));
                 if ($.inArray(transitionClass, special) > -1) {
                     self.element.trigger("offCanvas.open");
                 } else {
                     self.element.trigger("offCanvas.close");
                 }
-                console.log(self.element);
                 self.element.toggleClass('off-canvas-active');
                 $root.toggleClass('off-canvas-active');
                 return false;

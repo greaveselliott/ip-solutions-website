@@ -9,7 +9,7 @@ $background_image =  get_field('background_image');
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1 class="text-align-center text-white margin-top margin-bottom h2">Choose your starting point</h1>
+                    <h3 class="text-align-center text-white margin-top margin-bottom h2">Choose your starting point</h3>
                 </div>
                 <?php get_template_part('template', 'starting-point'); ?>
             </div>
@@ -21,7 +21,7 @@ $background_image =  get_field('background_image');
     <div class="container">
         <div class="row text-align-center margin-bottom">
             <div class="col-sm-10 col-sm-offset-1">
-                <h3><?php the_field('textbox_top_title'); ?></h3>
+                <h1 class="h3"><?php the_field('textbox_top_title'); ?></h1>
                 <?php the_field('textbox_top'); ?>
             </div>
         </div>

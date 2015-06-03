@@ -2055,23 +2055,6 @@ if( function_exists('register_field_group') ):
         'title' => 'Resources',
         'fields' => array (
             array (
-                'key' => 'field_55099cec56727',
-                'label' => 'Video',
-                'name' => 'video',
-                'prefix' => '',
-                'type' => 'oembed',
-                'instructions' => 'Paste a link to your Youtube or Vimeo video here.',
-                'required' => 0,
-                'conditional_logic' => 0,
-                'wrapper' => array (
-                    'width' => '',
-                    'class' => '',
-                    'id' => '',
-                ),
-                'width' => '',
-                'height' => '',
-            ),
-            array (
                 'key' => 'field_55099ee0d5002',
                 'label' => 'File Attachments',
                 'name' => 'file_attachments',
@@ -2112,6 +2095,23 @@ if( function_exists('register_field_group') ):
                 'new_lines' => 'br',
                 'readonly' => 0,
                 'disabled' => 0,
+            ),
+            array (
+                'key' => 'field_556f2ac3ed601',
+                'label' => 'Require Users Email',
+                'name' => 'require_users_email',
+                'prefix' => '',
+                'type' => 'true_false',
+                'instructions' => 'Check this box if you want to require the user enter their email address before gaining access to the resource.',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => '',
+                'default_value' => 0,
             ),
         ),
         'location' => array (

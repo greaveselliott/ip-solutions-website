@@ -1,6 +1,6 @@
 <?php
 
-define("__DEVELOPMENT_MODE__", true);
+define("__DEVELOPMENT_MODE__", false);
 
 // General Theme Configuration
 include_once('inc/theme-configuration.php');
@@ -31,6 +31,9 @@ include_once('inc/plugin-config-acf.php');
 
 // Register Theme Widgets
 include_once( 'inc/widgets.php' );
+
+// Themes Hooks
+include_once( 'inc/hooks.php' );
 
 // Eemjii-WP-Query Class
 include_once('inc/eemjii-wp-query/eemjii-wp-query.php');

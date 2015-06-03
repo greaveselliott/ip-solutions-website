@@ -48,5 +48,14 @@ function eemjii_widgets() {
         'before_title'  => '<h3 class="margin-top-0">',
         'after_title'   => '</h3>',
     ) );
+    // Resource Form
+    register_sidebar ( array(
+        'name'          => 'Resources - Email collection form',
+        'id'            => 'resource-email-collection-form',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="margin-top-0">',
+        'after_title'   => '</h3>',
+    ) );
 }
 add_action( 'widgets_init', 'eemjii_widgets' );

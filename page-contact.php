@@ -15,10 +15,6 @@ if( !empty($location) ):?>
     <div class="container"><div class="row"><div class="sm-col-12">
                 <pre>Why not add your offices google maps location on this page?</pre></div></div></div>
 <?php endif; ?>
-    </div>
-    <!-- Featured Image -->
-</div><!-- End .featured-image-container tag -->
-
 <h1 class="display-none"><?php the_title(); ?></h1>
 <!-- END Google Maps -->
 <div class="position-relative">
@@ -39,7 +35,7 @@ if( !empty($location) ):?>
                         <div class="padding-bottom-2">
                             <span class="margin-0"><i class="fa fa-phone text-orange"></i></span>
                             <h5 class="display-inline text-orange">Tel.</h5>
-                            <span class="text-blue font-family-default display-inline-block margin-0"><?php eemjii_option_tel() ?></span>
+                            <span class="text-blue font-family-default display-inline-block margin-0"><?php eemjii_option_tel('blue') ?></span>
                         </div>
                         <!-- Fax Number -->
                         <div class="padding-bottom-2">
