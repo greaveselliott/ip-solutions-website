@@ -13,7 +13,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // Remove excerpt more string
 function sbt_auto_excerpt_more( $more ) {
-    return '';
+    return '...';
 }
 add_filter( 'excerpt_more', 'sbt_auto_excerpt_more', 20 );
 

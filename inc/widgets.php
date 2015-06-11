@@ -48,6 +48,24 @@ function eemjii_widgets() {
         'before_title'  => '<h3 class="margin-top-0">',
         'after_title'   => '</h3>',
     ) );
+    // Request Quote
+    register_sidebar ( array(
+        'name'          => 'Book a Demo',
+        'id'            => 'book-a-demo',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="margin-top-0">',
+        'after_title'   => '</h3>',
+    ) );
+    // Request Quote
+    register_sidebar ( array(
+        'name'          => 'Book a Meeting',
+        'id'            => 'book-a-meeting',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="margin-top-0">',
+        'after_title'   => '</h3>',
+    ) );
     // Resource Form
     register_sidebar ( array(
         'name'          => 'Resources - Email collection form',

@@ -3,7 +3,7 @@
 $eemjii_the_ID = get_the_ID();
 ?>
 
-<section class="col-md-2 col-sm-4 col-xs-6 margin-bottom service-nav-item">
+<section class="col-md-2 col-sm-4 col-xs-4 margin-bottom service-nav-item">
     <a href="<?php echo get_permalink($post->ID); ?>" class=" padding-2 text-align-center display-block border-radius-1 border-1-<?php echo $post->ID == get_the_ID() ? 'orange' : 'white'?>">
         <div class="padding-2 text-align-center force-aspect-ratio-container height-100">
             <div class="force-aspect-ratio height-100">

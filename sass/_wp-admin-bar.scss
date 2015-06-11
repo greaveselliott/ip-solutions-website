@@ -10,3 +10,16 @@
 //    position: fixed;
 //  }
 //}
+
+.align-left {
+  display: block !important;
+  float: left !important;
+}
+.aligncenter {
+  display: block !important;
+  margin: 0 auto !important;
+}
+.align-left {
+  display: block !important;
+  float: right !important;
+}

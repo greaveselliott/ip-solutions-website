@@ -16,7 +16,7 @@
                     <h4 class="text-blue h5"><?php the_title(); ?></h4>
                     <?php
                     if( get_field('file_attachments') ): ?>
-                    <a href="<?php the_field('file_attachments'); ?>" target="_blank" title="Click here to download the file attachment" class="btn btn-orange"><i class="fa fa-download"></i>&nbsp;Download File</a><?php
+                    <a href="<?php the_permalink(); ?>" target="_blank" title="Click here to download the file attachment" class="btn btn-orange"><i class="fa fa-download"></i>&nbsp;View File</a><?php
                     else :?>
                     <div class="btn btn-grey"><i class="fa fa-exclamation-circle"></i>&nbsp;Download unavailable</div>
                     <?php

@@ -1,3 +1,16 @@
 .mix-it-up .mix, .mix-it-up-sub .mix-service{
   display: none;
 }
+
+.single-related-content {
+  height: auto;
+  min-height: 125px;
+  .single-related-content-featured-image {
+    width: 30%;
+    vertical-align: top;
+  }
+  .single-related-content-content {
+    width: 58%;
+    padding-left: 2%;
+  }
+}

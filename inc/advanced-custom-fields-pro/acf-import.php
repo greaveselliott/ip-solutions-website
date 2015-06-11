@@ -466,7 +466,14 @@ if( function_exists('register_field_group') ):
                 array (
                     'param' => 'page_template',
                     'operator' => '==',
-                    'value' => 'page-resources.php',
+                    'value' => 'default',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_partners',
                 ),
             ),
         ),
@@ -482,6 +489,22 @@ if( function_exists('register_field_group') ):
         'key' => 'group_554ab0d85c46e',
         'title' => 'Case Study',
         'fields' => array (
+            array (
+                'key' => 'field_5579bb9acbce3',
+                'label' => 'Heading Color',
+                'name' => 'heading_color',
+                'prefix' => '',
+                'type' => 'color_picker',
+                'instructions' => 'Select a colour for the heading',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+            ),
             array (
                 'key' => 'field_556d7fff140fb',
                 'label' => 'Case Study Description',
@@ -1787,6 +1810,13 @@ if( function_exists('register_field_group') ):
                     'param' => 'post_type',
                     'operator' => '==',
                     'value' => 'eemjii_solutions',
+                ),
+            ),
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'eemjii_partners',
                 ),
             ),
         ),

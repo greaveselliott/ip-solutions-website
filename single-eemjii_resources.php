@@ -8,9 +8,15 @@ function set_resource ($ID) {
 function cookie_exists ($cookie_name) {
     return isset($_COOKIE[$cookie_name]) ? true : false;
 }
-
+if ( is_active_sidebar('resource-email-collection-form') && get_field('require_users_email',$eemjii_the_ID) == true ) :
 ?>
+
 <article style="background-image: url(<?php echo get_stylesheet_directory_uri() .'/images/skydivers.jpg'?>); background-size: cover; background-position: center; min-height: 600px;">
+    <?php
+    else: ?>
+<article style="min-height: 600px;">
+    <?php endif;
+    ?>
     <div class="header-offset"></div>
     <h1 class="display-none"><?php the_title(); ?></h1>
     <?php

@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+    $eemjii_request_quote = is_active_sidebar('request-quote');
+    $eemjii_book_a_demo = is_active_sidebar('book-a-demo');
+    $eemjii_book_a_meeting = is_active_sidebar('book-a-meeting');
+?>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -57,31 +62,89 @@
         <li class="email"><a href="mailto:info@ipsolutions.co.uk" class="text-white"><i class="fa fa-envelope"></i></a></li>
     </ul>
 </div>
-<?php if ( is_active_sidebar('request-quote') ) : ?>
-<div class="off-canvas-trigger" data-transition="ease">
-    <div class="off-canvas-trigger-inner">
-        <div class="front padding-2">
-            <div class="table-center-container">
-                <div class="table-center-cell">Request a Quote</div>
+<?php if ( $eemjii_request_quote || $eemjii_book_a_demo || $eemjii_book_a_meeting) : ?>
+<div class="off-canvas-trigger">
+    <?php if ($eemjii_request_quote) :?>
+        <div class="off-canvas-trigger-inner margin-bottom" data-transition="ease" data-off-canvas-tab="1">
+            <div class="front padding-2">
+                <div class="table-center-container">
+                    <div class="table-center-cell">Request a Quote</div>
+                </div>
             </div>
-        </div>
-        <div class="back padding-2">
-            <div class="table-center-container">
-                <div class="table-center-cell">
-                    <span class="h2"><i class="fa fa-times"></i></span>
+            <div class="back padding-2">
+                <div class="table-center-container">
+                    <div class="table-center-cell">
+                        <span class="h2"><i class="fa fa-times"></i></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    <?php
+    endif;
+    if ($eemjii_book_a_demo) :
+        ?>
+        <div class="off-canvas-trigger-inner margin-bottom" data-transition="ease" data-off-canvas-tab="2">
+            <div class="front padding-2">
+                <div class="table-center-container">
+                    <div class="table-center-cell">Book a Demo</div>
+                </div>
+            </div>
+            <div class="back padding-2">
+                <div class="table-center-container">
+                    <div class="table-center-cell">
+                        <span class="h2"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php
+    endif;
+    if ($eemjii_book_a_meeting) :
+        ?>
+        <div class="off-canvas-trigger-inner" data-transition="ease" data-off-canvas-tab="3">
+            <div class="front padding-2">
+                <div class="table-center-container">
+                    <div class="table-center-cell">Book a Meeting</div>
+                </div>
+            </div>
+            <div class="back padding-2">
+                <div class="table-center-container">
+                    <div class="table-center-cell">
+                        <span class="h2"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
 </div>
 <?php endif; ?>
 <div class="off-canvas-wrapper">
 <div class="off-canvas-inner">
-<?php if ( is_active_sidebar('request-quote') ) : ?>
+<?php if ( $eemjii_request_quote || $eemjii_book_a_demo || $eemjii_book_a_meeting ) : ?>
 <div class="off-canvas-content">
     <div class="request-quote-content padding-left padding padding-right-2 padding-top-2">
-        <?php dynamic_sidebar('request-quote'); ?>
-        <div class="off-canvas-trigger-internal display-block text-align-center text-grey"><span class="h2"><i class="fa fa-times"></i></span></div>
+        <?php if ($eemjii_request_quote) :?>
+            <div class="off-canvas-tab off-canvas-tab-1">
+                <?php dynamic_sidebar('request-quote'); ?>
+                <div class="off-canvas-trigger-internal display-block text-align-center text-grey"><span class="h2"><i class="fa fa-times"></i></span></div>
+            </div>
+        <?php
+            endif;
+            if ($eemjii_book_a_demo) :
+        ?>
+            <div class="off-canvas-tab off-canvas-tab-2">
+                <?php dynamic_sidebar('book-a-demo'); ?>
+                <div class="off-canvas-trigger-internal display-block text-align-center text-grey"><span class="h2"><i class="fa fa-times"></i></span></div>
+            </div>
+        <?php
+            endif;
+            if ($eemjii_book_a_meeting) :
+        ?>
+            <div class="off-canvas-tab off-canvas-tab-3">
+                <?php dynamic_sidebar('book-a-meeting'); ?>
+                <div class="off-canvas-trigger-internal display-block text-align-center text-grey"><span class="h2"><i class="fa fa-times"></i></span></div>
+            </div>
+        <?php endif; ?>
     </div>
 </div>
 <?php endif; ?>

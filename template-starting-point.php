@@ -7,7 +7,7 @@
                 <a href="<?php the_sub_field('starting_point_url');?>">
                     <div class="flip-container-tablet-up">
                         <!-- Front -->
-                        <div class="front border-1-orange border-radius-1-tablet-up">
+                        <div class="front border-1-orange border-radius-1">
                             <!--Force Square Aspect Ratio -->
                             <div class="padding-2 text-align-center force-aspect-ratio-container-tablet-up height-100-tablet-portrait">
                                 <div class="force-aspect-ratio-tablet-up height-100-tablet-portrait">
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                         <!-- Back -->
-                        <div class="back background-orange padding-2-tablet-landscape-desktop text-align-center display-none-tablet-portrait border-radius-1-tablet-up">
+                        <div class="back background-orange padding-2-tablet-landscape-desktop text-align-center display-none-tablet-portrait border-radius-1">
                             <!-- Center Content inside box -->
                             <div class="table-center-container">
                                 <div class="table-center-cell">

@@ -143,7 +143,7 @@
   position:   fixed;
   display:    block;
   top:        50%;
-  top:        calc(50% - 35px);
+  top:        calc(50% - 120px);
   right:      0px;
   width:      70px;
   height:     auto;
@@ -158,12 +158,11 @@
     backface-visibility:          hidden;
 
     // Copied from .force-aspect-ratio-container
-    @include respond-to('tablet-up'){
+
       height:   100%;
       width:    100%;
       padding:  50%;
       position: relative;
-    }
     .front, .back {
       -moz-backface-visibility:     hidden;
       -webkit-backface-visibility:  hidden;
@@ -173,13 +172,11 @@
       transition:                   transform 0.5s ease-out, background 0.17s ease-out;
 
       // Copied from .force-aspect-ratio;
-      @include respond-to('tablet-up') {
         height:   inherit;
         width:    inherit;
         position: absolute;
         top:      0px;
         left:     0px;
-      }
     }
 
     .front {
@@ -203,16 +200,36 @@
     }
   }
 }
-.off-canvas-active .off-canvas-trigger {
-  right: 300px;
-  .front {
-    -moz-transform:     perspective(1000px) rotateY(180deg);
-    -webkit-transform:  perspective(1000px) rotateY(180deg);
-    transform:          perspective(1000px) rotateY(180deg);
+.off-canvas-active {
+  .off-canvas-trigger {
+    right: 300px;
   }
-  .back {
-    -moz-transform:     perspective(1000px) rotateY(0deg);
-    -webkit-transform:  perspective(1000px) rotateY(0deg);
-    transform:          perspective(1000px) rotateY(0deg);
+  .off-canvas-trigger-active {
+    .front {
+      -moz-transform:     perspective(1000px) rotateY(180deg);
+      -webkit-transform:  perspective(1000px) rotateY(180deg);
+      transform:          perspective(1000px) rotateY(180deg);
+    }
+    .back {
+      -moz-transform:     perspective(1000px) rotateY(0deg);
+      -webkit-transform:  perspective(1000px) rotateY(0deg);
+      transform:          perspective(1000px) rotateY(0deg);
+    }
+  }
+}
+
+.off-canvas-tab {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+  width: 86%;
+  opacity: 0;
+  z-index: -1000;
+  display: block;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  &.off-canvas-tab-active {
+    opacity: 1;
+    z-index: 1000;
   }
 }

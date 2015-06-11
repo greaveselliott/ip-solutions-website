@@ -38,7 +38,7 @@ function eemjii_get_taxonomies ($taxonomy) {
     return $taxonomy_list_object;
 }
 
-function eemjii_get_related_posts ($post_type, $custom_field, $ID = false) {
+function eemjii_get_related_posts ($post_type, $custom_field, $ID = false, $posts_per_page = 0, $orderby = 'title') {
     // get the relationship field
     $acf_relationship_object = get_field($custom_field, $ID, false);
     // define the $value variable
@@ -48,11 +48,11 @@ function eemjii_get_related_posts ($post_type, $custom_field, $ID = false) {
     if ($acf_relationship_object):
         $the_query = new WP_Query(array(
             'post_type'      	=> $post_type,
-            'posts_per_page'	=> 0,
+            'posts_per_page'	=> $posts_per_page,
             'post__in'		    => $acf_relationship_object,
             'post_status'		=> 'any',
             'order'             => 'ASC',
-            'orderby'        	=> 'title'
+            'orderby'        	=> $orderby
         ));
         // resetting the WP_Query to avoid conflicting errors
         wp_reset_query();

@@ -36,7 +36,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
         if(!$service_top_additional_text):
             // True: Show the image
         ?>
-        <div class="col-sm-4 display-none-tablet-portrait padding-2 padding-top-0 padding-left-0 padding-right-0">
+        <div class="col-sm-4 padding-2 padding-top-0 padding-left-0 padding-right-0">
             <?php $image =  get_field('services_content_top_image',$eemjii_post_ID);?>
             <img src="<?php echo $image ? $image['url'] : "http://placehold.it/75x75"; ?>" alt="<?php echo $image['alt']; ?>" class="display-none-phone width-100 height-auto">
         </div>
@@ -100,7 +100,7 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
                     <?php
                     // loop through the rows of data
                     while ( have_rows('service_content') ) : the_row();?>
-                        <div class="service-tab-single">
+                        <div class="service-tab-single padding-bottom-tablet-portrait">
                             <div class="padding">
                                 <section>
                                     <h3 class="display-none"><?php the_sub_field('section_heading'); ?></h3>
