@@ -1,5 +1,6 @@
 <?php get_header();
 $background_image =  get_field('background_image');
+$related_solutions = eemjii_simple_post_query('eemjii_solutions', 4);
 ?>
 
     <div class="header-offset"></div>
@@ -7,13 +8,17 @@ $background_image =  get_field('background_image');
     <!-- Choose your starting point -->
     <article class="starting-point background-navy-blue opacity-90 width-100">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3 class="text-align-center text-white margin-top margin-bottom h2">Choose your starting point</h3>
+                <h3 class="display-none">Navigate to other IP-Solutions - Solutions</h3>
+                <!-- Services Navigation -->
+                <div class="row padding-top margin-0-tablet-portrait">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="row margin-0-tablet-portrait">
+                            <?php eemjii_post_command($related_solutions,'template-solutions-navigation.php');?>
+                        </div>
+                    </div>
                 </div>
-                <?php get_template_part('template', 'starting-point'); ?>
+                <!-- END Services Navigation -->
             </div>
-        </div>
     </article>
     <!-- Featured Image -->
     </div><!-- End .featured-image-container tag -->
@@ -38,11 +43,15 @@ $background_image =  get_field('background_image');
             ?>
             <div class="background-white padding-top padding-bottom">
                 <div class="container">
-                    <div class="row position-relative">
-                        <div class="col-sm-3 col-sm-offset-2">
+                    <div class="row position-relative equal-columns-row">
+                        <div class="col-sm-3 col-sm-offset-2 equal-columns-column">
+                            <div class="table-center-container">
+                                <div class="table-center-cell">
                             <img src="<?php echo get_sub_field('image')['url']; ?>" alt="An Icon relating to this this solution" class="width-100 height-auto">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 equal-columns-column">
                             <h3><?php the_sub_field('title'); ?></h3>
                             <?php the_sub_field('solution_content');?>
                         </div>
@@ -52,13 +61,17 @@ $background_image =  get_field('background_image');
         <?php else : ?>
             <div class="background-light-grey opacity-50 padding-top padding-bottom">
                 <div class="container">
-                    <div class="row position-relative">
-                        <div class="col-sm-5 col-sm-offset-2">
+                    <div class="row position-relative equal-columns-row">
+                        <div class="col-sm-5 col-sm-offset-2 equal-columns-column">
                             <h3><?php the_sub_field('title'); ?></h3>
                             <?php the_sub_field('solution_content');?>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3 equal-columns-column">
+                            <div class="table-center-container">
+                                <div class="table-center-cell">
                             <img src="<?php echo get_sub_field('image')['url']; ?>" alt="An Icon relating to this this solution" class="width-100 height-auto">
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>

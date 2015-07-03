@@ -86,17 +86,17 @@ $related_services = eemjii_simple_post_query('eemjii_services', 6);
         <!-- Main Content -->
         <div class="col-sm-12">
             <div class="row">
-                <div class="col-sm-3 display-none-tablet-portrait">
+                <div class="col-sm-3">
                     <ul class="tabs_controll padding-0">
                         <?php while ( have_rows('service_content') ) : the_row();?>
                             <li>
-                                <a><?php the_sub_field('section_heading') ?></a>
+                                <a class="border-radius-1"><?php the_sub_field('section_heading') ?></a>
                             </li>
                         <?php endwhile;?>
                     </ul>
                 </div>
                 <div class="col-sm-9">
-                    <div class="service-tabs background-light-grey opacity-50">
+                    <div class="service-tabs background-light-grey opacity-50 margin-top-tablet-portrait">
                     <?php
                     // loop through the rows of data
                     while ( have_rows('service_content') ) : the_row();?>

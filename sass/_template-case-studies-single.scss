@@ -14,3 +14,10 @@
 
   }
 }
+
+.drop-heading-position-tablet-portrait {
+  @include respond-to('tablet-portrait'){
+    position: absolute;
+    top: 2em;
+  }
+}

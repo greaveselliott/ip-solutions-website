@@ -1,5 +1,10 @@
 .btn {
   @extend .border-radius-1;
+  outline: none !important;
+}
+
+button {
+  outline: none !important;
 }
 
 .gform_button {

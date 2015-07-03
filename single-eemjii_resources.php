@@ -1,12 +1,9 @@
 <?php get_header();
+
 $eemjii_the_ID = get_the_ID();
 
 function set_resource ($ID) {
     echo '<div class="container"><div class="row"><div class="col-sm-12"><iframe src="' . get_field('file_attachments',$ID) . '" width="100%" height="700" frameborder="0"></iframe></div></div></div>';
-}
-
-function cookie_exists ($cookie_name) {
-    return isset($_COOKIE[$cookie_name]) ? true : false;
 }
 if ( is_active_sidebar('resource-email-collection-form') && get_field('require_users_email',$eemjii_the_ID) == true ) :
 ?>

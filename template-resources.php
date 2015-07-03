@@ -1,5 +1,5 @@
 <!--Force Square Aspect Ratio -->
-<div class="background-white opacity-25 padding-2 border-3-blue margin-right-tablet-up margin-bottom-tablet-up width-100">
+<div class="background-white opacity-25 padding-2 border-3-grey margin-right-tablet-up margin-bottom-tablet-up width-100">
     <div class="text-align-center force-aspect-ratio-container-tablet-up height-100-tablet-portrait">
         <div class="force-aspect-ratio-tablet-up height-100-tablet-portrait ">
             <!-- Center Content inside box -->

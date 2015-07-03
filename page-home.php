@@ -2,6 +2,7 @@
 /*
     Template Name: Home
 */
+$related_solutions = eemjii_simple_post_query('eemjii_solutions', 4);
 ?>
 
     <?php get_header(); ?>
@@ -13,7 +14,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text-white text-align-center">
-                        <p class="h4 margin-top">We’re comms technology experts - and deliver a range of flexible and intuitive solutions.</p><p class="text-white h4"> From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
+                        <p class="h4 h5-tablet-portrait margin-top">We’re comms technology experts - and deliver a range of flexible and intuitive solutions.</p><p class="text-white h4 h5-tablet-portrait"> From virtual contact centres, desktops and servers, to cloud-based solutions that unify telephony, video, data, email and more – bringing real results to your business and your bottom line.</p>
                         <h3><a data-toggle="lightbox" class="h3" title="Watch the IP Solutions promotional video" data-remote="https://player.vimeo.com/video/127074788">Discover how the cloud can transform your business
                            <span class="h1"><i class="fa fa-youtube-play" style="vertical-align: bottom;"></i></span></a></h3>
                         <hr class="border-bottom-white-1 margin-bottom-0">
@@ -23,7 +24,15 @@
                     <div class="col-sm-12">
                         <h2 class="text-align-center text-white margin-top margin-bottom">Choose your starting point</h2>
                     </div>
-                    <?php get_template_part('template', 'starting-point'); ?>
+                    <!-- Services Navigation -->
+                    <div class="row margin-0-tablet-portrait">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                            <div class="row margin-0-tablet-portrait">
+                                    <?php eemjii_post_command($related_solutions,'template-solutions-navigation.php');?>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Services Navigation -->
                 </div>
             </div>
         </article>

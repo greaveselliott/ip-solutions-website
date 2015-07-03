@@ -155,14 +155,14 @@
             <div class="container-fluid" role="navigation" aria-label="Main Website Navigation">
                 <div id="header-main-height" class="row">
                     <!-- Logo -->
-                    <div class="col-xs-6 col-md-4 col-sm-3 height-inherit">
+                    <div class="col-xs-6 col-md-4 col-sm-3 header-element display-inline-block">
 
                         <?php echo is_front_page() ? '<h1 class="display-none">': '<p class="display-none">'; echo bloginfo('name'); ?> | <?php echo bloginfo('description'); echo is_front_page() ? '</h1>': '</p>';?>
-                        <figure class="eemjii-logo display-table padding-right padding-0-tablet-portrait height-inherit" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
-                            <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2 height-inherit" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block main-logo padding-top-tablet-up padding-bottom-tablet-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.svg" alt="<?php echo bloginfo('name'); ?> Logo"></a>
+                        <figure class="eemjii-logo display-table padding-right padding-0-tablet-portrait height-auto" role="banner" aria-label="<?php echo bloginfo('name'); ?> Logo">
+                            <a href="<?php echo home_url();?>" class="display-inline-block padding-right-2 header-element" title="Navigate to the Official <?php echo bloginfo('name'); ?> Home Page"><img class="display-block main-logo padding-top-2-tablet-up padding-bottom-2-tablet-up" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ipsolutions.svg" alt="<?php echo bloginfo('name'); ?> Logo"></a>
                         </figure>
                     </div>
-                    <div class="col-sm-6 col-md-8 col-sm-9 height-inherit">
+                    <div class="col-sm-6 col-md-8 col-sm-9 header-element display-block">
                         <div class="row padding-bottom-2 height-50 display-none-tablet-portrait">
                             <div class="col-sm-12">
                                 <div class="float-right float-none-tablet-portrait text-align-center-tablet-portrait">

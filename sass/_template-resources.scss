@@ -4,7 +4,12 @@
 
 .single-related-content {
   height: auto;
-  min-height: 125px;
+  @include respond-to('large-desktop') {
+    height: 125px;
+  }
+  @include respond-to('tablet-landscape-desktop') {
+    height: 165px;
+  }
   .single-related-content-featured-image {
     width: 30%;
     vertical-align: top;

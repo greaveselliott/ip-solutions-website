@@ -53,7 +53,6 @@
             var current_tab     = null;
             var active_tab      = null;
 
-            //self.element.addClass( "my-widget" );
 
             //subscribe to 'myEventStart'
             self.element.bind( "offCanvas.open", function( e, injection_this, injection_current_tab ) {
@@ -83,15 +82,11 @@
 
             $trigger.on('click', function () {
                 current_tab = $(this).data('off-canvas-tab');
-
                 if (is_open && current_tab == active_tab) {
                     self.element.trigger("offCanvas.close",[this]);
                 } else {
                     self.element.trigger("offCanvas.open",[this, current_tab]);
                 }
-                console.log('current tab = ', current_tab);
-                console.log('active tab = ', active_tab);
-                console.log('Is open = ', is_open);
                 return false;
             });
 

@@ -21,7 +21,8 @@
     .arrow-down {
       bottom: 9px;
       position: relative;
-      left: 110px;
+      left: 50%;
+      left: calc(50% - 30px);
       content: "";
       display: block;
       width: 60px;

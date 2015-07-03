@@ -3,3 +3,13 @@
     display: none;
   }
 }
+
+.awards-height {
+  height: 760px;
+  @include respond-to('tablet-landscape-desktop') {
+    height: 830px;
+  }
+  @include respond-to('tablet-landscape-desktop') {
+    height: 830px;
+  }
+}

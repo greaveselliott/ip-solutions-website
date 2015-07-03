@@ -1,15 +1,9 @@
 <?php
 ?>
-<pre>
-    <?php print_r($post); ?>
-</pre>
 <?php
 $case_study_related_client = eemjii_get_related_posts('eemjii_clients', 'related_client', $post->ID );
 
 ?>
-<pre>
-<?php print_r($case_study_related_client); ?>
-</pre>
 <?php
 ?>
 <!--<a href="--><?php //echo $post->guid; ?><!--" title="Read --><?php //echo $post->post_title ?><!--'s case study">-->

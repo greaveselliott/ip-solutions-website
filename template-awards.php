@@ -4,7 +4,7 @@
  * Currently used on page template: Blog
  */
 ?>
-<article class="background-light-grey padding template-post">
+<article class="background-light-grey padding template-post awards-height">
     <div class="text-align-center">
         <div class="display-inline-block">
             <?php

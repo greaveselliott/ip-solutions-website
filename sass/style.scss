@@ -45,7 +45,7 @@
 @import "social-sidebar";
 
 // Main Website Header
-@import "header-main";
+@import "header";
 
 // plugins
 @import "../javascripts/slick/slick/slick";
@@ -93,7 +93,7 @@
 @import "gravity-forms-sass/form-default";
 @import "gravity-forms-sass/form-gravity";
 
-@import "tabs";
+@import "template-services-tabs";
 //@import "request-quote";
 @import "jquery-ui.off-canvas";
 

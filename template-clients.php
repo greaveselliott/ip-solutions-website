@@ -11,13 +11,13 @@
 <section class="block-grid-item single-client <?php echo $client_class; ?>  text-align-center">
     <h3 class="hide"><?php echo $post->post_name; ?></h3>
     <?php if ( $has_case_study && $is_home_template) : ?>
-    <a href="<?php echo $related_case_study[0]->guid ?>" class="width-100 height-100 display-block"  data-toggle="tooltip" data-placement="bottom" title="<?php echo 'Read the ' . $related_case_study[0] -> post_title . ' Case Study.' ?>">
+    <a href="<?php echo get_permalink($related_case_study[0]->ID); ?>" class="width-100 height-100 display-block"  data-toggle="tooltip" data-placement="bottom" title="<?php echo 'Read the ' . $related_case_study[0] -> post_title . ' Case Study.' ?>">
     <?php endif; ?>
     <div class="padding-left-tablet-up padding-right-tablet-up">
         <img src="<?php echo get_field('client_logo', $post->ID);?>" alt="<?php echo $post->post_name?>" class="width-100 height-auto">
     </div>
     <?php if ( $has_case_study && !$is_home_template )  : ?>
-        <a href="<?php echo $related_case_study[0]->guid ?>" class="btn btn-orange display-inline-block margin-top">Read Case Study</a>
+        <a href="<?php echo get_permalink($related_case_study[0]->ID); ?>" class="btn btn-orange display-inline-block margin-top">Read Case Study</a>
     <?php else : ?>
         </a>
     <?php endif; ?>

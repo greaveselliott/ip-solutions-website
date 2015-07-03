@@ -228,5 +228,25 @@ function eemjii_enqueue () {
         true
     );
     wp_enqueue_script('eemjii-offcanvas-config');
+
+    // equal Columns
+    wp_register_script (
+        'eemjii-equal-columns',
+        get_stylesheet_directory_uri() . '/javascripts/equal-columns/jquery-ui.equal-columns.js',
+        array('jquery','jquery-ui-widget'),
+        '',
+        true
+    );
+    wp_enqueue_script('eemjii-equal-columns');
+
+    // Off Canvas Config
+    wp_register_script (
+        'eemjii-equal-columns-config',
+        get_stylesheet_directory_uri() . '/javascripts/equal-columns/jquery-ui.equal-columns.config.js',
+        array('jquery','jquery-ui-widget','eemjii-equal-columns'),
+        '',
+        true
+    );
+    wp_enqueue_script('eemjii-equal-columns-config');
 }
 add_action('wp_enqueue_scripts','eemjii_enqueue');

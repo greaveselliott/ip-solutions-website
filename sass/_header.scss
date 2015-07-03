@@ -10,9 +10,15 @@
 
 body.logged-in, body.admin-bar {
   #header-main-container {
+    @extend .ease;
     top: 28px !important;
     @include respond-to(tablet-portrait) {
      top: 46px !important;
+    }
+  }
+  &.sticky #header-main-container {
+    @include respond-to(620, true) {
+      top: 0px !important;
     }
   }
 }
@@ -30,7 +36,7 @@ body.logged-in, body.admin-bar {
   z-index: 20;
   position: relative;
 }
-#header-main-height, .header-offset {
+#header-main-height, .header-offset, .header-element {
   -webkit-transition: all 0.17s ease-in;
   -moz-transition: all 0.17s ease-in;
   -ms-transition: all 0.17s ease-in;
@@ -50,14 +56,20 @@ body.logged-in, body.admin-bar {
   }
 }
 
-//.sticky #header-main-height, .sticky .header-offset {
-//  @include respond-to('desktop-down') {
-//    height: 72px;
-//  }
-//  @include respond-to('large-desktop') {
-//    height: 90px;
-//  }
-//}
+.sticky {
+  #header-main-height, .header-offset, .header-element {
+    @include respond-to('desktop-down') {
+      height: 72px !important;
+    }
+    @include respond-to('large-desktop') {
+      height: 90px !important;
+    }
+    @include respond-to('tablet-portrait') {
+      height: auto !important;
+      min-height: 50px !important;
+    }
+  }
+}
 #header-main-height {
   //background: pink;
 }

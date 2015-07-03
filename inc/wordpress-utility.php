@@ -14,3 +14,7 @@ function clean($string) {
 
     return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
 }
+
+function cookie_exists ($cookie_name) {
+    return isset($_COOKIE[$cookie_name]) ? true : false;
+}

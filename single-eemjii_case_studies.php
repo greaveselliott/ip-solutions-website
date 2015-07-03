@@ -14,7 +14,7 @@ echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'
         <div class="container">
             <div class="row">
                 <div class="col-sm-7">
-                    <h1 class="h2 text-white" <?php echo $heading_colour ? 'style="color:'.$heading_colour.' !important";':"";?>>Case Study:<br> <?php the_title(); ?></h1>
+                    <h1 class="h2 text-white drop-heading-position-tablet-portrait" <?php echo $heading_colour ? 'style="color:'.$heading_colour.' !important";':"";?>>Case Study:&nbsp;<?php the_title(); ?></h1>
                 </div>
                 <!-- Client Logo inside cloud -->
                 <div class="col-sm-5 display-none-tablet-portrait">
@@ -62,15 +62,29 @@ echo eemjii_get_featured_image_url( get_the_ID(), 'wide-1000-3-1', array('class'
                     <?php the_field('result'); ?>
                 </div>
                 <!-- Related Services -->
-                <div class="background-orange padding margin-top">
-                    <div class="display-inline-block"><h4 class="text-white h5 padding-right">Discover how IP Solutions can help you</h4></div>
-                    <div class="display-inline-block"><?php eemjii_post_command($related_services,'template-services-related.php'); ?></div>
-                </div>
-
             </div>
         </div>
     </div>
 </div>
+    <section class="container padding-top">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3>Discover more about our services</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!--        <div class="col-sm-10 col-sm-offset-1">-->
+            <div class="col-lg-8 col-md-10 col-sm-12 col-lg-offset-2 col-md-offset-1">
+                <div class="row">
+                    <?php
+                    $related_services = eemjii_simple_post_query('eemjii_services', 6);
+                    eemjii_post_command($related_services,'template-services-navigation-solutions.php');
+                    ?>
+                    <!--        </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
 <!-- Related Case Studies -->
 <div class="container">
     <div class="row">
